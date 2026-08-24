@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1208.0 774.0" width="1208" height="774" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-ExecutionGap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="40.00" y="59.80" font-size="22" fill="#0f766e">An idea is a free option.</text></g>
+<g data-beat="1"><text x="40.00" y="89.80" font-size="22" fill="#b45309">Execution is the part where you pay.</text></g>
+<g data-beat="1"><ellipse cx="180.00" cy="168.00" rx="120.00" ry="50.00" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="180.00" y="174.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Your idea</text></g>
+<g data-beat="1"><path d="M 305.00,168.00 L 385.00,168.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ExecutionGap)"/></g>
+<g data-beat="1"><rect x="390.00" y="118.00" width="260.00" height="100.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="1"><text x="520.00" y="174.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Execution</text></g>
+<g data-beat="1"><text x="690.00" y="143.30" font-size="17" fill="#4b5563"><tspan x="690.00">Medvi: $401M of sales in 2025.</tspan><tspan x="690.00" dy="21.25">Two employees, the founder and his brother.</tspan></text></g>
+<g data-beat="2"><path d="M 40.00,258.00 L 1200.00,258.00" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><text x="40.00" y="292.00" font-size="20" fill="#1971c2">WHAT GOT CHEAP — the mechanical half of execution</text></g>
+<g data-beat="2"><rect x="40.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="174.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Landing page</text></g>
+<g data-beat="2"><rect x="332.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="466.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Contract review</text></g>
+<g data-beat="2"><rect x="624.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="758.00" y="357.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="758.00">Dashboard</tspan><tspan x="758.00" dy="22.50">&amp; analytics</tspan></text></g>
+<g data-beat="2"><rect x="916.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="1050.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Ad creative</text></g>
+<g data-beat="2"><text x="40.00" y="438.40" font-size="16" fill="#4b5563">A few hundred dollars a month. 48% of surveyed users said the gain was scope — work they could not do at all.</text></g>
+<g data-beat="3"><path d="M 40.00,470.00 L 1200.00,470.00" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="3"><text x="40.00" y="504.00" font-size="20" fill="#b45309">WHAT STAYED EXPENSIVE</text></g>
+<g data-beat="3"><rect x="40.00" y="530.00" width="1160.00" height="112.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="3"><text x="620.00" y="578.30" font-size="22" fill="#1e1e1e" text-anchor="middle"><tspan x="620.00">Judgment under incomplete information —</tspan><tspan x="620.00" dy="27.50">exercised repeatedly, in public, with your own money at stake.</tspan></text></g>
+<g data-beat="4"><path d="M 620.00,646.00 L 620.00,686.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ExecutionGap)"/></g>
+<g data-beat="4"><rect x="230.00" y="690.00" width="780.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="620.00" y="734.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Eight decisions. No correct answer — only a defensible one.</text></g>
+</svg>

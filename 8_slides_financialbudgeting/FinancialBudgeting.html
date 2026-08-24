@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Financial Budgeting</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Financial Budgeting</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 8 &middot; Concept Lecture &middot; Tuesday, November 10</p>
+          <p class="subtitle">Case: Marvell FY2026 &middot; Mental model: the Reversibility Budget</p>
+          <aside class="notes">A budget is not a forecast. It is a set of promises, and they are not equally easy to break. Open with the hands &mdash; the laugh when they drop is the setup for the whole hour.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>A budget is a work of fiction</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Show of hands: who has ever made a budget? <em>(most hands)</em></li>
+                <li class="fragment fade-up">Keep it up if you stuck to it. <em>(hands drop)</em></li>
+                <li class="fragment fade-up">So we all know a budget is fiction. What I want to convince you of is that <strong>most of it is fiction and some of it absolutely is not</strong> &mdash; and the entire skill is knowing which lines are which.</li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Two activities, one word</h3>
+              <p>Some of what you write down is an <strong>estimate</strong>: we think we will spend about this much on marketing.</p>
+              <p>Some of it is a <strong>contract</strong>: we signed a piece of paper promising to pay this, and it will be paid whether or not the year goes the way we said.</p>
+              <p class="small">Estimates flex. Contracts do not. <strong>A budget that does not tell you which is which is not a plan. It is a wish with columns.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">Let the laugh land before the box. The distinction between an estimate and a contract is the entire lecture, stated in the first ninety seconds.</aside>
+        </section>
+
+        <!-- Story -->
+        <section>
+          <h2>The plane that broke the airline</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Airlines order aircraft years before they fly them. You get in a queue, you put money down, you take delivery in three or four years &mdash; and you were required to <strong>guess in advance</strong> what travel demand would look like when the plane arrives.</li>
+                <li class="fragment fade-up">Imagine you placed that order in <strong>2019</strong>. You forecast a great few years. You committed.</li>
+                <li class="fragment fade-up">And then in 2020 <strong>nobody flew anywhere at all.</strong></li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>The asymmetry that actually hurt</h3>
+              <p>The demand forecast was wrong &mdash; fine, everybody's was. But <strong>the forecast was revised in a morning and the commitment took years to unwind.</strong></p>
+              <p class="small">The planes were still coming. The deposits were still spent. Airlines spent the entire crisis negotiating to delay deliveries, because the one thing they could not do was <strong>un-sign</strong>.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">Rule one: <strong>you make commitments based on a forecast, and you pay them based on reality.</strong></p>
+          <aside class="notes">Any long-lead industry works here if the room is not interested in aircraft &mdash; foundry capacity is the one they will meet on Thursday.</aside>
+        </section>
+
+        <!-- Three buckets -->
+        <section>
+          <h2>Not all money is equally spent</h2>
+          <div class="three-col">
+            <div class="card bad fragment fade-up" data-fragment-index="1"><h3>Committed</h3><p>Signed. Contractual. Multi-year supply agreements, capacity reservations, leases, debt service, deposits already paid. You can sometimes get out &mdash; cancellation fees, forfeited deposits, or losing a place in a queue you waited years to join. <strong>Time to stop: months to never.</strong></p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="1"><h3>Sticky</h3><p>Not contractual, but not fast either. People, mostly. Engineering programs halfway to a design win. A factory ramp. You <em>can</em> stop these &mdash; you just destroy something on the way out, and rebuilding takes as long as building did. <strong>Time to stop: a quarter or two, with damage.</strong></p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Flexible</h3><p>Discretionary. Marketing campaigns, travel, contractors, buybacks, optional projects. Turn it off Monday, turn it back on in March. <strong>Time to stop: immediately.</strong></p></div>
+          </div>
+          <div class="box bad fragment fade-up" data-fragment-index="2" style="margin-top: 20px;">
+            <p>When the year goes badly, <strong>all the pressure falls on the third bucket &mdash; because it is the only one that moves.</strong> Which means the thing that gets cut is not the thing that <em>should</em> be cut. It is the thing that <em>can</em> be. And it is usually the smallest bucket, and frequently the most valuable per dollar.</p>
+          </div>
+          <aside class="notes">Slow down. This is the actual content. One question defines the bucket: how fast could I stop this, and what would stopping cost?</aside>
+        </section>
+
+        <!-- Reversibility not percentage -->
+        <section>
+          <h2>Budget by reversibility, not by percentage</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>What most people do</h3>
+              <p>Budget by <strong>percentage of revenue</strong>: R&amp;D should be 20%, marketing 10%, that is what our industry does.</p>
+              <p class="small">Fast, and roughly harmless &mdash; until revenue misses, at which point the percentages tell you <strong>nothing about what to do.</strong></p>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>What to do instead</h3>
+              <p><strong>How much of next year is already decided?</strong> Add up the committed bucket. That is what you spend no matter what happens &mdash; compare it to your <em>worst plausible</em> revenue, not your expected revenue.</p>
+              <p class="small">If the floor is higher, you have not written a budget. <strong>You have written a bet</strong> &mdash; which may be the right call, but it should be a decision, not a discovery.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">And then the question that saves companies: <strong>how much of my flexibility have I already spent?</strong> Every commitment you sign converts flexible money into committed money, permanently, for its term. <strong>Optionality is a resource. You can run out of it.</strong></p>
+          <aside class="notes">The worst-plausible-revenue comparison is the exercise. Make them do it for their own venture in two minutes; most have never written the floor down.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the Reversibility Budget</h2>
+          <div class="fig-embed" role="img" aria-label="Three buckets sorted by how fast you could stop the spending: committed months to never, sticky a quarter or two with damage, and flexible immediately, with all cuts landing on the smallest bucket"><!--fig:Reversibility_Budget-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 12.0 1168.0 698.0" width="1168" height="698" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Reversibility_Budget" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="40.00" y="51.30" font-size="17" fill="#0f766e">SORT EVERY LINE BY ONE QUESTION: how fast could I stop this, and what would stopping cost?</text></g>
+<g data-beat="1"><rect x="260.00" y="96.00" width="640.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="1"><text x="240.00" y="129.22" font-size="19" fill="#c92a2a" text-anchor="end">COMMITTED</text></g>
+<g data-beat="1"><text x="260.00" y="184.40" font-size="16" fill="#4b5563">signed contracts, capacity reservations, deposits, leases, debt service</text></g>
+<g data-beat="1"><text x="920.00" y="118.40" font-size="16" fill="#c92a2a"><tspan x="920.00">months → never</tspan><tspan x="920.00" dy="20.00">exiting costs money</tspan></text></g>
+<g data-beat="2"><rect x="260.00" y="222.00" width="340.00" height="56.00" rx="14.0" ry="14.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="240.00" y="255.22" font-size="19" fill="#b45309" text-anchor="end">STICKY</text></g>
+<g data-beat="2"><text x="260.00" y="310.40" font-size="16" fill="#4b5563">people, programs, factory ramps, half-finished design wins</text></g>
+<g data-beat="2"><text x="920.00" y="244.40" font-size="16" fill="#b45309"><tspan x="920.00">a quarter or two</tspan><tspan x="920.00" dy="20.00">exiting destroys something</tspan></text></g>
+<g data-beat="3"><rect x="260.00" y="348.00" width="140.00" height="56.00" rx="14.0" ry="14.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="240.00" y="381.23" font-size="19" fill="#0f766e" text-anchor="end">FLEXIBLE</text></g>
+<g data-beat="3"><text x="260.00" y="436.40" font-size="16" fill="#4b5563">campaigns, travel, contractors, buybacks, optional projects</text></g>
+<g data-beat="3"><text x="920.00" y="380.40" font-size="16" fill="#0f766e">immediately</text></g>
+<g data-beat="4"><path d="M 150.00,456.00 L 250.00,408.00" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Reversibility_Budget)"/></g>
+<g data-beat="4"><text x="40.00" y="489.40" font-size="16" fill="#b45309"><tspan x="40.00">the ONLY bucket that moves when the year goes wrong —</tspan><tspan x="40.00" dy="20.00">so every cut lands on the smallest bucket, and often the most valuable per dollar.</tspan><tspan x="40.00" dy="20.00">What gets cut is not what SHOULD be cut. It is what CAN be.</tspan></text></g>
+<g data-beat="5"><rect x="40.00" y="568.00" width="1120.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="5"><text x="600.00" y="601.23" font-size="19" fill="#1e1e1e" text-anchor="middle">Commitments are made on a FORECAST and paid on the ACTUAL.</text></g>
+<g data-beat="5"><text x="600.00" y="657.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="600.00">And demand can cancel on you faster than supply can cancel on you: revenue falls immediately, costs fall slowly —</tspan><tspan x="600.00" dy="20.00">and the gap between those two speeds is exactly the size of the crisis.</tspan></text></g>
+</svg>
+<!--/fig:Reversibility_Budget--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">The number at the bottom matters less than the shape above it &mdash; and the shape is <strong>how much of this can I still change?</strong></p>
+          <aside class="notes">Beat 4 is the one that changes behaviour: the cut lands where it can, not where it should. Beat 5 is the sentence Thursday turns on.</aside>
+        </section>
+
+        <!-- How to use it -->
+        <section>
+          <h2>How to use it &mdash; four steps</h2>
+          <div class="four-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>1 &middot; Sort every line</h4><p>By one question only: <strong>how long would it take to stop this, and what would stopping cost?</strong></p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>2 &middot; Total the committed</h4><p>For next year. <strong>That is your floor</strong> &mdash; the spending that happens whatever the revenue does.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>3 &middot; Compare it to the worst case</h4><p>Not to expected revenue. If the floor is higher, <strong>you are running a bet.</strong></p></div>
+            <div class="card bad fragment fade-up" data-fragment-index="2"><h4>4 &middot; Look at what flexible is left</h4><p>That is your <strong>entire ability to respond to being wrong.</strong> If it is thin, you have already spent your optionality.</p></div>
+          </div>
+          <aside class="notes">Step 3 is the one nobody does. Make them say the worst plausible number out loud before they see the committed total.</aside>
+        </section>
+
+        <!-- Asymmetries -->
+        <section>
+          <h2>The asymmetries that make it a model</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>Forecast versus fact</h3>
+              <p><strong>Commitments are made on a forecast and paid on the actual.</strong></p>
+              <p class="small">Every multi-year supply agreement is a bet on a demand number somebody typed into a spreadsheet. <strong>The number gets revised quarterly. The agreement does not.</strong></p>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>And where the real damage happens</h3>
+              <p><strong>Demand can cancel on you faster than supply can cancel on you.</strong></p>
+              <p class="small">Customers buy on purchase orders they can pull with short notice. Suppliers sell on contracts you signed for years. So when demand turns, <strong>your revenue falls immediately and your costs fall slowly</strong> &mdash; and the gap between those two speeds is exactly the size of the crisis.</p>
+            </div>
+          </div>
+          <aside class="notes">The second box is the case in advance. Write the two speeds on the board and leave them up through Thursday.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;can we afford this?&rdquo; &mdash; but <span class="em">if the demand we are assuming does not arrive, how long does it take to stop paying for it &mdash; and what does stopping cost?</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p>A budget is not a prediction of the future. <strong>It is a record of how much of the future you have already promised away.</strong></p>
+          </div>
+          <aside class="notes">Every team has one line they cannot answer this about. Finding it is the point of the exercise, not the number they eventually give.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You will open the real books of a company that grew revenue <strong>42% to $8.2 billion</strong> on AI demand, sold a business for <strong>$2.5 billion</strong>, and bought two more within ten days of its year end.</li>
+                <li class="fragment fade-up">And has <strong>$1.87 billion of unconditional foundry commitments</strong> falling due next year &mdash; against customers who <em>&ldquo;can cancel, change or delay product purchase commitments with relatively short notice.&rdquo;</em></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Your job</h3>
+              <p>Not to admire the growth. <strong>To decide</strong> &mdash; and to know which of your decisions you could take back.</p>
+              <p class="small">Put every choice in a bucket before you vote on it.</p>
+            </div>
+          </div>
+          <aside class="notes">Hand out the role pages. That quoted sentence from the filing is the whole asymmetry in the company's own words &mdash; read it aloud twice.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

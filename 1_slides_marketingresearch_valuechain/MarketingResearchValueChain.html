@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Marketing Research and the Value Chain</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Marketing Research and the Value Chain</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 1 &middot; Concept Lecture &middot; Tuesday, September 8</p>
+          <p class="subtitle">Case: TheRealReal FY2025 &middot; Mental model: the Value-Chain Chokepoint</p>
+          <aside class="notes">Tell this like a stand-up set. Pause where the script says pause, let them laugh, then land the point. Do not put a definition on the board in the first ten minutes.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>Theater with catering</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Marketing research is the most misunderstood phrase in this building.</li>
+                <li class="fragment fade-up">Most of you think it means a survey. A focus group. Six people behind glass eating free sandwiches, rating a logo one through seven.</li>
+                <li class="fragment fade-up">That is not research. <strong>That is theater with catering.</strong></li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>Real research answers one much ruder question</h3>
+              <p><strong>What is the customer actually paying us to do &mdash; and are we the ones doing it?</strong></p>
+              <p class="small">Today: how to answer that. Then where in a business the money actually collects &mdash; because it is never where you think, and almost never where the logo is.</p>
+            </div>
+          </div>
+          <aside class="notes">Ask who has run a survey for a class project. Most hands go up. Do not mock them &mdash; the point is that the survey answers a question nobody needed answered.</aside>
+        </section>
+
+        <!-- Story 1 -->
+        <section>
+          <h2>The milkshake</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">A chain wanted to sell more milkshakes. They asked milkshake customers what would make the milkshake better. Thicker? Cheaper? More chocolate?</li>
+                <li class="fragment fade-up">They improved it along every dimension the customers named. <strong>Sales did not move. At all.</strong></li>
+                <li class="fragment fade-up">So a researcher stood in the restaurant for <strong>eighteen hours</strong> and just watched <em>when</em> people bought them.</li>
+                <li class="fragment fade-up">Nearly half sold before 8:30 in the morning. To people alone. In cars. Who bought nothing else, and drove off.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>What they were actually buying</h3>
+              <p>A long boring commute. One hand on the wheel. Not hungry yet, but will be by ten. A bagel makes crumbs. A banana is gone in twenty seconds. A donut makes your fingers greasy.</p>
+              <p>The milkshake takes <strong>twenty-three minutes</strong> through a thin straw, fits the cup holder, and makes the commute stop being boring.</p>
+              <p class="small">Its competition was not other milkshakes. It was a banana, the radio, and a cigarette.</p>
+            </div>
+          </div>
+          <aside class="notes">Beat on "eighteen hours" &mdash; the method is boring on purpose. Ask the room what the milkshake's competitor is before you reveal it.</aside>
+        </section>
+
+        <!-- Rule one -->
+        <section>
+          <h2>Rule one: you are not researching your product</h2>
+          <div class="two-col">
+            <div class="box fragment fade-up">
+              <h3>Ask about the thing, learn about the thing</h3>
+              <p>Every question they asked the first time was about the <em>product</em>. Every useful answer came from the <em>situation</em>.</p>
+              <p><strong>Watch a customer struggle and you learn what they are trying to get done &mdash; and that is what you are actually selling.</strong></p>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Now the case</h3>
+              <p>A Chanel bag in a closet. Five thousand dollars. Unworn for four years. Ask &ldquo;would you like to sell it?&rdquo; &mdash; she says yes. Useless answer.</p>
+              <p class="small">Watch instead: she does not know what it is worth, will not meet a stranger in a parking lot, will not photograph it and answer forty messages &mdash; and <strong>the buyer does not believe it is real.</strong></p>
+              <p><strong>She is not hiring anyone to sell a bag. She is hiring someone to make a stranger believe her.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">This is the whole case in one line. Write it on the board and leave it there for the rest of the hour.</aside>
+        </section>
+
+        <!-- Story 2 -->
+        <section>
+          <h2>The most expensive handshake</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up"><strong>1980.</strong> IBM decides to build a personal computer. It wants this fast, so it buys the pieces: the processor from a small company called <strong>Intel</strong>, the operating system from a smaller one called <strong>Microsoft</strong>.</li>
+                <li class="fragment fade-up">And critically, it lets Microsoft license that same operating system <em>to anyone else.</em></li>
+                <li class="fragment fade-up">IBM keeps the part it thought was the business: assembling the box, and putting IBM on the front.</li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>Fifteen years later</h3>
+              <p>&ldquo;IBM compatible&rdquo; PCs are everywhere and IBM makes almost nothing on them &mdash; anybody with a screwdriver can assemble a box. IBM eventually sold the PC business entirely.</p>
+              <p><strong>It kept the step anyone could do, and gave away the two steps nobody else could.</strong></p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">IBM was not outsmarted on strategy or marketing. It was outsmarted on <em>which step of the chain to own</em>.</p>
+          <aside class="notes">Ask which of the three pieces they would have kept in 1980. Almost everyone keeps the brand. That is the lesson.</aside>
+        </section>
+
+        <!-- Margin pools -->
+        <section>
+          <h2>The margin does not spread. It pools.</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Every business is a <strong>chain</strong> of steps between a raw thing and a happy customer. Somebody sources it, verifies it, prices it, sells it, moves it, handles it coming back.</li>
+                <li class="fragment fade-up">The margin does not spread out evenly along that chain. <strong>It collects at one or two steps and runs right past the rest.</strong></li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>The steps it runs past are not bad steps</h3>
+              <p>Someone has to do them. They are just steps where you have <strong>no bargaining power</strong> &mdash; because if you charged more, the customer would do it themselves, or buy it from the eleven other people who do it.</p>
+              <p class="small">Two jobs, then. Draw the chain. Find the step where the money pools.</p>
+            </div>
+          </div>
+          <aside class="notes">Have them draw the chain for their own team venture before you show the figure. Six boxes, no more.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the Value-Chain Chokepoint</h2>
+          <div class="fig-embed" role="img" aria-label="A six-step value chain from source to returns, with the verification step highlighted as the point where margin pools, three tests it must pass, and the asymmetry that makes it look like the most cuttable step"><!--fig:Value_Chain_Chokepoint-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="21.0 20.0 1158.0 702.0" width="1158" height="702" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Value_Chain_Chokepoint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="45.00" y="76.20" font-size="18" fill="#0f766e">THE CHAIN — raw thing to happy customer</text></g>
+<g data-beat="1"><rect x="45.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="125.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SOURCE</text></g>
+<g data-beat="1"><path d="M 209.00,146.00 L 231.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="235.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="315.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">VERIFY</text></g>
+<g data-beat="1"><path d="M 399.00,146.00 L 421.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="425.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="505.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">PRICE</text></g>
+<g data-beat="1"><path d="M 589.00,146.00 L 611.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="615.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="695.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SELL</text></g>
+<g data-beat="1"><path d="M 779.00,146.00 L 801.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="805.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="885.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SHIP</text></g>
+<g data-beat="1"><path d="M 969.00,146.00 L 991.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="995.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="1075.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">RETURNS</text></g>
+<g data-beat="1"><text x="850.00" y="60.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="850.00">Somebody sources it, verifies it, prices it, sells it, ships it, takes it back.</tspan><tspan x="850.00" dy="20.00">Every step is necessary — but the margin does not spread evenly. It POOLS.</tspan></text></g>
+<g data-beat="2"><rect x="235.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="315.00" y="151.50" font-size="20" fill="#b45309" text-anchor="middle">VERIFY</text></g>
+<g data-beat="2"><path d="M 315.00,300.00 L 315.00,190.00" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="2"><text x="315.00" y="322.05" font-size="17" fill="#b45309" text-anchor="middle"><tspan x="315.00">THE CHOKEPOINT — margin pools here</tspan><tspan x="315.00" dy="21.25">authentication is what the customer is actually buying</tspan></text></g>
+<g data-beat="2"><text x="877.50" y="322.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="877.50">thin · thin · thin · thin — necessary steps where you have no bargaining power,</tspan><tspan x="877.50" dy="20.00">because the customer could do them, or buy them from eleven other people.</tspan></text></g>
+<g data-beat="3"><text x="45.00" y="385.30" font-size="17" fill="#0f766e">A step is the chokepoint only if it passes ALL THREE</text></g>
+<g data-beat="3"><rect x="45.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="220.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="220.00">1 · THE CUSTOMER&#x27;S ACTUAL JOB</tspan><tspan x="220.00" dy="18.75"> </tspan><tspan x="220.00" dy="18.75">not what they said in the survey —</tspan><tspan x="220.00" dy="18.75">what they are hiring you to get done</tspan><tspan x="220.00" dy="18.75"> </tspan><tspan x="220.00" dy="18.75">(not &quot;sell my bag&quot;:</tspan><tspan x="220.00" dy="18.75">make a stranger believe me)</tspan></text></g>
+<g data-beat="3"><rect x="425.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="600.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="600.00">2 · HARD TO COPY</tspan><tspan x="600.00" dy="18.75"> </tspan><tspan x="600.00" dy="18.75">would a well-funded rival need years,</tspan><tspan x="600.00" dy="18.75">licences, trained people, accumulated</tspan><tspan x="600.00" dy="18.75">data —</tspan><tspan x="600.00" dy="18.75"> </tspan><tspan x="600.00" dy="18.75">or a weekend and a credit card?</tspan></text></g>
+<g data-beat="3"><rect x="805.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="980.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="980.00">3 · FAILS LOUDLY</tspan><tspan x="980.00" dy="18.75"> </tspan><tspan x="980.00" dy="18.75">if the step goes wrong, does the</tspan><tspan x="980.00" dy="18.75">customer notice?</tspan><tspan x="980.00" dy="18.75"> </tspan><tspan x="980.00" dy="18.75">a step that fails silently carries</tspan><tspan x="980.00" dy="18.75">no trust, and earns no premium</tspan></text></g>
+<g data-beat="4"><rect x="45.00" y="580.00" width="1110.00" height="62.00" rx="15.5" ry="15.5" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="4"><text x="600.00" y="615.95" font-size="18" fill="#1e1e1e" text-anchor="middle">The chokepoint always looks like the most expensive, most annoying, most CUTTABLE step on the whole chain.</text></g>
+<g data-beat="4"><text x="600.00" y="670.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="600.00">Cut a normal step and you save money. Cut the chokepoint and you do not have a business —</tspan><tspan x="600.00" dy="20.00">you have a website with other people&#x27;s things on it.</tspan></text></g>
+</svg>
+<!--/fig:Value_Chain_Chokepoint--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">Find it, own it, and starve everything else. Miss it, and you are IBM assembling boxes.</p>
+          <aside class="notes">Beat 1: the chain, and that every step is necessary. Beat 2: pause here &mdash; ask which step they would cut first. Beat 3: the three tests, all three. Beat 4 is the one they will get wrong on Thursday.</aside>
+        </section>
+
+        <!-- Three tests -->
+        <section>
+          <h2>Three tests &mdash; a step qualifies only if it passes all three</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>1 &middot; The customer's actual job</h3><p>Not what they said in the survey &mdash; what they are hiring you to accomplish. Not &ldquo;sell my bag.&rdquo; <strong>Make a stranger believe me.</strong></p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>2 &middot; Hard to copy</h3><p>Would a well-funded competitor need years, licences, trained people, accumulated data &mdash; or a weekend and a credit card?</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>3 &middot; Fails loudly</h3><p>If the step goes wrong, does the customer notice? A step that fails silently carries no trust, and earns no premium.</p></div>
+          </div>
+          <div class="box warn fragment fade-up" data-fragment-index="2" style="margin-top: 22px;">
+            <p>A step that passes all three is a chokepoint. <strong>A step that passes two is a cost centre pretending to be a moat.</strong></p>
+          </div>
+          <aside class="notes">Run their own venture through the three tests out loud. Most teams discover their &ldquo;moat&rdquo; fails test two.</aside>
+        </section>
+
+        <!-- The asymmetry -->
+        <section>
+          <h2>The asymmetry that makes it a model</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>It always looks cuttable</h3>
+              <p>The chokepoint is the <strong>most expensive, most annoying, most cuttable</strong> step on the chain. Of course it is &mdash; it is the step that is hard, and hard is expensive.</p>
+              <p class="small">So every spreadsheet points at it and says <em>look what this costs us.</em> Automate it. Outsource it. Sample it. Skip it for trusted sellers.</p>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>And the other direction</h3>
+              <p><strong>The steps that are easy to grow are almost never the steps worth growing.</strong></p>
+              <p class="small">Buying inventory, adding advertising, opening stores &mdash; these scale beautifully in a deck because anybody can do them. That is exactly why the margin is thin there.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">Cut a normal step and you save money. <strong>Cut the chokepoint and you do not have a business &mdash; you have a website with other people's things on it.</strong></p>
+          <aside class="notes">This slide is the whole reason the model is worth memorising. Say the last line slowly; it is the sentence they should hear again on Thursday.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;will this grow revenue?&rdquo; &mdash; but <span class="em">does this strengthen the step the whole chain depends on, or does it just add volume to a step anyone could do?</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p>Spending forty percent of your revenue on gemologists, horologists and microphotography is <strong>not overhead</strong>. It is the entire reason a stranger will send you a five-thousand-dollar handbag through the mail.</p>
+            <p class="small">The day it becomes &ldquo;overhead&rdquo; in someone's slide deck is the day the chain snaps.</p>
+          </div>
+          <aside class="notes">Ask for one decision from their own project and run it through this question. Do not accept &ldquo;it grows the business&rdquo; as an answer.</aside>
+        </section>
+
+        <!-- The one line -->
+        <section>
+          <h2>The one line to carry in</h2>
+          <p class="quote fragment fade-up">Marketing research tells you <span class="em">what job the customer is hiring you for.</span> The value chain tells you <span class="em">which step of that job you can actually get paid for.</span></p>
+          <div class="two-col" style="margin-top: 20px;">
+            <div class="box fragment fade-up"><p>Get the first one wrong and you build a beautiful thing nobody hires.</p></div>
+            <div class="box warn fragment fade-up"><p>Get the second one wrong and you do all the work and someone else banks it.</p></div>
+          </div>
+          <p class="small fragment fade-up">A venture is durable only when <strong>the step you own is the same step the customer's job depends on</strong> &mdash; and it is the step hardest for anyone else to do.</p>
+          <aside class="notes">Have them write this sentence down before the role pages go out. They will need it in the first five minutes of the simulation.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You will open the <strong>real books of TheRealReal</strong> &mdash; fourteen years spent building exactly one chokepoint.</li>
+                <li class="fragment fade-up">It is now within <strong>twenty-four million dollars</strong> of breaking even, and is being pushed from <strong>five directions</strong> to change the thing that makes it work.</li>
+                <li class="fragment fade-up">Six roles, four choices each. Before every decision, say <strong>which step of the chain it touches</strong>.</li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Your job</h3>
+              <p>Not to admire the flywheel. <strong>To decide.</strong></p>
+              <p>Find the chokepoint. Then protect it from your own team.</p>
+            </div>
+          </div>
+          <aside class="notes">Hand out the role pages here. The Account Manager gets the company overview and the weighting sheet; the five leads see only their own question.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

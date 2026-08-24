@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Legal Structure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Legal Structure</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 4 &middot; Concept Lecture &middot; Tuesday, September 29</p>
+          <p class="subtitle">Case: NYT v. Microsoft &amp; OpenAI &middot; Mental model: the Structure Trilemma</p>
+          <aside class="notes">The question is not &ldquo;should I be an LLC.&rdquo; It is &ldquo;what am I buying, and what am I paying with.&rdquo; Same allegation discipline as Module 3 &mdash; state it before the case appears.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>&ldquo;We should probably set up an LLC&rdquo;</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Hands up if you have heard someone say that sentence. <em>(most hands go up)</em></li>
+                <li class="fragment fade-up">Keep it up if anyone in that conversation could say <strong>what an LLC actually does for you.</strong> <em>(the hands go down)</em></li>
+                <li class="fragment fade-up">Legal structure is the part of entrepreneurship everybody nods along to and nobody can explain &mdash; which is exactly the condition under which people sign things.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>What to leave with today</h3>
+              <p>Legal structure is not paperwork. <strong>It is a machine for splitting up three things</strong> &mdash; and you cannot have all three.</p>
+              <p class="small">So every choice is a trade you should be able to name out loud.</p>
+            </div>
+          </div>
+          <aside class="notes">Actually run the two hand-raises. The visual of the hands going down is the whole opening; do not narrate it.</aside>
+        </section>
+
+        <!-- The three things -->
+        <section>
+          <h2>The three things &mdash; that is the whole subject</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Control</h3><p>Who decides. Who hires, who fires, who picks the direction, <strong>who can say no</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Capital</h3><p>Who funds it, and on what terms they get paid back.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Liability</h3><p>Who is holding the bag when it goes wrong.</p></div>
+          </div>
+          <div class="two-col" style="margin-top: 20px;">
+            <div class="box fragment fade-up" data-fragment-index="2"><p><strong>Sole proprietorship:</strong> total control, exactly as much capital as you personally have, and <strong>unlimited personal liability</strong> &mdash; your car, your savings, your house.</p></div>
+            <div class="box warn fragment fade-up" data-fragment-index="2"><p><strong>Corporation:</strong> limited liability and access to outside capital &mdash; and in exchange you now have shareholders, a board, and duties to people who are not you.</p></div>
+          </div>
+          <p class="small fragment fade-up" data-fragment-index="3">Nothing on that list is free. <strong>You do not get limited liability. You buy it, and you pay in control.</strong></p>
+          <aside class="notes">Every entity form, investor term, partnership agreement and supplier contract divides these three. Say that, then refuse to add a fourth when someone offers taxes.</aside>
+        </section>
+
+        <!-- Story 1 -->
+        <section>
+          <h2>The two founders and the handshake</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Two people start a company. They do not form anything, because forming things costs $500 and they are busy.</li>
+                <li class="fragment fade-up">Legally they have just created a <strong>general partnership</strong> &mdash; a real entity the law will happily recognise on their behalf, whether or not they meant to.</li>
+                <li class="fragment fade-up">Eighteen months later, <strong>one</strong> of them signs a lease for office space. Not the other one. Just one.</li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>Both of them owe the rent</h3>
+              <p>Each partner can bind the partnership, and each is personally liable for <strong>the whole obligation</strong>. Not half. The whole thing.</p>
+              <p class="small">They bought maximum control &mdash; nobody could tell them what to do &mdash; and paid for it with unlimited, joint, personal liability. <strong>And they never knew they were at the till.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">Ask what they think happens before you reveal it. &ldquo;Half the rent&rdquo; is the usual answer, and being wrong about that is what makes the trilemma stick.</aside>
+        </section>
+
+        <!-- Story 2 -->
+        <section>
+          <h2>The money that came with a seat</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">A properly formed company raises a big cheque from a big <strong>strategic partner</strong> &mdash; the kind who does not just wire funds but also builds the infrastructure the company runs on.</li>
+                <li class="fragment fade-up">Great deal. The product could not have been built without it.</li>
+                <li class="fragment fade-up">Three years later somebody sues. And the plaintiff's lawyers do not just sue the company. <strong>They sue the partner too.</strong></li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>And the argument is not &ldquo;they own you&rdquo;</h3>
+              <p><strong>&ldquo;They had the right and the ability to stop you, and they were making money while you did it.&rdquo;</strong></p>
+              <p class="small">That is a real doctrine &mdash; <em>vicarious liability</em>. The test is roughly <strong>the right and ability to control</strong> plus <strong>a direct financial benefit</strong>.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">The partner invested, <strong>and</strong> built the machine, <strong>and</strong> helped tune it, <strong>and</strong> put the output in their own products. Every one of those made them a better partner. All four together made them a defendant.</p>
+          <aside class="notes">Let the quoted sentence sit for a beat before you name the doctrine. Then point out what it attaches to: control, never the org chart.</aside>
+        </section>
+
+        <!-- Instruments -->
+        <section>
+          <h2>The instruments, honestly</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Sole proprietorship / general partnership</h4><p>Free, instant, and <strong>the default if you do nothing</strong>. Full control, unlimited personal liability.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>LLC</h4><p>Limited liability, flexible governance, pass-through tax. The workhorse &mdash; but investors wanting preferred stock and option pools usually do not want one.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>C-corporation</h4><p>The form built for outside investment: shares, classes, boards, option pools. Costs you formality and, over time, control.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>Nonprofit corporation</h4><p><strong>No owners.</strong> Assets locked to a stated purpose, a board with duties to that purpose. It can raise donations. <strong>It cannot sell you equity.</strong></p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>Public benefit corporation</h4><p>A for-profit <em>chartered</em> to pursue a stated public benefit alongside profit. A hybrid &mdash; and a deliberate constraint on the board.</p></div>
+            <div class="card bad fragment fade-up" data-fragment-index="3"><h4>The ones nobody counts</h4><p><strong>Contract · licence · indemnity · warranty.</strong> A licence converts an unbounded legal risk into a priced line item. An indemnity moves a loss onto someone else's balance sheet. These are structure &mdash; they just do not come with a certificate.</p></div>
+          </div>
+          <aside class="notes">The last card does most of the work in real ventures and gets none of the attention. Spend your time there, not on the entity list.</aside>
+        </section>
+
+        <!-- Accretion -->
+        <section>
+          <h2>Structure is not built. It accretes.</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You pick a structure for what you are on <strong>day one</strong>. A nonprofit &mdash; the work is research, the money is donations, the mission is the point. And it works.</li>
+                <li class="fragment fade-up">Then the thing you are building needs <strong>capital at a scale donations cannot reach.</strong></li>
+                <li class="fragment fade-up">A nonprofit has no owners and cannot sell equity &mdash; so you build something next to it. Then that needs an operating company. Then a holding company for the raise. Then a shell for one round.</li>
+                <li class="fragment fade-up">You look up one day and there are <strong>nine of them.</strong></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>None of it is illegal, and none of it is stupid</h3>
+              <p>Every box was added for a real reason by people solving a real problem. <strong>That is precisely why it is worth studying.</strong></p>
+              <p>Nobody ever sits down, reads the whole chart back, and asks the only question that matters: <strong>who is actually in control here &mdash; and does the chart agree?</strong></p>
+            </div>
+          </div>
+          <aside class="notes">The nine entities are not a scandal; they are an accretion. That framing is what stops Thursday turning into a morality contest.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the Structure Trilemma</h2>
+          <div class="fig-embed" role="img" aria-label="A triangle of control, capital and liability with pick two at its centre, the trade each common structural choice makes along its edges, and the rule that liability follows control"><!--fig:Structure_Trilemma-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1118.0 728.0" width="1118" height="728" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Structure_Trilemma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><rect x="430.00" y="40.00" width="280.00" height="92.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="570.00" y="69.42" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="570.00">CONTROL</tspan><tspan x="570.00" dy="21.25">who actually decides — who hires,</tspan><tspan x="570.00" dy="21.25">who fires, who can say no</tspan></text></g>
+<g data-beat="1"><rect x="60.00" y="360.00" width="290.00" height="100.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="205.00" y="393.43" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="205.00">CAPITAL</tspan><tspan x="205.00" dy="21.25">who funds it, and</tspan><tspan x="205.00" dy="21.25">what they want back</tspan></text></g>
+<g data-beat="1"><rect x="790.00" y="360.00" width="290.00" height="100.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="1"><text x="935.00" y="393.43" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="935.00">LIABILITY</tspan><tspan x="935.00" dy="21.25">who is holding the bag</tspan><tspan x="935.00" dy="21.25">when it goes wrong</tspan></text></g>
+<g data-beat="2"><path d="M 545.00,136.00 L 240.00,356.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><path d="M 595.00,136.00 L 900.00,356.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><path d="M 355.00,408.00 L 785.00,408.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><text x="570.00" y="249.15" font-size="26" fill="#b45309" text-anchor="middle">PICK TWO</text></g>
+<g data-beat="3"><text x="290.00" y="224.40" font-size="16" fill="#1971c2" text-anchor="end"><tspan x="290.00">raise a priced round</tspan><tspan x="290.00" dy="20.00">→ buys CAPITAL,</tspan><tspan x="290.00" dy="20.00">pays with CONTROL</tspan></text></g>
+<g data-beat="3"><text x="850.00" y="224.40" font-size="16" fill="#b45309"><tspan x="850.00">incorporate</tspan><tspan x="850.00" dy="20.00">→ buys LIABILITY protection,</tspan><tspan x="850.00" dy="20.00">pays with formality and control</tspan></text></g>
+<g data-beat="3"><text x="570.00" y="487.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="570.00">stay a sole proprietor or do nothing at all</tspan><tspan x="570.00" dy="20.00">→ keeps CONTROL and cheap CAPITAL,</tspan><tspan x="570.00" dy="20.00">pays with unlimited personal LIABILITY</tspan></text></g>
+<g data-beat="4"><rect x="60.00" y="552.00" width="1020.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="4"><text x="570.00" y="585.23" font-size="19" fill="#1e1e1e" text-anchor="middle">LIABILITY FOLLOWS CONTROL — not the boxes on your org chart.</text></g>
+<g data-beat="4"><text x="570.00" y="634.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="570.00">The test is roughly the right and ability to control, plus a direct financial benefit.</tspan><tspan x="570.00" dy="20.00">It reaches a partner who never owned you.</tspan></text></g>
+<g data-beat="4"><text x="570.00" y="691.40" font-size="16" fill="#b45309" text-anchor="middle"><tspan x="570.00">And: structure is chosen in advance and tested in arrears — you draw the chart when you are small and</tspan><tspan x="570.00" dy="20.00">optimistic; it is read aloud when you are large and adversarial, by a lawyer you did not hire.</tspan></text></g>
+</svg>
+<!--/fig:Structure_Trilemma--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">Put any structural choice on the triangle and ask which corner it buys, and which corner pays.</p>
+          <aside class="notes">Beat 1: the three corners only. Beat 2: pick two &mdash; make them argue that you cannot have all three. Beat 4 is the case in one line.</aside>
+        </section>
+
+        <!-- The ledger -->
+        <section>
+          <h2>Which corner does it buy, and which one pays?</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Stay a sole proprietor</h4><p>Buys <strong>control</strong>. Pays with <strong>liability protection</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Incorporate</h4><p>Buys <strong>liability protection</strong>. Pays with <strong>formality, and some control</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Raise a priced round</h4><p>Buys <strong>capital</strong>. Pays with <strong>control</strong>.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>Take strategic money from your infrastructure provider</h4><p>Buys <strong>capital and capability</strong>. Pays with <strong>control</strong> &mdash; and, per the doctrine, exposure.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>Licence an input instead of taking it</h4><p>Buys <strong>liability protection</strong>. Pays with <strong>capital</strong> &mdash; you pay the fee.</p></div>
+            <div class="card bad fragment fade-up" data-fragment-index="3"><h4>Push the risk into a subsidiary</h4><p>Buys <em>some</em> liability protection &mdash; <strong>only against money judgments</strong>. An injunction does not care about your boxes.</p></div>
+          </div>
+          <aside class="notes">Do these as a call-and-response. Give them the choice, make the room supply the payment. The last card is the one they get wrong.</aside>
+        </section>
+
+        <!-- Asymmetries -->
+        <section>
+          <h2>The asymmetries that make it a model</h2>
+          <div class="two-col">
+            <div class="box bad fragment fade-up">
+              <h3>Liability follows control, not the org chart</h3>
+              <p>You can draw any boundary you like. <strong>If you kept the right and the ability to say no, and you were being paid, the boundary is a drawing.</strong></p>
+              <p class="small">Which is how a strategic partner becomes a defendant while holding a minority stake &mdash; the theory does not run through ownership at all.</p>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Chosen in advance, tested in arrears</h3>
+              <p>You pick it when you are small, optimistic, and solving today's problem. It is read back to you when you are large, adversarial, and being asked about a decision made by someone who has left.</p>
+              <p class="small">In a nonprofit or a PBC, <strong>your stated purpose is not marketing. It is a charter.</strong> The mission statement is a legal fact about what the entity is for &mdash; write it like one.</p>
+            </div>
+          </div>
+          <aside class="notes">Every &ldquo;we will always&rdquo; in a founding document is a sentence someone may read aloud in a courtroom in a very different tone of voice. That is Thursday's opening exhibit.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;what entity should we be?&rdquo; &mdash; but <span class="em">which corner is this choice buying, and can I say out loud which of the other two I am paying with?</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p><strong>If you cannot name the payment, you have not understood the deal. There is always a payment.</strong></p>
+          </div>
+          <aside class="notes">Apply it to one decision each team has already made &mdash; usually a co-founder split or a client contract. They will find a payment nobody named.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">A <strong>real complaint</strong>, in which a 172-year-old newspaper sues <strong>nine defendants at once</strong> &mdash; a Delaware nonprofit, a limited partnership, six LLCs, and one of the largest public companies in the world &mdash; over a product built out of text.</li>
+                <li class="fragment fade-up">You will see a <strong>founding promise from 2015</strong> quoted back at a defendant in 2023. A partner reached through <strong>control</strong> rather than ownership. And a remedy that <strong>no entity boundary stops</strong>.</li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>How we talk about this case</h3>
+              <p>These are <strong>accusations in a filed complaint</strong>. Nothing has been proved and no court has ruled.</p>
+              <p><strong>Every sentence about the facts begins &ldquo;the complaint alleges.&rdquo;</strong></p>
+              <p class="small">Your job is not to decide who wins. It is to decide how a company should be structured &mdash; and to be precise about which corner you are buying, and which one you are spending.</p>
+            </div>
+          </div>
+          <aside class="notes">Hand out the role pages here. The Account Manager holds the entity chart; the leads only see their own corner of the trilemma.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

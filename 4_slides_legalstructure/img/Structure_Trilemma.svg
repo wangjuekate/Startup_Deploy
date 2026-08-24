@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1118.0 728.0" width="1118" height="728" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Structure_Trilemma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><rect x="430.00" y="40.00" width="280.00" height="92.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="570.00" y="69.42" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="570.00">CONTROL</tspan><tspan x="570.00" dy="21.25">who actually decides — who hires,</tspan><tspan x="570.00" dy="21.25">who fires, who can say no</tspan></text></g>
+<g data-beat="1"><rect x="60.00" y="360.00" width="290.00" height="100.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="205.00" y="393.43" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="205.00">CAPITAL</tspan><tspan x="205.00" dy="21.25">who funds it, and</tspan><tspan x="205.00" dy="21.25">what they want back</tspan></text></g>
+<g data-beat="1"><rect x="790.00" y="360.00" width="290.00" height="100.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="1"><text x="935.00" y="393.43" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="935.00">LIABILITY</tspan><tspan x="935.00" dy="21.25">who is holding the bag</tspan><tspan x="935.00" dy="21.25">when it goes wrong</tspan></text></g>
+<g data-beat="2"><path d="M 545.00,136.00 L 240.00,356.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><path d="M 595.00,136.00 L 900.00,356.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><path d="M 355.00,408.00 L 785.00,408.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><text x="570.00" y="249.15" font-size="26" fill="#b45309" text-anchor="middle">PICK TWO</text></g>
+<g data-beat="3"><text x="290.00" y="224.40" font-size="16" fill="#1971c2" text-anchor="end"><tspan x="290.00">raise a priced round</tspan><tspan x="290.00" dy="20.00">→ buys CAPITAL,</tspan><tspan x="290.00" dy="20.00">pays with CONTROL</tspan></text></g>
+<g data-beat="3"><text x="850.00" y="224.40" font-size="16" fill="#b45309"><tspan x="850.00">incorporate</tspan><tspan x="850.00" dy="20.00">→ buys LIABILITY protection,</tspan><tspan x="850.00" dy="20.00">pays with formality and control</tspan></text></g>
+<g data-beat="3"><text x="570.00" y="487.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="570.00">stay a sole proprietor or do nothing at all</tspan><tspan x="570.00" dy="20.00">→ keeps CONTROL and cheap CAPITAL,</tspan><tspan x="570.00" dy="20.00">pays with unlimited personal LIABILITY</tspan></text></g>
+<g data-beat="4"><rect x="60.00" y="552.00" width="1020.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="4"><text x="570.00" y="585.23" font-size="19" fill="#1e1e1e" text-anchor="middle">LIABILITY FOLLOWS CONTROL — not the boxes on your org chart.</text></g>
+<g data-beat="4"><text x="570.00" y="634.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="570.00">The test is roughly the right and ability to control, plus a direct financial benefit.</tspan><tspan x="570.00" dy="20.00">It reaches a partner who never owned you.</tspan></text></g>
+<g data-beat="4"><text x="570.00" y="691.40" font-size="16" fill="#b45309" text-anchor="middle"><tspan x="570.00">And: structure is chosen in advance and tested in arrears — you draw the chart when you are small and</tspan><tspan x="570.00" dy="20.00">optimistic; it is read aloud when you are large and adversarial, by a lawyer you did not hire.</tspan></text></g>
+</svg>

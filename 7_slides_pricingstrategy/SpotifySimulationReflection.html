@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simulation: Snowflake's Consumption Meter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
+      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
+      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.3em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.3em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
+      .small { font-size: 0.4em; color: var(--muted); }
+      /* role question slides */
+      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
+      .role-h .emoji { font-size: 1.1em; }
+      .role-h h2 { margin: 0; text-align: left; }
+      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
+      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
+      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
+      .reveal .role-h ~ p { text-align: left; }
+      .options li { margin-bottom: 0.35em; }
+      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
+      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
+      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+      .reflect li { font-size: 0.44em; }
+      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Snowflake's Consumption Meter</h2>
+          <p class="subtitle">Simulation Reflection · Thursday, November 5</p>
+        </section>
+
+        <!-- ============ Discussion Time ============ -->
+        <section class="title-slide">
+          <h2>Group Discussion</h2>
+          <div class="reflect">
+            <ul>
+              <li>Form groups with classmates who have the same role.</li>
+              <li>As a group, name the <strong>corner of the triangle</strong> your decision moves — metric, level, or fences.</li>
+              <li>Select one representative to present your group's choice and defense.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ FINANCIAL LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
+          <p class="q">Revenue +29% to $4,683.9&nbsp;M at 67% gross margin. Operating loss $(1,435.2)&nbsp;M — 31% of revenue, improved from 40%. Free cash flow +$1,120.3&nbsp;M. Stock-based compensation $1,599.5&nbsp;M — 34% of revenue, with $3.1&nbsp;B unvested to come. S&M is 44% of revenue; R&D 42%. What do you do?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Drive stock-based compensation down as a share of revenue.</li>
+            <li><span class="k">B</span> Bring sales and marketing down further — the meter, not the sales team, expands accounts.</li>
+            <li><span class="k">C</span> Nothing structural — free cash flow is positive; the GAAP loss is how we pay people.</li>
+            <li><span class="k">D</span> Cut research and development — $1,969.5&nbsp;M is the largest expense line.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>$1,599.5&nbsp;M of stock-based compensation is <strong>larger than the entire operating loss</strong> — it is what explains the gap between a $1.4&nbsp;B GAAP loss and $1.1&nbsp;B of positive free cash flow.</li>
+              <li>"Non-cash" is not "free": $3.1&nbsp;B of unvested awards is $3.1&nbsp;B of future dilution — and shareholders pay it.</li>
+              <li>Cutting R&D trades the growth engine — the thing that creates new metered workloads — for a loss smaller than the stock-compensation line.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ MARKETING LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
+          <p class="q">Net revenue retention is 125%, from 126% and 133%. Customers 10,996 → 13,328. $1M+ customers 449 → 576 → 733. Global 2000 customers ≈ 43% of revenue. RPO $6,867.5&nbsp;M → $9,771.5&nbsp;M. S&M is $2,062.1&nbsp;M (44% of revenue). Where does the effort go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Migrating new workloads inside existing customers.</li>
+            <li><span class="k">B</span> New logos — a wider base so no single expansion rate decides the year.</li>
+            <li><span class="k">C</span> The largest accounts — they have the most workloads left to move.</li>
+            <li><span class="k">D</span> Locking in longer capacity commitments; RPO is already $9,771.5&nbsp;M.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Under consumption pricing, revenue grows when <strong>work moves onto the platform</strong> — and migrating new workloads inside existing customers is the direct answer to a retention rate falling from 133% to 125%.</li>
+              <li>RPO is not revenue: the filing states revenue is recognised <strong>on consumption, not ratably</strong>, and that deferred revenue "is not a meaningful indicator of future revenue." A commitment does not make anyone run a query.</li>
+              <li>125% is still expansion — above 100 means existing customers spent more. The problem is the <em>direction</em>, not the level.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ OPERATION LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
+          <p class="q">The filing warns efficiency lets customers "consume fewer… resources to accomplish the same workloads," that open formats let them use compute "without requiring storage," and that customers are "optimiz[ing] consumption." Gross margin held at 67%. What do you do?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Ship the efficiency and go get the freed budget back as new workloads.</li>
+            <li><span class="k">B</span> Broaden what can be metered — transactions, agents, observability, applications.</li>
+            <li><span class="k">C</span> Help customers optimize deliberately and openly; price-performance is how we compete.</li>
+            <li><span class="k">D</span> Slow efficiency work on existing workloads; there's no reason to cut our own meter.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The filing's warning is conditional: revenue falls only "to the extent these improvements do not result in an offsetting increase in new workloads." The efficiency is not the problem; <strong>failing to convert it</strong> is.</li>
+              <li>Deliberately shipping a less efficient product while competing with AWS, Azure and GCP on price-performance is how you stop having the customer at all.</li>
+              <li>Open formats attack half the meter — compute without storage removes one of the three things being metered. That is a <em>metric</em> problem, not a <em>level</em> problem.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ TECH LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
+          <p class="q">R&D is $1,969.5&nbsp;M — 42% of revenue. Recent launches: Snowpark, Container Services, Snowflake Intelligence, Cortex Agents, Gen 2 Warehouses, Snowflake Postgres. Acquired Crunchy Data ($164.5&nbsp;M) and Observe (~$596.2&nbsp;M). Meanwhile open formats let customers use compute without storage. What does engineering build?</p>
+          <ul class="options">
+            <li><span class="k">A</span> New categories that put more kinds of work on the meter.</li>
+            <li><span class="k">B</span> The AI layer hardest — that's where new workloads are being created now.</li>
+            <li><span class="k">C</span> Open formats and interoperability — keep the compute even when we lose the storage.</li>
+            <li><span class="k">D</span> Price-performance on the core warehouse — the biggest part of consumption.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>A consumption model is only as large as the <strong>range of work it can measure</strong> — Postgres (transactions), Cortex Agents (AI) and Observe (observability) each widen the meter, which is why the company bought two of them.</li>
+              <li>Price-performance on the core warehouse is the paradox chosen deliberately, on the biggest possible base — efficiency destroys the most revenue with no new work created.</li>
+              <li>Open formats concede half the meter rather than widening it.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ SECURITY LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead</h2></div>
+          <p class="q">Under the shared-responsibility model, Snowflake secures the platform; customers configure their own controls. The filing concedes it "do[es] not have visibility into whether adequate access controls (such as MFA or network restrictions) are being enforced," and that customer failures have harmed the company "in the past." Where do you set the bar?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Change the defaults so the secure configuration is what customers get without choosing it.</li>
+            <li><span class="k">B</span> Invest in visibility and proactive customer alerting.</li>
+            <li><span class="k">C</span> Invest in the platform and cloud infrastructure we are unambiguously responsible for.</li>
+            <li><span class="k">D</span> Make the shared-responsibility boundary clearer in contracts and documentation.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Shared responsibility is not shared reputation: the filing concedes customer failures have harmed the company, so the control that works is the one customers get <strong>without having to choose it</strong>.</li>
+              <li>You cannot enforce what you cannot see — but seeing a bad configuration is not the same as preventing one.</li>
+              <li>Contracts allocate liability; they do not allocate blame — whose name is in the headline?</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ ACCOUNT MANAGER ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager</h2></div>
+          <p>You do <strong>not</strong> answer a functional question.</p>
+          <p>After all five leads present their selection + one-sentence defense, <strong>rank the five decisions 1–5</strong> by which the company must resolve <em>first</em>, allocate 100 points across them in blocks of 10, and name the <strong>metric</strong>: what does this company charge for, does that metric still pass the test — does the invoice go up on its own when the customer succeeds — and name one fence you would add?</p>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Rank by what happens to the meter — the paradox and expansion belong at the top, and the rank-#1 sentence must contain a figure.</li>
+              <li>The metric is consumption: it still passes the <strong>success test</strong> (invoice grows when the customer succeeds) but fails the <strong>efficiency test</strong> (make the product better and the bill goes down).</li>
+              <li>RPO of $9.77&nbsp;B does not make anyone consume anything — and a fixed 20/20/20/20/20 means the Account Manager decided nothing.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Key takeaway -->
+        <section>
+          <h2>Key takeaway</h2>
+          <div class="box"><p>Separate the three pricing decisions — metric, level, and fences. A pricing metric that punishes your own product improvements is a strategic contradiction: the invoice should rise when the customer succeeds, not when they wait.</p></div>
+          <p class="quote" style="margin-top: 20px;">Making the product better can make the revenue smaller.</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: true });
+    </script>
+  </body>
+</html>

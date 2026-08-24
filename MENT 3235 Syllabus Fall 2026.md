@@ -1,255 +1,126 @@
-# MENT 3235: Venture Planning, Management, and Growth
-**Spring 2026**
-Innovation Quest
-Small business development center at Connecticut
-https://ccei.uconn.edu/about/
----
+# MENT / BADM 3235 - Venture Planning, Management, and Growth  
+**Fall 2026**
+
+***
 
 ## Course Information
 
 **Course Title:** MENT 3235 / BADM 3235 - Venture Planning, Management, and Growth  
-**Credits:** 3  
 **Instructor:** Kate Wang  
-**Office Hours:** [To be scheduled]  
-**Email:** [Contact information]  
-**Class Meeting:** [Days/Times/Location]  
+**Office Hours:** By appointment  
+**Email:** juw13011@uconn.edu  
+**Class Meeting:** TuTh 2:00PM - 3:15PM, BUSN 218
 
----
+***
 
 ## Course Description
 
-An exposure to multiple facets of starting and managing new ventures in a very hands-on fashion. The course involves an integration of business skills that are required for preparing and pitching new business plans.
+An exposure to multiple facets of starting and managing new ventures in a hands-on fashion. The course integrates the business skills required for preparing, managing, and presenting new venture plans.
 
-This advanced course focuses on **scaling AI-enabled ventures in traditional industries** (food, transportation, apparel, pharmacy, finance, insurance). Students will develop comprehensive business plans, build operational capabilities, and create growth strategies for ventures that transform fundamental business sectors with emerging technologies.
+This course emphasizes venture planning, management, and growth through simulations, applied reflection, team-based website development, and presentations. Students will examine how entrepreneurs make decisions across marketing research, operations, intellectual property, legal structure, technology deployment, pricing, budgeting, and future venture strategy.
 
----
+***
 
 ## Enrollment Requirements
 
 - Open only to business majors of junior or higher status
-- **Recommended preparation**: 
-  - MENT 3234 or BADM 3234 (Opportunity Generation, Assessment, and Promotion)
+- Recommended preparation:
+  - MENT 3234 or BADM 3234
   - MENT 3101 or BADM 3740
   - ACCT or BADM 2101
 
----
+***
 
 ## Course Learning Objectives
 
 By the end of this course, students will be able to:
 
-1. **Develop Comprehensive Business Plans**: Create investor-ready business plans for AI-enabled ventures in traditional industries
-2. **Design Operational Systems**: Build scalable operational frameworks including supply chain, technology infrastructure, and quality control
-3. **Create Financial Models**: Develop detailed financial projections, funding strategies, and unit economics for growth
-4. **Build Growth Strategies**: Design and execute strategies for customer acquisition, market expansion, and scaling
-5. **Manage Ventures**: Apply management principles to early-stage venture operations, team building, and culture development
-6. **Pitch to Stakeholders**: Deliver compelling presentations to investors, partners, and customers
-7. **Navigate Challenges**: Address regulatory, ethical, and operational challenges in scaling technology-enabled traditional businesses
+1. **Develop Venture Plans**: Create and refine venture plans that address market, operational, legal, financial, and technology decisions
+2. **Analyze Markets and Value Chains**: Evaluate market research, customer needs, and value-chain positioning for entrepreneurial ventures
+3. **Design Business Models**: Build and critique business models that connect operations, revenue, and customer value
+4. **Navigate Legal and IP Issues**: Identify intellectual property, legal structure, and governance considerations for new ventures
+5. **Evaluate Competitive Strategy**: Analyze technology deployment, competitor positioning, dominant design, and market entry decisions
+6. **Apply Financial Reasoning**: Develop pricing and budgeting decisions that support venture sustainability
+7. **Communicate Venture Concepts**: Present team projects clearly through websites, slides, and in-class presentations
 
----
+***
 
 ## Required Materials
 
 ### Readings
-- Comprehensive case studies from traditional industries (provided)
-- Industry-specific regulatory and compliance guides
-- Selected business planning and scaling frameworks
-- Articles on venture management and growth
+- Simulation cases and materials provided through HuskyCT or in class
+- Selected articles and case studies related to venture planning, management, and growth
 
 ### Tools & Resources
-- Business plan templates and frameworks
-- Financial modeling software (Excel/Google Sheets)
-- Pitch deck templates
-- Simulation of entrepreneurial decisions and venture management
-- AI tools for business planning and analysis
+- Presentation software
+- Business planning and financial analysis templates
+- UConn entrepreneurship resources, including CCEI and the Small Business Development Center
 
----
+***
 
-## Course Structure
+## Course Schedule
 
-### PART 1: Venture Planning (Weeks 1-6)
+| Week | Date | Topic | Simulation Content/Reading | After Class HW |
+|------|------|-------|----------------------------|----------------|
+| 1 | Tuesday, September 1 | Course Overview | | Blog commenting |
+| 1 | Thursday, September 3 | Team formation and resource introduction | | Reflection submission |
+| 2 | Tuesday, September 8 | Marketing Research and the Value Chain | TheRealReal FY2025 10-K | Blog commenting |
+| 2 | Thursday, September 10 | Simulation Reflection | | Reflection submission |
+| 3 | Tuesday, September 15 | Operations and Business Model | Affirm FY2025 10-K | Blog commenting |
+| 3 | Thursday, September 17 | Simulation Reflection | | Reflection submission |
+| 4 | Tuesday, September 22 | Intellectual Property Protection | Apple v. OpenAI complaint (N.D. Cal. 2026) | Blog commenting |
+| 4 | Thursday, September 24 | Simulation Reflection | | Reflection submission |
+| 5 | Tuesday, September 29 | Legal Structure | NYT v. Microsoft & OpenAI complaint (S.D.N.Y. 2023) | Blog commenting |
+| 5 | Thursday, October 1 | Simulation Reflection | | Reflection submission |
+| 6 | Tuesday, October 6 | Study Week | | Work on group projects |
+| 6 | Thursday, October 8 | Study Week | | Work on group projects |
+| 7 | Tuesday, October 13 | Study Day | | Submission of reports and team pitch video |
+| 7 | Thursday, October 15 | Review of Team Pitch Video | | |
+| 8 | Tuesday, October 20 | Market Deployment and Dominant Design | Tesla FY2025 10-K | Blog commenting |
+| 8 | Thursday, October 22 | Simulation Reflection | | Reflection submission |
+| 9 | Tuesday, October 27 | Technology Deployment and Competitor Analysis | Cerebras FY2025 10-K | Blog  commenting |
+| 9 | Thursday, October 29 | Simulation Reflection | | Reflection submission |
+| 10 | Tuesday, November 3 | Pricing Strategy | Snowflake FY2026 10-K | Blog commenting |
+| 10 | Thursday, November 5 | Simulation Reflection | | Reflection submission |
+| 11 | Tuesday, November 10 | Financial Budgeting | Marvell FY2026 10-K | Blog commenting |
+| 11 | Thursday, November 12 | Simulation Reflection | | Reflection submission |
+| 12 | Tuesday, November 17 | Course Summary and Reflection | | |
+| 12 | Thursday, November 19 | Study Day | | Work on group project |
+| 13 | Tuesday, November 24 | Thanksgiving | | |
+| 13 | Thursday, November 26 | Thanksgiving | | |
+| 14 | Tuesday, December 1 | Study Week | | Work on Group projects |
+| 14 | Thursday, December 3 | Study Week | | Work on group project |
+| 15 | Tuesday, December 8 | Study Day | | Submission of pitch video|
+| 15 | Thursday, December 10 | Review of Team Pitch Video | | |
+| Final | Tuesday, December 15 | Finalize reports and submission | | |
+| Final | Thursday, December 17 | Final Grade Posting and Review | | |
 
-**Week 1: From Opportunity to Venture**
-- Transitioning from feasibility to execution
-- Business model refinement
-- Venture positioning and differentiation
-- **Review**: MENT 3234 opportunities and feasibility analyses
-
-**Week 2: Comprehensive Business Planning**
-- Business plan components and structure
-- Executive summary mastery
-- Market analysis and competitive positioning
-- **Industry Focus**: Food & Agriculture ventures
-
-**Week 3: Operations Planning**
-- Supply chain design and management
-- Technology infrastructure requirements
-- Quality control and process optimization
-- Regulatory compliance frameworks
-- **Industry Focus**: Transportation & Logistics
-
-**Week 4: Financial Planning & Modeling**
-- Revenue models and pricing strategies
-- Cost structure and unit economics
-- 3-5 year financial projections
-- Break-even and profitability analysis
-- **Industry Focus**: Retail & Apparel
-
-**Week 5: Funding Strategy**
-- Funding sources: bootstrapping, angels, VC, strategic partners
-- Valuation fundamentals
-- Cap tables and equity structure
-- Pitch deck development
-- **Industry Focus**: Pharmacy & Healthcare
-
-**Week 6: Team & Organization**
-- Organizational structure design
-- Hiring and talent acquisition
-- Advisory boards and governance
-- Culture and values development
-- **Midterm Deliverable**: Draft Business Plan (25 pages)
-
----
-
-### PART 2: Venture Management (Weeks 7-11)
-
-**Week 7: Launch Execution**
-- Go-to-market execution
-- Pilot programs and beta testing
-- Early customer onboarding
-- Metrics and KPIs for launch
-- **Industry Focus**: Finance & Banking
-
-**Week 8: Customer Acquisition & Retention**
-- Scaling customer acquisition
-- Customer success and retention strategies
-- Building referral and growth loops
-- Community and brand building
-- **Industry Focus**: Insurance
-
-**Week 9: Operational Excellence**
-- Process optimization and efficiency
-- Technology stack selection and implementation
-- Vendor and partner management
-- Quality assurance and customer service
-
-**Week 10: Managing Growth**
-- Scaling challenges and solutions
-- Hiring and team expansion
-- Systems and infrastructure scaling
-- Managing cash flow during growth
-
-**Week 11: Leadership & Culture**
-- Entrepreneurial leadership
-- Building high-performance teams
-- Culture development and maintenance
-- Managing stakeholders and boards
-- **Assignment Due**: Operational Playbook
-
----
-
-### PART 3: Venture Growth (Weeks 12-15)
-
-**Week 12: Market Expansion Strategies**
-- Geographic expansion
-- Product/service line extension
-- New customer segments
-- Strategic partnerships and alliances
-
-**Week 13: Advanced Fundraising**
-- Series A and beyond
-- Strategic investors vs. financial investors
-- Term sheets and negotiations
-- Exit strategies: M&A, IPO, strategic sale
-
-**Week 14: Regulatory, Legal & Ethical Challenges**
-- Industry-specific regulations (FDA, DOT, SEC, insurance commissioners)
-- Data privacy and security (HIPAA, GDPR, financial regulations)
-- AI ethics and responsible innovation
-- Risk management and compliance
-
-**Week 15: Final Pitches & Integration**
-- Investor pitch presentations
-- Q&A and due diligence preparation
-- Integration of planning, management, and growth
-- **Final Deliverable**: Complete Business Plan + Pitch
-
----
+***
 
 ## Assignments & Assessments
 
-### 1. Individual Assignments (25%)
+### 1. Individual Assignments (60%)
 
-**Industry Analysis Paper (10%)**
-- Due: Week 3
-- Deep dive into one traditional industry
-- AI/technology transformation opportunities
-- Regulatory landscape and challenges
-- 8-10 pages
+**Pre-class Blog Commenting (10%)**
+- Students read the pre-class blog
+- Students post a 50-100 word comment with a clear opinion and supporting evidence.
 
-**Financial Model (10%)**
-- Due: Week 5
-- Build comprehensive 5-year financial model
-- Revenue projections, cost structure, cash flow
-- Sensitivity analysis
-- Excel/Google Sheets with documentation
+**Simulation Reflections (30%)**
+- Participate in the assigned in-class simulations.
+- Submit short reflections after simulation weeks describing actions taken, lessons learned, and improvements for next time.
 
-**Personal Leadership Reflection (5%)**
-- Due: Week 15
-- Reflect on entrepreneurial leadership journey
-- Personal growth and learning
-- Future venture aspirations
-- 5-7 pages
+**In-class Participation (10%)**
+- Active participation in discussions
+- Case study analyses
+- In-class exercises and workshops
 
-### 2. Team Project: Complete Business Plan & Venture Launch (60%)
 
-Teams of 4-5 will develop a complete, investor-ready business plan for an AI-enabled venture in a traditional industry.
+### 2. Team Project: Evaluate Venture Business Plan and Give Better Pitches (40%)
 
-**Draft Business Plan (15%)**
-- Due: Week 6 (Midterm)
-- 25-30 pages covering:
-  - Executive summary
-  - Market analysis
-  - Business model
-  - Operations plan
-  - Financial projections (3-year)
-  - Team and organization
-  - Funding requirements
+- **Midterm reports and pitch video (20%)** - Week 6 and Week 7
+- **Final reports and pitch video(20%)** - Week 14, Week 15, and Final Week
 
-**Operational Playbook (15%)**
-- Due: Week 11
-- Detailed operational procedures
-- Technology implementation plan
-- Customer acquisition and retention processes
-- Quality control and compliance procedures
-- 15-20 pages
-
-**Final Business Plan (20%)**
-- Due: Week 15
-- 40-50 page comprehensive plan including:
-  - All elements from draft (refined)
-  - 5-year financial projections
-  - Growth strategy
-  - Risk analysis and mitigation
-  - Regulatory compliance plan
-  - Exit strategy
-
-**Final Pitch Presentation (10%)**
-- Due: Week 15
-- 20-minute investor pitch
-- Professional pitch deck (15-20 slides)
-- Q&A session
-- Demonstration or prototype (if applicable)
-
-### 3. Class Participation & Engagement (15%)
-
-- Active participation in case discussions
-- Peer feedback on business plans
-- Workshop and simulation participation
-- Guest speaker engagement
-- Team collaboration and contribution
-
----
+***
 
 ## Grading Scale
 
@@ -268,265 +139,119 @@ Teams of 4-5 will develop a complete, investor-ready business plan for an AI-ena
 | D-    | 60-62%     |
 | F     | Below 60%  |
 
----
-
-## Industry Focus: AI-Enabled Traditional Sectors
-
-### 🍔 Food & Agriculture
-**Planning Focus**: Farm-to-table platforms, ghost kitchens, food safety tech
-**Management Focus**: Supply chain coordination, quality control, regulatory compliance (FDA, USDA)
-**Growth Focus**: Multi-market expansion, franchise models, B2B2C strategies
-
-### 🚗 Transportation & Logistics
-**Planning Focus**: Fleet optimization, last-mile delivery, predictive maintenance
-**Management Focus**: Driver/operator management, safety protocols, insurance
-**Growth Focus**: Geographic expansion, service diversification, strategic partnerships
-
-### 👔 Retail & Apparel
-**Planning Focus**: Omnichannel retail, personalization engines, sustainable fashion
-**Management Focus**: Inventory optimization, customer experience, returns management
-**Growth Focus**: Brand building, marketplace expansion, international markets
-
-### 💊 Pharmacy & Healthcare
-**Planning Focus**: Telehealth platforms, medication management, patient engagement
-**Management Focus**: HIPAA compliance, clinical workflows, provider partnerships
-**Growth Focus**: Payer relationships, clinical validation, regulatory approvals
-
-### 💰 Finance & Banking
-**Planning Focus**: Lending platforms, payment processing, financial planning tools
-**Management Focus**: Regulatory compliance (SEC, FINRA), risk management, fraud prevention
-**Growth Focus**: Product expansion, banking partnerships, international markets
-
-### 🛡️ Insurance
-**Planning Focus**: Insurtech platforms, claims automation, risk assessment
-**Management Focus**: Actuarial modeling, regulatory compliance, underwriting processes
-**Growth Focus**: Product diversification, distribution channels, reinsurance partnerships
-
----
-
-## Weekly Schedule Overview
-
-| Week | Part | Topic | Industry Focus | Deliverables |
-|------|------|-------|----------------|--------------|
-| 1 | 1 | Opportunity to Venture | Review | - |
-| 2 | 1 | Business Planning | Food & Agriculture | - |
-| 3 | 1 | Operations Planning | Transportation | Industry Analysis |
-| 4 | 1 | Financial Planning | Retail & Apparel | - |
-| 5 | 1 | Funding Strategy | Pharmacy & Healthcare | Financial Model |
-| 6 | 1 | Team & Organization | All | Draft Business Plan |
-| 7 | 2 | Launch Execution | Finance & Banking | - |
-| 8 | 2 | Customer Acquisition | Insurance | - |
-| 9 | 2 | Operational Excellence | All | - |
-| 10 | 2 | Managing Growth | All | - |
-| 11 | 2 | Leadership & Culture | All | Operational Playbook |
-| 12 | 3 | Market Expansion | All | - |
-| 13 | 3 | Advanced Fundraising | All | - |
-| 14 | 3 | Regulatory & Ethical | All | - |
-| 15 | 3 | Final Pitches | All | Final Plan + Pitch, Reflection |
-
----
+***
 
 ## Course Policies
 
 ### Attendance
-Attendance is mandatory. More than 2 unexcused absences will significantly impact your participation grade. Guest speaker sessions and pitch days cannot be missed.
+Regular attendance is expected. More than 3 unexcused absences will result in a reduction of your participation grade. Please notify the instructor in advance of any planned absences.
 
 ### Late Work
-Late submissions will be penalized 10% per day. Team deliverables affect all team members and must be submitted on time.
-
-### Team Dynamics
-Teams formed in Week 1 will remain together throughout the semester. Peer evaluations will be conducted at midterm and final, affecting individual grades by up to 20%.
-
-### Professional Standards
-All work should meet professional business standards. Business plans and pitch decks should be investor-ready quality.
+Assignments submitted late will be penalized 10% per day unless prior arrangements have been made with the instructor. Assignments more than one week late will not be accepted.
 
 ### Academic Integrity
-Original work is required. Proper citation of sources is mandatory. Violations will result in course failure and university disciplinary action.
+All students are expected to adhere to the University of Connecticut's academic integrity policies. Plagiarism, cheating, or any form of academic dishonesty will result in severe penalties, including possible failure of the course.
 
 ### Accommodations
-Students requiring accommodations must contact CSD and notify the instructor by Week 2.
+Students with disabilities should contact the Center for Students with Disabilities (CSD) and provide documentation to the instructor as early as possible to arrange appropriate accommodations.
 
----
+### Communication
+- Check HuskyCT regularly for announcements and materials
+- Email responses within 24-48 hours during weekdays
+- Office hours available for individual consultations
 
-## Experiential Learning Components
+***
 
-### Real Venture Development
-- Teams develop actual ventures (not just hypothetical)
-- Encouraged to register businesses and launch during semester
-- Opportunity to compete in Innovation Quest and other competitions
+## Learning Environment
 
-### Industry Mentorship
-- Each team assigned an industry mentor
-- Monthly check-ins and feedback sessions
-- Mentor evaluation contributes to team grade
+This course emphasizes **experiential learning** and **venture planning**. Students will:
 
-### Investor Feedback
-- Practice pitches to angel investors and VCs
-- Feedback incorporated into final presentations
-- Potential for actual funding conversations
+- Participate in venture simulations
+- Analyze entrepreneurial decisions through reflection
+- Develop team project websites
+- Present and defend venture concepts
+- Provide constructive peer feedback
 
-### Regulatory Workshops
-- Sessions with compliance experts from each industry
-- Understanding real-world regulatory requirements
-- Building compliance into business plans
+### Venture Planning and Growth Focus
 
----
+Throughout the course, students will develop their venture planning capabilities through:
 
-## Guest Speakers & Industry Experts
+1. **Simulation-Based Learning**: Applying course concepts to company and industry cases
+2. **Iterative Project Development**: Building team websites and presentations across the semester
+3. **Market and Technology Analysis**: Evaluating market deployment, competitor positioning, and dominant design
+4. **Legal and Financial Reasoning**: Considering IP, legal structure, pricing, and budgeting decisions
+5. **Entrepreneurial Communication**: Presenting venture ideas clearly to peers and the instructor
 
-Planned guests include:
+***
+## Academic Policies & Resources
 
-**Entrepreneurs**:
-- Founders of AI-enabled food delivery platforms
-- Transportation tech company CEOs
-- Retail innovation leaders
-- Healthcare technology entrepreneurs
-- Fintech and insurtech founders
+### Sources and Formatting
 
-**Investors**:
-- Angel investors focused on traditional industry innovation
-- Venture capitalists
-- Corporate venture arms
+- Essays should include terminology and concepts from assigned readings
+- Best essays will apply, not just name, these terms and concepts with proper citations
+- Outside academic sources are recommended for written work when appropriate
+- Include a Works Cited section when outside sources are used
+- Follow Chicago Manual of Style (Author-Date format) unless otherwise instructed
+- **Accepted file formats:** .docx or .pdf only unless otherwise specified
+- Multiple submission attempts allowed before deadline; only last submission will be graded
+- Monitor your grades and contact instructor immediately if problems arise
 
-**Industry Experts**:
-- Regulatory compliance specialists
-- Operations and supply chain experts
-- CFOs and financial advisors
-- Technology implementation consultants
+### Writing Support
 
----
+**Online Tutoring at the Writing Center**
+- 45-minute sessions available remotely
+- Email writingcenter@uconn.edu to schedule
 
-## Connection to MENT Curriculum
+### Feedback and Grades
 
-**From MENT 2234**: Builds on foundational entrepreneurship concepts and business model development
+- Grades and feedback provided within a reasonable period after submission
+- Track performance via My Grades in HuskyCT
 
-**From MENT 3234**: Advances validated opportunities through comprehensive planning and execution
+### Weekly Time Commitment
 
-**Capstone Integration**: Prepares students for entrepreneurship capstone experiences and real venture launches
+Expect to dedicate regular time each week outside of class for readings, blog posts, simulations, reflections, team meetings, website development, and presentation preparation. This aligns with UConn's credit hour policy. See the [Online Student website](https://onlinestudent.uconn.edu/) for more information.
 
----
+### Student Authentication and Verification
 
-## Expected Outcomes
+UConn verifies student identity through:
 
-Students completing this course will have:
+1. **Secure Access:** Unique UConn NetID and password for learning management system
+2. **Writing Consistency Review:** Comparison of drafts, final essays, peer review feedback, discussion posts, and emails; assignments may be screened with SafeAssign
 
-1. **Investor-Ready Business Plan**: 40-50 page comprehensive plan
-2. **Financial Model**: Detailed 5-year projections with sensitivity analysis
-3. **Pitch Deck**: Professional presentation materials
-4. **Operational Framework**: Detailed playbook for venture execution
-5. **Industry Expertise**: Deep knowledge of one traditional industry sector
-6. **Network**: Connections with mentors, investors, and industry experts
-7. **Launch Experience**: Many teams will have actually launched their ventures
+### Student Responsibilities
 
----
+As a UConn student, you are held to the following standards and policies:
 
-## Venture Competition Opportunities
+- [The Student Code](https://community.uconn.edu/the-student-code/)
+- [Academic Integrity](https://community.uconn.edu/the-student-code-appendix-a/)
+- [Resources on Avoiding Cheating and Plagiarism](https://lib.uconn.edu/services/citing-sources/)
+- Copyrighted Materials
+- Credit Hours and Workload
+- Netiquette and Communication
+- Adding or Dropping a Course
+- [Academic Calendar](https://registrar.uconn.edu/academic-calendar/)
+- Policy Against Discrimination, Harassment and Inappropriate Romantic Relationships
+- Sexual Assault Reporting Policy
 
-Students are encouraged to enter:
-- **UConn Innovation Quest (IQ)**: $30,000+ in prizes
-- **Regional Business Plan Competitions**
-- **Industry-Specific Pitch Competitions**
-- **National Entrepreneurship Competitions**
+### Copyright Notice
 
-Course assignments align with competition requirements, allowing teams to compete while completing coursework.
+> Course materials including videos, lectures, notes, handouts, and displays are protected by state common law and federal copyright law. Students may take notes for personal use only. Recording authorization will be announced at the beginning of each semester. Unauthorized copying, distribution, or commercial use is prohibited.
 
----
+### Students with Disabilities
 
-## Additional Resources
+UConn is committed to accessible learning environments. If you anticipate or experience barriers based on disability or pregnancy, contact the instructor immediately.
 
-### UConn Resources
-- Werth Institute for Entrepreneurship & Innovation
-- Technology Incubation Program (TIP)
-- UConn Law School (legal clinics)
-- School of Business faculty expertise
-- Alumni entrepreneur network
+**Center for Students with Disabilities**
+- Location: Wilbur Cross Building, Room 204
+- Phone: (860) 486-2020
+- Website: [csd.uconn.edu](http://csd.uconn.edu/)
 
-### External Resources
-- SCORE mentorship
-- Small Business Development Center (SBDC)
-- Industry associations and trade groups
-- Regulatory agency resources (FDA, SEC, DOT, etc.)
-- Technology and AI platforms
+HuskyCT/Blackboard meets WCAG 2.0 and Section 508 accessibility standards.
 
-### Software & Tools
-- Financial modeling templates
-- Business plan software
-- Pitch deck tools
-- Project management platforms
-- Customer relationship management (CRM) systems
+### Software & Technical Requirements
 
----
-
-## Important Dates
-
-- **Team Formation**: Week 1
-- **Industry Mentor Assignment**: Week 2
-- **Midterm Deliverable**: Week 6
-- **Operational Playbook**: Week 11
-- **Final Presentations**: Week 15
-- **Innovation Quest Submission**: [Date if applicable]
-
----
-
-## Assessment Rubrics
-
-### Business Plan Rubric
-- **Market Analysis** (20%): Depth of research, competitive analysis, customer insights
-- **Business Model** (20%): Clarity, viability, scalability, innovation
-- **Operations** (15%): Feasibility, detail, compliance, technology integration
-- **Financials** (20%): Realism, detail, assumptions, sensitivity analysis
-- **Team & Execution** (15%): Capabilities, organizational design, milestones
-- **Writing & Presentation** (10%): Clarity, professionalism, completeness
-
-### Pitch Presentation Rubric
-- **Problem & Opportunity** (20%): Clarity and significance
-- **Solution** (20%): Innovation, feasibility, differentiation
-- **Market & Traction** (15%): Size, validation, customer evidence
-- **Business Model** (15%): Revenue model, unit economics, scalability
-- **Team** (10%): Capabilities and credibility
-- **Financials & Ask** (10%): Projections, funding needs, use of funds
-- **Delivery** (10%): Presentation skills, Q&A handling, professionalism
-
----
-
-## Instructor Contact & Office Hours
-
-**Office Hours**: [Schedule - recommend 2-3 hours per week]  
-**Team Consultation Hours**: By appointment  
-**Email**: [Contact - 24-48 hour response time]  
-**Course Website**: HuskyCT  
-
----
-
-## Final Note
-
-This course is designed to be the most intensive and rewarding entrepreneurship experience in the MENT curriculum. You will work harder than in most courses, but you will leave with a complete business plan, real venture experience, and potentially a launched company. Many successful UConn ventures have emerged from this course.
-
-**Commitment Required**:
-- 10-15 hours per week outside of class
-- Team meetings and collaboration
-- Customer and industry research
-- Mentor meetings
-- Potential travel for competitions
-
-**Potential Rewards**:
-- Launched venture
-- Competition winnings
-- Investor funding
-- Job offers from startups
-- Entrepreneurial network
-- Real-world business experience
-
----
-
-## Acknowledgment
-
-This syllabus may be modified during the semester. All changes will be communicated via HuskyCT and in class. Students are responsible for staying informed of updates.
-
----
-
-**Welcome to the culmination of your entrepreneurship education. Let's build something remarkable together.**
-
----
-
-*Last Updated: March 2026*
+| Software | Accessibility | Privacy |
+|----------|--------------|---------|
+| HuskyCT/Blackboard | [Accessibility Statement](https://help.blackboard.com/Accessibility) | [Privacy Policy](https://www.blackboard.com/privacy-statement) |
+| Adobe Acrobat Reader | [Accessibility Statement](https://www.adobe.com/accessibility.html) | [Privacy Policy](https://www.adobe.com/privacy.html) |
+| Google Apps | [Accessibility](https://www.google.com/accessibility/) | [Privacy Policy](https://edu.google.com/why-google/privacy-security/) |

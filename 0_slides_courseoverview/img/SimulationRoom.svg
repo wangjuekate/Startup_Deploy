@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1188.0 725.8" width="1188" height="726" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-SimulationRoom" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="40.00" y="61.60" font-size="24" fill="#1e1e1e">Thursday, 2:00 PM. You are handed one page.</text></g>
+<g data-beat="1"><rect x="40.00" y="96.00" width="212.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="146.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="146.00">Financial</tspan><tspan x="146.00" dy="23.75">Lead</tspan></text></g>
+<g data-beat="2"><path d="M 146.00,192.00 L 146.00,234.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="2"><rect x="40.00" y="238.00" width="212.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="146.00" y="270.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="146.00">one question</tspan><tspan x="146.00" dy="20.00">four options</tspan></text></g>
+<g data-beat="3"><path d="M 146.00,318.00 L 146.00,350.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="1"><rect x="272.00" y="96.00" width="212.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="378.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="378.00">Marketing</tspan><tspan x="378.00" dy="23.75">Lead</tspan></text></g>
+<g data-beat="2"><path d="M 378.00,192.00 L 378.00,234.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="2"><rect x="272.00" y="238.00" width="212.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="378.00" y="270.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="378.00">one question</tspan><tspan x="378.00" dy="20.00">four options</tspan></text></g>
+<g data-beat="3"><path d="M 378.00,318.00 L 378.00,350.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="1"><rect x="504.00" y="96.00" width="212.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="610.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="610.00">Operations</tspan><tspan x="610.00" dy="23.75">Lead</tspan></text></g>
+<g data-beat="2"><path d="M 610.00,192.00 L 610.00,234.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="2"><rect x="504.00" y="238.00" width="212.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="610.00" y="270.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="610.00">one question</tspan><tspan x="610.00" dy="20.00">four options</tspan></text></g>
+<g data-beat="3"><path d="M 610.00,318.00 L 610.00,350.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="1"><rect x="736.00" y="96.00" width="212.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="842.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="842.00">Tech</tspan><tspan x="842.00" dy="23.75">Lead</tspan></text></g>
+<g data-beat="2"><path d="M 842.00,192.00 L 842.00,234.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="2"><rect x="736.00" y="238.00" width="212.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="842.00" y="270.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="842.00">one question</tspan><tspan x="842.00" dy="20.00">four options</tspan></text></g>
+<g data-beat="3"><path d="M 842.00,318.00 L 842.00,350.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="1"><rect x="968.00" y="96.00" width="212.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="1074.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="1074.00">Security</tspan><tspan x="1074.00" dy="23.75">Lead</tspan></text></g>
+<g data-beat="2"><path d="M 1074.00,192.00 L 1074.00,234.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="2"><rect x="968.00" y="238.00" width="212.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="1074.00" y="270.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="1074.00">one question</tspan><tspan x="1074.00" dy="20.00">four options</tspan></text></g>
+<g data-beat="3"><path d="M 1074.00,318.00 L 1074.00,350.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="3"><path d="M 146.00,352.00 L 1074.00,352.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="3"><path d="M 620.00,352.00 L 620.00,396.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="3"><ellipse cx="620.00" cy="464.00" rx="220.00" ry="64.00" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="3"><text x="620.00" y="457.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="620.00">Account Manager</tspan><tspan x="620.00" dy="23.75">ranks the five 1-5, weights them to 100</tspan></text></g>
+<g data-beat="4"><path d="M 620.00,532.00 L 620.00,574.00" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SimulationRoom)"/></g>
+<g data-beat="4"><rect x="240.00" y="578.00" width="760.00" height="92.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="620.00" y="616.65" font-size="21" fill="#1e1e1e" text-anchor="middle"><tspan x="620.00">One decision the team owns —</tspan><tspan x="620.00" dy="26.25">and a reflection due the same day.</tspan></text></g>
+<g data-beat="5"><text x="40.00" y="711.10" font-size="19" fill="#b45309">You are graded on the defense, not the answer. Nobody in this room is an observer.</text></g>
+</svg>

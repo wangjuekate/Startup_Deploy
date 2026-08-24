@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Technology Deployment and Competitor Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Technology Deployment and Competitor Analysis</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 6 &middot; Concept Lecture &middot; Tuesday, October 27</p>
+          <p class="subtitle">Case: Cerebras Systems &middot; Mental model: the 10&times; Threshold vs the Ecosystem Moat</p>
+          <aside class="notes">Last week: whose design does the industry build around. This week: you have the better technology and the incumbent still might win. Say that framing first.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>&ldquo;If I built a better version of that, I'd win&rdquo;</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Every one of you has had that thought.</li>
+                <li class="fragment fade-up">I want to spend an hour ruining that sentence &mdash; not because it is wrong, but because <strong>it is missing about four words</strong>, and those four words are where all the money is.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>The question you should be able to answer by the end</h3>
+              <p><strong>How much better do you have to be to make someone change?</strong></p>
+              <p class="small">Not &ldquo;is it better.&rdquo; Not &ldquo;did the benchmark improve.&rdquo; <em>How much</em>, and better at <em>what</em>, and better than <em>what they would have to give up.</em></p>
+            </div>
+          </div>
+          <aside class="notes">Do not answer the question yet. Everything until the figure is evidence for one number they will not guess.</aside>
+        </section>
+
+        <!-- Story -->
+        <section>
+          <h2>The keyboard you are using wrong</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Look at your laptop. <strong>Q-W-E-R-T-Y.</strong> Designed in the 1870s for a mechanical typewriter &mdash; the standard story is the letters were arranged to <em>slow typists down</em> so the metal arms would not jam.</li>
+                <li class="fragment fade-up">There is no typewriter. The arms are gone. <strong>The problem it solved has not existed in your lifetime.</strong> And every one of you is still typing on it.</li>
+                <li class="fragment fade-up">In the 1930s, Dvorak patented a layout he claimed was substantially faster and less tiring. Whether or not the studies hold up, notice what happened: <strong>it did not matter.</strong></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Why it did not matter</h3>
+              <p>You would retrain your fingers for weeks. Every computer you ever sit down at would have the wrong layout. Every keyboard on sale would still be QWERTY. Every person you asked for help would be useless to you.</p>
+              <p><strong>That is not a product comparison. That is a switching cost.</strong></p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">First real rule of competitor analysis: <strong>your competitor is not the other product. Your competitor is the customer's cost of leaving what they have</strong> &mdash; and that cost usually has nothing to do with the product itself.</p>
+          <aside class="notes">Ask how many have tried Dvorak. Usually one person, who quit. That anecdote does more work than the rule does.</aside>
+        </section>
+
+        <!-- The moat -->
+        <section>
+          <h2>The incumbent's moat is made of other people's work</h2>
+          <div class="four-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>The complements</h4><p>Everything built to work with it. Software, add-ons, spare parts, integrations, plugins.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>The skills</h4><p>Every person hired who knows how to use it &mdash; and every course, tutorial and forum answer written about it.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>The habits</h4><p>The workflows, the checklists, the way the team already does it.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="1"><h4>The risk of being wrong</h4><p><em>&ldquo;Nobody ever got fired for buying the incumbent.&rdquo;</em> If the safe choice fails it is bad luck. If your choice fails it is bad judgement &mdash; and it is their fault.</p></div>
+          </div>
+          <div class="box bad fragment fade-up" data-fragment-index="2" style="margin-top: 22px;">
+            <p><strong>None of that was built by the incumbent.</strong> It was built by customers, partners and third parties, for free, over a decade. <strong>You can out-engineer a company. You cannot out-engineer ten years of everybody else's accumulated effort.</strong></p>
+          </div>
+          <p class="small fragment fade-up" data-fragment-index="3">Which is why the incumbent is often not even trying to win on your dimension. <strong>They do not have to be as good as you. They have to be good enough that switching is not worth it.</strong></p>
+          <aside class="notes">Slow down here; this is the important part. Ask them to name the moat for a product they use daily &mdash; the fourth card is the one that never comes up unprompted.</aside>
+        </section>
+
+        <!-- 10x -->
+        <section>
+          <h2>So how much better do you have to be?</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>2% better</h4><p>A rounding error against retraining a team.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>15% better</h4><p>A slide in a sales deck.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>10&times; better</h4><p>A business case that <strong>survives contact with a procurement department</strong>.</p></div>
+          </div>
+          <div class="box warn fragment fade-up" data-fragment-index="2" style="margin-top: 22px;">
+            <h3>And the part technical founders stop reading before</h3>
+            <p><strong>Ten times better on the wrong dimension is worth nothing.</strong> Ten times faster is decisive only if the customer is <em>waiting</em>. Ten times cheaper is decisive only if they are <em>cost-constrained</em>.</p>
+            <p class="small">If the buyer's actual pain is &ldquo;my engineers know the other thing,&rdquo; then your 15&times; benchmark and their retraining budget are having two completely different conversations.</p>
+          </div>
+          <aside class="notes">The 10&times; rule of thumb comes from the Grove era at Intel. Give them the number, then immediately take it away with the wrong-dimension caveat.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the 10&times; Threshold vs the Moat</h2>
+          <div class="fig-embed" role="img" aria-label="Your advantage on the dimension the buyer buys, weighed against the incumbent's moat of complements, skills, habits and career risk, with the two moves that change the subtraction"><!--fig:Tenx_Threshold-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="36.0 10.0 1088.0 724.0" width="1088" height="724" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Tenx_Threshold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="60.00" y="49.30" font-size="17" fill="#0f766e"><tspan x="60.00">YOUR ADVANTAGE</tspan><tspan x="60.00" dy="21.25">on the dimension the buyer actually buys</tspan></text></g>
+<g data-beat="1"><rect x="60.00" y="96.00" width="420.00" height="150.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="270.00" y="145.65" font-size="26" fill="#1e1e1e" text-anchor="middle"><tspan x="270.00">15× faster</tspan><tspan x="270.00" dy="32.50"> </tspan><tspan x="270.00" dy="32.50">on a chip 58× larger</tspan></text></g>
+<g data-beat="2"><text x="570.00" y="177.15" font-size="26" fill="#4b5563" text-anchor="middle">vs</text></g>
+<g data-beat="2"><text x="660.00" y="49.30" font-size="17" fill="#b45309"><tspan x="660.00">THEIR MOAT</tspan><tspan x="660.00" dy="21.25">what the customer would have to abandon</tspan></text></g>
+<g data-beat="2"><rect x="660.00" y="96.00" width="440.00" height="150.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="880.00" y="115.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="880.00">complements · skills · habits · process</tspan><tspan x="880.00" dy="20.00">career risk — &quot;nobody ever got fired</tspan><tspan x="880.00" dy="20.00">for buying the incumbent&quot;</tspan><tspan x="880.00" dy="20.00"> </tspan><tspan x="880.00" dy="20.00">none of it built by the incumbent:</tspan><tspan x="880.00" dy="20.00">built by customers, partners and third</tspan><tspan x="880.00" dy="20.00">parties, free, over a decade</tspan></text></g>
+<g data-beat="3"><path d="M 270.00,250.00 L 500.00,322.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Tenx_Threshold)"/></g>
+<g data-beat="3"><path d="M 880.00,250.00 L 660.00,322.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Tenx_Threshold)"/></g>
+<g data-beat="3"><rect x="440.00" y="330.00" width="280.00" height="66.00" rx="16.0" ry="16.0" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/></g>
+<g data-beat="3"><text x="580.00" y="368.50" font-size="20" fill="#1e1e1e" text-anchor="middle">SWITCH   or   STAY</text></g>
+<g data-beat="3"><text x="580.00" y="429.95" font-size="18" fill="#c92a2a" text-anchor="middle">the switch happens only when   ADVANTAGE (on the right dimension)   &gt;   MOAT</text></g>
+<g data-beat="4"><rect x="60.00" y="462.00" width="500.00" height="112.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="310.00" y="502.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="310.00">GROW YOUR SIDE</tspan><tspan x="310.00" dy="20.00">raise the advantage — engineering.</tspan><tspan x="310.00" dy="20.00">Be 10× on the dimension they buy.</tspan></text></g>
+<g data-beat="4"><rect x="600.00" y="462.00" width="500.00" height="112.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="4"><text x="850.00" y="492.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="850.00">SHRINK THEIR SIDE</tspan><tspan x="850.00" dy="20.00">lower the cost of leaving — compatibility.</tspan><tspan x="850.00" dy="20.00">Take their file formats, run their code unchanged,</tspan><tspan x="850.00" dy="20.00">sell the first unit as an experiment, not a migration.</tspan></text></g>
+<g data-beat="5"><rect x="60.00" y="596.00" width="1040.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="5"><text x="580.00" y="628.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Your advantage has to be proven ONCE. Their moat is rebuilt EVERY DAY, by people who do not work for them.</text></g>
+<g data-beat="5"><text x="580.00" y="681.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="580.00">So the gap you have to clear is not fixed — it grows while you build.</tspan><tspan x="580.00" dy="20.00">A technical lead is temporary. A distribution position compounds.</tspan></text></g>
+</svg>
+<!--/fig:Tenx_Threshold--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">It is a subtraction &mdash; and <strong>both sides of it are your job.</strong></p>
+          <aside class="notes">Beat 3 is where the room usually stops nodding. Beat 4 is the move almost nobody thinks of as strategy; beat 5 is why time is not on your side.</aside>
+        </section>
+
+        <!-- Two moves -->
+        <section>
+          <h2>Two moves &mdash; and most founders only know one</h2>
+          <div class="two-col">
+            <div class="box fragment fade-up">
+              <h3>Grow your side</h3>
+              <p><strong>Raise the advantage.</strong> Engineering. Be ten times better on the dimension they actually buy.</p>
+              <p class="small">This is the move every technical team already knows, and the only one most of them ever make.</p>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Shrink their side</h3>
+              <p><strong>Lower the cost of leaving.</strong> Compatibility. Speak their language, take their file formats, run their code unchanged, plug into the channels they already buy through, sell the first unit as an experiment instead of a migration.</p>
+              <p class="small"><strong>Every hour spent making the switch smaller is worth as much as an hour spent making your product better &mdash; and it usually costs less.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">Ask for the cheapest thing their own venture could do to make a customer's switch smaller. The answers are usually a day of work and nobody had scheduled them.</aside>
+        </section>
+
+        <!-- Asymmetries -->
+        <section>
+          <h2>The asymmetries that make it a model</h2>
+          <div class="two-col">
+            <div class="box bad fragment fade-up">
+              <h3>The gap grows while you build</h3>
+              <p><strong>Your advantage has to be proven once. Their moat gets rebuilt every day, by people who do not work for them.</strong></p>
+              <p class="small">Every new graduate who learns the incumbent's tool, every tutorial written, every integration shipped by a third party makes the moat deeper &mdash; and none of it costs the incumbent anything.</p>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>What actually compounds</h3>
+              <p><strong>A technical lead is temporary. A distribution position is compounding.</strong></p>
+              <p class="small">Win on speed and they copy the speed in two years. Win a place inside the channel where everybody already buys &mdash; the marketplace, the hyperscaler, the standard toolchain &mdash; and you collect customers while you sleep. <strong>The deal that makes you easy to buy is worth more than the benchmark that makes you better.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">This pair is the whole argument for the partnership decision on Thursday. Get them to say it before the numbers do.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;are we better?&rdquo; &mdash; but <span class="em">on the dimension this buyer is actually bleeding on, is our advantage bigger than everything they would have to throw away &mdash; and what is the cheapest thing we could do to make that pile smaller?</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p>You do not win by being better. <strong>You win when your advantage on the dimension they care about is bigger than everything they would have to abandon to come and get it.</strong></p>
+            <p class="small">You can make your side bigger &mdash; that is engineering. You can also make their side smaller &mdash; and that is usually the cheaper, faster, more decisive move.</p>
+          </div>
+          <aside class="notes">Force the second half of the question. Teams answer the first half fluently and have never once costed the second.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You will open the real books of a company that built a chip <strong>58 times larger</strong> than its competitor's, runs models <strong>15 times faster</strong>, and spends <strong>48% of its revenue</strong> on research.</li>
+                <li class="fragment fade-up">And last year took <strong>86% of its revenue from two related customers</strong> &mdash; while losing money on operations.</li>
+                <li class="fragment fade-up">They have the technology. The question on the table is whether they can get anyone to switch <strong>before the moat gets deeper.</strong></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Your job</h3>
+              <p>Not to admire the silicon. <strong>To decide.</strong></p>
+              <p class="small">For every decision, say which side of the subtraction it changes &mdash; yours, or theirs.</p>
+            </div>
+          </div>
+          <aside class="notes">Customer concentration is a competitive fact, not just a finance risk. Flag it here so the Financial Lead and the Marketing Lead arrive already disagreeing.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

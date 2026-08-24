@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Market Deployment and Dominant Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Market Deployment and Dominant Design</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 5 &middot; Concept Lecture &middot; Tuesday, October 20</p>
+          <p class="subtitle">Case: Tesla FY2025 &middot; Mental model: the Dominant-Design Clock</p>
+          <aside class="notes">The question is not &ldquo;is our product better.&rdquo; It is &ldquo;whose design does the whole industry end up building around.&rdquo; Open with the hands, not the definition.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>Nobody chose USB-C</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Hand up if your phone charges with USB-C. <em>(most hands go up)</em></li>
+                <li class="fragment fade-up">Keep it up if you <em>chose</em> it &mdash; if you read the spec and made an informed decision between competing charging architectures. <em>(every hand goes down)</em></li>
+                <li class="fragment fade-up">Nobody chose it. <strong>It won, and then you complied.</strong></li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>That is what a dominant design is</h3>
+              <p>The version of a product that stops being one option and starts being <strong>the way it is done</strong>.</p>
+              <p class="small">And once that happens, being better is no longer enough. <strong>Being different becomes a liability.</strong></p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">The most under-taught fact in entrepreneurship: <strong>industries do not stay open.</strong> There is a window where the design is genuinely up for grabs, then it shuts &mdash; and everything about your strategy has to change on the day it shuts. <em>Most founders never notice the day.</em></p>
+          <aside class="notes">Run both hand-raises for real. The second one is the lecture: adoption is not a series of choices, it is a series of compliances.</aside>
+        </section>
+
+        <!-- Story -->
+        <section>
+          <h2>The better tape</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Late 1970s. Two video cassette formats fight for the living room. Sony's <strong>Betamax</strong> was, by most accounts, the better technology &mdash; better picture, better engineering, and it was <strong>first</strong>.</li>
+                <li class="fragment fade-up">JVC's <strong>VHS</strong> was, at launch, technically worse. But it recorded longer, it was cheaper to license, and JVC did what Sony refused to do: <strong>it let everybody build it.</strong></li>
+                <li class="fragment fade-up">The tapes in the video store were VHS. So the players people bought were VHS. So the tapes the studios pressed were VHS. So the players &mdash; you see where this goes.</li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>Within a few years</h3>
+              <p>Betamax was a trivia question. <strong>And it was still the better tape when it died.</strong></p>
+              <p class="small">The lesson founders hate: in a standards fight you are not competing on the product. You are competing on <strong>how many other people's decisions point at your design.</strong></p>
+            </div>
+          </div>
+          <aside class="notes">Ask which one they would have backed in 1978 knowing only the specs. Everyone backs Betamax. That is the point.</aside>
+        </section>
+
+        <!-- Three things -->
+        <section>
+          <h2>Three things decide it, and none of them is elegance</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Installed base</h3><p>How many units are already out there.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Complements</h3><p>The tapes, the apps, the chargers, the mechanics who can fix it, the software written for it.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Switching costs</h3><p>What it costs a customer to leave once they have bought in.</p></div>
+          </div>
+          <div class="box warn fragment fade-up" data-fragment-index="2" style="margin-top: 22px;">
+            <p><strong>Sony optimised the product. JVC optimised the ecosystem. Ecosystem won</strong> &mdash; as it almost always does.</p>
+          </div>
+          <aside class="notes">Have them name the complements for their own venture. Teams that cannot name three are usually still optimising the product.</aside>
+        </section>
+
+        <!-- The window shuts -->
+        <section>
+          <h2>The window shuts &mdash; and the money moves</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Nobody tells you this about winning a standards battle: <strong>the prize is not the standard. The prize is the position the standard puts you in.</strong></li>
+                <li class="fragment fade-up">When a design settles, the product commoditizes. Everyone builds to the same spec, so versions converge, so price converges, so margin falls. <strong>The thing you fought for becomes the thing anybody can make.</strong></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>And the money moves up a layer</h3>
+              <p>After the PC architecture settled, the money left the box and went to <strong>the chip and the operating system</strong>.</p>
+              <p>After the smartphone form factor settled, it left the handset and went to <strong>the app store</strong>.</p>
+              <p class="small">After a car becomes a car, the money starts moving to whatever is <em>on top</em> of the car.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">Before the window shuts you ask <em>how do I make my design win?</em> After it shuts you ask <strong>where did the money go, and am I standing there?</strong></p>
+          <aside class="notes">Change tone here. This is the part that surprises them &mdash; the victory and the commoditization are the same event, and you say that twice today.</aside>
+        </section>
+
+        <!-- Give it away -->
+        <section>
+          <h2>The move that looks insane and is not</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Sometimes the right move is to <strong>give the standard away.</strong> Open it. Publish it. Let your competitors use it.</li>
+                <li class="fragment fade-up">And every finance person in the room says: <em>we spent a decade and billions building that &mdash; why are we handing it to the people trying to kill us?</em></li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>Because a standard only you use is not a standard</h3>
+              <p>It is <strong>a proprietary connector</strong>. And a proprietary connector on a shrinking share of the market is how you become Betamax with better marketing.</p>
+              <p><strong>You give away the specification and you keep the position</strong> &mdash; the network, the operations, the data, the relationship, the layer above.</p>
+              <p class="small">Everybody else builds cars that plug into your network. You get paid every time they do.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">That is not generosity. It is the most aggressive move available to you &mdash; and it only works if you make it <strong>before</strong> somebody else's standard reaches critical mass.</p>
+          <aside class="notes">This is the slide that decides Thursday's charging-network decision. Do not let them treat opening as a concession.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the Dominant-Design Clock</h2>
+          <div class="fig-embed" role="img" aria-label="Three sequential gates: pre-dominance where the architecture is up for grabs, the battle won on installed base and complements, and post-dominance where the product commoditizes and the money moves up a layer"><!--fig:Dominant_Design_Clock-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 56.0 1148.0 590.0" width="1148" height="590" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Dominant_Design_Clock" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><rect x="40.00" y="80.00" width="340.00" height="292.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="210.00" y="127.00" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="210.00">GATE 1 · PRE-DOMINANCE</tspan><tspan x="210.00" dy="18.75">many designs, no winner</tspan><tspan x="210.00" dy="18.75"> </tspan><tspan x="210.00" dy="18.75">&quot;which architecture</tspan><tspan x="210.00" dy="18.75">do we bet on?&quot;</tspan><tspan x="210.00" dy="18.75"> </tspan><tspan x="210.00" dy="18.75">WIN BY:</tspan><tspan x="210.00" dy="18.75">optionality · fast iteration ·</tspan><tspan x="210.00" dy="18.75">reversible bets</tspan><tspan x="210.00" dy="18.75"> </tspan><tspan x="210.00" dy="18.75">do not over-commit capital</tspan><tspan x="210.00" dy="18.75">to one design</tspan></text></g>
+<g data-beat="2"><path d="M 384.00,226.00 L 416.00,226.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Dominant_Design_Clock)"/></g>
+<g data-beat="2"><rect x="420.00" y="80.00" width="340.00" height="292.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="590.00" y="108.25" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="590.00">GATE 2 · THE BATTLE</tspan><tspan x="590.00" dy="18.75">one design pulls ahead</tspan><tspan x="590.00" dy="18.75"> </tspan><tspan x="590.00" dy="18.75">installed base × complements</tspan><tspan x="590.00" dy="18.75">× switching costs</tspan><tspan x="590.00" dy="18.75"> </tspan><tspan x="590.00" dy="18.75">WIN BY:</tspan><tspan x="590.00" dy="18.75">adoption — even at the cost</tspan><tspan x="590.00" dy="18.75">of exclusivity. Open it.</tspan><tspan x="590.00" dy="18.75">Licence it. Subsidise</tspan><tspan x="590.00" dy="18.75">complements.</tspan><tspan x="590.00" dy="18.75"> </tspan><tspan x="590.00" dy="18.75">margin can wait;</tspan><tspan x="590.00" dy="18.75">the installed base cannot</tspan></text></g>
+<g data-beat="3"><path d="M 764.00,226.00 L 796.00,226.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Dominant_Design_Clock)"/></g>
+<g data-beat="3"><rect x="800.00" y="80.00" width="340.00" height="292.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="970.00" y="127.00" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="970.00">GATE 3 · POST-DOMINANCE</tspan><tspan x="970.00" dy="18.75">the design is settled</tspan><tspan x="970.00" dy="18.75"> </tspan><tspan x="970.00" dy="18.75">the product commoditizes;</tspan><tspan x="970.00" dy="18.75">the money moves UP A LAYER</tspan><tspan x="970.00" dy="18.75"> </tspan><tspan x="970.00" dy="18.75">WIN BY:</tspan><tspan x="970.00" dy="18.75">harvesting the commodity</tspan><tspan x="970.00" dy="18.75">efficiently — and standing</tspan><tspan x="970.00" dy="18.75">where the money went</tspan><tspan x="970.00" dy="18.75"> </tspan><tspan x="970.00" dy="18.75">then open the next Gate 1</tspan></text></g>
+<g data-beat="4"><path d="M 1120.00,376.00 L 1120.00,420.00 L 210.00,420.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Dominant_Design_Clock)"/></g>
+<g data-beat="4"><text x="590.00" y="453.68" font-size="17" fill="#4b5563" text-anchor="middle">Ask the question for EACH product line separately — you are usually at all three gates at once.</text></g>
+<g data-beat="5"><rect x="40.00" y="486.00" width="1100.00" height="56.00" rx="14.0" ry="14.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="590.00" y="519.23" font-size="19" fill="#1e1e1e" text-anchor="middle">At Gate 2 you should GIVE AWAY the thing you would never give away at Gate 3.</text></g>
+<g data-beat="5"><text x="590.00" y="573.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="590.00">Openness is a weapon while the standard is being decided, and a giveaway once it is settled —</tspan><tspan x="590.00" dy="20.00">same action, opposite value, and the only thing that changed was the gate.</tspan><tspan x="590.00" dy="20.00">And winning Gate 2 hands you a business that is about to commoditize: the victory and the margin compression are the SAME EVENT.</tspan></text></g>
+</svg>
+<!--/fig:Dominant_Design_Clock--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">A dominant design is not a trophy. <strong>It is a clock.</strong></p>
+          <aside class="notes">Beat 4 is the technique: ask the gate question for each product line separately. Companies have a strong instinct to run the whole firm on one strategy, and that instinct is the error.</aside>
+        </section>
+
+        <!-- The three gates -->
+        <section>
+          <h2>What correct behaviour looks like at each gate</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Gate 1 &middot; Pre-dominance</h3><p>Nobody knows which architecture wins. <strong>Keep bets reversible</strong>, iterate fast, do not over-commit capital to one design.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="1"><h3>Gate 2 &middot; The battle</h3><p>One design is pulling ahead. <strong>Maximise adoption</strong>, even at the cost of exclusivity. Open it. Licence it. Subsidise complements. <strong>Margin can wait; the installed base cannot.</strong></p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>Gate 3 &middot; Post-dominance</h3><p>The architecture is settled. Harvest the commoditizing layer efficiently, and <strong>move your best people and capital to wherever the value went</strong> &mdash; usually one layer up.</p></div>
+          </div>
+          <div class="box fragment fade-up" data-fragment-index="2" style="margin-top: 20px;">
+            <p>Do this <strong>for each product line separately</strong>. That is the entire technique, and it is harder than it sounds.</p>
+          </div>
+          <aside class="notes">Make them place two of their own products or features on the clock. Disagreement in the room is the exercise working.</aside>
+        </section>
+
+        <!-- Asymmetries -->
+        <section>
+          <h2>The asymmetries that make it a model</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>Same action, opposite value</h3>
+              <p><strong>At Gate 2 you should give away the thing you would never give away at Gate 3.</strong></p>
+              <p class="small">Openness is a <em>weapon</em> while the standard is being decided, and a <em>giveaway</em> after it is settled. The only thing that changed was the gate.</p>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>Where incumbents die</h3>
+              <p><strong>Winning Gate 2 hands you a business that is about to commoditize.</strong> The victory and the margin compression are the <em>same event</em>.</p>
+              <p class="small">Your design became the industry's design &mdash; congratulations, everyone can now build it. Read falling margins on a won product as a failure of execution and you will spend your capital defending a commodity while somebody else decides the next architecture.</p>
+            </div>
+          </div>
+          <aside class="notes">The right-hand box is the Thursday argument in advance. If they accept it now, the margin slide stops looking like bad news and starts looking like evidence.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;how do we beat this competitor?&rdquo; &mdash; but <span class="em">which gate is this product at, and am I playing the strategy for that gate, or the one that worked at the last one?</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p><strong>Most companies keep playing the previous gate.</strong></p>
+            <p>That is what &ldquo;disruption&rdquo; usually is &mdash; somebody winning the next gate while the incumbent is still celebrating the last one.</p>
+          </div>
+          <aside class="notes">Ask for an example of a company still playing a previous gate. They will name one you did not expect, and it will be right.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You will open the real books of a company that <strong>won</strong> a standards battle &mdash; every major automaker adopted its charging connector.</li>
+                <li class="fragment fade-up">While its car revenue <strong>fell 10%</strong>, its automotive margin slid from <strong>19.4% to 17.8%</strong>, and it raised research spending <strong>41%</strong> to chase an entirely different architecture that launched in June.</li>
+                <li class="fragment fade-up"><strong>Three gates, one company, all at the same time.</strong></li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Your job</h3>
+              <p>Not to admire the win. <strong>To decide which gate you are playing.</strong></p>
+              <p class="small">Before every decision, name the gate that decision belongs to &mdash; and which product line you are naming it for.</p>
+            </div>
+          </div>
+          <aside class="notes">Hand out the role pages. The Account Manager weights the leads; the argument about which gate the company is at is the argument the weighting settles.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

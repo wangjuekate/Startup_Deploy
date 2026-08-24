@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="36.0 20.0 1168.0 783.8" width="1168" height="784" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-GradeEngine" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="60.00" y="62.00" font-size="20" fill="#0f766e">INDIVIDUAL — 60%</text></g>
+<g data-beat="1"><rect x="60.00" y="92.00" width="460.00" height="84.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="290.00" y="127.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="290.00">Pre-class blog post</tspan><tspan x="290.00" dy="22.50">and commenting — 10%</tspan></text></g>
+<g data-beat="1"><rect x="60.00" y="192.00" width="460.00" height="84.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="290.00" y="238.95" font-size="18" fill="#1e1e1e" text-anchor="middle">In-class participation — 10%</text></g>
+<g data-beat="1"><rect x="60.00" y="292.00" width="460.00" height="84.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="290.00" y="338.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Simulation reflections — 30%</text></g>
+<g data-beat="1"><rect x="60.00" y="392.00" width="460.00" height="84.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="290.00" y="438.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Personal project portfolio — 10%</text></g>
+<g data-beat="2"><rect x="60.00" y="500.00" width="460.00" height="78.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="290.00" y="545.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Individual work — 60%</text></g>
+<g data-beat="3"><text x="720.00" y="62.00" font-size="20" fill="#0f766e">TEAM — 40%</text></g>
+<g data-beat="3"><rect x="720.00" y="92.00" width="460.00" height="108.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="950.00" y="139.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="950.00">Team topic submission — 5%</tspan><tspan x="950.00" dy="22.50">Week 1</tspan></text></g>
+<g data-beat="3"><path d="M 950.00,204.00 L 950.00,244.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="3"><rect x="720.00" y="226.00" width="460.00" height="108.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="950.00" y="262.45" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="950.00">Report Part 1 + pitch video</tspan><tspan x="950.00" dy="22.50">+ midterm presentation — 15%</tspan><tspan x="950.00" dy="22.50">Weeks 6-7</tspan></text></g>
+<g data-beat="3"><path d="M 950.00,338.00 L 950.00,378.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="3"><rect x="720.00" y="360.00" width="460.00" height="108.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="950.00" y="396.45" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="950.00">Final report, pitch video</tspan><tspan x="950.00" dy="22.50">and presentation — 20%</tspan><tspan x="950.00" dy="22.50">Weeks 14 to Finals</tspan></text></g>
+<g data-beat="4"><rect x="720.00" y="500.00" width="460.00" height="78.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="950.00" y="545.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Team venture — 40%</text></g>
+<g data-beat="5"><path d="M 290.00,580.00 L 290.00,620.00 L 520.00,620.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="5"><path d="M 950.00,580.00 L 950.00,620.00 L 720.00,620.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="5"><ellipse cx="620.00" cy="673.00" rx="200.00" ry="55.00" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="620.00" y="679.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Your grade — 100%</text></g>
+<g data-beat="6"><text x="60.00" y="773.10" font-size="19" fill="#b45309">No exam. No final to save you. The grade is built one week at a time.</text></g>
+</svg>

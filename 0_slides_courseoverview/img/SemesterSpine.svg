@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1333.4 668.0" width="1333" height="668" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-SemesterSpine" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<text x="40.00" y="61.60" font-size="24" fill="#1e1e1e">The semester, end to end</text>
+<g data-beat="2"><rect x="40.00" y="96.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="440.00" y="126.67" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 1 — Course overview · team formation · topic submission (5%)</text></g>
+<g data-beat="2"><rect x="40.00" y="160.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="440.00" y="190.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Weeks 2-5 — Modules 1-4:  TheRealReal · Affirm · Apple v. OpenAI · NYT v. OpenAI</text></g>
+<g data-beat="3"><rect x="40.00" y="224.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#f3f4f6" stroke="#adb5bd" stroke-width="2"/></g>
+<g data-beat="3"><text x="440.00" y="254.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 6 — Study week.  Report Part 1 + pitch video + slides due Oct 8</text></g>
+<g data-beat="3"><rect x="40.00" y="288.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="3"><text x="440.00" y="318.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 7 — Midterm team presentations, Oct 13 &amp; 15   (15%)</text></g>
+<g data-beat="4"><rect x="40.00" y="352.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="4"><text x="440.00" y="382.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Weeks 8-11 — Modules 5-8:  Tesla · Cerebras · Snowflake · Marvell</text></g>
+<g data-beat="5"><rect x="40.00" y="416.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="5"><text x="440.00" y="446.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 12 — Course summary and future directions</text></g>
+<g data-beat="5"><rect x="40.00" y="480.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#f3f4f6" stroke="#adb5bd" stroke-width="2"/></g>
+<g data-beat="5"><text x="440.00" y="510.68" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 14 — Study week.  Final slides due Dec 3</text></g>
+<g data-beat="5"><rect x="40.00" y="544.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="440.00" y="574.67" font-size="17" fill="#1e1e1e" text-anchor="middle">Week 15 — Final team presentations, Dec 8 &amp; 10</text></g>
+<g data-beat="5"><rect x="40.00" y="608.00" width="800.00" height="52.00" rx="13.0" ry="13.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="440.00" y="638.67" font-size="17" fill="#1e1e1e" text-anchor="middle">Finals week — Final report and pitch video submitted, Dec 15   (20%)</text></g>
+<g data-beat="1"><text x="880.00" y="56.20" font-size="18" fill="#0f766e">Every topic week, the same two beats</text></g>
+<g data-beat="1"><rect x="880.00" y="96.00" width="320.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="1040.00" y="135.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="1040.00">Tuesday</tspan><tspan x="1040.00" dy="23.75">concept + case</tspan></text></g>
+<g data-beat="1"><path d="M 1040.00,192.00 L 1040.00,234.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SemesterSpine)"/></g>
+<g data-beat="1"><rect x="880.00" y="240.00" width="320.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="1040.00" y="279.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="1040.00">Thursday</tspan><tspan x="1040.00" dy="23.75">simulation + reflection</tspan></text></g>
+<g data-beat="1"><path d="M 1200.00,286.00 L 1258.00,286.00 L 1258.00,142.00 L 1200.00,142.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-SemesterSpine)"/></g>
+<g data-beat="1"><text x="880.00" y="366.40" font-size="16" fill="#4b5563"><tspan x="880.00">Tuesday is the model. Thursday you use it</tspan><tspan x="880.00" dy="20.00">on a real filing, then write it up the same day.</tspan></text></g>
+<g data-beat="5"><rect x="880.00" y="452.00" width="320.00" height="110.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="1040.00" y="490.43" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="1040.00">Reflections are 30%.</tspan><tspan x="1040.00" dy="21.25">There is no exam to fix a</tspan><tspan x="1040.00" dy="21.25">semester of quiet Thursdays.</tspan></text></g>
+</svg>

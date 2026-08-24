@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Operations and the Business Model</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Operations and the Business Model</h2>
+          <p class="subtitle">MENT 3235 &middot; Module 2 &middot; Concept Lecture &middot; Tuesday, September 15</p>
+          <p class="subtitle">Case: Affirm FY2025 &middot; Mental model: the Take-Rate Waterfall</p>
+          <aside class="notes">Last week they found where the money pools. This week they find where it leaks. Say that in the first thirty seconds &mdash; it is the whole relationship between the two lectures.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>You have described the first line</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Everybody here can describe a business model in one sentence. &ldquo;We take a cut.&rdquo; &ldquo;We charge a subscription.&rdquo; &ldquo;It's a marketplace, we take fifteen percent.&rdquo;</li>
+                <li class="fragment fade-up">Congratulations. That is the <strong>first</strong> line. There are eleven more, and every one of them takes money away from you.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>What that sentence actually is</h3>
+              <p>It is the <strong>top of a waterfall</strong>. The whole discipline of operations is what happens on the way down.</p>
+              <p class="small">Today: how to read a business model the way an operator reads it &mdash; downward, one subtraction at a time, until you reach the number that is actually yours.</p>
+            </div>
+          </div>
+          <aside class="notes">Take three business models from the room out loud before you show the box. Write them on the board; you will subtract from them later.</aside>
+        </section>
+
+        <!-- Story 1 -->
+        <section>
+          <h2>The ninety-nine-cent song</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">When the iTunes Store launched, a song cost ninety-nine cents. Simple, famous, clean.</li>
+                <li class="fragment fade-up">About <strong>seventy cents</strong> went straight to the record label &mdash; wholesale, non-negotiable, they own the music.</li>
+                <li class="fragment fade-up">Then card processing &mdash; and here is the cruel part: networks charge <strong>a fixed fee per transaction plus a percentage</strong>. On a ninety-nine cent sale, the fixed part is brutal.</li>
+                <li class="fragment fade-up">Then bandwidth. Then the store itself. Estimates put Apple's margin at around <strong>ten cents</strong>. Maybe less.</li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>So why bother?</h3>
+              <p>They were not running the store to make money on songs. <strong>They were running it to sell iPods.</strong></p>
+              <p>The store was a cost of goods sold for the hardware. The music was the bait.</p>
+              <p class="small">Read only the top line &mdash; &ldquo;Apple sells a billion songs!&rdquo; &mdash; and you conclude they are in the music business. They were in the device business.</p>
+            </div>
+          </div>
+          <aside class="notes">Ask them to guess Apple's margin before you say it. Nobody guesses ten cents. That gap is the lecture.</aside>
+        </section>
+
+        <!-- Every subtraction is a job -->
+        <section>
+          <h2>Every subtraction is somebody's job</h2>
+          <div class="four-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Payment processing</h4><p>costs what it costs because of <strong>how you route transactions</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Credit losses</h4><p>cost what they cost because of <strong>who you said yes to</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Funding</h4><p>costs what it costs because of <strong>where you borrowed</strong>.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>Fulfillment</h4><p>costs what it costs because of <strong>where you put the warehouse</strong>.</p></div>
+          </div>
+          <div class="box fragment fade-up" data-fragment-index="2" style="margin-top: 22px;">
+            <p>Two companies both say &ldquo;we take a 3% merchant fee.&rdquo; One keeps a third of it. One keeps nothing. <strong>The difference is not the pitch &mdash; it is a thousand operational decisions stacked on top of each other.</strong></p>
+            <p class="small">The model tells you where the money comes from. <strong>Operations tells you how much of it you keep.</strong></p>
+          </div>
+          <aside class="notes">This is why the module is called operations and not finance. None of those lines is an accounting entry; each is a process with a person's name on it.</aside>
+        </section>
+
+        <!-- The trap -->
+        <section>
+          <h2>The trap: growth multiplies the whole waterfall</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Every subtraction is a <strong>percentage of volume</strong>. Double the volume and you double the leak.</li>
+                <li class="fragment fade-up">Students, founders and honestly a lot of investors look at a company losing money at scale and say: <em>&ldquo;it just needs scale.&rdquo;</em></li>
+                <li class="fragment fade-up">Sometimes that is exactly right &mdash; some costs are fixed, and scale spreads them.</li>
+              </ul>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>And sometimes it is suicide</h3>
+              <p>If what you are losing money on is a <strong>per-transaction</strong> cost, scale does not fix it. <strong>Scale makes it bigger.</strong></p>
+              <p class="small">You do not grow your way out of a model that leaks per unit. You grow your way deeper into it &mdash; faster, with more enthusiasm and more press coverage.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">The only honest question: <strong>at what volume does this become profitable &mdash; and is that because something got spread thinner, or because I fixed a leak?</strong></p>
+          <aside class="notes">Change tone here. This is the mistake that shows up in half the team projects, and they will not recognise it as the same mistake unless you name it now.</aside>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h2>The mental model &mdash; the Take-Rate Waterfall</h2>
+          <div class="fig-embed" role="img" aria-label="A waterfall from gross merchandise volume down through the take rate to revenue, four variable subtractions to contribution, and the fixed stack to a profit of about one tenth of one cent"><!--fig:Take_Rate_Waterfall-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 10.0 1166.0 660.0" width="1166" height="660" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Take_Rate_Waterfall" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="40.00" y="50.20" font-size="18" fill="#0f766e">READ IT DOWNWARD — one subtraction at a time</text></g>
+<g data-beat="1"><rect x="200.00" y="76.00" width="640.00" height="44.00" rx="11.0" ry="11.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="190.00" y="102.67" font-size="17" fill="#1971c2" text-anchor="end">VOLUME (GMV)</text></g>
+<g data-beat="1"><text x="862.00" y="92.40" font-size="16" fill="#4b5563"><tspan x="862.00">100 ¢   ·   $36.7 billion of</tspan><tspan x="862.00" dy="20.00">other people&#x27;s purchases</tspan></text></g>
+<g data-beat="2"><path d="M 222.00,126.00 L 222.00,164.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Take_Rate_Waterfall)"/></g>
+<g data-beat="2"><text x="250.00" y="149.40" font-size="16" fill="#4b5563">your stated take rate — the one line that is a contract, not a process</text></g>
+<g data-beat="2"><rect x="200.00" y="168.00" width="56.32" height="44.00" rx="11.0" ry="11.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="2"><text x="190.00" y="194.68" font-size="17" fill="#0f766e" text-anchor="end">REVENUE</text></g>
+<g data-beat="2"><text x="862.00" y="184.40" font-size="16" fill="#4b5563"><tspan x="862.00">8.8 ¢   ·   the number people quote</tspan><tspan x="862.00" dy="20.00">in pitches, and the least interesting one</tspan></text></g>
+<g data-beat="3"><path d="M 222.00,218.00 L 222.00,320.00" fill="none" stroke="#c92a2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Take_Rate_Waterfall)"/></g>
+<g data-beat="3"><text x="250.00" y="241.40" font-size="16" fill="#c92a2a">− credit losses</text></g>
+<g data-beat="3"><text x="446.00" y="241.40" font-size="16" fill="#4b5563">(who you said yes to)</text></g>
+<g data-beat="3"><text x="250.00" y="265.40" font-size="16" fill="#c92a2a">− processing</text></g>
+<g data-beat="3"><text x="446.00" y="265.40" font-size="16" fill="#4b5563">(how you route the transaction)</text></g>
+<g data-beat="3"><text x="250.00" y="289.40" font-size="16" fill="#c92a2a">− funding cost</text></g>
+<g data-beat="3"><text x="446.00" y="289.40" font-size="16" fill="#4b5563">(where you borrowed)</text></g>
+<g data-beat="3"><text x="250.00" y="313.40" font-size="16" fill="#c92a2a">− purchase / COGS</text></g>
+<g data-beat="3"><text x="446.00" y="313.40" font-size="16" fill="#4b5563">(what the product actually costs)</text></g>
+<g data-beat="3"><text x="862.00" y="258.38" font-size="15" fill="#4b5563"><tspan x="862.00">Not accounting entries.</tspan><tspan x="862.00" dy="18.75">Operations — and every one is a place</tspan><tspan x="862.00" dy="18.75">an operator beats an identical model.</tspan></text></g>
+<g data-beat="4"><rect x="200.00" y="330.00" width="25.60" height="44.00" rx="6.4" ry="6.4" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="190.00" y="356.68" font-size="17" fill="#0f766e" text-anchor="end">CONTRIBUTION</text></g>
+<g data-beat="4"><text x="862.00" y="346.40" font-size="16" fill="#4b5563"><tspan x="862.00">4.0 ¢   ·   revenue minus everything</tspan><tspan x="862.00" dy="20.00">that grows WITH volume</tspan></text></g>
+<g data-beat="4"><text x="40.00" y="400.40" font-size="16" fill="#0f766e">Draw the line here. This is the number that tells you whether growth is worth having.</text></g>
+<g data-beat="5"><path d="M 222.00,414.00 L 222.00,448.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Take_Rate_Waterfall)"/></g>
+<g data-beat="5"><text x="250.00" y="435.40" font-size="16" fill="#4b5563">− technology · marketing · administration  (the fixed stack)</text></g>
+<g data-beat="5"><rect x="200.00" y="452.00" width="5.00" height="44.00" rx="1.2" ry="1.2" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="190.00" y="478.68" font-size="17" fill="#b45309" text-anchor="end">PROFIT</text></g>
+<g data-beat="5"><text x="862.00" y="468.40" font-size="16" fill="#4b5563"><tspan x="862.00">about 0.1 ¢   ·   $52 million — the first</tspan><tspan x="862.00" dy="20.00">ever, on $36.7 billion touched</tspan></text></g>
+<g data-beat="5"><rect x="40.00" y="528.00" width="1118.00" height="60.00" rx="15.0" ry="15.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="5"><text x="599.00" y="562.95" font-size="18" fill="#1e1e1e" text-anchor="middle">A FIXED cost is a problem you can OUTGROW.  A VARIABLE cost is a problem you must OUT-OPERATE.</text></g>
+<g data-beat="5"><text x="599.00" y="617.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="599.00">Double the volume and you double every variable slice with it. You do not grow out of a per-unit leak —</tspan><tspan x="599.00" dy="20.00">you grow deeper into it, faster, with more press coverage.</tspan></text></g>
+</svg>
+<!--/fig:Take_Rate_Waterfall--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">The bars are to scale. That collapse is the business model &mdash; everything else is commentary.</p>
+          <aside class="notes">Beat 1: the number in the press release. Beat 2: pause on how little survives the take. Beat 3: name the operator behind each slice. Beat 4 is the line that matters. Beat 5 is Thursday's argument.</aside>
+        </section>
+
+        <!-- How to read it -->
+        <section>
+          <h2>How to read it &mdash; in order</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>1 &middot; Write the top number</h4><p>Volume. GMV, bookings, units &mdash; whatever passes through.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>2 &middot; Write the take</h4><p>What fraction becomes revenue? The number people quote, and almost never the interesting one.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h4>3 &middot; List every variable slice</h4><p>And the operational decision that controls it. <strong>If you cannot name the decision, you cannot manage the cost.</strong></p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>4 &middot; Draw the line at contribution</h4><p>Revenue minus everything that grows with volume. This is the number that says whether growth is worth having.</p></div>
+            <div class="card warn fragment fade-up" data-fragment-index="2"><h4>5 &middot; Only then, the fixed stack</h4><p>Technology, marketing, administration &mdash; and ask what volume makes it work.</p></div>
+            <div class="card bad fragment fade-up" data-fragment-index="3"><h4>The two kinds of slice</h4><p><strong>Variable</strong> slices scale <em>with</em> volume &mdash; growth multiplies them. <strong>Fixed</strong> slices scale slower &mdash; these are the ones scale actually helps.</p></div>
+          </div>
+          <aside class="notes">Step 3 is the whole exercise. Make a student name the person who owns each slice; if the room cannot, they have found the real finding.</aside>
+        </section>
+
+        <!-- The asymmetry -->
+        <section>
+          <h2>The asymmetry that makes it a model</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>Outgrow, or out-operate</h3>
+              <p><strong>A fixed cost is a problem you can outgrow. A variable cost is a problem you must out-operate.</strong></p>
+              <p class="small">That is why &ldquo;we'll fix it with scale&rdquo; is sometimes brilliant and sometimes suicide &mdash; and why you must know which slice you are talking about <em>before</em> you say it.</p>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>And who gets to choose</h3>
+              <p><strong>You negotiate your take rate once. You earn your contribution margin every single day.</strong></p>
+              <p class="small">The top is a contract. The middle is a thousand daily choices &mdash; approve or decline, route this way or that, hold the asset or sell it. Anyone can copy your contract. Almost nobody can copy four years of operating discipline.</p>
+            </div>
+          </div>
+          <aside class="notes">If they take one sentence out of this hour, make it the first one. It is also the sentence that decides the Thursday vote.</aside>
+        </section>
+
+        <!-- The one question -->
+        <section>
+          <h2>The one question the model makes you ask</h2>
+          <p class="quote fragment fade-up">Not &ldquo;how much volume will it add?&rdquo; &mdash; but <span class="em">which slice does this volume have to survive, and does that slice get thinner or thicker as we scale?</span></p>
+          <div class="two-col" style="margin-top: 22px;">
+            <div class="box fragment fade-up"><p>A billion dollars of volume carrying a <strong>five-cent</strong> variable cost against an eight-cent take is <strong>a good day</strong>.</p></div>
+            <div class="box bad fragment fade-up"><p>The same billion at a <strong>nine-cent</strong> variable cost is a press release, followed by a funding round you did not want to raise.</p></div>
+          </div>
+          <aside class="notes">Run their own venture's next growth idea through this question. Refuse any answer that only names the top line.</aside>
+        </section>
+
+        <!-- The one line -->
+        <section>
+          <h2>The one line to carry in</h2>
+          <p class="quote fragment fade-up">A business model is not a sentence. <span class="em">It is a waterfall.</span></p>
+          <div class="box fragment fade-up" style="margin-top: 22px;">
+            <p>Somebody hands you volume at the top. Every operational decision you have ever made takes a slice on the way down. <strong>What is left at the bottom is the only number that was ever yours.</strong></p>
+            <p class="small">Operations is the discipline of deciding which slices you can shrink &mdash; and knowing which ones get bigger the moment you grow.</p>
+          </div>
+          <aside class="notes">Return to the three business models on the board from the opening and subtract out loud. It takes ninety seconds and it lands the whole hour.</aside>
+        </section>
+
+        <!-- Bridge -->
+        <section>
+          <h2>Next: the simulation</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">You will open the real books of a company that moved <strong>$36.7 billion</strong> of other people's purchases across its platform last year.</li>
+                <li class="fragment fade-up">It kept about <strong>nine cents</strong> of each dollar, and finished with a net profit of <strong>$52 million</strong> &mdash; its first ever, and about <strong>one-tenth of one percent</strong> of the volume it touched.</li>
+                <li class="fragment fade-up">Each of your five leads controls a <strong>different slice of that waterfall</strong>.</li>
+              </ul>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Your job</h3>
+              <p>Not to admire the growth rate. <strong>To decide.</strong></p>
+              <p class="small">Before every decision, say which slice it touches &mdash; and whether that slice thickens when volume grows.</p>
+            </div>
+          </div>
+          <aside class="notes">Hand out the role pages. The Account Manager weights the five leads' questions; that weighting is where the waterfall becomes an argument.</aside>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker. Captions sit at index
+      // 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck; with no
+      // Narration.md compiled in (window.NARRATION is empty) every beat gets the
+      // 4s default, and ?auto=3500 overrides it with a fixed millisecond
+      // interval. Any key press stops it. To pace it against a real script,
+      // write Narration.md and run Tools/Figure_Convert/build_narration.py.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

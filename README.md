@@ -1,51 +1,82 @@
+# MENT 3235 / BADM 3235: Venture Planning, Management, and Growth
 
-# MENT 3235: Venture Planning, Management, and Growth
+## Course Information
 
-This repository contains slide decks for MENT 3235: Venture Planning, Management, and Growth
+- Instructor: Kate Wang
+- Class Meeting: TuTh 2:00PM-3:15PM, BUSN 218
 
-## Available Presentations
+- [Syllabus](./MENT%203235%20Syllabus%20Fall%202026.md)
 
-*   **[Course Overview](./slides_overview/Overview.html)**
+## Pre-class Blogs and Presentations
 
-*   **[Technology S Curve](./slides_techcomplement/TechnologyScurve.html)**
-*   **[Technology S Curve Simulation](./slides_techcomplement/TechnologyScurveSimulation.html)**
+### Week 1: Course Setup
 
-*   **[Dominant Design](./slides_dominantdesign/DominantDesignslides.html)**
-*   **[Dominant Design Simulation](./slides_dominantdesign/DominantDesign_simulation.html)**
+- [The Idea Was Never the Hard Part](./0_slides_courseoverview/TheIdeaWasNeverTheHardPart.md)
+- [Course Overview](./0_slides_courseoverview/CourseOverview.html)
+- [Team Formation and Resource Introduction](./0_slides_courseoverview/TeamFormationResources.html)
 
-*   **[Entry Timing](./slides_entrytiming/EntryTiming.html)**
-*   **[Entry Timing Simulation](./slides_entrytiming/EntryTimingSimulation.html)**
+### Week 2: Marketing Research and the Value Chain
 
-*   **[Value Chain](./slides_valuechain/ValueChain.html)**
-*   **[Value Chain Simulation](./slides_valuechain/ValueChainSimulation.html)**
+- [Where the Value Actually Sits](./1_slides_marketingresearch_valuechain/WhereTheValueActuallySits.md)
+- [Marketing Research and the Value Chain](./1_slides_marketingresearch_valuechain/MarketingResearchValueChain.html)
+- [Simulation Reflection: RealReal](./1_slides_marketingresearch_valuechain/RealRealSimulationReflection.html)
+
+### Week 3: Operations and Business Model
+
+- [The Take-Rate Waterfall](./2_slides_operations_businessmodel/TheTakeRateWaterfall.md)
+- [Operations and Business Model](./2_slides_operations_businessmodel/OperationsBusinessModel.html)
+- [Simulation Reflection: Netflix](./2_slides_operations_businessmodel/NetflixSimulationReflection.html)
+
+### Week 4: Intellectual Property Protection
+
+- [Secrets, Patents, and People](./3_slides_intellectualproperty/SecretsPatentsAndPeople.md)
+- [Intellectual Property Protection](./3_slides_intellectualproperty/IntellectualPropertyProtection.html)
+- [Simulation Reflection: Disney](./3_slides_intellectualproperty/DisneySimulationReflection.html)
+
+### Week 5: Legal Structure
+
+- [Choosing the Container](./4_slides_legalstructure/ChoosingTheContainer.md)
+- [Legal Structure](./4_slides_legalstructure/LegalStructure.html)
+- [Simulation Reflection: OpenAI](./4_slides_legalstructure/OpenAISimulationReflection.html)
+
+### Week 6-7: Mid-term
+
+- [Mid-term instructor evaluation](https://uconn.co1.qualtrics.com/jfe/form/SV_cMan0YSUgWMcQqG)
+- [Mid-term pitch video review](./10_slides_Pitchvideo_review/Mid-termreview.html)
+
+### Week 8: Market Deployment and Dominant Design
+
+- [When the Market Stops Arguing](./5_slides_marketdeployment_dominantdesign/WhenTheMarketStopsArguing.md)
+- [Market Deployment and Dominant Design](./5_slides_marketdeployment_dominantdesign/MarketDeploymentDominantDesign.html)
+- [Simulation Reflection: Tesla](./5_slides_marketdeployment_dominantdesign/TeslaSimulationReflection.html)
+
+### Week 9: Technology Deployment and Competitor Analysis
+
+- [How Much Better Do You Have to Be?](./6_slides_technologydeployment_competitoranalysis/HowMuchBetterDoYouHaveToBe.md)
+- [Technology Deployment and Competitor Analysis](./6_slides_technologydeployment_competitoranalysis/TechnologyDeploymentCompetitorAnalysis.html)
+- [Simulation Reflection: Anthropic](./6_slides_technologydeployment_competitoranalysis/AnthropicSimulationReflection.html)
+
+### Week 10: Pricing Strategy
+
+- [The Number Is the Last Decision](./7_slides_pricingstrategy/TheNumberIsTheLastDecision.md)
+- [Pricing Strategy](./7_slides_pricingstrategy/PricingStrategy.html)
+- [Simulation Reflection: Spotify](./7_slides_pricingstrategy/SpotifySimulationReflection.html)
+
+### Week 11: Financial Budgeting
+
+- [Runway Is a Decision, Not a Number](./8_slides_financialbudgeting/RunwayIsADecision.md)
+- [Financial Budgeting](./8_slides_financialbudgeting/FinancialBudgeting.html)
+- [Simulation Reflection: AWS Data Center](./8_slides_financialbudgeting/AWSDataCenterSimulationReflection.html)
+
+### Week 12: Course Summary and Future Directions
+
+- [Course Summary and Future Directions](./9_slides_summary_futuredirections/CourseSummaryReflection.html)
+
+### Week 13-15: Final project
+
+- [Final pitch video review](./10_slides_Pitchvideo_review/Final_review.html)
 
 
-Reporting Response Rate:[Midsemester SEEQ](https://www.srte.psu.edu/)
-*   **[Midterm Review](./slides_midtermreview/Mid_termreview_2026.html)**
+## Simulation Access
 
-
-*   **[Competition Analyses](./slides_competitionanalyses/CompetitionAnalyses.html)**
-*   **[Competition Analyses Simulation](./slides_competitionanalyses/CompetitionAnalysesSimulation.html)**
-
-
-*   **[Business Model](./slides_businessmodel/BusinessModel.html)**
-*   **[Business Model Simulation](./slides_businessmodel/BusinessModelSimulation.html)**
-
-*   **[Collaboration](./slides_collaboration/Collaboration.html)**
-*   **[Collaboration Simulation](./slides_collaboration/CollaborationSimulation.html)**
-
-
-*   **[Platform](./slides_platform/Platform.html)**
-*   **[Platform Simulation](./slides_platform/PlatformSimulation.html)**
-
-
-Reporting Response Rate: [Endsemester SEEQ](https://www.srte.psu.edu/)
-
-*   **[Evaluation](./slides_evaluation/Evaluation1.html)**
-*   **[Evaluation Simulation](./slides_evaluation/Evaluation2.html)**
-
-
-## In-class Simulation
-
-*   **[Simulation](https://bcs.statherian.com)**
-
+- [Simulation Platform](https://app.skillsimm.com/?expired=1)

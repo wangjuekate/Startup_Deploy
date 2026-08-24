@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simulation: Cerebras Against the Moat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
+      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
+      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.3em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.3em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
+      .small { font-size: 0.4em; color: var(--muted); }
+      /* role question slides */
+      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
+      .role-h .emoji { font-size: 1.1em; }
+      .role-h h2 { margin: 0; text-align: left; }
+      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
+      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
+      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
+      .reveal .role-h ~ p { text-align: left; }
+      .options li { margin-bottom: 0.35em; }
+      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
+      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
+      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+      .reflect li { font-size: 0.44em; }
+      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Cerebras Against the Moat</h2>
+          <p class="subtitle">Simulation Reflection · Thursday, October 29</p>
+        </section>
+
+        <!-- ============ Discussion Time ============ -->
+        <section class="title-slide">
+          <h2>Group Discussion</h2>
+          <div class="reflect">
+            <ul>
+              <li>Form groups with classmates who have the same role.</li>
+              <li>As a group, say whether your choice <strong>grows our advantage</strong> or <strong>shrinks their switching cost</strong> — and name the dimension the buyer is bleeding on.</li>
+              <li>Select one representative to present your group's choice and defense.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ FINANCIAL LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
+          <p class="q">Revenue +76% to $510.0&nbsp;M. Gross margin fell 42.3% → 39.0%. Loss from operations widened to $(145.9)&nbsp;M. Reported net income $237.8&nbsp;M came from $390.7&nbsp;M of other income; non-GAAP is a $75.7&nbsp;M loss. R&D is 48% of revenue. What do you do with the money?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Fix the margin on the growing line — cloud grew 94% at ~29.9% against hardware's ~42.9%.</li>
+            <li><span class="k">B</span> Raise and spend on data-centre capacity; we cannot deliver the OpenAI tranches without it.</li>
+            <li><span class="k">C</span> Protect R&D at 48% of revenue whatever else happens.</li>
+            <li><span class="k">D</span> Fund growth out of the $237.8&nbsp;M of net income and avoid dilution.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The profit is not from selling computers: $237.8&nbsp;M of net income sits on a $(145.9)&nbsp;M <strong>operating loss</strong> and $390.7&nbsp;M of other income. "Now that we're profitable" is built on an accounting entry.</li>
+              <li>Growth arrived in the line that keeps least — cloud +94% at ~29.9% against hardware's ~42.9% — which is exactly why total margin fell in a year revenue rose 76%.</li>
+              <li>There is no operating profit to fund anything with.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ MARKETING LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
+          <p class="q">MBZUAI 62.0% + G42 24.0% = 86% of 2025 revenue, from two related parties; one is 77.9% of receivables. OpenAI's MRA is future revenue. AWS will deploy Cerebras in its own data centres, and inference already ships through six marketplaces and gateways. Top ten customers grew spend ~80% in 12 months. Where does go-to-market effort go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Into the channels buyers already use — AWS, the marketplaces and gateways.</li>
+            <li><span class="k">B</span> Into landing more flagship names like the OpenAI agreement.</li>
+            <li><span class="k">C</span> Into the benchmark story — publish 15× and 10× results everywhere.</li>
+            <li><span class="k">D</span> Into deepening the customers we already have; they grew 80% in twelve months.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Being purchasable inside AWS and the standard gateways <strong>shrinks the customer's cost of trying</strong> — the side of the inequality the company can move fastest — and it produces many small buyers, the only real answer to 86% in two related parties.</li>
+              <li>Deepening existing customers is exactly how the company arrived at 86% of revenue in two related parties and 77.9% of receivables in one — <strong>curing concentration by concentrating</strong>.</li>
+              <li>More proof of the thing already proven (15×) does not move the decision.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ OPERATION LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
+          <p class="q">The MRA requires "capacity tranches… upon certain time-based milestones"; failure lets OpenAI "terminate a portion or all of the agreement" and accelerates a $1.0&nbsp;billion loan. Chips come from TSMC under a fabless model; sole-source components are bought "on a purchase order basis without capacity or volume commitments"; data centres are leased and not controlled. Where does operational effort go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Convert the supply chain from purchase orders to committed capacity.</li>
+            <li><span class="k">B</span> Into the data-centre build — leased space is the step between contract and delivery.</li>
+            <li><span class="k">C</span> Into yield and throughput at Sunnyvale, the part of the chain we own.</li>
+            <li><span class="k">D</span> Keep the flexible model; purchase orders let a company our size scale with demand.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The company has promised <strong>dated</strong> tranches on inputs bought without commitments — failure lets OpenAI terminate <em>and</em> accelerates the $1.0&nbsp;billion loan: the largest single downside anywhere in the case.</li>
+              <li>Flexibility with no volume commitments is right for a company with no delivery obligations — this company has dated obligations with a termination right and a debt trigger attached.</li>
+              <li>Leased racks are useless without the wafers to fill them.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ TECH LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
+          <p class="q">58× larger, 2,625× bandwidth, 15× inference, 10× training. The compiler already eliminates the need for CUDA and runs PyTorch without rewriting code. R&D is $243.3&nbsp;M — 48% of revenue. Where does the engineering go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Into making the switch invisible — unchanged PyTorch, standard APIs, existing toolchains.</li>
+            <li><span class="k">B</span> Into the cloud software platform — orchestration, multi-tenancy, utilisation.</li>
+            <li><span class="k">C</span> Into the next generation of the WSE.</li>
+            <li><span class="k">D</span> Into benchmarks and reference designs that make the advantage unarguable.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The advantage side is already enormous; the unsolved side is <strong>everything a customer would abandon</strong>. Adoption engineering converts a benchmark into an order.</li>
+              <li>Going from 15× to 20× buys nothing from a buyer who was not blocked on speed.</li>
+              <li>Proving harder what is already proven spends engineering on the side of the inequality that is already winning.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ SECURITY LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead</h2></div>
+          <p class="q">Exports need licences the company "cannot guarantee" obtaining; BIS may change the rules "at any time"; most 2025 revenue came from two UAE-linked related parties. The company disclosed material weaknesses in internal control over financial reporting, and its leased data centres face "break-ins, human error, malfeasance or interference." Where do you set the bar?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Export-control and trade compliance as a first-class function, plus remediating the internal-control weaknesses.</li>
+            <li><span class="k">B</span> The leased data centres and the customer workloads running on them.</li>
+            <li><span class="k">C</span> Protecting the wafer-scale designs and process know-how.</li>
+            <li><span class="k">D</span> Keep it proportionate — 708 people with a queue of demand; scale compliance later.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>A licence problem does not slow the company down — it <strong>removes, by law</strong>, the geography holding 86% of last year's revenue.</li>
+              <li>"We're only 708 people" is exactly the argument that produces material weaknesses — which this company has already disclosed.</li>
+              <li>Losing the IP is a multi-year erosion; losing a licence is next quarter.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ ACCOUNT MANAGER ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager</h2></div>
+          <p>You do <strong>not</strong> answer a functional question.</p>
+          <p>After all five leads present their selection + one-sentence defense, <strong>rank the five decisions 1–5</strong> by which the company must resolve <em>first</em>, allocate 100 points across them in blocks of 10, and name the <strong>dimension</strong>: what is the buyer actually bleeding on, and is our advantage on that dimension bigger than everything the buyer would have to throw away?</p>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Rank by what would stop the company selling — delivery and concentration belong at the top, and the rank-#1 sentence must contain a figure.</li>
+              <li>The buyer is bleeding on <strong>switching cost, not on speed</strong> — 15× has already cleared the threshold.</li>
+              <li>The four multiples are not the same claim: 58× (chip size), 2,625× (bandwidth), 15× (inference), 10× (training) — only the last two are things a customer experiences.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Key takeaway -->
+        <section>
+          <h2>Key takeaway</h2>
+          <div class="box"><p>A genuine technical advantage must beat the incumbent's ecosystem — the complements, the habits, the switching cost — not just its silicon. Grow the side of the inequality that is small; the side that is already winning needs no more effort.</p></div>
+          <p class="quote" style="margin-top: 20px;">Fifteen times faster is a real advantage. The question is whether it is a business.</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: true });
+    </script>
+  </body>
+</html>

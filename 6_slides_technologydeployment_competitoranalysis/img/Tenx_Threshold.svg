@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="36.0 10.0 1088.0 724.0" width="1088" height="724" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Tenx_Threshold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="60.00" y="49.30" font-size="17" fill="#0f766e"><tspan x="60.00">YOUR ADVANTAGE</tspan><tspan x="60.00" dy="21.25">on the dimension the buyer actually buys</tspan></text></g>
+<g data-beat="1"><rect x="60.00" y="96.00" width="420.00" height="150.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="270.00" y="145.65" font-size="26" fill="#1e1e1e" text-anchor="middle"><tspan x="270.00">15× faster</tspan><tspan x="270.00" dy="32.50"> </tspan><tspan x="270.00" dy="32.50">on a chip 58× larger</tspan></text></g>
+<g data-beat="2"><text x="570.00" y="177.15" font-size="26" fill="#4b5563" text-anchor="middle">vs</text></g>
+<g data-beat="2"><text x="660.00" y="49.30" font-size="17" fill="#b45309"><tspan x="660.00">THEIR MOAT</tspan><tspan x="660.00" dy="21.25">what the customer would have to abandon</tspan></text></g>
+<g data-beat="2"><rect x="660.00" y="96.00" width="440.00" height="150.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="880.00" y="115.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="880.00">complements · skills · habits · process</tspan><tspan x="880.00" dy="20.00">career risk — &quot;nobody ever got fired</tspan><tspan x="880.00" dy="20.00">for buying the incumbent&quot;</tspan><tspan x="880.00" dy="20.00"> </tspan><tspan x="880.00" dy="20.00">none of it built by the incumbent:</tspan><tspan x="880.00" dy="20.00">built by customers, partners and third</tspan><tspan x="880.00" dy="20.00">parties, free, over a decade</tspan></text></g>
+<g data-beat="3"><path d="M 270.00,250.00 L 500.00,322.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Tenx_Threshold)"/></g>
+<g data-beat="3"><path d="M 880.00,250.00 L 660.00,322.00" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Tenx_Threshold)"/></g>
+<g data-beat="3"><rect x="440.00" y="330.00" width="280.00" height="66.00" rx="16.0" ry="16.0" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/></g>
+<g data-beat="3"><text x="580.00" y="368.50" font-size="20" fill="#1e1e1e" text-anchor="middle">SWITCH   or   STAY</text></g>
+<g data-beat="3"><text x="580.00" y="429.95" font-size="18" fill="#c92a2a" text-anchor="middle">the switch happens only when   ADVANTAGE (on the right dimension)   &gt;   MOAT</text></g>
+<g data-beat="4"><rect x="60.00" y="462.00" width="500.00" height="112.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="310.00" y="502.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="310.00">GROW YOUR SIDE</tspan><tspan x="310.00" dy="20.00">raise the advantage — engineering.</tspan><tspan x="310.00" dy="20.00">Be 10× on the dimension they buy.</tspan></text></g>
+<g data-beat="4"><rect x="600.00" y="462.00" width="500.00" height="112.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="4"><text x="850.00" y="492.40" font-size="16" fill="#1e1e1e" text-anchor="middle"><tspan x="850.00">SHRINK THEIR SIDE</tspan><tspan x="850.00" dy="20.00">lower the cost of leaving — compatibility.</tspan><tspan x="850.00" dy="20.00">Take their file formats, run their code unchanged,</tspan><tspan x="850.00" dy="20.00">sell the first unit as an experiment, not a migration.</tspan></text></g>
+<g data-beat="5"><rect x="60.00" y="596.00" width="1040.00" height="56.00" rx="14.0" ry="14.0" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/></g>
+<g data-beat="5"><text x="580.00" y="628.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Your advantage has to be proven ONCE. Their moat is rebuilt EVERY DAY, by people who do not work for them.</text></g>
+<g data-beat="5"><text x="580.00" y="681.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="580.00">So the gap you have to clear is not fixed — it grows while you build.</tspan><tspan x="580.00" dy="20.00">A technical lead is temporary. A distribution position compounds.</tspan></text></g>
+</svg>

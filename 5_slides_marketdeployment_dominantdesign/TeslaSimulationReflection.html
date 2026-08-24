@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simulation: Tesla at Three Gates</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
+      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
+      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.3em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.3em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
+      .small { font-size: 0.4em; color: var(--muted); }
+      /* role question slides */
+      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
+      .role-h .emoji { font-size: 1.1em; }
+      .role-h h2 { margin: 0; text-align: left; }
+      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
+      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
+      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
+      .reveal .role-h ~ p { text-align: left; }
+      .options li { margin-bottom: 0.35em; }
+      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
+      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
+      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+      .reflect li { font-size: 0.44em; }
+      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Tesla at Three Gates</h2>
+          <p class="subtitle">Simulation Reflection · Thursday, October 22</p>
+        </section>
+
+        <!-- ============ Discussion Time ============ -->
+        <section class="title-slide">
+          <h2>Group Discussion</h2>
+          <div class="reflect">
+            <ul>
+              <li>Form groups with classmates who have the same role.</li>
+              <li>As a group, name the <strong>gate</strong> (1, 2 or 3) your decision belongs to and what strategy that gate calls for.</li>
+              <li>Select one representative to present your group's choice and defense.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ FINANCIAL LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
+          <p class="q">Automotive fell 10% to $69.5&nbsp;B at a 17.8% margin (from 19.4% two years ago). Energy grew 27% to $12.8&nbsp;B at 29.8% (from 18.9%). R&D rose 41% to $6.4&nbsp;B while capex fell from $11.3&nbsp;B to $8.5&nbsp;B. Net income fell $3.30&nbsp;B to $3.79&nbsp;B. Where does capital go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Follow the open gates — energy storage and AI/autonomy.</li>
+            <li><span class="k">B</span> Concentrate on autonomy specifically.</li>
+            <li><span class="k">C</span> Fund cost reduction in automotive — still $69.5&nbsp;B and 1.64 million deliveries.</li>
+            <li><span class="k">D</span> Pull back: cut R&D and capex, protect the $3.79&nbsp;B.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Put capital where the architecture is still being decided: energy at 29.8% and rising versus automotive at 17.8% and falling for the third year.</li>
+              <li>Funding the settled gate defends a commodity — a point of margin on $69.5&nbsp;B is real money, but it is Gate&nbsp;3 behaviour, not a strategy for where the company goes next.</li>
+              <li>Profit fell because the won business is commoditizing; cutting R&D to defend it spends the last advantage on the gate already won.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ MARKETING LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
+          <p class="q">OBBBA removed the EV tax credit; credit revenue fell 28%. Automotive sales fell 9% on an 8% decline in cash deliveries and a lower average selling price with higher customer incentives. Margin has fallen 19.4% → 17.8%. Services grew 19%. How do you sell?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Sell the network and the software rather than the sticker price.</li>
+            <li><span class="k">B</span> Sell affordability through financing and lease terms, not price cuts.</li>
+            <li><span class="k">C</span> Sell the future — Robotaxi and FSD.</li>
+            <li><span class="k">D</span> Cut price again to defend the 1.64 million delivery number.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>At Gate 3 the vehicle converges with every other vehicle — what does not converge is the <strong>network</strong> the competitor's car plugs into and the <strong>software</strong> attached to yours. That is also the line that actually grew: services +19%.</li>
+              <li>A third price cut buys volume with the last of the margin — ASP already fell and margin has gone 19.4% → 18.4% → 17.8%.</li>
+              <li>You cannot pay this year's bills with a Gate 1 promise — over-promising autonomy has a long and expensive history.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ OPERATION LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
+          <p class="q">All major automakers adopted NACS. Supercharger for Business lets third parties "purchase and install Superchargers and set the charging price, while Tesla remains responsible for software updates, network operations, maintenance and driver support." Paid Supercharging helped services grow 19%. What is the network for now?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Keep it open to everyone and keep operating it ourselves.</li>
+            <li><span class="k">B</span> Scale through Supercharger for Business — others own the hardware, we own the operation.</li>
+            <li><span class="k">C</span> Aim the build-out at Robotaxi corridors first.</li>
+            <li><span class="k">D</span> Re-prioritise the network for Tesla owners and Robotaxi; we gave the connector away for nothing.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The standard is only worth having if everyone uses it — the payment for opening it arrives as other companies' drivers paying to charge, visible in the 19% services growth. <strong>Opening was the Gate 2 weapon; operating is the Gate 3 position.</strong></li>
+              <li>You cannot un-publish a standard: "close the network" forfeits the revenue that opening it was for.</li>
+              <li>Supercharger for Business keeps Tesla on the layer that matters — software, network operations, maintenance and support.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ TECH LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
+          <p class="q">R&D is $6.4&nbsp;B (+41%), "primarily due to… AI and other programs." "Every Tesla vehicle delivered today is designed for autonomy." Robotaxi launched June 2025; Cybercab follows. The company is also developing its own cells, plus Optimus. Where does the engineering go?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Concentrate on autonomy — the fleet is the data asset.</li>
+            <li><span class="k">B</span> Concentrate on in-house cells and the next-generation platform.</li>
+            <li><span class="k">C</span> Spread across autonomy, cells and Optimus.</li>
+            <li><span class="k">D</span> Slow AI spending until Robotaxi proves revenue.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The vehicle architecture is settled; the autonomy architecture is not — and the company already owns the input that decides it: a fleet where every vehicle delivered is designed for autonomy. <strong>A Gate 1 bet with a Gate 3 asset behind it.</strong></li>
+              <li>Demanding proof of revenue before funding a Gate 1 architecture is the definition of being late to it.</li>
+              <li>$6.4&nbsp;B spread three ways in a year revenue fell may fund nothing to completion.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ SECURITY LEAD ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead</h2></div>
+          <p class="q">Every car is updated over the air. Listed risks include "harm to employees or customers." Incidents are "ranked by severity." Robotaxi is on public roads with nobody in the driver's seat and is expanding. Where do you set the bar?</p>
+          <ul class="options">
+            <li><span class="k">A</span> Vehicle and product security as safety-critical and fleet-wide.</li>
+            <li><span class="k">B</span> Concentrate on Robotaxi — newest surface, least proven, no driver.</li>
+            <li><span class="k">C</span> Concentrate on data privacy compliance across markets.</li>
+            <li><span class="k">D</span> Rank by severity after launch — expand to more cities first, harden as incidents arrive.</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🔒</span><h2>Security Lead — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>The over-the-air channel that ships features reaches every vehicle at once — one exploited path or one serious Robotaxi incident is a regulatory event for the whole company.</li>
+              <li>Robotaxi is Gate 1 with public-road consequences: reversible bets are correct at Gate 1, but "harden it after launch" is not — the first serious incident is not reversible.</li>
+              <li>"Ranked by severity" is a triage method, not permission to defer.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ ACCOUNT MANAGER ============ -->
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager</h2></div>
+          <p>You do <strong>not</strong> answer a functional question.</p>
+          <p>After all five leads present their selection + one-sentence defense, <strong>rank the five decisions 1–5</strong> by which the company must resolve <em>first</em>, allocate 100 points across them in blocks of 10, and name the <strong>gates</strong>: which gate (1, 2 or 3) are the cars, the charging network, the energy business and autonomy each standing at — and what strategy does that gate call for?</p>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">🧭</span><h2>Account Manager — Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Assign each business to a gate and rank accordingly — the network and capital belong at the top, and the rank-#1 sentence must contain a figure.</li>
+              <li>The victory and the margin compression are the same event: margin fell because EVs became normal — which is what winning looks like.</li>
+              <li>R&D up 41% in a down year is a strategy, not an accident — somebody has already decided which gate matters; ask whether they were right.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Key takeaway -->
+        <section>
+          <h2>Key takeaway</h2>
+          <div class="box"><p>The dominant-design clock has three gates — bet on an architecture, win installed base and complements, then defend or harvest. The trap is funding the wrong gate: winning the standard is not the same as making money from it.</p></div>
+          <p class="quote" style="margin-top: 20px;">They all took the plug — and the quarter went the other way.</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: true });
+    </script>
+  </body>
+</html>

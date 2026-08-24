@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Team Formation and Resource Introduction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
+      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
+      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.3em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.3em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; text-align: left; align-items: stretch; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .two-col .box p { margin: 0 0 0.35em 0; }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .small { font-size: 0.4em; color: var(--muted); }
+      /* role question slides */
+      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
+      .role-h .emoji { font-size: 1.1em; }
+      .role-h h2 { margin: 0; text-align: left; }
+      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
+      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
+      .options li { margin-bottom: 0.35em; }
+      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
+      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
+      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+      .reflect li { font-size: 0.44em; }
+      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+      .reveal table { font-size: 0.42em; width: 100%; border-collapse: collapse; }
+      .reveal table th, .reveal table td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; }
+      .reveal table th { background: var(--soft); color: var(--muted); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Simulation: Finance of a two-person software startup</h2>
+        </section>
+
+        <section>
+          <h2>How this works</h2>
+          <div class="reflect">
+            <ul>
+              <li>Take the role you were assigned and join that group.</li>
+              <li>Everyone works from the same one-page brief. Each group answers only its own role's question.</li>
+              <li>Read silently first and pick one option. No discussion yet.</li>
+              <li>Agree one answer as a group, then select a representative to present it.</li>
+              <li>Representatives come to the front and sit for a panel interview.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Goal -->
+        <section>
+          <h2>Goal of the simulation</h2>
+          <p>At today's numbers, how far is Cadence from paying for itself, and what would it take to close the gap?</p>
+          <p class="small">Cadence is a two-person software startup. Two founders, no outside money, one product, and a bank balance that is going in the wrong direction.</p>
+        </section>
+
+        <!-- The brief -->
+        <section>
+          <h2>The Startup</h2>
+          <div class="two-col">
+            <div class="box">
+              <p><strong>Users and pricing</strong></p>
+              <p>1,000 free users.</p>
+              <p>80 paid users.</p>
+              <p>1,080 total active users.</p>
+              <p>$20 per month per paid user.</p>
+            </div>
+            <div class="box warn">
+              <p><strong>Costs</strong></p>
+              <p>$6,000 per month in fixed cost.</p>
+              <p>$2 per month in variable cost for every active user.</p>
+              <p>Free and paid users both create variable cost.</p>
+            </div>
+          </div>
+          <p class="small">These are all the numbers there are. Everything your role is asked comes out of this slide.</p>
+        </section>
+
+                <!-- Panel -->
+        <section>
+          <h2>The panel</h2>
+
+  <div class="reflect">
+    <ul>
+      <li>Join with classmates who have the same role.</li>
+      <li>As a group of the same role, discuss about your decisions and reasons.</li>
+      <li>Select one representative to come and sit on the front for a interview about what we have learned.</li>
+    </ul>
+  </div>
+        </section>
+
+
+        <section>
+          <div class="role-h"><span class="emoji">&#128176;</span><h2>Financial Lead</h2></div>
+          <p class="q">What is monthly revenue?</p>
+          <ul class="options">
+            <li><span class="k">A</span> $1,600</li>
+            <li><span class="k">B</span> $6,000</li>
+            <li><span class="k">C</span> $8,000</li>
+            <li><span class="k">D</span> $20,000</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">&#128176;</span><h2>Financial Lead &mdash; Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Revenue counts only the users who actually pay. Of 1,080 active users, 80 carry the entire top line.</li>
+              <li>A big user base and a big revenue number are two different claims. Be clear about which one you are quoting.</li>
+              <li>Price times paying customers is the whole formula. Anything added to it is a forecast, not revenue.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="role-h"><span class="emoji">&#128227;</span><h2>Operation Lead</h2></div>
+          <p class="q">What is total variable cost if all 1,080 active users create cost?</p>
+          <ul class="options">
+            <li><span class="k">A</span> $160</li>
+            <li><span class="k">B</span> $2,160</li>
+            <li><span class="k">C</span> $6,000</li>
+            <li><span class="k">D</span> $8,160</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">&#128227;</span><h2>Operation Lead &mdash; Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>What is left of a paying user after variable cost is the only money available to cover fixed cost.</li>
+            </ul>
+          </div>
+        </section>
+
+
+                <section>
+          <div class="role-h"><span class="emoji">&#128227;</span><h2>Market Lead</h2></div>
+          <p class="q">As the Market Lead, select the main business issue given the unit economics</p>
+          <ul class="options">
+            <li><span class="k">A</span> Too many users</li>
+            <li><span class="k">B</span> Not enough paid conversion</li>
+            <li><span class="k">C</span> Price too high</li>
+            <li><span class="k">D</span> No fixed cost</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">&#128227;</span><h2>Market Lead &mdash; Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>Cost follows usage, not billing. Every active user consumes the product whether or not they pay for it.</li>
+              <li>Free users are an expense line with a growth story attached. Both halves of that sentence are real.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="role-h"><span class="emoji">&#129517;</span><h2>Account Manager</h2></div>
+          <p class="q">Rank these four levers 1&ndash;4, best to worst, for reaching break-even. Use each lever once, no repeats.</p>
+          <ul class="options">
+            <li><span class="k">A</span> Increase paid conversion</li>
+            <li><span class="k">B</span> Reduce fixed cost</li>
+            <li><span class="k">C</span> Increase price</li>
+            <li><span class="k">D</span> Add more free users</li>
+          </ul>
+        </section>
+        <section>
+          <div class="role-h"><span class="emoji">&#129517;</span><h2>Account Manager &mdash; Key Takeaways</h2></div>
+          <div class="reflect">
+            <ul>
+              <li>A ranking is a claim about which constraint binds hardest, not a list of good ideas.</li>
+              <li>Moving conversion changes the slope of the business. Trimming fixed cost shifts the line down once.</li>
+              <li>Growth that adds cost without adding revenue moves you away from break-even. Scale is not a strategy by itself.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Team formation -->
+        <section>
+          <h2>Semester Team projects</h2>
+          <p>Now that you have met your classmates, form a group of 6 to conduct your group project.</p>
+          <p>When you are done, come to the front and register your team.</p>
+        </section>
+
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] });
+    </script>
+  </body>
+</html>

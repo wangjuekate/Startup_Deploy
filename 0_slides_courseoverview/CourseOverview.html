@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Course Overview: Venture Planning, Management, and Growth</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; --bad: #b91c1c; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .box.bad { border-left-color: var(--bad); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .card.bad { border-top-color: var(--bad); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with
+         Plan_Classes/MENT3235/0_courseoverview/build_figures.py, then
+         Tools/Figure_Convert/inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section class="title-slide">
+          <h2>Venture Planning, Management, and Growth</h2>
+          <p class="subtitle">MENT 3235 / BADM 3235 &middot; Fall 2026 &middot; Course Overview</p>
+          <p class="subtitle">Kate Wang &middot; TuTh 2:00&ndash;3:15 PM &middot; BUSN 218 &middot; juw13011@uconn.edu</p>
+          <aside class="notes">Do not open with the syllabus. Open with the argument: why a course about planning a venture is worth fifteen weeks in 2026.</aside>
+        </section>
+
+        <!-- Hook -->
+        <section>
+          <h2>The idea was never the hard part</h2>
+          <div class="two-col">
+            <div class="box fragment fade-up">
+              <h3>An idea is a free option</h3>
+              <p>Every semester somebody comes to office hours with an idea they will not describe until I promise not to steal it. I always promise, and I have never once been tempted.</p>
+              <p>Selling GLP-1 medications direct to consumers online was <strong>not a secret</strong>. Hundreds of people had that idea at the same time.</p>
+            </div>
+            <div class="box warn fragment fade-up">
+              <h3>Execution is where you pay</h3>
+              <p>Medvi did <strong>$401M in sales in 2025 with two employees</strong> &mdash; the founder and his brother (Griffith, 2026, <em>The New York Times</em>).</p>
+              <p>What separated them was not insight. It was pharmacy relationships that functioned, ads that converted, payments that cleared, and a support queue answered on a Sunday.</p>
+            </div>
+          </div>
+          <p class="small fragment fade-up">And the second half of that story matters too: within days, other outlets were raising allegations about the company's practices. <strong>A story about execution travels faster than execution does.</strong> (Pre-class reading: <em>The Idea Was Never the Hard Part</em>)</p>
+          <aside class="notes">Ask who read the blog. Ask who believes the $401M number means what it appears to mean. Revenue measures what customers paid, not what they received.</aside>
+        </section>
+
+        <!-- Figure 1 -->
+        <section>
+          <h2>What got cheap, and what did not</h2>
+          <div class="fig-embed" role="img" aria-label="An idea leads to execution; the mechanical half of execution has collapsed in cost, while judgment under incomplete information has not, and resolves into eight decisions"><!--fig:ExecutionGap-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16.0 16.0 1208.0 774.0" width="1208" height="774" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-ExecutionGap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="40.00" y="59.80" font-size="22" fill="#0f766e">An idea is a free option.</text></g>
+<g data-beat="1"><text x="40.00" y="89.80" font-size="22" fill="#b45309">Execution is the part where you pay.</text></g>
+<g data-beat="1"><ellipse cx="180.00" cy="168.00" rx="120.00" ry="50.00" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="1"><text x="180.00" y="174.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Your idea</text></g>
+<g data-beat="1"><path d="M 305.00,168.00 L 385.00,168.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ExecutionGap)"/></g>
+<g data-beat="1"><rect x="390.00" y="118.00" width="260.00" height="100.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="1"><text x="520.00" y="174.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Execution</text></g>
+<g data-beat="1"><text x="690.00" y="143.30" font-size="17" fill="#4b5563"><tspan x="690.00">Medvi: $401M of sales in 2025.</tspan><tspan x="690.00" dy="21.25">Two employees, the founder and his brother.</tspan></text></g>
+<g data-beat="2"><path d="M 40.00,258.00 L 1200.00,258.00" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="2"><text x="40.00" y="292.00" font-size="20" fill="#1971c2">WHAT GOT CHEAP — the mechanical half of execution</text></g>
+<g data-beat="2"><rect x="40.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="174.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Landing page</text></g>
+<g data-beat="2"><rect x="332.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="466.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Contract review</text></g>
+<g data-beat="2"><rect x="624.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="758.00" y="357.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="758.00">Dashboard</tspan><tspan x="758.00" dy="22.50">&amp; analytics</tspan></text></g>
+<g data-beat="2"><rect x="916.00" y="318.00" width="268.00" height="92.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="1050.00" y="368.95" font-size="18" fill="#1e1e1e" text-anchor="middle">Ad creative</text></g>
+<g data-beat="2"><text x="40.00" y="438.40" font-size="16" fill="#4b5563">A few hundred dollars a month. 48% of surveyed users said the gain was scope — work they could not do at all.</text></g>
+<g data-beat="3"><path d="M 40.00,470.00 L 1200.00,470.00" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-beat="3"><text x="40.00" y="504.00" font-size="20" fill="#b45309">WHAT STAYED EXPENSIVE</text></g>
+<g data-beat="3"><rect x="40.00" y="530.00" width="1160.00" height="112.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="3"><text x="620.00" y="578.30" font-size="22" fill="#1e1e1e" text-anchor="middle"><tspan x="620.00">Judgment under incomplete information —</tspan><tspan x="620.00" dy="27.50">exercised repeatedly, in public, with your own money at stake.</tspan></text></g>
+<g data-beat="4"><path d="M 620.00,646.00 L 620.00,686.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ExecutionGap)"/></g>
+<g data-beat="4"><rect x="230.00" y="690.00" width="780.00" height="76.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="620.00" y="734.05" font-size="22" fill="#1e1e1e" text-anchor="middle">Eight decisions. No correct answer — only a defensible one.</text></g>
+</svg>
+<!--/fig:ExecutionGap--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">In a survey of roughly 81,000 people, the most common gain was not speed but <strong>scope</strong> &mdash; work people previously could not do at all (Massenkoff &amp; Huang, 2026, Anthropic Research).</p>
+          <aside class="notes">Beat 1 is the setup. Beat 2 should feel like good news and then land as bad news: the barrier that slowed you down was also protecting you. Beat 3 is the course. Beat 4 is the syllabus.</aside>
+        </section>
+
+        <!-- Therefore -->
+        <section>
+          <h2>So the advantage moved &mdash; and this is where it moved to</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">If everyone in this section can now build the thing, the barrier that used to protect your idea is gone &mdash; <strong>and it was protecting you from competitors as much as it was slowing you down</strong>.</li>
+                <li class="fragment fade-up">What is left is <strong>judgment under incomplete information</strong>: which step of the value chain to own, which cost to out-operate, which secret to keep, what to charge for, how much of next year to promise away.</li>
+                <li class="fragment fade-up">No tool makes those calls for you, because each one is a trade with <strong>no correct answer &mdash; only a defensible one</strong>.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>What this course is not</h3>
+              <p>It is not a semester of writing a plan nobody will read.</p>
+              <p>It is fifteen weeks of making the eight decisions a venture actually has to make, on real numbers, out loud, in front of people who will push back.</p>
+            </div>
+          </div>
+          <aside class="notes">The objection to head off: &ldquo;I am not going to found a company.&rdquo; The answer is that these eight decisions are made inside every firm, by whoever is trusted to make them.</aside>
+        </section>
+
+        <!-- Figure 2 -->
+        <section>
+          <h2>Eight modules, eight mental models</h2>
+          <div class="fig-embed" role="img" aria-label="The eight named mental models of the course in two rows of four, each with the company case it is taught on"><!--fig:EightModels-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="36.0 16.0 1188.0 722.0" width="1188" height="722" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-EightModels" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="60.00" y="61.60" font-size="24" fill="#1e1e1e">One named mental model per module. Eight in a semester.</text></g>
+<g data-beat="2"><text x="60.00" y="124.20" font-size="18" fill="#0f766e">Weeks 2-5  ·  the four decisions the midterm asks about</text></g>
+<g data-beat="2"><rect x="60.00" y="140.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="195.00" y="196.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="195.00">1  Value-Chain</tspan><tspan x="195.00" dy="23.75">Chokepoint</tspan></text></g>
+<g data-beat="2"><text x="195.00" y="289.12" font-size="15" fill="#b45309" text-anchor="middle">TheRealReal 10-K</text></g>
+<g data-beat="2"><rect x="350.00" y="140.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="485.00" y="196.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="485.00">2  Take-Rate</tspan><tspan x="485.00" dy="23.75">Waterfall</tspan></text></g>
+<g data-beat="2"><text x="485.00" y="289.12" font-size="15" fill="#b45309" text-anchor="middle">Affirm 10-K</text></g>
+<g data-beat="2"><rect x="640.00" y="140.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="775.00" y="196.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="775.00">3  Appropriability</tspan><tspan x="775.00" dy="23.75">Matrix</tspan></text></g>
+<g data-beat="2"><text x="775.00" y="289.12" font-size="15" fill="#b45309" text-anchor="middle">Apple v. OpenAI</text></g>
+<g data-beat="2"><rect x="930.00" y="140.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="1065.00" y="196.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="1065.00">4  Structure</tspan><tspan x="1065.00" dy="23.75">Trilemma</tspan></text></g>
+<g data-beat="2"><text x="1065.00" y="289.12" font-size="15" fill="#b45309" text-anchor="middle">NYT v. OpenAI</text></g>
+<g data-beat="3"><text x="60.00" y="384.20" font-size="18" fill="#0f766e">Weeks 8-11  ·  the four decisions the final asks about</text></g>
+<g data-beat="3"><rect x="60.00" y="400.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="195.00" y="456.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="195.00">5  Dominant-Design</tspan><tspan x="195.00" dy="23.75">Clock</tspan></text></g>
+<g data-beat="3"><text x="195.00" y="549.12" font-size="15" fill="#b45309" text-anchor="middle">Tesla 10-K</text></g>
+<g data-beat="3"><rect x="350.00" y="400.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="485.00" y="456.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="485.00">6  10x Threshold vs</tspan><tspan x="485.00" dy="23.75">Ecosystem Moat</tspan></text></g>
+<g data-beat="3"><text x="485.00" y="549.12" font-size="15" fill="#b45309" text-anchor="middle">Cerebras 10-K</text></g>
+<g data-beat="3"><rect x="640.00" y="400.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="775.00" y="456.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="775.00">7  Value-Metric</tspan><tspan x="775.00" dy="23.75">Triangle</tspan></text></g>
+<g data-beat="3"><text x="775.00" y="549.12" font-size="15" fill="#b45309" text-anchor="middle">Snowflake 10-K</text></g>
+<g data-beat="3"><rect x="930.00" y="400.00" width="270.00" height="126.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="1065.00" y="456.35" font-size="19" fill="#1e1e1e" text-anchor="middle"><tspan x="1065.00">8  Reversibility</tspan><tspan x="1065.00" dy="23.75">Budget</tspan></text></g>
+<g data-beat="3"><text x="1065.00" y="549.12" font-size="15" fill="#b45309" text-anchor="middle">Marvell 10-K</text></g>
+<g data-beat="4"><rect x="180.00" y="618.00" width="900.00" height="96.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="4"><text x="630.00" y="658.65" font-size="21" fill="#1e1e1e" text-anchor="middle"><tspan x="630.00">Every one of them is a trade. Your job is to name which corner</tspan><tspan x="630.00" dy="26.25">you are buying — and which one you are paying with.</tspan></text></g>
+</svg>
+<!--/fig:EightModels--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">A mental model is not a framework to fill in. It is a <strong>named tension</strong> you can carry into a room where nobody agrees.</p>
+          <aside class="notes">Beat 2 is the midterm's four topics, beat 3 the final's four. Say plainly that the team project is graded against exactly these sections.</aside>
+        </section>
+
+        
+        <!-- how to ace -->
+  
+
+
+             <section>
+          <h2>How to ace this course</h2>
+          <div class="fig-embed" role="img" aria-label="A weekly loop of blog comment, simulation and reflection worth 60 percent, alongside a team milestone track worth 40 percent, combining to 100 percent"><!--fig:GradeEngine-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="46.0 60.0 1258.0 794.0" width="1258" height="794" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-GradeEngine" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="70.00" y="102.00" font-size="20" fill="#0f766e">The weekly loop</text></g>
+<g data-beat="1"><rect x="270.00" y="170.00" width="240.00" height="100.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="390.00" y="213.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="390.00">Pre-class</tspan><tspan x="390.00" dy="22.50">blog comment · 10%</tspan></text></g>
+<g data-beat="2"><path d="M 492.00,274.00 L 566.00,452.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="2"><rect x="470.00" y="460.00" width="240.00" height="100.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="2"><text x="590.00" y="503.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="590.00">In-class</tspan><tspan x="590.00" dy="22.50">simulation · 20%</tspan></text></g>
+<g data-beat="3"><path d="M 462.00,510.00 L 320.00,510.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="3"><rect x="70.00" y="460.00" width="240.00" height="100.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="3"><text x="190.00" y="503.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="190.00">After-class</tspan><tspan x="190.00" dy="22.50">reflection · 30%</tspan></text></g>
+<g data-beat="3"><path d="M 202.00,454.00 L 282.00,278.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="3"><text x="390.00" y="366.60" font-size="24" fill="#0f766e" text-anchor="middle"><tspan x="390.00">Every</tspan><tspan x="390.00" dy="30.00">week</tspan></text></g>
+<g data-beat="4"><rect x="70.00" y="610.00" width="640.00" height="80.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="4"><text x="390.00" y="656.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Individual work — 60%</text></g>
+<g data-beat="5"><text x="880.00" y="102.00" font-size="20" fill="#0f766e">The team milestones</text></g>
+<g data-beat="5"><rect x="880.00" y="170.00" width="400.00" height="90.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="5"><text x="1080.00" y="208.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="1080.00">Team Register · 5%</tspan><tspan x="1080.00" dy="22.50">Week 1</tspan></text></g>
+<g data-beat="5"><path d="M 1080.00,264.00 L 1080.00,316.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="5"><rect x="880.00" y="320.00" width="400.00" height="90.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="5"><text x="1080.00" y="358.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="1080.00">Midterm pitch + report · 15%</tspan><tspan x="1080.00" dy="22.50">Week 7</tspan></text></g>
+<g data-beat="5"><path d="M 1080.00,414.00 L 1080.00,466.00" fill="none" stroke="#1971c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="5"><rect x="880.00" y="470.00" width="400.00" height="90.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="5"><text x="1080.00" y="508.70" font-size="18" fill="#1e1e1e" text-anchor="middle"><tspan x="1080.00">Final pitch + report · 20%</tspan><tspan x="1080.00" dy="22.50">Week 15 + Finals</tspan></text></g>
+<g data-beat="6"><rect x="880.00" y="610.00" width="400.00" height="80.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="6"><text x="1080.00" y="656.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Team venture — 40%</text></g>
+<g data-beat="7"><path d="M 1080.00,692.00 L 1080.00,726.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="7"><path d="M 712.00,650.00 L 792.00,650.00 L 792.00,772.00 L 876.00,772.00" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="7"><ellipse cx="1080.00" cy="780.00" rx="200.00" ry="50.00" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="7"><text x="1080.00" y="786.60" font-size="24" fill="#1e1e1e" text-anchor="middle">Your grade — 100%</text></g>
+<g data-beat="8"><path d="M 390.00,692.00 L 390.00,726.00" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-GradeEngine)"/></g>
+<g data-beat="8"><rect x="70.00" y="730.00" width="640.00" height="100.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2" stroke-dasharray="8 6"/></g>
+<g data-beat="8"><text x="390.00" y="774.05" font-size="17" fill="#1e1e1e" text-anchor="middle"><tspan x="390.00">Miss a week? Up to 3 exemptions — interview a classmate</tspan><tspan x="390.00" dy="21.25">about the simulation and submit the reflection.</tspan></text></g>
+</svg>
+<!--/fig:GradeEngine--></div>
+          <p class="fig-cap fragment fade-up" data-fragment-index="99">60% is a loop you repeat every week. 40% is three team milestones. There is no exam to save you at the end.</p>
+          <aside class="notes">Eight beats: walk the loop 1-3, total it at 4, then the milestones 5-6, the total at 7, and only then the make-up path at 8. Do not show beat 8 early or it becomes the takeaway.</aside>
+        </section>
+
+        <!-- The 60% -->
+        <section>
+          <h2>The 60%: what "prepared" means</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up">
+              <h3>Blog comments &mdash; 10%</h3>
+              <p>Before class: 50&ndash;100 words with a <strong>clear opinion</strong> and evidence behind it. "Interesting post" is not a comment.</p>
+            </div>
+            <div class="card fragment fade-up">
+              <h3>In-class participation &mdash; 20%</h3>
+              <p>Be a decision-maker in the simulation, not a spectator. Use evidence when you defend a recommendation.</p>
+            </div>
+            <div class="card fragment fade-up">
+              <h3>Simulation reflections &mdash; 30%</h3>
+              <p>After class: what you did, what it cost, what you would do differently next time. Specific beats polished.</p>
+            </div>
+          </div>
+          <aside class="notes">Read one strong and one weak blog comment aloud in Week 2. Setting the bar by example saves a semester of arguing about grades.</aside>
+        </section>
+
+        <!-- The 40% -->
+        <section>
+          <h2>The 40%: your team's venture</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up">Teams of <strong>4&ndash;5</strong>, developing one new venture concept all semester.</li>
+                <li class="fragment fade-up"><strong>Midterm pitch video + report &mdash; 20%</strong>, Week 7.</li>
+                <li class="fragment fade-up"><strong>Final pitch video + report &mdash; 20%</strong>, Week 15 and finals week.</li>
+              </ul>
+            </div>
+            <div class="box fragment fade-up">
+              <h3>The through-line</h3>
+              <p>Each module hands your team a tool. The midterm is the first honest test of whether the idea survives contact with those tools; the final is whether you fixed what broke.</p>
+            </div>
+          </div>
+          <aside class="notes">Team formation happens Thursday of Week 1 &mdash; point them at the TeamFormationResources deck.</aside>
+        </section>
+
+
+   
+
+        <!-- Objectives -->
+        <section>
+          <h2>What you should be able to do by December</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li class="fragment fade-up"><strong>Develop venture plans</strong> that address market, operational, legal, financial and technology decisions.</li>
+                <li class="fragment fade-up"><strong>Analyze markets and value chains</strong> &mdash; customer needs, research, and where a venture actually sits in the chain.</li>
+                <li class="fragment fade-up"><strong>Design business models</strong> that connect operations, revenue and customer value.</li>
+                <li class="fragment fade-up"><strong>Navigate legal and IP issues</strong> &mdash; protection, structure, governance.</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="fragment fade-up"><strong>Evaluate competitive strategy</strong> &mdash; technology deployment, dominant design, entry.</li>
+                <li class="fragment fade-up"><strong>Apply financial reasoning</strong> to pricing and budgeting decisions that keep a venture alive.</li>
+                <li class="fragment fade-up"><strong>Communicate venture concepts</strong> through a written report, a pitch video, slides, and a presentation you have to defend.</li>
+              </ul>
+              <div class="box fragment fade-up" style="margin-top: 18px;">
+                <p>Every one of these is assessed through the simulations and the team venture. <strong>There is no exam.</strong></p>
+              </div>
+            </div>
+          </div>
+          <aside class="notes">These are the seven syllabus objectives, verbatim in substance. Read them quickly &mdash; they matter more as a checklist for the report than as a slide.</aside>
+        </section>
+
+        <!-- Rules -->
+        <section>
+          <h2>The rules of the room</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up">
+              <h3>Attendance</h3>
+              <p>More than <strong>3 unexcused absences</strong> reduces the participation grade. Tell me <em>in advance</em> when you know you will be out.</p>
+            </div>
+            <div class="card warn fragment fade-up">
+              <h3>Late work</h3>
+              <p><strong>&minus;10% per day.</strong> Nothing accepted more than a week late. Multiple submissions allowed before the deadline; the last one is graded.</p>
+            </div>
+            <div class="card fragment fade-up">
+              <h3>Sources</h3>
+              <p><strong>Chicago author-date.</strong> Works Cited whenever you use an outside source. <strong>.docx or .pdf only.</strong> Apply the course terms, do not just name them.</p>
+            </div>
+          </div>
+          <div class="box bad fragment fade-up" style="margin-top: 22px;">
+            <p>Academic integrity is not negotiable, and in a course built on real filings it is also easy to check. <strong>Quote the document, cite the paragraph, and the problem never arises.</strong></p>
+          </div>
+          <aside class="notes">Keep this slide short and unapologetic. Being explicit now removes most of the end-of-semester email.</aside>
+        </section>
+
+    
+
+        <!-- Closer -->
+        <section>
+          <h2>The one line to carry in</h2>
+          <p class="quote fragment fade-up">Bring the idea &mdash; everyone has one, and it is worth roughly what everyone else's is worth. Then spend fifteen weeks on the part that is actually scarce: <span class="em">deciding, shipping, measuring, and being wrong early enough that it is still cheap.</span></p>
+          <p class="small fragment fade-up">Before Thursday: post your introduction blog and submit a team topic. Thursday we form teams and run the format on a small case.</p>
+          <aside class="notes">End on the choice, not the calendar. Then send them to the team-formation deck.</aside>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script><!--narration-->
+      window.NARRATION = {};
+      <!--/narration--></script>
+    <script>
+      // Each inlined figure carries data-beat="N" groups written by
+      // build_figures.py. Turn them into reveal fragments so the drawing builds
+      // up one beat at a time, in step with the speaker notes. Captions sit at
+      // index 99 so they always land last.
+      document.querySelectorAll('.fig-embed [data-beat]').forEach(function (g) {
+        g.classList.add('fragment');
+        g.setAttribute('data-fragment-index', g.getAttribute('data-beat'));
+      });
+
+      // Rehearsal / screen-capture mode. ?auto walks the deck on the per-beat
+      // seconds compiled into window.NARRATION; ?auto=3500 overrides it with a
+      // fixed millisecond interval. Any key press stops it.
+      var auto = new URLSearchParams(location.search).get('auto');
+      var fixed = parseInt(auto, 10);
+      var running = auto !== null;
+      document.addEventListener('keydown', function () { running = false; });
+
+      function dwell() {
+        var i = Reveal.getIndices();
+        var key = i.h + ':' + (typeof i.f === 'number' ? i.f : -1);
+        var secs = (window.NARRATION || {})[key];
+        return fixed || (secs ? secs * 1000 : 4000);
+      }
+
+      function tick() {
+        if (!running) return;
+        setTimeout(function () {
+          if (!running) return;
+          var before = JSON.stringify(Reveal.getIndices());
+          Reveal.next();
+          if (JSON.stringify(Reveal.getIndices()) === before) return;  // end of deck
+          tick();
+        }, dwell());
+      }
+
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ] })
+        .then(function () { if (running) tick(); });
+    </script>
+  </body>
+</html>

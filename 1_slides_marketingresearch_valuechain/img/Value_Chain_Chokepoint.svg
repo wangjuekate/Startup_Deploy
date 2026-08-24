@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="21.0 20.0 1158.0 702.0" width="1158" height="702" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive">
+<defs><marker id="ah-Value_Chain_Chokepoint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/></marker></defs>
+<g data-beat="1"><text x="45.00" y="76.20" font-size="18" fill="#0f766e">THE CHAIN — raw thing to happy customer</text></g>
+<g data-beat="1"><rect x="45.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="125.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SOURCE</text></g>
+<g data-beat="1"><path d="M 209.00,146.00 L 231.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="235.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="315.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">VERIFY</text></g>
+<g data-beat="1"><path d="M 399.00,146.00 L 421.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="425.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="505.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">PRICE</text></g>
+<g data-beat="1"><path d="M 589.00,146.00 L 611.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="615.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="695.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SELL</text></g>
+<g data-beat="1"><path d="M 779.00,146.00 L 801.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="805.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="885.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">SHIP</text></g>
+<g data-beat="1"><path d="M 969.00,146.00 L 991.00,146.00" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="1"><rect x="995.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/></g>
+<g data-beat="1"><text x="1075.00" y="150.95" font-size="18" fill="#1e1e1e" text-anchor="middle">RETURNS</text></g>
+<g data-beat="1"><text x="850.00" y="60.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="850.00">Somebody sources it, verifies it, prices it, sells it, ships it, takes it back.</tspan><tspan x="850.00" dy="20.00">Every step is necessary — but the margin does not spread evenly. It POOLS.</tspan></text></g>
+<g data-beat="2"><rect x="235.00" y="110.00" width="160.00" height="72.00" rx="16.0" ry="16.0" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="2"><text x="315.00" y="151.50" font-size="20" fill="#b45309" text-anchor="middle">VERIFY</text></g>
+<g data-beat="2"><path d="M 315.00,300.00 L 315.00,190.00" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-Value_Chain_Chokepoint)"/></g>
+<g data-beat="2"><text x="315.00" y="322.05" font-size="17" fill="#b45309" text-anchor="middle"><tspan x="315.00">THE CHOKEPOINT — margin pools here</tspan><tspan x="315.00" dy="21.25">authentication is what the customer is actually buying</tspan></text></g>
+<g data-beat="2"><text x="877.50" y="322.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="877.50">thin · thin · thin · thin — necessary steps where you have no bargaining power,</tspan><tspan x="877.50" dy="20.00">because the customer could do them, or buy them from eleven other people.</tspan></text></g>
+<g data-beat="3"><text x="45.00" y="385.30" font-size="17" fill="#0f766e">A step is the chokepoint only if it passes ALL THREE</text></g>
+<g data-beat="3"><rect x="45.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="220.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="220.00">1 · THE CUSTOMER&#x27;S ACTUAL JOB</tspan><tspan x="220.00" dy="18.75"> </tspan><tspan x="220.00" dy="18.75">not what they said in the survey —</tspan><tspan x="220.00" dy="18.75">what they are hiring you to get done</tspan><tspan x="220.00" dy="18.75"> </tspan><tspan x="220.00" dy="18.75">(not &quot;sell my bag&quot;:</tspan><tspan x="220.00" dy="18.75">make a stranger believe me)</tspan></text></g>
+<g data-beat="3"><rect x="425.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="600.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="600.00">2 · HARD TO COPY</tspan><tspan x="600.00" dy="18.75"> </tspan><tspan x="600.00" dy="18.75">would a well-funded rival need years,</tspan><tspan x="600.00" dy="18.75">licences, trained people, accumulated</tspan><tspan x="600.00" dy="18.75">data —</tspan><tspan x="600.00" dy="18.75"> </tspan><tspan x="600.00" dy="18.75">or a weekend and a credit card?</tspan></text></g>
+<g data-beat="3"><rect x="805.00" y="400.00" width="350.00" height="145.00" rx="16.0" ry="16.0" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/></g>
+<g data-beat="3"><text x="980.00" y="420.38" font-size="15" fill="#1e1e1e" text-anchor="middle"><tspan x="980.00">3 · FAILS LOUDLY</tspan><tspan x="980.00" dy="18.75"> </tspan><tspan x="980.00" dy="18.75">if the step goes wrong, does the</tspan><tspan x="980.00" dy="18.75">customer notice?</tspan><tspan x="980.00" dy="18.75"> </tspan><tspan x="980.00" dy="18.75">a step that fails silently carries</tspan><tspan x="980.00" dy="18.75">no trust, and earns no premium</tspan></text></g>
+<g data-beat="4"><rect x="45.00" y="580.00" width="1110.00" height="62.00" rx="15.5" ry="15.5" fill="#fff4e6" stroke="#b45309" stroke-width="2"/></g>
+<g data-beat="4"><text x="600.00" y="615.95" font-size="18" fill="#1e1e1e" text-anchor="middle">The chokepoint always looks like the most expensive, most annoying, most CUTTABLE step on the whole chain.</text></g>
+<g data-beat="4"><text x="600.00" y="670.40" font-size="16" fill="#4b5563" text-anchor="middle"><tspan x="600.00">Cut a normal step and you save money. Cut the chokepoint and you do not have a business —</tspan><tspan x="600.00" dy="20.00">you have a website with other people&#x27;s things on it.</tspan></text></g>
+</svg>

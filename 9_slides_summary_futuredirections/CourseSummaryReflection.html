@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Course Summary and Future Directions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #1d4ed8; --soft: #f3f4f6; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.12em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.45em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .question-slide li { list-style: none; margin-left: -1em; }
+      .small { font-size: 0.42em; color: var(--muted); }
+      .reveal table { font-size: 0.42em; }
+      .reveal table th { color: var(--accent); }
+      /* journey arc */
+      .arc { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 0.5em; }
+      .arc .stage { background: var(--soft); border-top: 4px solid var(--accent); border-radius: 6px; padding: 12px 14px; text-align: left; flex: 1 1 150px; }
+      .arc .stage h4 { color: var(--accent); font-size: 0.44em; font-weight: 700; margin: 0 0 0.35em 0; letter-spacing: 0.04em; text-transform: uppercase; }
+      .arc .stage p { font-size: 0.36em; line-height: 1.35; margin: 0 0 0.25em 0; }
+      .arc .stage .case { color: var(--muted); font-size: 0.32em; }
+      /* venture hub */
+      .hub { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; align-items: center; text-align: center; margin-top: 0.5em; }
+      .hub div { font-size: 0.4em; color: var(--muted); line-height: 1.35; }
+      .hub .center { background: var(--accent); color: #fff; font-size: 0.5em; font-weight: 700; border-radius: 8px; padding: 22px 10px; }
+      /* photo placeholder */
+      .fig { border: 2px dashed var(--line); border-radius: 12px; background: var(--soft);
+             display: flex; flex-direction: column; align-items: center; justify-content: center;
+             gap: 8px; padding: 20px; min-height: 300px; text-align: center; }
+      .fig .fig-icon { font-size: 1.4em; color: var(--accent); }
+      .fig .fig-label { font-size: 0.38em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+      .fig .fig-desc { font-size: 0.38em; max-width: 40ch; line-height: 1.4; color: var(--muted); }
+      .part-slide h2 { font-size: 1.2em; }
+      .part-slide .kicker { color: var(--accent); font-size: 0.44em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-align: center; }
+      .closing { font-size: 0.95em; font-weight: 700; line-height: 1.3; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section class="title-slide">
+          <h2>Course Summary and Future Directions</h2>
+          <p class="subtitle">MENT 3235 &middot; Venture Planning, Management, and Growth</p>
+          <p class="subtitle">Week 12: Tuesday, November 17 and Thursday, November 19</p>
+        </section>
+
+        <section class="part-slide">
+          <p class="kicker">Part A &middot; Tuesday, November 17</p>
+          <h2>Course Summary and Reflection</h2>
+        </section>
+
+        <!-- The journey -->
+        <section>
+          <h2>The semester in one picture</h2>
+          <div class="arc">
+            <div class="stage">
+              <h4>Discover</h4>
+              <p>Marketing Research and the Value Chain</p>
+              <p class="case">TheRealReal FY2025 10-K</p>
+            </div>
+            <div class="stage">
+              <h4>Build</h4>
+              <p>Operations and Business Model</p>
+              <p class="case">Affirm FY2025 10-K</p>
+            </div>
+            <div class="stage">
+              <h4>Protect</h4>
+              <p>IP Protection &middot; Legal Structure</p>
+              <p class="case">Apple v. OpenAI &middot; NYT v. Microsoft &amp; OpenAI</p>
+            </div>
+            <div class="stage">
+              <h4>Enter</h4>
+              <p>Market Deployment and Dominant Design</p>
+              <p class="case">Tesla FY2025 10-K</p>
+            </div>
+            <div class="stage">
+              <h4>Compete</h4>
+              <p>Technology Deployment and Competitor Analysis</p>
+              <p class="case">Cerebras FY2025 10-K</p>
+            </div>
+            <div class="stage">
+              <h4>Monetize</h4>
+              <p>Pricing Strategy &middot; Financial Budgeting</p>
+              <p class="case">Snowflake FY2026 10-K &middot; Marvell FY2026 10-K</p>
+            </div>
+            <div class="stage">
+              <h4>Grow</h4>
+              <p>Summary and Future Directions</p>
+              <p class="case">your own venture</p>
+            </div>
+          </div>
+          <p class="small">The order is not arbitrary. You cannot price what you have not built, and you cannot protect what you have not defined.</p>
+        </section>
+
+        <!-- Frameworks -->
+        <section>
+          <h2>Eight topics, eight frameworks</h2>
+          <table>
+            <tr><th>Topic</th><th>Case</th><th>Framework</th></tr>
+            <tr><td>Marketing Research and the Value Chain</td><td>TheRealReal</td><td>Value Chain Chokepoint</td></tr>
+            <tr><td>Operations and Business Model</td><td>Affirm</td><td>Take Rate Waterfall</td></tr>
+            <tr><td>Intellectual Property Protection</td><td>Apple v. OpenAI</td><td>Appropriability Matrix</td></tr>
+            <tr><td>Legal Structure</td><td>NYT v. Microsoft &amp; OpenAI</td><td>Structure Trilemma</td></tr>
+            <tr><td>Market Deployment and Dominant Design</td><td>Tesla</td><td>Dominant Design Clock</td></tr>
+            <tr><td>Technology Deployment and Competitor Analysis</td><td>Cerebras</td><td>10x Threshold</td></tr>
+            <tr><td>Pricing Strategy</td><td>Snowflake</td><td>Value Metric Triangle</td></tr>
+            <tr><td>Financial Budgeting</td><td>Marvell</td><td>Reversibility Budget</td></tr>
+          </table>
+          <p class="small">Every case was a real filing &mdash; a 10-K or a complaint &mdash; written by people who did not know how it ended either.</p>
+        </section>
+
+        <!-- Not eight separate topics -->
+        <section>
+          <h2>You didn't learn eight separate topics</h2>
+          <div class="hub">
+            <div>Who is the customer?</div>
+            <div>What problem are we solving?</div>
+            <div>How do we create value?</div>
+            <div>How do we deliver it?</div>
+            <div class="center">YOUR<br>VENTURE</div>
+            <div>How do we protect it?</div>
+            <div>How do we compete?</div>
+            <div>How do we make money?</div>
+            <div>How do we fund and grow it?</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>The lines between them are the course</h2>
+          <ul>
+            <li>Change <strong>who the customer is</strong> and your pricing model breaks.</li>
+            <li>Change your <strong>legal structure</strong> and your funding options change with it.</li>
+            <li>Win on <strong>technology</strong> and you have made your IP position both more valuable and more attacked.</li>
+            <li>Cut the <strong>budget</strong> and you have quietly changed your deployment timing.</li>
+          </ul>
+          <div class="box">
+            <p>Entrepreneurship is not about knowing one answer. It is about making interconnected decisions under uncertainty &mdash; and knowing which decision you would have to unwind first.</p>
+          </div>
+        </section>
+
+        <!-- Reflection -->
+        <section>
+          <h2>Reflection questions</h2>
+          <ul>
+            <li>Which framework changed how you look at a business you had already made up your mind about?</li>
+            <li>Which simulation decision was hardest &mdash; and was it the data or the room?</li>
+            <li>Where is your venture's evidence thinnest, and are you avoiding it?</li>
+            <li>What has to improve before the final presentation?</li>
+            <li>What did you learn about yourself as a teammate?</li>
+          </ul>
+        </section>
+
+        <!-- Grade design -->
+        <section>
+          <h2>Where your grade stands</h2>
+          <table>
+            <tr><th>Component</th><th>Weight</th><th>What it was testing</th></tr>
+            <tr><td>Pre-class blog posting and commenting</td><td>10%</td><td>A position formed before you knew the ending</td></tr>
+            <tr><td>Simulation reflections</td><td>30%</td><td>Action, lesson, improvement &mdash; in writing</td></tr>
+            <tr><td>In-class participation</td><td>10%</td><td>Defending a position to people who disagreed</td></tr>
+            <tr><td>Personal project portfolio</td><td>10%</td><td>Owning a five-year path, not just a semester</td></tr>
+            <tr><td>Team venture website and presentation</td><td>40%</td><td>Topic 5% &middot; business plan and midterm slides 15% &middot; final slides and plan 20%</td></tr>
+          </table>
+        </section>
+
+        <!-- Checkpoint -->
+        <section>
+          <h2>Team project checkpoint</h2>
+          <ul>
+            <li>Is the problem and customer segment still the one you registered in Week 1? If it changed, does the website say so?</li>
+            <li>Which business model assumptions have you actually tested since the midterm?</li>
+            <li>Does every financial claim trace to a source a stranger could check?</li>
+            <li>Is the website clear to someone who has never heard your pitch?</li>
+            <li>What are you fixing before the December 3 slide deadline?</li>
+          </ul>
+        </section>
+
+        <section class="part-slide">
+          <p class="kicker">Part B &middot; Thursday, November 19</p>
+          <h2>Future Directions</h2>
+        </section>
+
+        <!-- Memory -->
+        <section>
+          <h2>Memory of this class</h2>
+          <div class="fig">
+            <div class="fig-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <div class="fig-label">Class photos</div>
+            <div class="fig-desc">Drop the semester photos in here before the session.</div>
+          </div>
+        </section>
+
+        <!-- Next chapter -->
+        <section>
+          <h2>The next chapter of this journey</h2>
+          <div class="two-col">
+            <div class="box">
+              <h3>More classes</h3>
+              <ul>
+                <li><strong>MENT 4900</strong> &mdash; the broader strategic management view, for running the whole board rather than one venture.</li>
+                <li>Finance, marketing analytics, and business law will read differently now that you have seen what those decisions cost a real company.</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Programs and fellowships</h3>
+              <ul>
+                <li><strong>CCEI</strong> &mdash; accelerator, summer fellowship, validation awards.</li>
+                <li><strong>SBDC</strong> &mdash; free advising once you have customers.</li>
+                <li>Werth Institute, Innovation Quest, and the Technology Incubation Program.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Funding, honestly</h2>
+          <p>At your stage the money that matters is small, non-dilutive, and attached to a program: competitions, grants, and fellowships.</p>
+          <p>Nobody writes a term sheet off a class project. What they fund is evidence &mdash; and evidence is what your team has been assembling since Week 1.</p>
+          <div class="box">
+            <p><strong>Your personal project portfolio</strong> is the 10% that outlives the course. It is the artifact you take to an interview next fall. Make sure it says what you decided and why, not just what you built.</p>
+          </div>
+        </section>
+
+        <!-- Calendar -->
+        <section>
+          <h2>What is left on the calendar</h2>
+          <ul>
+            <li><strong>November 24 and 26.</strong> Thanksgiving.</li>
+            <li><strong>December 1&ndash;3.</strong> Study week. Presentation slides due Thursday, December 3.</li>
+            <li><strong>December 8 and 10.</strong> Team presentations.</li>
+            <li><strong>Tuesday, December 15.</strong> Finalize your website and submit for review.</li>
+            <li><strong>Thursday, December 17.</strong> Final grade posting and review.</li>
+          </ul>
+          <p class="small">Late work is penalized 10% per day. More than one week late is not accepted.</p>
+        </section>
+
+        <!-- Close -->
+        <section>
+          <p class="closing">The semester ends.<br>The experiment doesn't.</p>
+          <aside class="notes">You will forget the framework names. Keep the habit: before you commit, say out loud what you are assuming and what it would cost you to be wrong.</aside>
+        </section>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>Reveal.initialize({ hash: true, slideNumber: true });</script>
+  </body>
+</html>
