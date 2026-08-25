@@ -4,8 +4,7 @@
 
 - Instructor: Kate Wang
 - Class Meeting: TuTh 2:00PM-3:15PM, BUSN 218
-
-- [Syllabus](./MENT%203235%20Syllabus%20Fall%202026.md)
+- [Syllabus](./Syllabus.md)
 
 ## Pre-class Blogs and Presentations
 
