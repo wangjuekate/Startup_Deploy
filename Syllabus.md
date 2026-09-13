@@ -22,8 +22,6 @@ This course emphasizes venture planning, management, and growth through simulati
 ***
 
 ## Enrollment Requirements
-
-- Open only to business majors of junior or higher status
 - Recommended preparation:
   - MENT 3234 or BADM 3234
   - MENT 3101 or BADM 3740
@@ -255,3 +253,39 @@ HuskyCT/Blackboard meets WCAG 2.0 and Section 508 accessibility standards.
 | HuskyCT/Blackboard | [Accessibility Statement](https://help.blackboard.com/Accessibility) | [Privacy Policy](https://www.blackboard.com/privacy-statement) |
 | Adobe Acrobat Reader | [Accessibility Statement](https://www.adobe.com/accessibility.html) | [Privacy Policy](https://www.adobe.com/privacy.html) |
 | Google Apps | [Accessibility](https://www.google.com/accessibility/) | [Privacy Policy](https://edu.google.com/why-google/privacy-security/) |
+| Microsoft Office | [Accessibility Statement](https://www.microsoft.com/accessibility) | [Privacy Statement](https://privacy.microsoft.com/) |
+| SkillSimm | [Accessibility Statement](https://www.skillsimm.com/terms) | [Privacy Statement](https://www.skillsimm.com/privacy) |
+
+
+### Technical Support
+
+- [Help Center](https://help.uits.uconn.edu/) - In-person support during business hours
+- 24/7 Course Support: Live chat, phone, and documentation available
+
+### Minimum Technical Skills
+
+- Use email with attachments
+- Save files in common word processing formats
+- Copy and paste text, graphics, and hyperlinks
+- Work with multiple browser windows simultaneously
+- Open and access PDF files
+
+See the [Computer Technology Competencies](https://onlinestudent.uconn.edu/learn-more/) page for more information.
+
+### Course Evaluation
+
+Students will evaluate instruction using University standard procedures administered by the Office of Institutional Research and Effectiveness (OIRE). Additional informal surveys may be administered within the course.
+
+
+## Additional Resources
+
+### UConn Entrepreneurship Resources
+- Innovation Quest (IQ)
+- Technology Incubation Program (TIP)
+- Entrepreneurship & Innovation Consortium
+- Werth Institute for Entrepreneurship & Innovation
+
+### Online Resources
+- Startup tools and templates
+- Entrepreneurship podcasts and videos
+- Industry reports and market research databases

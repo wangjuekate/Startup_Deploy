@@ -24,19 +24,19 @@
 
 - [The Take-Rate Waterfall](./2_slides_operations_businessmodel/TheTakeRateWaterfall.md)
 - [Operations and Business Model](./2_slides_operations_businessmodel/OperationsBusinessModel.html)
-- [Simulation Reflection: Netflix](./2_slides_operations_businessmodel/NetflixSimulationReflection.html)
+- [Simulation Reflection: Affirm](./2_slides_operations_businessmodel/AffirmSimulationReflection.html)
 
 ### Week 4: Intellectual Property Protection
 
 - [Secrets, Patents, and People](./3_slides_intellectualproperty/SecretsPatentsAndPeople.md)
 - [Intellectual Property Protection](./3_slides_intellectualproperty/IntellectualPropertyProtection.html)
-- [Simulation Reflection: Disney](./3_slides_intellectualproperty/DisneySimulationReflection.html)
+- [Simulation Reflection: Apple/OpenAI](./3_slides_intellectualproperty/AppleSimulationReflection.html)
 
 ### Week 5: Legal Structure
 
 - [Choosing the Container](./4_slides_legalstructure/ChoosingTheContainer.md)
 - [Legal Structure](./4_slides_legalstructure/LegalStructure.html)
-- [Simulation Reflection: OpenAI](./4_slides_legalstructure/OpenAISimulationReflection.html)
+- [Simulation Reflection: NYT/OpenAI](./4_slides_legalstructure/OpenAISimulationReflection.html)
 
 ### Week 6-7: Mid-term
 
@@ -53,19 +53,19 @@
 
 - [How Much Better Do You Have to Be?](./6_slides_technologydeployment_competitoranalysis/HowMuchBetterDoYouHaveToBe.md)
 - [Technology Deployment and Competitor Analysis](./6_slides_technologydeployment_competitoranalysis/TechnologyDeploymentCompetitorAnalysis.html)
-- [Simulation Reflection: Anthropic](./6_slides_technologydeployment_competitoranalysis/AnthropicSimulationReflection.html)
+- [Simulation Reflection: Cerebras](./6_slides_technologydeployment_competitoranalysis/CerebrasSimulationReflection.html)
 
 ### Week 10: Pricing Strategy
 
 - [The Number Is the Last Decision](./7_slides_pricingstrategy/TheNumberIsTheLastDecision.md)
 - [Pricing Strategy](./7_slides_pricingstrategy/PricingStrategy.html)
-- [Simulation Reflection: Spotify](./7_slides_pricingstrategy/SpotifySimulationReflection.html)
+- [Simulation Reflection: Snowflake](./7_slides_pricingstrategy/SnowFlakeSimulationReflection.html)
 
 ### Week 11: Financial Budgeting
 
 - [Runway Is a Decision, Not a Number](./8_slides_financialbudgeting/RunwayIsADecision.md)
 - [Financial Budgeting](./8_slides_financialbudgeting/FinancialBudgeting.html)
-- [Simulation Reflection: AWS Data Center](./8_slides_financialbudgeting/AWSDataCenterSimulationReflection.html)
+- [Simulation Reflection: Marvell](./8_slides_financialbudgeting/MarvelSimulationReflection.html)
 
 ### Week 12: Course Summary and Future Directions
 
