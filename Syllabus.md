@@ -255,7 +255,7 @@ HuskyCT/Blackboard meets WCAG 2.0 and Section 508 accessibility standards.
 | Google Apps | [Accessibility](https://www.google.com/accessibility/) | [Privacy Policy](https://edu.google.com/why-google/privacy-security/) |
 | Microsoft Office | [Accessibility Statement](https://www.microsoft.com/accessibility) | [Privacy Statement](https://privacy.microsoft.com/) |
 | SkillSimm | [Accessibility Statement](https://www.skillsimm.com/terms) | [Privacy Statement](https://www.skillsimm.com/privacy) |
-
+|[Wall Street Prep](https://www.wallstreetprep.com/signup/university-of-connecticut-groups/ )|||
 
 ### Technical Support
 
