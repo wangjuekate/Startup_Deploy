@@ -1,5 +1,7 @@
 # The Idea Was Never the Hard Part: Why Execution Decides Everything
 
+> **Start here:** Read the course overview first. Post a 50–100 word introduction/comment with one concrete example and one question in the existing HuskyCT space at its current deadline. This longer essay is optional depth.
+
 Every semester, somebody comes to office hours with an idea they will not describe until I promise not to steal it. I always promise, and I have never once been tempted, and the reason is not politeness. It is that **an idea is a free option and execution is the part where you pay**. The gap between the two is where entire companies are won and lost, and almost none of what happens in that gap is glamorous enough to fit in a pitch.
 
 The clearest recent illustration ran in *The New York Times* in April. Erin Griffith reported on Medvi, a telehealth company selling GLP-1 weight-loss drugs, which did $401 million in sales in 2025 with **two employees** — the founder and his brother — while tracking toward $1.8 billion in 2026 (Griffith, 2026, The New York Times, via [Techmeme](https://www.techmeme.com/260402/p12)). The website, the customer service, the marketing, the ad creative, and the analytics were assembled with a handful of AI tools costing a few hundred dollars a month.

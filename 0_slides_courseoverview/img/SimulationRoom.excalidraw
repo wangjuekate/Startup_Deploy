@@ -32,20 +32,20 @@
       "customData": {
         "beat": 1
       },
-      "text": "Thursday, 2:00 PM. You are handed one page.",
+      "text": "Four leads decide. One Account Manager integrates.",
       "fontSize": 24,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Thursday, 2:00 PM. You are handed one page.",
+      "originalText": "Four leads decide. One Account Manager integrates.",
       "lineHeight": 1.25,
       "baseline": 22
     },
     {
       "id": "r0",
       "type": "rectangle",
-      "x": 40,
+      "x": 156,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -77,7 +77,7 @@
     {
       "id": "r0t",
       "type": "text",
-      "x": 40,
+      "x": 156,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -116,7 +116,7 @@
     {
       "id": "r0a",
       "type": "arrow",
-      "x": 146,
+      "x": 262,
       "y": 192,
       "width": 0,
       "height": 42,
@@ -161,7 +161,7 @@
     {
       "id": "q0",
       "type": "rectangle",
-      "x": 40,
+      "x": 156,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -193,7 +193,7 @@
     {
       "id": "q0t",
       "type": "text",
-      "x": 40,
+      "x": 156,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -232,7 +232,7 @@
     {
       "id": "q0b",
       "type": "arrow",
-      "x": 146,
+      "x": 262,
       "y": 318,
       "width": 0,
       "height": 32,
@@ -277,7 +277,7 @@
     {
       "id": "r1",
       "type": "rectangle",
-      "x": 272,
+      "x": 388,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -309,7 +309,7 @@
     {
       "id": "r1t",
       "type": "text",
-      "x": 272,
+      "x": 388,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -348,7 +348,7 @@
     {
       "id": "r1a",
       "type": "arrow",
-      "x": 378,
+      "x": 494,
       "y": 192,
       "width": 0,
       "height": 42,
@@ -393,7 +393,7 @@
     {
       "id": "q1",
       "type": "rectangle",
-      "x": 272,
+      "x": 388,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -425,7 +425,7 @@
     {
       "id": "q1t",
       "type": "text",
-      "x": 272,
+      "x": 388,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -464,7 +464,7 @@
     {
       "id": "q1b",
       "type": "arrow",
-      "x": 378,
+      "x": 494,
       "y": 318,
       "width": 0,
       "height": 32,
@@ -509,7 +509,7 @@
     {
       "id": "r2",
       "type": "rectangle",
-      "x": 504,
+      "x": 620,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -541,7 +541,7 @@
     {
       "id": "r2t",
       "type": "text",
-      "x": 504,
+      "x": 620,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -580,7 +580,7 @@
     {
       "id": "r2a",
       "type": "arrow",
-      "x": 610,
+      "x": 726,
       "y": 192,
       "width": 0,
       "height": 42,
@@ -625,7 +625,7 @@
     {
       "id": "q2",
       "type": "rectangle",
-      "x": 504,
+      "x": 620,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -657,7 +657,7 @@
     {
       "id": "q2t",
       "type": "text",
-      "x": 504,
+      "x": 620,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -696,7 +696,7 @@
     {
       "id": "q2b",
       "type": "arrow",
-      "x": 610,
+      "x": 726,
       "y": 318,
       "width": 0,
       "height": 32,
@@ -741,7 +741,7 @@
     {
       "id": "r3",
       "type": "rectangle",
-      "x": 736,
+      "x": 852,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -773,7 +773,7 @@
     {
       "id": "r3t",
       "type": "text",
-      "x": 736,
+      "x": 852,
       "y": 96,
       "width": 212,
       "height": 92,
@@ -812,7 +812,7 @@
     {
       "id": "r3a",
       "type": "arrow",
-      "x": 842,
+      "x": 958,
       "y": 192,
       "width": 0,
       "height": 42,
@@ -857,7 +857,7 @@
     {
       "id": "q3",
       "type": "rectangle",
-      "x": 736,
+      "x": 852,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -889,7 +889,7 @@
     {
       "id": "q3t",
       "type": "text",
-      "x": 736,
+      "x": 852,
       "y": 238,
       "width": 212,
       "height": 76,
@@ -928,7 +928,7 @@
     {
       "id": "q3b",
       "type": "arrow",
-      "x": 842,
+      "x": 958,
       "y": 318,
       "width": 0,
       "height": 32,
@@ -971,243 +971,11 @@
       "endArrowhead": "arrow"
     },
     {
-      "id": "r4",
-      "type": "rectangle",
-      "x": 968,
-      "y": 96,
-      "width": 212,
-      "height": 92,
-      "angle": 0,
-      "strokeColor": "#1971c2",
-      "backgroundColor": "#e7f5ff",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "seed": 1633936473,
-      "version": 1,
-      "versionNonce": 499729563,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 1
-      }
-    },
-    {
-      "id": "r4t",
-      "type": "text",
-      "x": 968,
-      "y": 96,
-      "width": 212,
-      "height": 92,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "seed": 1727850946,
-      "version": 1,
-      "versionNonce": 468486982,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 1
-      },
-      "text": "Security\nLead",
-      "fontSize": 19,
-      "fontFamily": 1,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": null,
-      "originalText": "Security\nLead",
-      "lineHeight": 1.25,
-      "baseline": 17
-    },
-    {
-      "id": "r4a",
-      "type": "arrow",
-      "x": 1074,
-      "y": 192,
-      "width": 0,
-      "height": 42,
-      "angle": 0,
-      "strokeColor": "#1971c2",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "seed": 1483120379,
-      "version": 1,
-      "versionNonce": 1212275877,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 2
-      },
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          42
-        ]
-      ],
-      "lastCommittedPoint": null,
-      "startBinding": null,
-      "endBinding": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
-    },
-    {
-      "id": "q4",
-      "type": "rectangle",
-      "x": 968,
-      "y": 238,
-      "width": 212,
-      "height": 76,
-      "angle": 0,
-      "strokeColor": "#0f766e",
-      "backgroundColor": "#e6fffa",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "seed": 1244830857,
-      "version": 1,
-      "versionNonce": 537528985,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 2
-      }
-    },
-    {
-      "id": "q4t",
-      "type": "text",
-      "x": 968,
-      "y": 238,
-      "width": 212,
-      "height": 76,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "seed": 45552094,
-      "version": 1,
-      "versionNonce": 1636490211,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 2
-      },
-      "text": "one question\nfour options",
-      "fontSize": 16,
-      "fontFamily": 1,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": null,
-      "originalText": "one question\nfour options",
-      "lineHeight": 1.25,
-      "baseline": 14
-    },
-    {
-      "id": "q4b",
-      "type": "arrow",
-      "x": 1074,
-      "y": 318,
-      "width": 0,
-      "height": 32,
-      "angle": 0,
-      "strokeColor": "#0f766e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "seed": 1094496947,
-      "version": 1,
-      "versionNonce": 408045659,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "customData": {
-        "beat": 3
-      },
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          32
-        ]
-      ],
-      "lastCommittedPoint": null,
-      "startBinding": null,
-      "endBinding": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
-    },
-    {
       "id": "bus",
       "type": "line",
-      "x": 146,
+      "x": 262,
       "y": 352,
-      "width": 928,
+      "width": 696,
       "height": 0,
       "angle": 0,
       "strokeColor": "#0f766e",
@@ -1237,7 +1005,7 @@
           0
         ],
         [
-          928,
+          696,
           0
         ]
       ],
@@ -1351,13 +1119,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Account Manager\nranks the five 1-5, weights them to 100",
+      "text": "Account Manager\nranks four 1–4, weights them to 100",
       "fontSize": 19,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Account Manager\nranks the five 1-5, weights them to 100",
+      "originalText": "Account Manager\nranks four 1–4, weights them to 100",
       "lineHeight": 1.25,
       "baseline": 17
     },
@@ -1467,13 +1235,13 @@
       "customData": {
         "beat": 4
       },
-      "text": "One decision the team owns \u2014\nand a reflection due the same day.",
+      "text": "Save the team’s decision and evidence;\nkeep your current reflection deadline.",
       "fontSize": 21,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "One decision the team owns \u2014\nand a reflection due the same day.",
+      "originalText": "Save the team’s decision and evidence;\nkeep your current reflection deadline.",
       "lineHeight": 1.25,
       "baseline": 19
     },

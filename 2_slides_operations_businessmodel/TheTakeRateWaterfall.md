@@ -1,5 +1,7 @@
 # The Take-Rate Waterfall: Which Costs Get Thicker When You Grow
 
+> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+
 Everyone can describe a business model in one sentence. *We take a cut. We charge a subscription. It's a marketplace, we keep fifteen percent.* That is the first line of the model, and there are eleven more underneath it, every one of which takes money away from you. The sentence is the top of a waterfall, and **operations is the discipline of what happens on the way down.**
 
 The waterfall reads top to bottom. At the top sits volume — gross merchandise value, bookings, units, whatever passes through your hands. Your stated take rate converts some fraction of it into revenue. Then come the subtractions that scale with each transaction: credit losses, payment processing, funding costs, cost of goods. What survives that is **contribution** — the only number that tells you whether growth is worth having. Below contribution sit the fixed slices: technology, marketing, administration. What survives *those* is profit, and in a healthy-looking marketplace it is frequently a rounding error on the number at the top.

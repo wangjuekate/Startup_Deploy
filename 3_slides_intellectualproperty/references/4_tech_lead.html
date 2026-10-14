@@ -1,0 +1,158 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>4_tech_lead</title><style>body{font:17px/1.6 system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#17202a}h1,h2,h3{line-height:1.2}h2{margin-top:2em;color:#0f766e}a{color:#0f766e}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:.5em;text-align:left}blockquote{border-left:4px solid #0f766e;padding-left:1em}@media print{body{font-size:10pt;margin:0;max-width:none}a{color:inherit}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><h1 id="tech-lead">Tech Lead</h1>
+<blockquote>
+<p>Detailed reference, not required in full during the timed activity.
+Start with <a href="../StudentPacket.html">the short student packet</a>;
+use this page to investigate or cite supporting evidence.</p>
+</blockquote>
+<p><strong>Case: <em>Apple Inc. v. Liu, Tan, OpenAI Foundation, OpenAI
+Group PBC and io Products, LLC</em>, No. 5:26-cv-07078 (N.D. Cal.),
+complaint filed July 10, 2026</strong></p>
+<blockquote>
+<p>⚠️ <strong>Everything on this page is an allegation from a filed
+complaint. Nothing has been proved and no court has ruled.</strong> Say
+<em>“the complaint alleges”</em> every time you state a fact. That
+discipline is graded.</p>
+</blockquote>
+<blockquote>
+<p><strong>You own one decision:</strong> what the company instruments,
+logs and can prove. Everyone on your team has a different page. Yours is
+detection. Read it, pick one option, and be ready to defend it with
+something from the document.</p>
+</blockquote>
+<hr />
+<h2 id="what-the-complaint-alleges">What the complaint alleges</h2>
+<h3 id="where-every-allegation-in-this-document-came-from">Where every
+allegation in this document came from</h3>
+<blockquote>
+<p>“The following examples, drawn from Apple’s ongoing <strong>internal
+investigation of information gleaned from Apple’s company-owned devices
+and systems</strong>, begin to illuminate the scope and nature of the
+Defendants’ unlawful conduct.”</p>
+<p>— ¶ 54</p>
+</blockquote>
+<p>Then, one sentence later, the limit of it:</p>
+<blockquote>
+<p>“While Apple’s ongoing investigation has provided insights obtained
+from its own systems, <strong>Apple has virtually no visibility into
+what has been happening behind closed doors at OpenAI and
+io.</strong>”</p>
+<p>— ¶ 54</p>
+</blockquote>
+<p>There is your whole job in two sentences. <strong>Everything Apple
+can plead, it can plead because it logged it. Everything it cannot see,
+it can only ask a court for.</strong></p>
+<h3 id="the-technical-controls-apple-pleads-it-already-has">The
+technical controls Apple pleads it already has</h3>
+<blockquote>
+<p>“Network storage access at Apple is provisioned through Apple’s
+<strong>Access Manager system</strong>… that limit[s] access to only
+‘for work purposes’… Apple <strong>disables and prohibits access to its
+network storage upon an employee’s departure.</strong>”</p>
+<p>— ¶ 47</p>
+</blockquote>
+<blockquote>
+<p>“…database exchange and collaboration systems which include
+<strong>permission assignment to ensure access is on a need-to-know
+basis</strong>… and maintaining high standards for <strong>encryption,
+password protection, and device authentication.</strong>”</p>
+<p>— ¶ 48</p>
+</blockquote>
+<h3 id="what-is-alleged-to-have-happened-anyway">What is alleged to have
+happened anyway</h3>
+<p><strong>An unreturned device.</strong> Mr. Liu is alleged to have
+<em>“failed to return at least one Apple-owned computer”</em> (¶ 55)
+and, within hours of leaving, to have told a still-employed colleague
+<em>“<strong>I still have another computer</strong>”</em> he planned to
+use to access Apple’s confidential information (¶ 56).</p>
+<p><strong>A borrowed, still-authenticated machine.</strong> He
+allegedly used that colleague’s <em>“Apple-issued work computer that was
+<strong>authenticated to Apple’s network</strong>—accessing it while she
+was still employed at Apple and he was not.”</em> (¶ 56)</p>
+<p><strong>Access that survived departure.</strong></p>
+<blockquote>
+<p>“Mr. Liu discovered that, surprisingly, <strong>he still could access
+the Apple’s network repository after leaving Apple, the result of a
+then-unknown authentication vulnerability.</strong> Rather than bringing
+this to Apple’s attention… Mr. Liu celebrated his find… <strong>‘LOL, I
+found out I can access the [network storage], so funny.’</strong>
+Ms. Peng’s response was immediate: <strong>‘I’m ready.’</strong>”</p>
+<p>— ¶ 57</p>
+</blockquote>
+<p><strong>And then the download.</strong></p>
+<blockquote>
+<p>“Mr. Liu then proceeded to select, access, and <strong>download
+dozens of confidential files</strong> from Apple’s network repository…
+including <strong>a compilation of technical files with over a thousand
+pages</strong>… many expressly labeled as confidential.”</p>
+<p>— ¶ 58</p>
+</blockquote>
+<p>One of them is described as a presentation on the manufacture and
+testing of <strong>MLBs (main logic boards)</strong> that
+<em>“identifies specific equipment to perform these analyses and issues
+each piece of equipment is capable of diagnosing”</em> (¶ 59).</p>
+<h3 id="how-it-ended-and-how-it-was-found">How it ended — and how it was
+found</h3>
+<blockquote>
+<p>“Apple <strong>discovered Mr. Liu’s misconduct through its own
+investigation.</strong> Once it learned of this security breach, Apple
+immediately took steps to ensure Mr. Liu’s access was terminated.”</p>
+<p>— ¶ 60</p>
+</blockquote>
+<blockquote>
+<p>“<strong>At no point did Mr. Liu notify Apple</strong> or take steps
+to stop it.”</p>
+<p>— ¶ 61</p>
+</blockquote>
+<p>And one more, because it tells you what people believe about your
+logging: he allegedly coached a colleague on how to access and copy
+files from Apple workstations <em>“<strong>to avoid trouble with the
+security team</strong>”</em> (¶ 63). Somebody was already reasoning
+about what you would detect.</p>
+<hr />
+<h2 id="your-question">Your question</h2>
+<p><strong>A secret whose departure you cannot prove is a secret you
+cannot enforce. Where does engineering effort go?</strong></p>
+<h2 id="your-four-choices-pick-one">Your four choices — pick one</h2>
+<ul>
+<li><strong>(A)</strong> <strong>Instrument the exfiltration
+paths</strong> — repository access logging, anomaly detection around
+departures, device custody — because every provable allegation in this
+complaint came from our own systems.</li>
+<li><strong>(B)</strong> <strong>Close the specific hole and the class
+of holes like it:</strong> the authentication bug, unreturned devices,
+and access that survives a departure.</li>
+<li><strong>(C)</strong> <strong>Lock the environment down</strong> so
+tightly that files cannot be moved or copied at all, and accept the
+friction as the cost of secrecy.</li>
+<li><strong>(D)</strong> <strong>Harden device management</strong> —
+full-disk encryption, remote wipe, blocking personal email and removable
+media on work machines.</li>
+</ul>
+<hr />
+<h2 id="before-you-answer">Before you answer</h2>
+<p>A competent lead does four things, in this order:</p>
+<ol type="1">
+<li><strong>Name the instrument</strong> you are reaching for — patent,
+copyright, trademark, trade secret, contract, or an operational control
+— and which box of the matrix it sits in.</li>
+<li><strong>Answer the detection question:</strong> would we ever find
+out, and what could we prove?</li>
+<li><strong>Cite an allegation from this page.</strong> Not a feeling —
+something from the document.</li>
+<li><strong>State one thing that would change your answer.</strong> If
+nothing would, you are not reasoning.</li>
+</ol>
+<p>One test before you commit. <strong>A patent is published, so
+infringement is visible on the shelf; a trade secret is invisible, so
+misuse is only visible in your logs.</strong> Ask yourself what the
+complaint would say if Apple had kept no records at all — and then ask
+which of the four options above changes what tomorrow’s complaint is
+<em>able</em> to say.</p>
+<hr />
+<p><em>Source: Complaint, </em>Apple Inc. v. Chang Liu, Tang Yew Tan,
+OpenAI Foundation, OpenAI Group PBC, and io Products, LLC<em>,
+No. 5:26-cv-07078 (N.D. Cal., filed July 10, 2026). <strong>All
+statements are allegations by the plaintiff and have not been
+proved.</strong> Quotations are verbatim; “…” marks omitted text. Full
+document: <code>materials/apple-v-openai.pdf</code>.</em></p>
+</body></html>

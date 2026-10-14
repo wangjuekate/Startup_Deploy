@@ -1,5 +1,7 @@
 # The Number Is the Last Decision: Pricing Strategy, Elasticity, and What You Charge For
 
+> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+
 Give me a price for a cup of coffee. Four dollars? Fine — four dollars **per what?** Per cup, per ounce, per visit, per month unlimited, per hour in the chair? Four dollars a cup and four dollars an hour are the same number and two completely different businesses: different customers, different behaviour, different furniture. **Pricing is three decisions, and the number is the last of them and the least interesting.** First the **metric** — what you charge for. Then the **level** — how much. Then the **fences** — who pays more, and why they cannot simply buy the cheap version.
 
 Start with the metric, because it is the strategy. A printer costs eighty dollars and the manufacturer may make nothing on it; then the cartridges cost sixty dollars each, forever. Look at what that decides: who buys, who is profitable (heavy printers), what the company must defend at all costs (the cartridge), and therefore what R&D gets funded. They did not pick a number. **They picked a unit.** Flip it: a gym charging thirty dollars a month for unlimited visits has decided its best customer is **the person who never comes.**

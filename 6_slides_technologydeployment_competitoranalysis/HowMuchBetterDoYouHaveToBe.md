@@ -1,5 +1,7 @@
 # How Much Better Do You Have to Be? Competitor Analysis for People With the Better Technology
 
+> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+
 Everyone has had the thought: *if I built a better version of that, I would win.* That sentence is missing four words, and those four words are where the money is. The question is not whether your technology is better. It is **how much better you have to be to make somebody change** — better at what, and better than what they would give up.
 
 Look at the keyboard in front of you. QWERTY was arranged in the 1870s around the mechanics of a typewriter whose arms could jam. There is no typewriter; the problem it solved has not existed in your lifetime. In the 1930s Dvorak patented a layout claimed to be faster and less tiring, and whether or not the studies hold, notice what happened: **it did not matter.** To switch you would retrain your fingers for weeks, every machine you sat down at would have the wrong layout, and every person you asked for help would be useless to you. That is not a product comparison. **That is a switching cost — and your real competitor is not the other product, it is the customer's cost of leaving what they have.**

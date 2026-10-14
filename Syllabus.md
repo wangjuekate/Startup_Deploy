@@ -17,7 +17,7 @@
 
 An exposure to multiple facets of starting and managing new ventures in a hands-on fashion. The course integrates the business skills required for preparing, managing, and presenting new venture plans.
 
-This course emphasizes venture planning, management, and growth through simulations, applied reflection, team-based website development, and presentations. Students will examine how entrepreneurs make decisions across marketing research, operations, intellectual property, legal structure, technology deployment, pricing, budgeting, and future venture strategy.
+This course emphasizes venture planning, management, and growth through simulations, applied reflection, team-based venture-plan development, and presentations. Students will examine how entrepreneurs make decisions across marketing research, operations, intellectual property, legal structure, technology deployment, pricing, budgeting, and future venture strategy.
 
 ***
 
@@ -39,7 +39,7 @@ By the end of this course, students will be able to:
 4. **Navigate Legal and IP Issues**: Identify intellectual property, legal structure, and governance considerations for new ventures
 5. **Evaluate Competitive Strategy**: Analyze technology deployment, competitor positioning, dominant design, and market entry decisions
 6. **Apply Financial Reasoning**: Develop pricing and budgeting decisions that support venture sustainability
-7. **Communicate Venture Concepts**: Present team projects clearly through websites, slides, and in-class presentations
+7. **Communicate Venture Concepts**: Present team projects clearly through written reports, slides, and pitch videos
 
 ***
 
@@ -48,6 +48,10 @@ By the end of this course, students will be able to:
 ### Readings
 - Simulation cases and materials provided through HuskyCT or in class
 - Selected articles and case studies related to venture planning, management, and growth
+
+### Weekly learning sequence
+
+Read the short module guide before class; the full blog and detailed case references provide optional depth. Tuesday begins with a 10-minute concept/example and an instruction check before the simulation. Thursday combines debrief with a 20-minute venture workshop. Save a decision record before leaving. Static case packets and debriefs linked from the course index remain readable without a simulation-group login.
 
 ### Tools & Resources
 - Presentation software
@@ -70,10 +74,10 @@ By the end of this course, students will be able to:
 | 4 | Thursday, September 24 | Simulation Reflection | | Reflection submission |
 | 5 | Tuesday, September 29 | Legal Structure | NYT v. Microsoft & OpenAI complaint (S.D.N.Y. 2023) | Blog commenting |
 | 5 | Thursday, October 1 | Simulation Reflection | | Reflection submission |
-| 6 | Tuesday, October 6 | Study Week | | Work on group projects |
+| 6 | Tuesday, October 6 | Midterm Instruction | | Work on group projects |
 | 6 | Thursday, October 8 | Study Week | | Work on group projects |
 | 7 | Tuesday, October 13 | Study Day | | Submission of reports and team pitch video |
-| 7 | Thursday, October 15 | Review of Team Pitch Video | | |
+| 7 | Thursday, October 15 | Midterm Review | | |
 | 8 | Tuesday, October 20 | Market Deployment and Dominant Design | Tesla FY2025 10-K | Blog commenting |
 | 8 | Thursday, October 22 | Simulation Reflection | | Reflection submission |
 | 9 | Tuesday, October 27 | Technology Deployment and Competitor Analysis | Cerebras FY2025 10-K | Blog  commenting |
@@ -82,20 +86,22 @@ By the end of this course, students will be able to:
 | 10 | Thursday, November 5 | Simulation Reflection | | Reflection submission |
 | 11 | Tuesday, November 10 | Financial Budgeting | Marvell FY2026 10-K | Blog commenting |
 | 11 | Thursday, November 12 | Simulation Reflection | | Reflection submission |
-| 12 | Tuesday, November 17 | Course Summary and Reflection | | |
+| 12 | Tuesday, November 17 | Course Summary and Final Project Instructions | | |
 | 12 | Thursday, November 19 | Study Day | | Work on group project |
 | 13 | Tuesday, November 24 | Thanksgiving | | |
 | 13 | Thursday, November 26 | Thanksgiving | | |
 | 14 | Tuesday, December 1 | Study Week | | Work on Group projects |
 | 14 | Thursday, December 3 | Study Week | | Work on group project |
-| 15 | Tuesday, December 8 | Study Day | | Submission of pitch video|
-| 15 | Thursday, December 10 | Review of Team Pitch Video | | |
-| Final | Tuesday, December 15 | Finalize reports and submission | | |
-| Final | Thursday, December 17 | Final Grade Posting and Review | | |
+| 15 | Tuesday, December 8 | Study Week | | Submission of pitch video|
+| 15 | Thursday, December 10 | Study Week | | |
+| Final | Tuesday, December 15 | Submit Final Report and Video | | |
+| Final | Thursday, December 17 | Final Grade Posting  | | |
 
 ***
 
 ## Assignments & Assessments
+
+See the [assignment guide](Assignments/Assignment_Guide.html) for submission checklists and the canonical project rubrics. No current deadlines change.
 
 ### 1. Individual Assignments (60%)
 
@@ -103,9 +109,9 @@ By the end of this course, students will be able to:
 - Students read the pre-class blog
 - Students post a 50-100 word comment with a clear opinion and supporting evidence.
 
-**Simulation Reflections (30%)**
+**Simulation Reflections (40%)**
 - Participate in the assigned in-class simulations.
-- Submit short reflections after simulation weeks describing actions taken, lessons learned, and improvements for next time.
+- Use the five headings in the [reflection guide](Assignments/Reflection_Guide.html): Decision, Evidence, Trade-off, Revision, Connection. From October 20 onward, aim for 300–500 words; complete work following the earlier 500–800 word guidance remains acceptable. Keep each existing HuskyCT deadline.
 
 **In-class Participation (10%)**
 - Active participation in discussions
@@ -166,7 +172,7 @@ This course emphasizes **experiential learning** and **venture planning**. Stude
 
 - Participate in venture simulations
 - Analyze entrepreneurial decisions through reflection
-- Develop team project websites
+- Develop and revise team venture plans
 - Present and defend venture concepts
 - Provide constructive peer feedback
 
@@ -175,7 +181,7 @@ This course emphasizes **experiential learning** and **venture planning**. Stude
 Throughout the course, students will develop their venture planning capabilities through:
 
 1. **Simulation-Based Learning**: Applying course concepts to company and industry cases
-2. **Iterative Project Development**: Building team websites and presentations across the semester
+2. **Iterative Project Development**: Building team reports and pitch videos across the semester
 3. **Market and Technology Analysis**: Evaluating market deployment, competitor positioning, and dominant design
 4. **Legal and Financial Reasoning**: Considering IP, legal structure, pricing, and budgeting decisions
 5. **Entrepreneurial Communication**: Presenting venture ideas clearly to peers and the instructor
@@ -202,12 +208,12 @@ Throughout the course, students will develop their venture planning capabilities
 
 ### Feedback and Grades
 
-- Grades and feedback provided within a reasonable period after submission
+- Feedback names a rubric criterion, one specific strength, and one concrete next revision. Keep a comment → revision → location record for the final project.
 - Track performance via My Grades in HuskyCT
 
 ### Weekly Time Commitment
 
-Expect to dedicate regular time each week outside of class for readings, blog posts, simulations, reflections, team meetings, website development, and presentation preparation. This aligns with UConn's credit hour policy. See the [Online Student website](https://onlinestudent.uconn.edu/) for more information.
+Expect to dedicate regular time each week outside of class for readings, blog posts, simulations, reflections, team meetings, venture-plan development, and presentation preparation. This aligns with UConn's credit hour policy. See the [Online Student website](https://onlinestudent.uconn.edu/) for more information.
 
 ### Student Authentication and Verification
 

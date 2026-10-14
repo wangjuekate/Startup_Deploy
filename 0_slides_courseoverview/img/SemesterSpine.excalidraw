@@ -100,13 +100,13 @@
       "customData": {
         "beat": 2
       },
-      "text": "Week 1 \u2014 Course overview \u00b7 team formation \u00b7 topic submission (5%)",
+      "text": "Week 1 — Course overview · team formation (ungraded)",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 1 \u2014 Course overview \u00b7 team formation \u00b7 topic submission (5%)",
+      "originalText": "Week 1 — Course overview · team formation (ungraded)",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -171,13 +171,13 @@
       "customData": {
         "beat": 2
       },
-      "text": "Weeks 2-5 \u2014 Modules 1-4:  TheRealReal \u00b7 Affirm \u00b7 Apple v. OpenAI \u00b7 NYT v. OpenAI",
+      "text": "Weeks 2-5 — Modules 1-4:  TheRealReal · Affirm · Apple v. OpenAI · NYT v. OpenAI",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Weeks 2-5 \u2014 Modules 1-4:  TheRealReal \u00b7 Affirm \u00b7 Apple v. OpenAI \u00b7 NYT v. OpenAI",
+      "originalText": "Weeks 2-5 — Modules 1-4:  TheRealReal · Affirm · Apple v. OpenAI · NYT v. OpenAI",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -242,13 +242,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Week 6 \u2014 Study week.  Report Part 1 + pitch video + slides due Oct 8",
+      "text": "Week 6 — Study week: develop the report and pitch video",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 6 \u2014 Study week.  Report Part 1 + pitch video + slides due Oct 8",
+      "originalText": "Week 6 — Study week: develop the report and pitch video",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -313,13 +313,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Week 7 \u2014 Midterm team presentations, Oct 13 & 15   (15%)",
+      "text": "Week 7 — Midterm due Oct 13; review Oct 15   (20%)",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 7 \u2014 Midterm team presentations, Oct 13 & 15   (15%)",
+      "originalText": "Week 7 — Midterm due Oct 13; review Oct 15   (20%)",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -384,13 +384,13 @@
       "customData": {
         "beat": 4
       },
-      "text": "Weeks 8-11 \u2014 Modules 5-8:  Tesla \u00b7 Cerebras \u00b7 Snowflake \u00b7 Marvell",
+      "text": "Weeks 8-11 — Modules 5-8:  Tesla · Cerebras · Snowflake · Marvell",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Weeks 8-11 \u2014 Modules 5-8:  Tesla \u00b7 Cerebras \u00b7 Snowflake \u00b7 Marvell",
+      "originalText": "Weeks 8-11 — Modules 5-8:  Tesla · Cerebras · Snowflake · Marvell",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -455,13 +455,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Week 12 \u2014 Course summary and future directions",
+      "text": "Week 12 — Course summary and future directions",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 12 \u2014 Course summary and future directions",
+      "originalText": "Week 12 — Course summary and future directions",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -526,13 +526,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Week 14 \u2014 Study week.  Final slides due Dec 3",
+      "text": "Week 14 — Study week: develop the final report and pitch",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 14 \u2014 Study week.  Final slides due Dec 3",
+      "originalText": "Week 14 — Study week: develop the final report and pitch",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -597,13 +597,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Week 15 \u2014 Final team presentations, Dec 8 & 10",
+      "text": "Week 15 — Pitch submission milestone Dec 8; project work",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Week 15 \u2014 Final team presentations, Dec 8 & 10",
+      "originalText": "Week 15 — Pitch submission milestone Dec 8; project work",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -668,13 +668,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Finals week \u2014 Final report and pitch video submitted, Dec 15   (20%)",
+      "text": "Finals week — Final report and pitch video submitted, Dec 15   (20%)",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Finals week \u2014 Final report and pitch video submitted, Dec 15   (20%)",
+      "originalText": "Finals week — Final report and pitch video submitted, Dec 15   (20%)",
       "lineHeight": 1.25,
       "baseline": 15
     },
@@ -894,13 +894,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "Thursday\nsimulation + reflection",
+      "text": "Thursday\ndebrief + venture workshop",
       "fontSize": 19,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Thursday\nsimulation + reflection",
+      "originalText": "Thursday\ndebrief + venture workshop",
       "lineHeight": 1.25,
       "baseline": 17
     },
@@ -986,13 +986,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "Tuesday is the model. Thursday you use it\non a real filing, then write it up the same day.",
+      "text": "Tuesday: concept, example, and simulation.\nThursday: discuss, apply, save your record.",
       "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Tuesday is the model. Thursday you use it\non a real filing, then write it up the same day.",
+      "originalText": "Tuesday: concept, example, and simulation.\nThursday: discuss, apply, save your record.",
       "lineHeight": 1.25,
       "baseline": 14
     },
@@ -1057,13 +1057,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Reflections are 30%.\nThere is no exam to fix a\nsemester of quiet Thursdays.",
+      "text": "Reflections are 40%.\nThere is no exam to fix a\nsemester of quiet Thursdays.",
       "fontSize": 17,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Reflections are 30%.\nThere is no exam to fix a\nsemester of quiet Thursdays.",
+      "originalText": "Reflections are 40%.\nThere is no exam to fix a\nsemester of quiet Thursdays.",
       "lineHeight": 1.25,
       "baseline": 15
     }

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>MENT3235 Midterm Review · Student Feedback &amp; Course Improvements</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
+      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
+      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
+      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.35em; }
+      .reveal h4 { font-size: 0.58em; color: var(--muted); margin-bottom: 0.4em; }
+      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
+      .reveal ul { margin: 0.35em 0 0 1.1em; }
+      .reveal li { margin-bottom: 0.35em; }
+      .title-slide h2 { font-size: 1.35em; }
+      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; align-items: center; }
+      .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+      .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
+      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
+      .box.warn { border-left-color: var(--warn); }
+      .card { background: var(--soft); border-top: 5px solid var(--accent); padding: 14px 16px; border-radius: 8px; text-align: left; }
+      .card p { font-size: 0.42em; }
+      .card.warn { border-top-color: var(--warn); }
+      .small { font-size: 0.42em; color: var(--muted); }
+      /* Figures are inlined <svg> (not <img>) so their data-beat groups can be
+         animated. Sized in reveal's 960x700 slide coordinates: vh units do not
+         scale with the deck. Rebuild with build_figures.py + inline_figures.py. */
+      .fig-embed svg { display: block; margin: 0 auto; width: auto; height: auto; max-width: 100%; max-height: 450px; }
+      .fig-cap { font-size: 0.42em; color: var(--muted); margin-top: 0.55em; }
+      .quote { font-size: 0.72em; font-weight: 600; line-height: 1.3; }
+      .quote .em { color: var(--accent); }
+      /* Figure beats cross-fade in place. Deliberately NOT fade-up: a transform on an
+         SVG <g> would slide diagram parts out of register with the arrows pointing at
+         them. Scoped to .fig-embed so reveal's own transform transition still drives
+         fade-up on the prose. */
+      .fig-embed .fragment { transition: opacity 0.35s ease; }
+    
+      /* Review-specific layouts use the course overview's typography and palette. */
+      .reveal .eyebrow { font-size: .3em; color: var(--accent); text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: 18px; }
+      .reveal .lead { font-size: .55em; line-height: 1.45; }
+      .reveal .agenda { display: flex; justify-content: center; gap: 24px; margin: 30px 0; font-size: .4em; color: var(--accent); }
+      .reveal p.note { font-size: .3em; line-height: 1.4; color: var(--muted); margin-top: 20px; }
+      .reveal .table-wrap { width: 100%; }
+      .reveal table { width: 100%; font-size: .4em; border-collapse: collapse; }
+      .reveal table th, .reveal table td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+      .reveal table thead { background: var(--soft); color: var(--accent); }
+      .reveal table thead th { font-size: .86em; }
+      .reveal table tbody th { font-weight: 400; width: 59%; }
+      .reveal table td { white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .reveal table td:nth-child(2) { color: var(--accent); font-weight: 700; }
+      .reveal .dense table { font-size: .36em; }
+      .reveal .dense table th, .reveal .dense table td { padding: 6px 9px; }
+      .reveal .dense h2 { font-size: 1.05em; }
+      .reveal .metrics { margin: 30px 0 22px; align-items: stretch; }
+      .reveal .metric span { display: block; font-size: .45em; color: var(--muted); }
+      .reveal .metric > strong { display: block; font-size: 1.7em; color: var(--accent); margin-top: 15px; }
+      .reveal .metric small { font-size: .35em; color: var(--muted); vertical-align: baseline; }
+      .reveal .metric.reference > strong { color: var(--ink); }
+      .reveal .metric > strong.unavailable { font-size: .85em; margin-top: 25px; }
+      .reveal .metric.reference p { font-size: .4em; }
+      .reveal .callout > strong { font-size: .55em; }
+      .reveal .callout p { margin: 8px 0 0; }
+      .reveal .strengths { display: block; text-align: left; margin: 0 0 0 1em; }
+      .reveal .strengths li { font-size: 1em; margin-bottom: 10px; padding-left: 6px; }
+      .reveal .strengths li::marker { font-size: .45em; color: var(--accent); }
+      .reveal .strengths strong { font-size: .47em; color: var(--accent); }
+      .reveal .strengths p { font-size: .4em; margin: 4px 0 0; }
+      .reveal .feedback { margin-top: 30px; }
+      .reveal .feedback .tag { display: block; color: var(--warn); font-size: .4em; font-weight: 700; }
+      .reveal .feedback p { font-size: .58em; line-height: 1.5; }
+      .reveal .actions { display: grid; gap: 18px; margin-top: 24px; text-align: left; }
+      .reveal .actions article { display: flex; gap: 18px; align-items: flex-start; }
+      .reveal .actions h3 { font-size: .55em; margin: 0 0 8px; }
+      .reveal .actions p { font-size: .45em; margin: 0; }
+      .reveal .step { font-size: .45em; font-weight: 700; color: var(--accent); padding-top: 2px; }
+      .reveal .problem .eyebrow { color: var(--warn); }
+
+      .reveal table.raw-ratings { table-layout: fixed; font-size: .33em; }
+      .reveal table.raw-ratings thead th { font-size: .9em; font-weight: 700; overflow-wrap: break-word; }
+      .reveal table.raw-ratings th:first-child { width: 46%; }
+      .reveal table.raw-ratings th, .reveal table.raw-ratings td { padding: 7px 5px; }
+      .reveal table.raw-ratings td { text-align: center; color: var(--ink); font-weight: 400; }
+      .reveal table.raw-ratings th:not(:first-child) { text-align: center; }
+      .reveal .dense table.raw-ratings { font-size: .32em; }
+      .reveal .dense table.raw-ratings th, .reveal .dense table.raw-ratings td { padding: 5px; }
+      .reveal table.raw-statistics { font-size: .43em; }
+      .reveal table.raw-statistics tbody th { width: 80%; }
+      .reveal table.raw-statistics td { color: var(--ink); font-weight: 400; }
+</style></head><body>
+<div class="reveal"><div class="slides">
+<section class="title-slide" aria-label="What we heard.&lt;br&gt;What we’ll refine."><div class="eyebrow">MENT3235 • Midterm feedback • Kate Wang</div><h2>What we heard.<br>What we’ll refine.</h2></section>
+
+
+<section class="slide dense" aria-label="Instructor ratings by area"><div class="eyebrow">01 / Instructor feedback • Q10</div><h2>Instructor ratings by area</h2><div class="table-wrap"><table class="raw-ratings"><thead><tr><th scope="col">10. Please respond to the following questions about Kate Wang:</th><th scope="col">Strongly Disagree</th><th scope="col">Disagree</th><th scope="col">Neither Agree nor Disagree</th><th scope="col">Agree</th><th scope="col">Strongly Agree</th><th scope="col">Not Applicable</th></tr></thead><tbody><tr><th scope="row">The instructor presented the course material clearly.</th><td>0</td><td>3</td><td>3</td><td>11</td><td>16</td><td>0</td></tr><tr><th scope="row">The instructor was well prepared for class.</th><td>0</td><td>0</td><td>1</td><td>10</td><td>22</td><td>0</td></tr><tr><th scope="row">The instructor responded to questions adequately.</th><td>0</td><td>1</td><td>3</td><td>9</td><td>18</td><td>2</td></tr><tr><th scope="row">The instructor stimulated interest in the subject.</th><td>0</td><td>0</td><td>2</td><td>9</td><td>21</td><td>1</td></tr><tr><th scope="row">The instructor showed interest in helping students learn.</th><td>0</td><td>0</td><td>2</td><td>9</td><td>19</td><td>3</td></tr><tr><th scope="row">The instructor gave clear assignments.</th><td>1</td><td>7</td><td>4</td><td>6</td><td>15</td><td>0</td></tr><tr><th scope="row">The instructor was accessible to students.</th><td>0</td><td>0</td><td>4</td><td>10</td><td>17</td><td>2</td></tr><tr><th scope="row">The instructor gave useful feedback on my performance.</th><td>1</td><td>2</td><td>4</td><td>9</td><td>17</td><td>0</td></tr><tr><th scope="row">The instructor returned graded work in a reasonable amount of time.</th><td>0</td><td>0</td><td>1</td><td>7</td><td>23</td><td>2</td></tr><tr><th scope="row">The instructor used class time effectively.</th><td>0</td><td>0</td><td>4</td><td>6</td><td>22</td><td>1</td></tr><tr><th scope="row">The instructor treated all students with respect.</th><td>0</td><td>0</td><td>1</td><td>4</td><td>24</td><td>4</td></tr><tr><th scope="row">The instructor graded fairly.</th><td>0</td><td>0</td><td>1</td><td>6</td><td>23</td><td>3</td></tr><tr><th scope="row">The instructor&#x27;s teaching methods promoted student learning.</th><td>0</td><td>1</td><td>6</td><td>8</td><td>16</td><td>2</td></tr></tbody></table></div></section>
+<section class="slide " aria-label="Overall teaching rating"><div class="eyebrow">01 / Instructor feedback • Q11</div><h2>Overall teaching rating (Department average 4.72)</h2><table class="raw-statistics"><thead><tr><th scope="col">Statistic (workbook label)</th><th scope="col">Reported value</th></tr></thead><tbody><tr><th scope="row">Average (Q11 - 11. What is your overall rating of Kate Wang&#x27;s teaching?)</th><td>3.97</td></tr><tr><th scope="row">Minimum (Q11 - 11. What is your overall rating of Kate Wang&#x27;s teaching?)</th><td>2</td></tr><tr><th scope="row">Maximum (Q11 - 11. What is your overall rating of Kate Wang&#x27;s teaching?)</th><td>5</td></tr><tr><th scope="row">Standard Deviation (Q11 - 11. What is your overall rating of Kate Wang&#x27;s teaching?)</th><td>1.11</td></tr><tr><th scope="row">Variance (Q11 - 11. What is your overall rating of Kate Wang&#x27;s teaching?)</th><td>1.24</td></tr><tr><th scope="row">Count</th><td>33</td></tr></tbody></table></section>
+<section class="slide " aria-label="Class ratings by area"><div class="eyebrow">01 / Class feedback • Q12</div><h2>Class ratings by area</h2><div class="table-wrap"><table class="raw-ratings"><thead><tr><th scope="col">12. Please respond to the following questions about the course:</th><th scope="col">Disagree</th><th scope="col">Neither Agree nor Disagree</th><th scope="col">Agree</th><th scope="col">Strongly Agree</th><th scope="col">Not Applicable</th></tr></thead><tbody><tr><th scope="row">The methods of evaluating student learning seemed appropriate.</th><td>0</td><td>3</td><td>15</td><td>15</td><td>0</td></tr><tr><th scope="row">The course content was well organized.</th><td>4</td><td>3</td><td>11</td><td>14</td><td>1</td></tr><tr><th scope="row">The course objectives were clear.</th><td>2</td><td>4</td><td>11</td><td>16</td><td>0</td></tr><tr><th scope="row">The course objectives were met.</th><td>0</td><td>6</td><td>11</td><td>15</td><td>1</td></tr><tr><th scope="row">The course materials made a valuable contribution.</th><td>1</td><td>6</td><td>8</td><td>17</td><td>1</td></tr><tr><th scope="row">The pace of the course seemed appropriate.</th><td>0</td><td>3</td><td>11</td><td>18</td><td>1</td></tr></tbody></table></div></section>
+<section class="slide " aria-label="Overall class rating"><div class="eyebrow">01 / Class feedback • Q13</div><h2>Overall class rating (Department average 4.7)</h2><table class="raw-statistics"><thead><tr><th scope="col">Statistic (workbook label)</th><th scope="col">Reported value</th></tr></thead><tbody><tr><th scope="row">Average (Q13 - 13. What is your overall rating of the course?)</th><td>3.88</td></tr><tr><th scope="row">Minimum (Q13 - 13. What is your overall rating of the course?)</th><td>2</td></tr><tr><th scope="row">Maximum (Q13 - 13. What is your overall rating of the course?)</th><td>5</td></tr><tr><th scope="row">Standard Deviation (Q13 - 13. What is your overall rating of the course?)</th><td>1.07</td></tr><tr><th scope="row">Variance (Q13 - 13. What is your overall rating of the course?)</th><td>1.14</td></tr><tr><th scope="row">Count</th><td>33</td></tr></tbody></table></section>
+<section class="slide " aria-label="Five strengths to preserve"><div class="eyebrow">02 / What worked well</div><h2>Five strengths to preserve</h2><ol class="strengths"><li class="fragment fade-up"><strong>Engaging, hands-on learning</strong><p>Keep simulations that make venture-planning concepts tangible through realistic business decisions.</p></li><li class="fragment fade-up"><strong>Collaboration and participation</strong><p>Preserve teamwork and discussions that encourage different perspectives, shared decisions, and learning from mistakes.</p></li><li class="fragment fade-up"><strong>Positive, approachable teaching</strong><p>Continue bringing energy, enthusiasm, and knowledge—and walking around to answer questions.</p></li><li class="fragment fade-up"><strong>Helpful debriefs</strong><p>Keep post-simulation discussions and weekly reviews that explain decisions and reinforce concepts.</p></li><li class="fragment fade-up"><strong>Accessible learning environment</strong><p>Preserve a manageable, welcoming course where students can participate without prior experience.</p></li></ol></section>
+<section class="slide problem" aria-label="Expectations and navigation need to be clearer."><div class="eyebrow">03 / Improvement 1 of 5 • Clearer instructions • Problem</div><h2>Expectations and navigation need to be clearer.</h2><div class="feedback box warn"><span class="tag">What students told us</span><p>The most recurring concern was unclear assignment expectations, simulation directions, SkillSimm navigation, and midterm requirements. Students wanted concise, consistent, easily accessible guidance.</p></div></section>
+<section class="slide solution" aria-label="Make the instructions easier to use"><div class="eyebrow">03 / Improvement 1 of 5 • Clearer instructions • Solution</div><h2>Make the instructions easier to use</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Planned · Demonstrate the platform</h3><p>Provide an instructional video showing how to use the simulation.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Planned · Explain expectations and grading</h3><p>Add instructions about assignment expectations and grading details.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Suggested · Keep guidance together</h3><p>Place the video, assignment checklist, and grading criteria in one consistent location.</p></div></article></div></section>
+<section class="slide problem" aria-label="Students need concepts before decisions."><div class="eyebrow">03 / Improvement 2 of 5 • Preparation before simulations • Problem</div><h2>Students need concepts before decisions.</h2><div class="feedback box warn"><span class="tag">What students told us</span><p>Some students felt confused early in the semester or entered simulations before understanding the concepts. They asked for slower explanations, better orientation, and explicit connections to prior lessons.</p></div></section>
+<section class="slide solution" aria-label="Orient students, then guide each team"><div class="eyebrow">03 / Improvement 2 of 5 • Preparation before simulations • Solution</div><h2>Orient students, then guide each team</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Planned · Check the starting point</h3><p>Use a pre-survey for the first simulation to understand team needs.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Planned · Track learning after each simulation</h3><p>Use a post-survey after every simulation to make team guidance more specific.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Suggested · Start with a concept walkthrough</h3><p>Slow down the introduction, connect the activity to prior lessons, and demonstrate a decision before teams begin.</p></div></article></div></section>
+<section class="slide problem" aria-label="The weekly format can feel repetitive."><div class="eyebrow">03 / Improvement 3 of 5 • Variety and class time • Problem</div><h2>The weekly format can feel repetitive.</h2><div class="feedback box warn"><span class="tag">What students told us</span><p>Although simulations were a major strength, several students wanted occasional lectures, additional startup cases, other activities, and more productive use of time after finishing simulations.</p></div></section>
+<section class="slide solution" aria-label="Keep simulations; vary the surrounding work"><div class="eyebrow">03 / Improvement 3 of 5 • Variety and class time • Solution</div><h2>Keep simulations; vary the surrounding work</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Suggested · Rotate the opening</h3><p>Alternate a short concept lesson, a startup case, and a focused discussion before the simulation.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Suggested · Give early finishers a useful task</h3><p>Ask teams to compare a different decision or connect their result to a real startup.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Suggested · Close with the learning purpose</h3><p>Use the debrief to explain what this week adds to prior activities.</p></div></article></div></section>
+<section class="slide problem" aria-label="Technical friction interrupts learning."><div class="eyebrow">03 / Improvement 4 of 5 • Technical reliability and access • Problem</div><h2>Technical friction interrupts learning.</h2><div class="feedback box warn"><span class="tag">What students told us</span><p>Lag, glitches, inconsistent instructions, and difficulty accessing simulations afterward interfered with learning and reflection assignments.</p></div></section>
+<section class="slide solution" aria-label="Check access and preserve the learning record"><div class="eyebrow">03 / Improvement 4 of 5 • Technical reliability and access • Solution</div><h2>Check access and preserve the learning record</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Planned · Show the access workflow</h3><p>Use the instructional video to explain how to navigate the simulation.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Suggested · Check and track failures</h3><p>Check access before class; record the step and error when a problem occurs so it can be reproduced and fixed.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Suggested · Make reflection materials available</h3><p>Provide a stable record of the scenario, key decisions, and outcomes for students to revisit afterward.</p></div></article></div></section>
+<section class="slide problem" aria-label="Materials need structure; feedback needs specifics."><div class="eyebrow">03 / Improvement 5 of 5 • Materials and feedback • Problem</div><h2>Materials need structure; feedback needs specifics.</h2><div class="feedback box warn"><span class="tag">What students told us</span><p>Some students requested better-organized materials and more specific feedback. One student explicitly found the heavy use of AI-generated readings fatiguing and the feedback too broad.</p></div></section>
+
+
+<section class="slide solution" aria-label="Make support more focused and actionable"><div class="eyebrow">03 / Improvement 5 of 5 • Materials and feedback • Solution</div><h2>Make support more focused and actionable</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Use office hours for specific feedback</h3><p>Offer more specific feedback through office hours.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Use surveys to direct support</h3><p>Use team-performance information from simulation surveys to target guidance.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Curate materials and feedback</h3><p>Organize readings around each activity, vary sources with selected startup cases, and identify a concrete next step in feedback.</p></div></article></div></section>
+
+
+<section class="slide " aria-label="A consistent team and support routine"><div class="eyebrow">04 / Next steps </div><h2>A consistent team and support routine</h2><div class="actions"><article class="box fragment fade-up"><span class="step">01</span><div><h3>Keep the midterm teams</h3><p>Use the same teams for the next four simulations and the final project.</p></div></article><article class="box fragment fade-up"><span class="step">02</span><div><h3>Track progress and target guidance</h3><p>Use a pre-survey for the first simulation and a post-survey after each simulation to understand team performance.</p></div></article><article class="box fragment fade-up"><span class="step">03</span><div><h3>Make help easier to use</h3><p>Provide an instructional video, clearer assignment and grading guidance, and more specific feedback through office hours.</p></div></article></div></section>
+
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+Reveal.initialize({ hash: true, slideNumber: true, plugins: [ RevealNotes ], pdfSeparateFragments: false });
+</script>
+</body></html>

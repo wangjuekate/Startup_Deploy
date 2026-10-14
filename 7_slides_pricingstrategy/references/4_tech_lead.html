@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>4_tech_lead</title><style>body{font:17px/1.6 system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#17202a}h1,h2,h3{line-height:1.2}h2{margin-top:2em;color:#0f766e}a{color:#0f766e}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:.5em;text-align:left}blockquote{border-left:4px solid #0f766e;padding-left:1em}@media print{body{font-size:10pt;margin:0;max-width:none}a{color:inherit}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><h1 id="tech-lead">Tech Lead</h1>
+<blockquote>
+<p>Detailed reference, not required in full during the timed activity.
+Start with <a href="../StudentPacket.html">the short student packet</a>;
+use this page to investigate or cite supporting evidence.</p>
+</blockquote>
+<p><strong>Case: Snowflake Inc., Form 10-K for the fiscal year ended
+January 31, 2026</strong></p>
+<blockquote>
+<p><strong>You own one decision:</strong> what engineering builds.
+Everyone on your team has a different page. Yours is the roadmap. Read
+it, pick one option, and be ready to defend it with a number.</p>
+</blockquote>
+<hr />
+<h2 id="what-the-filing-says">What the filing says</h2>
+<h3 id="your-budget">Your budget</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>FY2026</th>
+<th>FY2025</th>
+<th>FY2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Research and development</strong></td>
+<td><strong>$1,969,472 K (42% of revenue)</strong></td>
+<td>$1,783,379 K (49%)</td>
+<td>$1,287,949 K (46%)</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$4,683,946 K</td>
+<td>$3,626,396 K</td>
+<td>$2,806,489 K</td>
+</tr>
+</tbody>
+</table>
+<p>Of that, <strong>$935.4 million was stock-based compensation</strong>
+— R&amp;D alone is 20% of revenue in equity.</p>
+<h3 id="what-has-already-been-built">What has already been built</h3>
+<blockquote>
+<p>“In 2021, we launched <strong>Snowpark</strong> for Java and Scala…
+in 2022 we added support for <strong>Python</strong>… In 2023, we
+launched <strong>Snowpark Container Services</strong>, a fully managed
+container platform… In 2024 and 2025, we announced and then launched
+<strong>Snowflake Intelligence</strong> within our AI product category,
+to enable our customers to <strong>create data agents</strong>… In 2025
+and 2026, we announced and then launched <strong>Snowflake
+Postgres</strong> within our <strong>new transactions product
+category</strong>, a fully managed Postgres offering that enables
+customers to consolidate application and analytical data onto a single
+platform.”</p>
+<p>— Item 1, Business</p>
+</blockquote>
+<p>Also launched in fiscal 2026: <em>“<strong>Snowflake Cortex Agents,
+Generation 2 Standard Warehouses</strong>”</em> and more.</p>
+<p>And bought:</p>
+<blockquote>
+<p>On June 6, 2025, the company acquired <strong>Crunchy Data</strong> —
+<em>“a privately-held company that provided <strong>PostgreSQL
+technology</strong>”</em> — for <strong>$164.5 million</strong> in
+cash.</p>
+<p>On February 2, 2026, it acquired <strong>Observe, Inc.</strong> —
+<em>“a privately-held company that built an <strong>AI-powered
+observability platform</strong>”</em> — for approximately <strong>$596.2
+million.</strong></p>
+</blockquote>
+<p>Two acquisitions, two new categories of work that can run on the
+platform.</p>
+<h3 id="the-architecture-you-are-building-on">The architecture you are
+building on</h3>
+<blockquote>
+<p>“Our cloud-native architecture includes <strong>three independently
+scalable but logically integrated layers across storage, compute, and
+cloud services</strong>… This architecture is built on <strong>three
+major public clouds across 53 regional deployments</strong> around the
+world.”</p>
+</blockquote>
+<h3 id="and-here-is-what-makes-your-job-strange">And here is what makes
+your job strange</h3>
+<p>The company charges for <strong>consumption</strong> — <em>“the
+compute, storage, and data transfer resources consumed.”</em> Which
+produces this warning, in the company’s own words:</p>
+<blockquote>
+<p>“<strong>New software releases or hardware improvements, like better
+storage compression, cloud infrastructure processor improvements, and
+compute optimization, may make our platform more efficient, enabling
+customers to consume fewer compute, storage, and data transfer resources
+to accomplish the same workloads.</strong> In addition, <strong>open
+data formats allow customers to use our platform for compute services
+without requiring storage.</strong> To the extent these improvements do
+not result in an offsetting increase in new workloads, <strong>we may
+experience lower revenue.</strong>”</p>
+</blockquote>
+<p>Read the middle sentence twice. Open formats do not just reduce the
+storage bill — they can remove <strong>one of the three things being
+metered</strong> from the invoice entirely.</p>
+<h3 id="what-the-company-says-it-needs">What the company says it
+needs</h3>
+<blockquote>
+<p>“<strong>Our future growth is increasingly dependent on our ability
+to increase consumption of our platform</strong> by building and
+expanding the AI Data Cloud.”</p>
+</blockquote>
+<blockquote>
+<p>“We will continue to invest significantly in research and development
+to improve our platform, including in the areas of <strong>data science
+and AI Technology.</strong>”</p>
+</blockquote>
+<h3 id="the-competitive-factors-it-names">The competitive factors it
+names</h3>
+<p><em>“Ability to support <strong>multiple use cases in one
+platform</strong>”</em>; <em>“<strong>interoperability and integrations
+across open formats</strong>, tools, applications, and platforms”</em>;
+<em>“use of AI and timely availability of leading, enterprise-grade
+large language models and <strong>AI agents</strong>”</em>; and
+<em>“<strong>pricing transparency and optimized price-performance
+benefits.</strong>”</em></p>
+<p>Against <strong>AWS, Azure and GCP</strong>, who <em>“generally
+compete in all of our markets.”</em></p>
+<hr />
+<h2 id="your-question">Your question</h2>
+<p><strong>R&amp;D is $1.97 billion — 42% of revenue — and the revenue
+model is paid by the unit consumed. What does engineering
+build?</strong></p>
+<h2 id="your-four-choices-pick-one">Your four choices — pick one</h2>
+<ul>
+<li><strong>(A)</strong> Build <strong>price-performance improvements on
+the core warehouse.</strong> It is the biggest part of consumption and
+the competitive factor we name first.</li>
+<li><strong>(B)</strong> Build the <strong>AI layer hardest.</strong>
+Snowflake Intelligence and Cortex Agents are where new workloads are
+actually being created right now, and new workloads are what the revenue
+model needs.</li>
+<li><strong>(C)</strong> Build for <strong>open formats and
+interoperability.</strong> Customers are going there anyway, and being
+the best compute engine over open data keeps us in the transaction even
+when we lose the storage.</li>
+<li><strong>(D)</strong> Build the <strong>new categories that put more
+kinds of work on the meter</strong> — transactions, AI agents,
+observability — because a consumption model is only as big as the range
+of work it can measure.</li>
+</ul>
+<hr />
+<h2 id="before-you-answer">Before you answer</h2>
+<p>A competent lead does four things, in this order:</p>
+<ol type="1">
+<li><strong>Name the corner of the triangle your choice moves</strong> —
+<strong>the metric</strong> (what we charge for), <strong>the
+level</strong> (how much), or <strong>the fences</strong> (who pays
+more).</li>
+<li><strong>Cite at least one figure from this page.</strong> Not a
+feeling — a number.</li>
+<li><strong>Name what your choice gives up.</strong> Every option costs
+you something.</li>
+<li><strong>State one thing that would change your answer.</strong> If
+nothing would, you are not reasoning.</li>
+</ol>
+<p>Sort every item on the roadmap by one test: <strong>does this create
+work that has never run here before, or does it make work that already
+runs here cheaper?</strong> Both are worth building. Only one of them
+makes the invoice bigger.</p>
+<hr />
+<p><em>Source: Snowflake Inc., Annual Report on Form 10-K for the fiscal
+year ended January 31, 2026, filed with the U.S. Securities and Exchange
+Commission. Quotations are verbatim; “…” marks omitted text. Full
+filing: <code>materials/snow-20260131.html</code>.</em></p>
+</body></html>

@@ -1,5 +1,7 @@
 # Runway Is a Decision, Not a Number: Budgeting by Reversibility
 
+> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+
 Everyone has made a budget. Almost nobody has kept one. So we all half-believe a budget is fiction — and the useful correction is that **most of it is fiction and some of it absolutely is not**, and the whole skill is knowing which lines are which. Writing a budget is two different activities called one thing. Some of what you write is an **estimate**: we think we will spend about this much on marketing. Some of it is a **contract**: we have signed a piece of paper, and it will be paid whether or not the year goes the way we said. Estimates flex. Contracts do not. A budget that cannot tell you which is which is not a plan; it is a wish with columns.
 
 That distinction is why budgeting matters more for a new venture than for a large company, and not for the reason students expect. It is not thrift. A startup's defining scarcity is **optionality** — the ability to be wrong and still act — and every commitment converts flexible money into committed money, permanently, for its term. **A budget is a record of how much of the future you have already promised away.** The number at the bottom matters far less than the shape above it, and the shape is a single question: *how much of this can I still change?*

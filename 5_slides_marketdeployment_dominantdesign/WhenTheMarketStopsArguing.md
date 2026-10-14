@@ -1,5 +1,7 @@
 # When the Market Stops Arguing: Dominant Design and the Window That Closes
 
+> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+
 Ask a room full of students whether their phone charges with USB-C and most hands go up. Ask who *chose* USB-C — who compared connector architectures and decided — and every hand goes down. Nobody chose it. It won, and then everyone complied. That is what a **dominant design** is: the version of a product that stops being one option among several and becomes *the way it is done*. And the moment it settles, being better stops being enough, and being different becomes a liability.
 
 The formation is the part founders get wrong, because it is not decided on the merits. In the late 1970s two video formats fought for the living room. Sony's Betamax was, by most accounts, the better technology, and it was first. JVC's VHS was worse at launch — but it recorded longer, licensed cheaply, and JVC did the thing Sony refused to do: **it let everybody build it.** So the tapes in the rental shop were VHS, so the players people bought were VHS, so the tapes the studios pressed were VHS. Within a few years Betamax was trivia, and it was still the better tape when it died.

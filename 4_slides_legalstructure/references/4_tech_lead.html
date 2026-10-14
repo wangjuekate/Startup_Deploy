@@ -1,0 +1,189 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>4_tech_lead</title><style>body{font:17px/1.6 system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#17202a}h1,h2,h3{line-height:1.2}h2{margin-top:2em;color:#0f766e}a{color:#0f766e}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:.5em;text-align:left}blockquote{border-left:4px solid #0f766e;padding-left:1em}@media print{body{font-size:10pt;margin:0;max-width:none}a{color:inherit}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><h1 id="tech-lead">Tech Lead</h1>
+<blockquote>
+<p>Detailed reference, not required in full during the timed activity.
+Start with <a href="../StudentPacket.html">the short student packet</a>;
+use this page to investigate or cite supporting evidence.</p>
+</blockquote>
+<p><strong>Case: <em>The New York Times Company v. Microsoft
+Corporation, OpenAI, Inc. et al.</em>, No. 1:23-cv-11195 (S.D.N.Y.),
+complaint filed December 27, 2023</strong></p>
+<blockquote>
+<p>⚠️ <strong>Everything on this page is an allegation from a filed
+complaint. Nothing has been proved and no court has ruled.</strong> Say
+<em>“the complaint alleges”</em> every time you state a fact. That
+discipline is graded.</p>
+</blockquote>
+<blockquote>
+<p><strong>You own one decision:</strong> how much control the company
+takes over a partner’s system. Everyone on your team has a different
+page. Yours is control. Read it, pick one option, and be ready to defend
+it with something from the document.</p>
+</blockquote>
+<hr />
+<h2 id="what-the-complaint-alleges">What the complaint alleges</h2>
+<h3 id="start-with-the-strange-fact">Start with the strange fact</h3>
+<p><strong>Microsoft did not train these models.</strong> The complaint
+says so in its own words — the two companies had a division of labour,
+and the modelling was on the other side of it. Yet Microsoft is
+defendant number one in the caption.</p>
+<p>Your page is about why.</p>
+<h3 id="what-the-partnership-actually-was">What the partnership actually
+was</h3>
+<blockquote>
+<p>“Microsoft is the <strong>sole cloud computing provider</strong> for
+OpenAI. Microsoft and OpenAI collaborated to design the supercomputing
+systems powered by Microsoft’s cloud computer platform Azure,
+<strong>which were used to train all OpenAI’s GPT models after
+GPT-1.</strong>”</p>
+<p>— ¶ 68</p>
+</blockquote>
+<p>Satya Nadella, quoted twice:</p>
+<blockquote>
+<p>“<strong>We built the infrastructure to train their models.</strong>
+They’re innovating on the algorithms and the training of these frontier
+models.”</p>
+<p>“They do the foundation models, and <strong>we [Microsoft] do a lot
+of work around them, including the tooling around responsible AI and AI
+safety.</strong>”</p>
+<p>— ¶¶ 68, 71</p>
+</blockquote>
+<p>And the machine itself:</p>
+<blockquote>
+<p>Microsoft built this supercomputer <em>“<strong>in collaboration with
+and exclusively for OpenAI</strong>,” and “designed [it]
+<strong>specifically to train that company’s AI models</strong>.”</em> —
+<em>“a single system with more than <strong>285,000 CPU cores, 10,000
+GPUs</strong> and 400 gigabits per second of network connectivity for
+each GPU server.”</em></p>
+<p>— ¶ 70</p>
+</blockquote>
+<blockquote>
+<p>“To ensure that the supercomputing system suited OpenAI’s needs,
+<strong>Microsoft needed to test the system, both independently and in
+collaboration with OpenAI software engineers.</strong>”</p>
+<p>— ¶ 71</p>
+</blockquote>
+<p>Every one of those facts is a description of a <em>good partner.</em>
+Bespoke, exclusive, deeply integrated, jointly tested. Now watch what
+the complaint builds out of them.</p>
+<h3 id="the-allegation-that-should-decide-your-page">The allegation that
+should decide your page</h3>
+<blockquote>
+<p>“To the extent that Microsoft did not select the works used to train
+the GPT models, it acted in self-described ‘partnership’ with OpenAI
+respecting that selection, knew or was willfully blind to the identity
+of the selected works… <strong>and/or had the right and ability to
+prevent OpenAI from using any particular work for training by virtue of
+its physical control of the supercomputer it developed for that purpose
+and its legal and financial influence over the OpenAI
+Defendants.</strong>”</p>
+<p>— ¶ 94</p>
+</blockquote>
+<p>And then, in the count itself:</p>
+<blockquote>
+<p>“Microsoft <strong>controlled, directed, and profited from</strong>
+the infringement perpetrated by the OpenAI Defendants. Microsoft
+<strong>controls and directs the supercomputing platform</strong> used
+to store, process, and reproduce the training datasets… Microsoft
+<strong>profited</strong> from the infringement… by incorporating the
+infringing GPT models trained on Times Works into its own product
+offerings, including Bing Chat.”</p>
+<p>— ¶ 170 (Count II — <strong>Vicarious Copyright
+Infringement</strong>)</p>
+</blockquote>
+<p>That is the doctrine, in two ingredients: <strong>the right and
+ability to control</strong>, plus <strong>a direct financial
+benefit.</strong> Notice what is <em>not</em> an ingredient. Ownership.
+The complaint elsewhere pleads that Microsoft holds only a
+<strong>minority stake</strong> in OpenAI Global LLC. The theory does
+not go through the cap table at all.</p>
+<h3 id="the-uncomfortable-middle">The uncomfortable middle</h3>
+<p>So consider the three positions you could occupy as the technical
+partner:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Position</th>
+<th>Control</th>
+<th>Exposure under this theory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Neutral utility</strong> — general-purpose, no bespoke
+build</td>
+<td>none claimed</td>
+<td>weakest</td>
+</tr>
+<tr>
+<td><strong>Deep partner who exercises control</strong> — reviews
+inputs, can and does say no</td>
+<td>real and used</td>
+<td>you carry it, but you can prevent the harm</td>
+</tr>
+<tr>
+<td><strong>Deep partner who has control and never uses it</strong></td>
+<td>real and unused</td>
+<td><em>“right and ability to prevent”</em> — <strong>all of the
+exposure, none of the protection</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Read ¶ 94 one more time and ask which of those three rows it
+describes.</p>
+<hr />
+<h2 id="your-question">Your question</h2>
+<p><strong>Liability attaches to control, not to the org chart. How much
+control do you take over a partner’s system?</strong></p>
+<h2 id="your-four-choices-pick-one">Your four choices — pick one</h2>
+<ul>
+<li><strong>(A)</strong> <strong>Stay a neutral utility:</strong>
+general-purpose infrastructure, no bespoke build, no involvement in what
+the customer runs on it.</li>
+<li><strong>(B)</strong> <strong>Push the whole obligation into the
+contract</strong> — warranties on the training data, audit rights, and
+indemnities that follow whoever chose the inputs.</li>
+<li><strong>(C)</strong> <strong>Take as much operational control as the
+partnership will give us</strong> and rely on the separate corporate
+entities to keep the liability where it belongs.</li>
+<li><strong>(D)</strong> <strong>Decide deliberately:</strong> either
+hold the control and exercise it — with real input review and the
+ability to say no — or contract it away and stay a utility. The pleaded
+theory is <em>“right and ability to prevent”</em>, so unexercised
+control is the worst of both.</li>
+</ul>
+<hr />
+<h2 id="before-you-answer">Before you answer</h2>
+<p>A competent lead does four things, in this order:</p>
+<ol type="1">
+<li><strong>Name the corner</strong> your choice buys —
+<strong>control</strong>, <strong>capital</strong>, or <strong>liability
+protection</strong>.</li>
+<li><strong>Name the corner it pays with.</strong> There is always a
+payment.</li>
+<li><strong>Cite an allegation from this page.</strong> Not a feeling —
+something from the document.</li>
+<li><strong>State one thing that would change your answer.</strong> If
+nothing would, you are not reasoning.</li>
+</ol>
+<p>One test before you commit. There are <strong>nine
+defendants</strong> on this caption, and the entities were drawn by good
+lawyers. Ask yourself the flat question: <strong>what did the boundaries
+accomplish?</strong> If your answer to your own decision relies on a
+boundary doing work, look at ¶ 94 and check whether that is a thing
+boundaries do.</p>
+<hr />
+<p><em>Source: Complaint, </em>The New York Times Company v. Microsoft
+Corporation, OpenAI, Inc., OpenAI LP, OpenAI GP, LLC, OpenAI, LLC,
+OpenAI OpCo LLC, OpenAI Global LLC, OAI Corporation, LLC, and OpenAI
+Holdings, LLC<em>, No. 1:23-cv-11195 (S.D.N.Y., filed December 27,
+2023). <strong>All statements are allegations by the plaintiff and have
+not been proved.</strong> Quotations are verbatim; “…” marks omitted
+text. Full document:
+<code>materials/NYT_Complaint_Dec2023.pdf</code>.</em></p>
+</body></html>

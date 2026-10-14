@@ -32,13 +32,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "INDIVIDUAL \u2014 60%",
+      "text": "INDIVIDUAL — 60%",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "INDIVIDUAL \u2014 60%",
+      "originalText": "INDIVIDUAL — 60%",
       "lineHeight": 1.25,
       "baseline": 18
     },
@@ -103,13 +103,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "Pre-class blog post\nand commenting \u2014 10%",
+      "text": "Pre-class blog\ncomments — 10%",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Pre-class blog post\nand commenting \u2014 10%",
+      "originalText": "Pre-class blog\ncomments — 10%",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -174,13 +174,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "In-class participation \u2014 10%",
+      "text": "In-class participation — 10%",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "In-class participation \u2014 10%",
+      "originalText": "In-class participation — 10%",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -245,13 +245,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "Simulation reflections \u2014 30%",
+      "text": "Simulation reflections — 40%",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Simulation reflections \u2014 30%",
+      "originalText": "Simulation reflections — 40%",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -316,13 +316,13 @@
       "customData": {
         "beat": 1
       },
-      "text": "Personal project portfolio \u2014 10%",
+      "text": "Decision records support reflections",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Personal project portfolio \u2014 10%",
+      "originalText": "Decision records support reflections",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -387,13 +387,13 @@
       "customData": {
         "beat": 2
       },
-      "text": "Individual work \u2014 60%",
+      "text": "Individual work — 60%",
       "fontSize": 24,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Individual work \u2014 60%",
+      "originalText": "Individual work — 60%",
       "lineHeight": 1.25,
       "baseline": 22
     },
@@ -426,13 +426,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "TEAM \u2014 40%",
+      "text": "TEAM — 40%",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "TEAM \u2014 40%",
+      "originalText": "TEAM — 40%",
       "lineHeight": 1.25,
       "baseline": 18
     },
@@ -497,13 +497,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Team topic submission \u2014 5%\nWeek 1",
+      "text": "Team setup — ungraded\nWeek 1",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Team topic submission \u2014 5%\nWeek 1",
+      "originalText": "Team setup — ungraded\nWeek 1",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -613,13 +613,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Report Part 1 + pitch video\n+ midterm presentation \u2014 15%\nWeeks 6-7",
+      "text": "Midterm report + pitch video\n20% of the course\nWeeks 6–7",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Report Part 1 + pitch video\n+ midterm presentation \u2014 15%\nWeeks 6-7",
+      "originalText": "Midterm report + pitch video\n20% of the course\nWeeks 6–7",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -729,13 +729,13 @@
       "customData": {
         "beat": 3
       },
-      "text": "Final report, pitch video\nand presentation \u2014 20%\nWeeks 14 to Finals",
+      "text": "Final report + pitch video\n20% of the course\nWeeks 14 to Finals",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Final report, pitch video\nand presentation \u2014 20%\nWeeks 14 to Finals",
+      "originalText": "Final report + pitch video\n20% of the course\nWeeks 14 to Finals",
       "lineHeight": 1.25,
       "baseline": 16
     },
@@ -800,13 +800,13 @@
       "customData": {
         "beat": 4
       },
-      "text": "Team venture \u2014 40%",
+      "text": "Team venture — 40%",
       "fontSize": 24,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Team venture \u2014 40%",
+      "originalText": "Team venture — 40%",
       "lineHeight": 1.25,
       "baseline": 22
     },
@@ -967,13 +967,13 @@
       "customData": {
         "beat": 5
       },
-      "text": "Your grade \u2014 100%",
+      "text": "Your grade — 100%",
       "fontSize": 24,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Your grade \u2014 100%",
+      "originalText": "Your grade — 100%",
       "lineHeight": 1.25,
       "baseline": 22
     },
