@@ -1,6 +1,6 @@
 # Secrets, Patents, and People: Is Intellectual Property a Legal System or an Operational One?
 
-> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 Intellectual property protection is not one decision. It is **choosing an instrument and paying that instrument's price**, and there are only four instruments worth knowing. A **patent** grants a right over an invention for a limited term in exchange for publishing it. **Copyright** arises automatically and covers expression, never the underlying idea. A **trademark** protects the name and the mark, potentially forever, as long as you use and defend it. A **trade secret** protects anything valuable that is secret, with no filing and no expiry — but only if you take reasonable measures to keep it secret.
 

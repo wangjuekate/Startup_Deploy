@@ -51,7 +51,7 @@ By the end of this course, students will be able to:
 
 ### Weekly learning sequence
 
-Read the short module guide before class; the full blog and detailed case references provide optional depth. Tuesday begins with a 10-minute concept/example and an instruction check before the simulation. Thursday combines debrief with a 20-minute venture workshop. Save a decision record before leaving. Static case packets and debriefs linked from the course index remain readable without a simulation-group login.
+Read the short module guide before class; the full blog and detailed case references provide optional depth. Tuesday begins with a 10-minute concept/example and an instruction check before the simulation. Thursday combines debrief with a 20-minute venture workshop. Save a decision record before leaving. Static student packets and references linked from the course index remain readable without a simulation-group login.
 
 ### Tools & Resources
 - Presentation software

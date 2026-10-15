@@ -1,6 +1,6 @@
 # Choosing the Container: What Legal Structure Actually Buys, and What It Costs
 
-> **Short reading path:** Start with the three facts and terms in [Start here](StartHere.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 Almost everyone starting a venture has heard the sentence *"we should probably set up an LLC."* Almost nobody in that conversation can say what an LLC does for them, which is exactly the condition under which people sign things. Here is the frame to carry instead. **Legal structure is a machine for splitting three things — control, capital, and liability — and you cannot have all three.** Control is who decides — who hires, who fires, who can say no. Capital is who funds it and on what terms. Liability is who holds the bag when it goes wrong. Every entity form and investor term divides those three, and **every choice buys one corner and pays with another.**
 
