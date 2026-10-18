@@ -51,7 +51,7 @@ By the end of this course, students will be able to:
 
 ### Weekly learning sequence
 
-Read the short module guide before class; the full blog and detailed case references provide optional depth. Tuesday begins with a 10-minute concept/example and an instruction check before the simulation. Thursday combines debrief with a 20-minute venture workshop. Save a decision record before leaving. Static student packets and references linked from the course index remain readable without a simulation-group login.
+Read the module essay and review the lecture slides before class. Tuesday begins with a 10-minute concept/example and an instruction check before the simulation. Thursday combines debrief with a 20-minute venture workshop. Save a decision record before leaving. The module essays and slides linked from the course index remain readable without a simulation-group login. Download the slides and save your own notes for use if SkillSimm is unavailable.
 
 ### Tools & Resources
 - Presentation software

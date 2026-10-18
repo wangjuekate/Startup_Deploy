@@ -1,6 +1,6 @@
 # How Much Better Do You Have to Be? Competitor Analysis for People With the Better Technology
 
-> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Before class:** Read this essay and review the [lecture slides](TechnologyDeploymentCompetitorAnalysis.html). Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 Everyone has had the thought: *if I built a better version of that, I would win.* That sentence is missing four words, and those four words are where the money is. The question is not whether your technology is better. It is **how much better you have to be to make somebody change** — better at what, and better than what they would give up.
 

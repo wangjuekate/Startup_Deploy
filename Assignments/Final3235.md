@@ -1,0 +1,217 @@
+# MENT 3235: Final Venture Proposal and Pitch
+
+## Start here
+
+**Create a venture commercialization report and a 10–20-minute pitch video. Submit both deliverables to Blackboard (HuskyCT).** Explain how the venture will enter its market, deploy technology, compete, set prices, and manage its finances. Prepare the proposal for one UConn funding or entrepreneurship support program.
+
+| Item | Requirement |
+| --- | --- |
+| Team | Continue with your existing five-person team: four members and one Team Leader. |
+| Project | Develop your midterm venture or propose an original venture. Both options follow the same requirements and rubrics. |
+| Report | One standalone proposal PDF with references and an application preparation appendix, worth **100 points**. |
+| Pitch video | One **10–20-minute** team pitch video, worth **100 points**. |
+| Intended audience | Reviewers for one relevant UConn funding or entrepreneurship support program. |
+| Deadlines | Follow the deadlines and submission requirements posted in Blackboard (HuskyCT) for the report and video. |
+| Course weight | The final project is **20% of the course grade**. The report and video are equally weighted; each contributes **10%**. |
+| Report length | No fixed page or word minimum. Address every criterion with evidence, headings, and readable tables. |
+| Rubrics | The report and video rubrics below define the scoring for this assignment. |
+
+
+## Class schedule and communication
+
+| Date | Class arrangement and required work |
+| --- | --- |
+| **November 17, 2:00–3:15 p.m.** | Attend the remote class meeting. The instructor will summarize the course and review the final project requirements. |
+| **November 19–December 15** | No class meetings. Use the class time to work with your team on the final report and pitch video. |
+
+Book office hours through Blackboard for team mentoring, feedback, or project questions.
+
+## What to submit and where
+
+| Submission | Format | Where | Who submits |
+| --- | --- | --- | --- |
+| Final venture report | Standalone PDF with Sections A–E, references, and application preparation appendix | **Blackboard final report assignment** | Team Leader, once for the team |
+| Pitch video | 10–20-minute video file or accessible link, using the field and version specified in Blackboard | **Blackboard video assignments** | Team Leader, according to the Blackboard assignment instructions |
+| Individual contribution record | Brief, accurate summary of completed work | Assigned **SkillSimm task** | Each member |
+| Leader completion | Completed final leader task | **SkillSimm** | Team Leader, after all revisions are complete |
+
+**SkillSimm completion does not replace Blackboard submissions.** The Blackboard report and video are the versions graded. Verify that the PDF opens and the instructor can play the video without requesting access.
+
+## 1. Choose your venture, intended audience, and workspace
+
+Choose one of the following options. Use the same venture throughout the report and video.
+
+### Option A: Develop your midterm venture
+
+Develop the startup plan your team analyzed for the midterm into a standalone commercialization proposal. Use the supplied plan and your research to define the venture's customer problem, solution, market entry, technology requirements, pricing, and budget. Distinguish the supplied plan's claims from independently verified evidence and your team's proposed decisions. Identify the technology, permissions, and partnerships needed to implement the proposal.
+
+### Option B: Develop an original venture
+
+Propose a new product or service. Define the customer problem and solution, then develop a market entry strategy, technology deployment approach, competitor analysis, pricing model, and financial budget. Support the proposal with research and identify assumptions requiring validation. A new idea must meet the same evidence and scoring requirements as Option A.
+
+For either option, use midterm feedback only as a reference during preparation. Do not include a feedback summary, response to instructor comments, or feedback revision record in the report, appendix, or video. These items are not graded.
+
+Choose **one primary funding or support program** from Section 5. Explain its fit with your venture stage, team, and next milestone. State the funding or service requested and connect it to the implementation plan and budget.
+
+**Submit the course deliverables to Blackboard. An external application is optional.** Document the selected program's eligibility, application format, and current application window. Prepare the relevant application content; do not assume the course report or video can be submitted unchanged. Course grades do not depend on receiving funding or admission.
+
+### Team workspace
+
+Use your existing SkillSimm group workspace for coordination.
+
+- **Join link:** 
+- **Joining code:** 
+
+## 2. Final report — 100 points
+
+Write a standalone proposal that can be understood without reading the midterm. Begin with a title page naming the venture and all team members, followed by an executive summary. Organize the body into Sections A–E, worth **20 points each**. Include citations, references, and the application preparation appendix.
+
+### A. Venture Overview and Program Fit — 20 points · Team Leader
+
+- **Customer problem, solution, and executive summary — 8 points:** Identify the initial customer and user, the problem, and the proposed solution. Summarize the evidence, commercialization approach, and current stage. Distinguish existing capabilities from planned development.
+- **Program fit and application preparation — 6 points:** Identify the primary target program, explain eligibility and stage fit, and include the application preparation appendix. Identify unresolved eligibility questions and steps needed to qualify.
+- **Support request and milestones — 6 points:** State the amount or service requested, its use, and the measurable milestone it supports. Assign owners and a timeline. Connect the request to Section E's budget and explain how the plan changes if only partial support is available.
+
+### B. Market Deployment and Dominant Design — 20 points · Member 1
+
+- **Initial segment and market entry — 8 points:** Define the first customer segment, distribution or sales channels, and launch sequence. Use evidence to explain how the venture will reach customers and deliver value.
+- **Dominant design, standards, and complements — 6 points:** Identify the design or approach widely accepted in the market, relevant industry standards, and complementary products or services. Explain their effects on entry and adoption. If no dominant design has emerged, document the competing approaches and their implications.
+- **Adoption barriers and switching costs — 6 points:** Analyze why customers might delay or reject adoption, including switching costs and dependence on other providers. Specify actions and measures for testing whether those barriers can be reduced.
+
+### C. Technology Deployment and Competitor Analysis — 20 points · Member 2
+
+- **Technology and operating capabilities — 8 points:** Describe the capabilities needed to deliver the solution. Specify what the team will build, acquire, or obtain through partners, with a deployment sequence and resource requirements.
+- **Competitor comparison — 6 points:** Compare relevant competitors and current customer alternatives using public evidence. Address capabilities, target customers, delivery models, and limitations in a comparison table.
+- **Differentiation, dependencies, and risks — 6 points:** Explain why customers would choose the venture. Identify critical suppliers, platforms, intellectual property or permission needs, and deployment risks. State the safeguards or tests needed to assess feasibility.
+
+### D. Pricing Strategy — 20 points · Member 3
+
+- **Price, model, and customer fit — 8 points:** State the proposed price, unit of sale or billing basis, and pricing model. Explain the fit with the target customer's needs, purchasing process, and value received.
+- **Comparison of alternatives — 6 points:** Compare alternative pricing approaches using competitor prices, customer research, or other traceable evidence. Record source dates and distinguish observed prices from assumptions.
+- **Adoption, revenue, and profitability trade-offs — 6 points:** Explain how the chosen price affects adoption, revenue, and margins. Show the assumptions linking price and sales volume to the budget in Section E and identify what evidence would lead the team to change its price.
+
+### E. Financial Budgeting — 20 points · Member 4
+
+- **Budget and assumptions — 8 points:** Present a budget over an explicitly stated period showing revenue, major costs, and resulting profit or loss. State price, volume, timing, and cost assumptions. Include the resources requested in Section A and distinguish funding inflows from operating revenue.
+- **Downside scenario — 6 points:** Recalculate the budget with revenue **20% below the base case**. Explain which costs can change, which remain, the resulting financial gap, and the actions the team would take. Identify additional material uncertainties.
+- **Spending classification and stopping costs — 6 points:** Classify major expenses as **committed** (obligations already made), **sticky** (difficult to reduce quickly), or **flexible** (easier to adjust). State the financial or operational cost of stopping each. For planned commitments, identify when the obligation would arise rather than presenting it as already incurred.
+
+### Application preparation appendix
+
+Include this appendix in the report PDF. It is assessed within Section A and carries no additional points.
+
+| Item | What to include |
+| --- | --- |
+| Target and source | Program name, official application link, and date the requirements were checked. |
+| Eligibility | Relevant affiliation, team-size, venture-stage, and other requirements; explain the team's fit and unresolved questions. |
+| Application window | Published deadline or next announced cycle. If none is published, state that it has not been announced. |
+| Required materials | Application questions, word limits, attachments, pitch length, and any live-presentation requirements. |
+| Prepared responses | Draft responses to the main application questions or a service inquiry, supported by the proposal. Identify reusable report sections or video segments. |
+| Remaining tasks | List required adaptations, eligibility checks, or other preparation, with an owner for each task. |
+
+For a program with a selection pathway, identify the team's next eligible step. For a service program, define the assistance requested and expected output. Distinguish proposed relationships from established ones.
+
+## 3. Final pitch video — 10–20 minutes, 100 points
+
+**The Team Leader submits the video file or accessible link through the designated Blackboard assignments by the deadlines posted there.** Follow each assignment's instructions for the required version.
+
+Present the venture to reviewers of the selected program. Cover all five sections below. The video is graded separately from the report; present the required evidence and reasoning in the recording.
+
+| Pitch section | Scoring criteria | Points |
+| --- | --- | --- |
+| **A. Venture Overview and Program Fit** | Customer problem, solution, and venture overview (8); program fit and application readiness (6); specific support request tied to milestones (6). | **20** |
+| **B. Market Deployment and Dominant Design** | Initial segment and market entry strategy (8); dominant design, standards, and complements (6); adoption barriers, switching costs, and actions to address them (6). | **20** |
+| **C. Technology Deployment and Competitor Analysis** | Required capabilities and build, acquire, or partner choices (8); evidence-based competitor comparison (6); differentiation, dependencies, and deployment risks (6). | **20** |
+| **D. Pricing Strategy** | Explicit price, pricing model, and customer fit (8); evidence-based comparison of alternatives (6); adoption, revenue, and profitability trade-offs (6). | **20** |
+| **E. Financial Budgeting** | Budget with a stated period and revenue/cost assumptions (8); revenue-down-20% scenario and response (6); committed, sticky, and flexible spending and stopping costs (6). | **20** |
+| **Total** | | **100** |
+
+Use audible speech, readable visuals, and source credits. Keep the price, sales assumptions, budget, milestones, and support request consistent with the report. Label projections and planned activities. End with the specific support request and the result it will enable.
+
+The **10–20-minute video is the course version**. Explain any changes needed for an external program's pitch format in the application appendix.
+
+## 4. Team workflow and submission
+
+Continue using the shared Google Doc and team chat. Add the final proposal as a clearly labeled Part 2. Make it self-contained and export it separately from the midterm analysis; the submitted final PDF must include the final proposal, references, and appendix.
+
+| Team role | Lead responsibility |
+| --- | --- |
+| Team Leader | Section A and application appendix; integrate the report; coordinate the pitch; complete the SkillSimm leader task; submit the report and video to Blackboard. |
+| Member 1 | Section B: market deployment and dominant design. |
+| Member 2 | Section C: technology deployment and competitor analysis. |
+| Member 3 | Section D: pricing strategy. |
+| Member 4 | Section E: financial budgeting. |
+
+**The report and video are shared team responsibilities.** Each member must review the complete proposal and help develop the pitch. Resolve inconsistent claims, figures, and assumptions before submission.
+
+### Team members
+
+Complete your assigned work and submit your individual SkillSimm task with an accurate contribution summary. This summary records your contribution when shared Google Doc edits appear as “Anonymous.” Retain a copy of the summary.
+
+### Team Leader
+
+Your SkillSimm submission task unlocks after all four members submit their tasks.
+
+1. Coordinate the pitch submission according to the existing Blackboard assignment.
+2. Review the complete final proposal, appendix, and video. Confirm that the five sections and both rubrics are addressed.
+3. Save the editable work and a local PDF before completing the final SkillSimm task. **Submitting the final leader task captures the shared document as a final PDF and closes the project run.**
+4. Complete the final leader task and retain the captured PDF as the workflow record.
+5. **Submit the report to Blackboard:** Export the standalone final proposal with references and appendix and upload it to the final report assignment. Use the captured PDF directly only if it contains the standalone final proposal and its required supporting materials.
+6. **Submit the final video to Blackboard:** Upload the 10–20-minute video file or accessible link.
+7. Open the submitted PDF, verify video playback and permissions, and save the submission receipts.
+
+**Submission fallback:** If SkillSimm prevents access or completion, save the proposal as a PDF and submit the report and video through the existing Blackboard assignments by their deadlines. Keep contribution records and report the technical issue to the instructor.
+
+### Participation issues and peer evaluation
+
+If a team member is not actively participating, the Team Leader can take over that member's tasks in SkillSimm. To request peer evaluation, attach **Part 1 of the peer evaluation request** to the report. The instructor will then initiate the evaluation and require each team member to complete **Part 2**. Individual grades will reflect contributions. If the Team Leader is not participating, report the issue to the instructor for reassignment.
+
+## 5. Research and sources
+
+Cite sources where claims appear and include a reference list with links and dates. Distinguish observed facts, supplied-plan claims, estimates, and proposed decisions. Identify limitations and unresolved assumptions.
+
+### Venture and course evidence
+
+- **Option A:** Cite the supplied plan by section number. Check its assumptions appendix, risk register, financial plan, and operations against its executive summary and outside evidence. Identify which claims are verified and which remain assumptions.
+- **Option B:** Document the original venture's customer, technology, market, pricing, and cost assumptions. Support them with external evidence and identify the tests needed to validate them.
+- **Course concepts:** Apply market research and value-chain analysis, operations, intellectual property, legal structure, dominant design, technology deployment, pricing, and budgeting where relevant. Course cases include TheRealReal, Affirm, Tesla, Cerebras, Snowflake, and Marvell; explain the relevance of any comparison.
+- **Competitors and technology:** Use official product documentation, public pricing, technical specifications, and filings available through [SEC EDGAR](https://www.sec.gov/edgar/search/). Distinguish advertised capabilities from tested or independently documented performance.
+- **Pricing and market evidence:** Record access dates and retain screenshots of competitor pricing. Show the assumptions behind market-size and sales estimates, and distinguish reported estimates from audited figures.
+- **Legal and regulatory evidence:** Identify the rules relevant to the venture's actual activities and cite authoritative sources. Investigate education records, children's privacy, accessibility, recording consent, data protection, and intellectual property where applicable; explain applicability rather than listing rules without analysis.
+- **Financial evidence:** Identify the basis for each major revenue and cost estimate. Keep prices, sales units, time periods, and funding assumptions consistent across the proposal, budget, and video.
+- **Interviews:** Obtain consent, record dates, attribute insights, and identify limitations. Do not present planned interviews as completed research. [UConn NetWerx](https://werth.institute.uconn.edu/netwerx/) is an alumni contact resource.
+
+Use the [UConn Entrepreneurship Business Plan Guide](https://guides.lib.uconn.edu/entrepreneurship/business-plan) for research resources.
+
+### UConn funding and support opportunities
+
+Choose one primary target using the official sources below. Check current eligibility, team-size rules, application windows, required materials, and selection pathways. Record the results and access date in the appendix. A five-person course team must identify any mismatch with an external program's team requirements.
+
+| Program | Focus for the proposal |
+| --- | --- |
+| [Get Seeded](https://ccei.uconn.edu/getseeded/) | Define an early venture test, its resource needs, and measurable learning outcomes. |
+| [Wolff New Venture Competition](https://ccei.uconn.edu/wolff-new-venture-competition/) | Explain commercialization progress and document the current selection pathway. |
+| [UConn IDEA Grant](https://ugradresearch.uconn.edu/idea-2/idea/) | Define the project, methods, timeline, and budget; check eligibility and team-size requirements. |
+| [Innovation Quest](https://innovationquest.uconn.edu/) | Explain the innovation, evidence of need, and development milestones. |
+| [Accelerate UConn](https://ccei.uconn.edu/accelerate-uconn/) | Define customer-discovery hypotheses and a validation plan; check cohort requirements. |
+| [CCEI Summer Accelerator](https://ccei.uconn.edu/summer-accelerator/) | Explain venture stage, team commitment, and commercialization milestones. |
+| [BUILD Hartford](https://ccei.uconn.edu/build-hartford/) | Identify a relevant community or business project and check participation requirements. |
+| [Entrepreneurship Bootcamp for Veterans](https://ccei.uconn.edu/ebv/) | Explain training needs and verify applicant eligibility. |
+| [Technology Incubation Program](https://innovation.uconn.edu/tip-application/) | Define technology development needs, facilities, and commercialization milestones. |
+| [Intellectual Property and Entrepreneurship Law Clinic](https://law.uconn.edu/academics/clinics-experiential-education/intellectual-property-entrepreneurship-law-clinic/) | Define the intellectual property issue and specific assistance requested. |
+| [Transactional Law Clinic](https://law.uconn.edu/academics/clinics-experiential-education/transactional-law-clinic/) | Define the business formation or transactional assistance needed and check service scope. |
+| [Verge Consulting](https://ccei.uconn.edu/programs/verge-consulting-group/) | Define a focused market, pricing, operations, or financial question and the expected consulting output. |
+
+## 6. Submission checklist
+
+- [ ] Choose Option A or B and one primary funding or support program.
+- [ ] Complete the title page, executive summary, Sections A–E, references, and application preparation appendix.
+- [ ] Check the report against the **100-point report rubric**.
+- [ ] Include a base budget, a revenue-down-20% scenario, and spending classifications with stopping costs.
+- [ ] Verify that pricing, sales assumptions, technology plans, budget, and support request agree across the report and video.
+- [ ] Complete the **10–20-minute video** and check it against the **100-point video rubric**.
+- [ ] Complete individual SkillSimm tasks and retain contribution summaries.
+- [ ] Save editable files and a local PDF before completing the final SkillSimm leader task.
+- [ ] Submit the standalone final report PDF and required final video version by the deadlines posted in Blackboard.
+- [ ] Verify PDF access, video playback, permissions, and submission receipts.
+- [ ] Retain editable materials and document adaptations needed for any later external application.

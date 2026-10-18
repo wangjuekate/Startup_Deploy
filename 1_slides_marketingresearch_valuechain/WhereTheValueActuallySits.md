@@ -1,6 +1,6 @@
 # Where the Value Actually Sits: Reading a Value Chain for the Step Nobody Can Copy
 
-> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Before class:** Read this essay and review the [lecture slides](MarketingResearchValueChain.html). Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 A value chain is the sequence of steps that stands between a raw thing and a satisfied customer. Somebody sources it. Somebody verifies it. Somebody prices it, moves it, sells it, and handles it when it comes back. Drawn on a whiteboard it looks democratic — a row of boxes, each one necessary, each one doing its share. That picture is wrong in the only way that matters. **Margin does not spread across a chain. It pools.** It collects at one or two steps and runs straight past the rest, and the steps it runs past are not bad steps. They are simply steps where you have no bargaining power, because if you charged more the customer would do it themselves or buy it from the eleven other firms that do it.
 

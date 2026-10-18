@@ -1,6 +1,6 @@
 # When the Market Stops Arguing: Dominant Design and the Window That Closes
 
-> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Before class:** Read this essay and review the [lecture slides](MarketDeploymentDominantDesign.html). Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 Ask a room full of students whether their phone charges with USB-C and most hands go up. Ask who *chose* USB-C — who compared connector architectures and decided — and every hand goes down. Nobody chose it. It won, and then everyone complied. That is what a **dominant design** is: the version of a product that stops being one option among several and becomes *the way it is done*. And the moment it settles, being better stops being enough, and being different becomes a liability.
 

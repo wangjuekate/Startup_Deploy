@@ -1,6 +1,6 @@
 # The Take-Rate Waterfall: Which Costs Get Thicker When You Grow
 
-> **Short reading path:** Start with your role in the [student packet](StudentPacket.html). This full essay is optional depth. Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
+> **Before class:** Read this essay and review the [lecture slides](OperationsBusinessModel.html). Post a 50–100 word comment with a position, evidence or a labeled example, and one question in the existing HuskyCT space at its current deadline.
 
 Everyone can describe a business model in one sentence. *We take a cut. We charge a subscription. It's a marketplace, we keep fifteen percent.* That is the first line of the model, and there are eleven more underneath it, every one of which takes money away from you. The sentence is the top of a waterfall, and **operations is the discipline of what happens on the way down.**
 
