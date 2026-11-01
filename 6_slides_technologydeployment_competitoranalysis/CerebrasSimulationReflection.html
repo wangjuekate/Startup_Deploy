@@ -1,197 +1,144 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Simulation: Cerebras Against the Moat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Reflection: Faster is not enough.</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
-      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
-      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
-      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
-      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
-      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
-      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
-      .reveal ul { margin: 0.3em 0 0 1.1em; }
-      .reveal li { margin-bottom: 0.35em; }
-      .title-slide h2 { font-size: 1.3em; }
-      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
-      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
-      .small { font-size: 0.4em; color: var(--muted); }
-      /* role question slides */
-      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
-      .role-h .emoji { font-size: 1.1em; }
-      .role-h h2 { margin: 0; text-align: left; }
-      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
-      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
-      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
-      .reveal .role-h ~ p { text-align: left; }
-      .options li { margin-bottom: 0.35em; }
-      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
-      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
-      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
-      .reflect li { font-size: 0.44em; }
-      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+      :root { --ink: #182525; --muted: #526361; --line: #d7dfdb; --accent: #08695d; --soft: #eef3ef; --red: #b52b35; }
+      body { background: #f8f9f5; }
+      .reveal { font-family: "Avenir Next", "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 36px; }
+      .reveal .slides { text-align: left; }
+      .reveal .slides section { box-sizing: border-box; padding: 24px 32px; }
+      .reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--ink); text-transform: none; letter-spacing: -.035em; }
+      .reveal h1 { font-size: 2.1em; line-height: 1.06; font-weight: 750; margin: 22px 0; }
+      .reveal h2 { font-size: 1.35em; line-height: 1.15; font-weight: 700; margin: 0 0 24px; }
+      .reveal h3, .reveal .eyebrow { color: var(--accent); font-size: .38em; line-height: 1.4; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; margin: 0 0 18px; }
+      .reveal p, .reveal li { font-size: .59em; line-height: 1.5; }
+      .reveal p { margin: 16px 0; }
+      .reveal strong { font-weight: 700; }
+      .reveal .subtitle { color: var(--muted); font-size: .66em; max-width: 760px; }
+      .reveal .small { font-size: .36em; color: var(--muted); line-height: 1.5; }
+      .title-slide::before { content: ""; display: block; width: 72px; height: 6px; background: var(--red); margin-bottom: 34px; }
+      .title-slide h1 span { color: var(--red); }
+      .title-slide .title-meta { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 35px; color: var(--muted); font-size: .4em; }
+      .box { background: var(--soft); border-left: 4px solid var(--accent); padding: 22px 28px; border-radius: 0 12px 12px 0; }
+      .box p:first-child { margin-top: 0; }
+      .box p:last-child { margin-bottom: 0; }
+      .reveal .question-slide h2 { margin-bottom: 20px; }
+      .reveal .question-slide .q { font-size: .65em; line-height: 1.4; font-weight: 600; margin-bottom: 22px; max-width: 950px; }
+      .reveal .options { list-style: none; display: grid; gap: 10px; margin: 0; width: 100%; }
+      .reveal .options li { display: flex; align-items: baseline; gap: 14px; font-size: .53em; line-height: 1.42; background: #fff; border: 1px solid var(--line); border-radius: 9px; padding: 13px 18px; margin: 0; }
+      .options .k { color: var(--accent); font-weight: 750; flex: 0 0 24px; }
+      .reveal .takeaway-slide .concept-link { font-size: .48em; color: var(--accent); margin-bottom: 24px; }
+      .reveal .takeaway-slide ul { margin: 0 0 0 22px; }
+      .reveal .takeaway-slide li { font-size: .55em; line-height: 1.5; margin-bottom: 20px; padding-left: 6px; }
+      .reveal .takeaway-slide li:last-child { margin-bottom: 0; }
+      .reveal li::marker { color: var(--accent); }
+      .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 26px 0; }
+      .stat { padding: 22px 26px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+      .reveal .stat .value { font-size: 1.12em; font-weight: 750; line-height: 1.1; letter-spacing: -.04em; margin: 0 0 10px; }
+      .reveal .stat .label { font-size: .46em; color: var(--muted); margin: 0; }
+      .reveal .stat .denominator { font-size: .48em; color: var(--muted); font-weight: 500; }
+      .reveal .stat .sample { font-size: .34em; color: var(--muted); margin: 8px 0 0; }
+      .stat.highlight { background: var(--soft); border-color: #b6d1c8; }
+      .reveal .callout { border-left: 4px solid var(--accent); padding: 8px 0 8px 20px; font-size: .57em; }
+      .reveal .award-mark { color: var(--accent); font-size: .4em; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 30px; }
+      .reveal .award-slide h2 { font-size: 1.9em; max-width: 800px; }
+      .reveal .ranking-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; list-style: none; margin: 24px 0; width: 100%; }
+      .reveal .ranking-options li { font-size: .57em; padding: 24px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+      .reveal .controls { color: var(--accent); }
+      .reveal .progress { color: var(--accent); height: 4px; }
+      .reveal .slide-number { background: transparent; color: var(--muted); font: 13px "Segoe UI", sans-serif; right: 20px; bottom: 15px; }
+      @media print { .reveal .stat, .reveal .options li { break-inside: avoid; } }
+      @media (prefers-reduced-motion: reduce) { .reveal *, .reveal *::before { transition: none !important; animation: none !important; } }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 
-        <!-- Title -->
         <section class="title-slide">
-          <h2>Cerebras Against the Moat</h2>
-          <p class="subtitle">Simulation Reflection · Thursday, October 29</p>
-        </section>
-<section class="course-adjustment"><h2>Today: discuss, then apply</h2><ul><li><strong>10 min:</strong> recap the concept and explain the task in your own words.</li>
-<li><strong>35 min:</strong> selected role decisions, evidence, trade-offs, and feedback.</li>
-<li><strong>20 min:</strong> apply the case to your venture. <strong>10 min:</strong> save the record and start the reflection.</li>
-<li>Review the <a href="TechnologyDeploymentCompetitorAnalysis.html">lecture slides</a> and <a href="HowMuchBetterDoYouHaveToBe.md">module essay</a>. Download the slides and save your own notes before the simulation.</li></ul><aside class="notes">Pause after each instruction. Invite a student to restate the task. Select contrasting decisions rather than reading every slide aloud.</aside></section>
-
-
-        <!-- ============ Discussion Time ============ -->
-        <section class="title-slide">
-          <h2>Group Discussion</h2>
-          <div class="reflect">
-            <ul>
-              <li>Form groups with classmates who have the same role.</li>
-              <li>As a group, say whether your choice <strong>grows our advantage</strong> or <strong>shrinks their switching cost</strong> — and name the dimension the buyer is bleeding on.</li>
-              <li>Cite a figure from your packet, name what your choice gives up, and state one thing that would change your answer.</li>
-              <li>Select one representative to present your group's choice and reasoning.</li>
-            </ul>
-          </div>
+<p class="eyebrow">Startup Deploy / Simulation reflection</p><h1>Faster is<br><span>not enough.</span></h1><p class="subtitle">Cerebras in mid-2026: turning a technical advantage into adoption.</p><p class="title-meta">Share information &nbsp; / &nbsp; Make a coordinated decision &nbsp; / &nbsp; Explain the priorities</p>
         </section>
 
-        <!-- ============ FINANCIAL LEAD ============ -->
         <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
-          <p class="q">Revenue grew 76%, margin fell to 39.0%, and the operating loss widened to $145.9 million. What do you do with the money?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Fix the margin on the growing line first.</strong> Cloud and services grew 94% at about 29.9% gross margin against hardware&#x27;s 42.9% — growth is arriving in the line that keeps least, and that is why total margin fell to 39.0%.</li>
-            <li><span class="k">B</span> <strong>We just earned $237.8 million of net income.</strong> Fund growth out of the profit and avoid dilution — the business is already paying for itself.</li>
-            <li><span class="k">C</span> <strong>Raise and spend on capacity.</strong> The prospectus says the cloud business needs significant data centre capacity and capital, and we cannot deliver the OpenAI tranches without it.</li>
-            <li><span class="k">D</span> <strong>Protect R&amp;D at 48% of revenue</strong> whatever else happens — the speed advantage is the only reason any of these customers called us.</li>
-          </ul>
+<p class="eyebrow">The starting point / Mid-2026 / FY2025 evidence</p><h2>A speed advantage. A concentrated business.</h2><div class="stat-grid"><div class="stat"><p class="value">$510.0 million</p><p class="label">FY2025 revenue</p></div><div class="stat"><p class="value">86%</p><p class="label">Revenue from two related customers</p></div><div class="stat"><p class="value">$145.9 million</p><p class="label">Loss from operations</p></div><div class="stat"><p class="value">$237.8 million</p><p class="label">Net income, driven by non-operating other income</p></div></div><p class="callout">How can Cerebras reach more customers while keeping its capacity promises?</p><p class="small">Source: simulation common brief and executive packets, citing the May 13, 2026 IPO prospectus. Figures are rounded.</p>
         </section>
+
+        <section class="award-slide">
+<p class="award-mark">Team recognition</p><h2>Celebrating the<br>winning team</h2>
+        </section>
+
         <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Funding must support a route to adoption.</strong> Explain how the proposed spending strengthens the offering, makes switching easier or enables delivery.</li>
-              <li><strong>Compare financial measures carefully.</strong> Distinguish revenue, margin, operating results and available cash before assessing the resources behind the plan.</li>
-              <li><strong>Test the investment hypothesis.</strong> Identify what customer or cost evidence would justify further spending and what would make you change course.</li>
-            </ul>
-          </div>
+<p class="eyebrow">Reflection / Team decision process</p><h2>AI versus Team Friction</h2><div class="box"><p>What is the minimum viable team based on the habit of collaboration?</p></div>
         </section>
 
-        <!-- ============ MARKETING LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
-          <p class="q">86% of revenue came from two related customers. Where does the go-to-market effort go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> Into <strong>landing more flagship names</strong> like the OpenAI agreement. A reference customer that everyone respects is what makes a procurement committee brave.</li>
-            <li><span class="k">B</span> Into the <strong>channels buyers already use</strong> — AWS and the marketplaces and gateways — because being easy to try shrinks the switch, and many small customers is the only real cure for 86% of revenue sitting with two related parties.</li>
-            <li><span class="k">C</span> Into <strong>deepening the customers we already have.</strong> Our top ten customers grew their spend about 80% within 12 months — expanding them is far cheaper than winning new ones.</li>
-            <li><span class="k">D</span> Into the <strong>benchmark story</strong> — publish 15x inference and 10x training results everywhere, because speed is the only thing we have that nobody can copy this year.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>The buyer&#x27;s problem defines the comparison.</strong> Specify the customer segment, the problem it values solving and the evidence that the offering addresses it.</li>
-              <li><strong>Map the cost of leaving.</strong> Consider procurement, skills, workflows, complements and perceived risk when judging the route to market.</li>
-              <li><strong>Assess the customer mix.</strong> Explain how the proposed channel changes both adoption and dependence on particular accounts.</li>
-            </ul>
-          </div>
+        <section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">What does securing the next OpenAI capacity tranche require this round? Consult the COO before answering.</p><ul class="options"><li><span class="k">A.</span> Purchase orders are enough; the tranche needs no commitment this round.</li><li><span class="k">B.</span> The Sunnyvale yield program alone secures the tranche.</li><li><span class="k">C.</span> Committed wafers, sole-source components and data-centre space for 50 planning units; purchase orders alone leave the tranche unsecured.</li><li><span class="k">D.</span> Leasing more data-centre space alone secures the tranche.</li></ul>
         </section>
 
-        <!-- ============ OPERATION LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
-          <p class="q">You have promised dated capacity on inputs nobody has promised you. Where does the operational effort go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Convert the supply chain from purchase orders to committed capacity</strong> — wafers, sole-source components, data-centre space — because we have promised dated capacity tranches on inputs nobody has promised us.</li>
-            <li><span class="k">B</span> <strong>Keep the flexible model.</strong> Purchase orders without volume commitments are what let a company our size scale up and down with demand.</li>
-            <li><span class="k">C</span> Put the effort into <strong>manufacturing yield and throughput at Sunnyvale</strong>, where we do final packaging, assembly and test ourselves — it is the part of the chain we actually own.</li>
-            <li><span class="k">D</span> Put the effort into the <strong>data-centre build</strong> itself. Leased space we do not control is the step between a signed contract and a delivered tranche.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Delivery is part of the switching decision.</strong> Explain what a buyer must believe about capacity, timing and support before relying on a new supplier.</li>
-              <li><strong>Map promises to dependencies.</strong> Identify what has been promised to customers, what inputs the plan depends on and who controls those inputs.</li>
-              <li><strong>Compare flexibility and assurance.</strong> State what the proposal commits, what it leaves adjustable and how you would respond if demand or supply changes.</li>
-            </ul>
-          </div>
+        <section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Which engineering option lets channel partners list Cerebras as a drop-in service? Consult the CTO before answering.</p><ul class="options"><li><span class="k">A.</span> The next-generation WSE; partners list whatever is fastest.</li><li><span class="k">B.</span> Custom benchmarks and reference designs.</li><li><span class="k">C.</span> No engineering is needed; partners already list every service.</li><li><span class="k">D.</span> Only the drop-in switching layer: unchanged PyTorch, an OpenAI-compatible API and gateway connectors.</li></ul>
         </section>
 
-        <!-- ============ TECH LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
-          <p class="q">R&amp;D is $243.3 million — 48% of revenue — and the hardware is already 15× faster. Where does the engineering go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> Into the <strong>next generation of the WSE.</strong> The lead is the whole story, and the incumbent ships a new architecture every year.</li>
-            <li><span class="k">B</span> Into <strong>making the switch invisible</strong> — unchanged PyTorch, industry-standard APIs, the toolchains and gateways customers already use. We are already 15× faster; what stops adoption is everything they would have to throw away.</li>
-            <li><span class="k">C</span> Into <strong>custom benchmarks and reference designs</strong> that show the advantage as clearly as possible. If the numbers are unarguable, the market has to come to us.</li>
-            <li><span class="k">D</span> Into the <strong>software platform for the cloud business</strong> — orchestration, multi-tenancy and utilisation. It is the lower-margin line and engineering is how its cost curve changes.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Benchmark the dimension that matters.</strong> Explain which workload and user need the performance measure represents, and what the benchmark leaves out.</li>
-              <li><strong>Compare both sides of the threshold.</strong> Assess the expected benefit of the proposed engineering work against the customer effort it creates or removes.</li>
-              <li><strong>Make the adoption hypothesis testable.</strong> Identify a trial that would reveal whether the remaining obstacle is performance, integration, cost or something else.</li>
-            </ul>
-          </div>
+        <section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Operating Officer (COO)</h2><p class="q">Which go-to-market option adds many small customers at the lower stated cost? Consult the CMO before answering.</p><ul class="options"><li><span class="k">A.</span> The flagship-name hunt.</li><li><span class="k">B.</span> The channel program through AWS and the marketplaces, once the service is drop-in compatible.</li><li><span class="k">C.</span> Deepening the top-ten accounts.</li><li><span class="k">D.</span> The benchmark campaign.</li></ul>
         </section>
 
-
-
-
-
-        <!-- ============ ACCOUNT MANAGER ============ -->
-        <section class="course-adjustment"><h2>Account Manager</h2><ul><li>Hear the <strong>four leads</strong>: Financial, Marketing, Operation, and Tech.</li>
-<li>Rank <strong>Money, Delivery, Concentration, Engineering</strong> from 1–4; use each once.</li>
-<li>Allocate <strong>100 priority points</strong> in blocks of 10. Explain the first priority with a figure or passage and a dependency.</li>
-<li>Name a trade-off and evidence that would change the ranking. Save the decision record.</li></ul></section>
-
-        <section class="course-adjustment"><h2>Account Manager — Key Takeaways</h2><ul><li>A technical advantage matters when customers can realize it after switching costs.</li>
-<li>Different rankings can be defensible. Connect the priorities to evidence and the weekly concept.</li>
-<li>Example allocation: 40/30/20/10 totals 100. Explain your own allocation; priority points are not course-grade points.</li></ul></section>
-
-
-        <!-- Key takeaway -->
-        <section>
-          <h2>Key takeaway</h2>
-          <div class="box"><p>Return to the keyboard example. Compare a benefit on the dimension a buyer values with the full cost of switching, then explain which part of that comparison your team&#x27;s plan changes.</p></div>
-          <p class="quote" style="margin-top: 20px;">What would make a particular customer choose to switch?</p>
+        <section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">What investment capacity is available this round, and what counts toward it? Consult the CFO before answering.</p><ul class="options"><li><span class="k">A.</span> 100 planning units for engineering alone, plus the $237.8 million of net income.</li><li><span class="k">B.</span> 100 planning units covering capacity, engineering and go-to-market; the non-operating other income adds nothing.</li><li><span class="k">C.</span> Unlimited: the $1.0 billion OpenAI loan can fund anything.</li><li><span class="k">D.</span> 100 planning units plus whatever the $390.7 million of other income adds.</li></ul>
         </section>
-<section class="course-adjustment"><h2>Apply this to your venture — 20 minutes</h2><ul><li>Compare your venture with two alternatives, including the current way customers solve the problem. List evidence, switching costs, and one test of your claimed advantage.</li>
-<li><strong>Produce:</strong> A competitor comparison table for Final Section C.</li>
-<li>Add this to your shared project document. If you finish the simulation early, start here; this is not a new separately graded assignment.</li></ul></section>
-<section class="course-adjustment"><h2>Save your decision record</h2><ul><li><strong>Decision → evidence and source → trade-off → change after discussion → concept and venture application.</strong></li>
-<li>Save a personal copy or screenshot before leaving. Use decision words, not only option letters.</li>
-<li>If SkillSimm lags, use your downloaded lecture slides and your own notes.</li></ul></section>
-<section class="course-adjustment"><h2>Reflection: a clear, specific explanation</h2><ul><li>Use five headings: <strong>Decision, Evidence, Trade-off, Revision, Connection.</strong></li>
-<li>From October 20: aim for <strong>300–500 words</strong>. Complete responses following the previous 500–800 word guidance remain acceptable.</li>
-<li>Submit individually in the existing HuskyCT assignment; <strong>keep its current deadline</strong>.</li>
-<li><a href="../Assignments/Reflection_Guide.html">Rubric and example feedback</a>: one specific strength and one next revision.</li></ul></section>
 
+        <section class="takeaway-slide" data-stage="1">
+<h3>Stage 1 — Key takeaways</h3><h2>Define the adoption problem together</h2><p class="concept-link"><strong>Technology Deployment &amp; Competitor Analysis:</strong> Compare the buyer’s benefit with the full cost of switching.</p><div class="box"><ul><li><strong>Combine the four perspectives.</strong> The CFO holds the ceiling, the COO the capacity requirement, the CMO the channel costs, and the CTO the compatibility condition.</li><li><strong>Separate performance from adoption.</strong> A faster chip does not remove a buyer’s code changes, retraining, procurement work, or delivery risk.</li><li><strong>Make dependencies explicit.</strong> Channel listings require the drop-in layer; a delivery promise requires committed inputs. Ask who holds each missing fact.</li></ul></div>
+        </section>
+
+        <section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">Reported net income was $237.8 million, but it came from non-operating other income while the loss from operations widened to $145.9 million. How should Cerebras fund this round?</p><ul class="options"><li><span class="k">A.</span> Fund growth from the $237.8 million of net income; the business already pays for itself.</li><li><span class="k">B.</span> Fund a coordinated allocation covering capacity commitments, engineering and go-to-market within the ceiling, counting no non-operating income.</li><li><span class="k">C.</span> Protect the next-generation WSE first and fund delivery and go-to-market from whatever remains.</li><li><span class="k">D.</span> Hold all new commitments until the operating loss turns into an operating profit.</li></ul>
+        </section>
+
+        <section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Two related customers were 86% of 2025 revenue (MBZUAI 62.0%, G42 24.0%). Where should the go-to-market effort go?</p><ul class="options"><li><span class="k">A.</span> Deepen the top-ten accounts; they grew their spend about 80% within 12 months.</li><li><span class="k">B.</span> Hunt more flagship names like OpenAI before anything else.</li><li><span class="k">C.</span> Launch the channel program through AWS and the marketplaces, timed to the CTO’s drop-in layer, to add many small customers.</li><li><span class="k">D.</span> Run a benchmark campaign publishing 15× inference results everywhere.</li></ul>
+        </section>
+
+        <section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Operating Officer (COO)</h2><p class="q">Cerebras has promised OpenAI dated capacity tranches, but substantially all of its components are bought by purchase order without capacity commitments. Where does the operational effort go?</p><ul class="options"><li><span class="k">A.</span> Keep the flexible purchase-order model so the company can scale with demand.</li><li><span class="k">B.</span> Put the effort into Sunnyvale yield and throughput, the part of the chain the company owns.</li><li><span class="k">C.</span> Lease more data-centre space first and order wafers when the tranche date is near.</li><li><span class="k">D.</span> Commit wafers, sole-source components and data-centre space for the next OpenAI tranche before taking on new capacity promises.</li></ul>
+        </section>
+
+        <section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">R&amp;D is $243.3 million, about 48% of revenue, and inference is already up to 15 times faster than leading GPU solutions. Where does the engineering go?</p><ul class="options"><li><span class="k">A.</span> Build the drop-in switching layer — unchanged PyTorch, an OpenAI-compatible API and gateway connectors — coordinated with the channel program and capacity commitments.</li><li><span class="k">B.</span> Start the next-generation WSE now; the lead is the whole story.</li><li><span class="k">C.</span> Publish custom benchmarks and reference designs so the numbers are unarguable.</li><li><span class="k">D.</span> Build cloud orchestration first to raise the cloud line’s margin.</li></ul>
+        </section>
+
+        <section class="takeaway-slide" data-stage="2">
+<h3>Stage 2 — Key takeaways</h3><h2>Fund a route from speed to adoption</h2><p class="concept-link"><strong>Technology Deployment &amp; Competitor Analysis:</strong> Reduce switching costs and support delivery within one budget.</p><div class="box"><ul><li><strong>Coordinate the whole allocation.</strong> Committed supply (50) + the drop-in layer (30) + the channel program (20) use the 100-unit ceiling.</li><li><strong>Connect engineering to the customer.</strong> Unchanged code and familiar interfaces enable channel access; the channel program then reaches many smaller buyers.</li><li><strong>Respect the financial constraint.</strong> Non-operating income adds no planning units. A 70-unit next-generation chip would leave too little for the 50-unit capacity commitment.</li></ul></div>
+        </section>
+
+        <section class="question-slide">
+<h3>Stage 3 — Set Company Priorities</h3><h2>Chief Executive Officer (CEO)</h2><p class="q">Rank the four questions from most to least important for Cerebras’s next strategic move. Discuss your executives’ recommendations before setting the priorities.</p><ul class="ranking-options"><li>Money — the CFO’s question</li><li>Concentration — the CMO’s question</li><li>Delivery — the COO’s question</li><li>Engineering — the CTO’s question</li></ul><p class="callout">Use each question once. Explain your first priority using information an executive shared through team chat.</p>
+        </section>
+
+        <section class="takeaway-slide" data-stage="3">
+<h3>Stage 3 — Key takeaways</h3><h2>Prioritize the constraints on adoption</h2><p class="concept-link"><strong>Technology Deployment &amp; Competitor Analysis:</strong> Use company dependencies to explain the ranking.</p><div class="box"><ul><li><strong>Put Delivery and Concentration first.</strong> Securing the promised tranche and broadening the customer base address the two immediate constraints in this scenario.</li><li><strong>Keep Money ahead of Engineering.</strong> The shared ceiling binds the plan. Engineering ranks fourth in the template because its job is to enable the channel, not pursue speed alone.</li><li><strong>Explain what would change your view.</strong> Ask whether buyers can integrate the service, whether new customers reduce concentration, and whether committed capacity arrives on time.</li></ul></div>
+        </section>
 
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
     <script>
-      Reveal.initialize({ hash: true, slideNumber: true });
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        width: 1120,
+        height: 760,
+        margin: 0.06,
+        transition: 'none',
+        controlsTutorial: false,
+        progress: true
+      });
     </script>
   </body>
 </html>

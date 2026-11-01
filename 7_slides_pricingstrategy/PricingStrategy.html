@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -43,6 +43,14 @@
          them. Scoped to .fig-embed so reveal's own transform transition still drives
          fade-up on the prose. */
       .fig-embed .fragment { transition: opacity 0.35s ease; }
+      .reveal .closing-slide .closing-lead { font-size: .60em; color: var(--accent); margin: 0 0 24px; }
+      .closing-slide .three-col { align-items: stretch; }
+      .closing-slide .card h3 { font-size: .56em; }
+      .reveal .closing-slide .card p { font-size: .46em; line-height: 1.5; margin-bottom: 0; }
+      .closing-slide .closing-callout { margin: 22px 0; }
+      .closing-slide .closing-callout p { margin: 0; }
+      .reveal .closing-slide .closing-question { font-size: .58em; font-weight: 600; line-height: 1.4; margin: 22px 0 0; }
+      .reveal .closing-slide .simulation-footnote { font-size: .36em; color: var(--muted); margin: 20px 0 0; }
     </style>
   </head>
   <body>
@@ -57,12 +65,6 @@
           <p class="subtitle">Case: Snowflake FY2026 &middot; Mental model: the Value-Metric Triangle</p>
           <aside class="notes">Everyone thinks pricing is a number. It is three decisions, and the number is the least interesting one. Open by taking a price from the room &mdash; do not skip it.</aside>
         </section>
-<section class="course-adjustment"><h2>Start here — three terms</h2><ul><li>Metric: the unit you charge for.</li>
-<li>Level: the amount charged per unit.</li>
-<li>Fence: a rule that separates offers or customer groups.</li>
-<li><strong>First 10 minutes:</strong> explain the terms, work the example, and pause for questions.</li></ul><aside class="notes">Use the concise primer first. The existing story slides are optional elaboration, not a script to rush through.</aside></section>
-<section class="course-adjustment"><h2>Try one simple example</h2><ul><li>Illustrative startup: compare $10 per event with $30 per month. At two events, bills are $20 and $30; at five events, $50 and $30. Discuss which customer each model attracts and what usage costs the venture bears.</li>
-<li><strong>Explain back:</strong> What unit are you charging for, and what happens to revenue when the customer uses the product more efficiently?</li></ul><aside class="notes">Give students a minute to think, then compare two explanations before launching SkillSimm.</aside></section>
 
 
         <!-- Hook -->
@@ -138,7 +140,39 @@
           <aside class="notes">Sit in the silence after &ldquo;cut your own revenue in half.&rdquo; This is the whole case they open on Thursday.</aside>
         </section>
 
-        <!-- Figure -->
+        <!-- How to read it -->
+        <section>
+          <h2>How to read it &mdash; in order</h2>
+          <div class="three-col">
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>1 &middot; The metric</h3><p>What one thing goes on the invoice? Test it: <strong>does this number get bigger when the customer is getting more value?</strong> If yes, a growth engine. If no, a negotiation every renewal.</p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>2 &middot; The level</h3><p>Only now pick the price per unit. Bounded by the customer's alternative and your cost to serve &mdash; and <strong>the easiest of the three to change later.</strong></p></div>
+            <div class="card fragment fade-up" data-fragment-index="1"><h3>3 &middot; The fences</h3><p>Different customers get different value from the same thing. Editions, tiers, support levels, volume commitments, regions. <strong>A single price for everyone is not fairness &mdash; it is money left on both ends.</strong></p></div>
+          </div>
+          <div class="box fragment fade-up" data-fragment-index="2" style="margin-top: 20px;">
+            <p>Fences let the customers who get more <strong>pay more, without losing the ones who get less.</strong></p>
+          </div>
+          <aside class="notes">Most teams have a metric and a level and no fences at all. Ask each team who their cheap customer is; the silence is the finding.</aside>
+        </section>
+
+        <!-- Asymmetries -->
+        <section>
+          <h2>What is the asymmetry here?</h2>
+          <div class="two-col">
+            <div class="box warn fragment fade-up">
+              <h3>Spend your thinking where it is expensive to be wrong</h3>
+              <p><strong>The level is easy to change and cheap to get wrong. The metric is almost impossible to change and it decides your entire company.</strong></p>
+              <p class="small">You can raise prices next quarter. You cannot switch from per-seat to per-usage without renegotiating every contract, retraining every salesperson, rebuilding billing, and terrifying every customer whose budget was built on the old shape.</p>
+            </div>
+            <div class="box bad fragment fade-up">
+              <h3>You bought both halves</h3>
+              <p><strong>A usage metric aligns you with your customer's success &mdash; and with your customer's efficiency. Those are not the same thing.</strong></p>
+              <p class="small">When the customer grows, you grow. When the customer optimizes, you shrink. You signed up for both when you picked the metric, and you cannot have only the first half.</p>
+            </div>
+          </div>
+          <aside class="notes">The right-hand box is the case. Say it in these words now so that Thursday's disclosure reads as a consequence rather than a surprise.</aside>
+        </section>
+
+              <!-- Figure -->
         <section>
           <h2>The mental model &mdash; the Value-Metric Triangle</h2>
           <div class="fig-embed" role="img" aria-label="A triangle of the metric at the apex, the level and the fences at the base, taken in that order, with the asymmetry that the level is cheap to change and the metric decides the company"><!--fig:Value_Metric_Triangle-->
@@ -165,72 +199,56 @@
           <aside class="notes">Beat 1 and its test are the lecture. Beats 2 and 3 are quick. Beat 4 is what they should be able to recite on Thursday.</aside>
         </section>
 
-        <!-- How to read it -->
-        <section>
-          <h2>How to read it &mdash; in order</h2>
+        <!-- Key takeaway -->
+        <section class="closing-slide">
+          <h2>Key takeaway</h2>
+          <p class="closing-lead">Choose what you charge for before choosing the number.</p>
           <div class="three-col">
-            <div class="card fragment fade-up" data-fragment-index="1"><h3>1 &middot; The metric</h3><p>What one thing goes on the invoice? Test it: <strong>does this number get bigger when the customer is getting more value?</strong> If yes, a growth engine. If no, a negotiation every renewal.</p></div>
-            <div class="card fragment fade-up" data-fragment-index="1"><h3>2 &middot; The level</h3><p>Only now pick the price per unit. Bounded by the customer's alternative and your cost to serve &mdash; and <strong>the easiest of the three to change later.</strong></p></div>
-            <div class="card fragment fade-up" data-fragment-index="1"><h3>3 &middot; The fences</h3><p>Different customers get different value from the same thing. Editions, tiers, support levels, volume commitments, regions. <strong>A single price for everyone is not fairness &mdash; it is money left on both ends.</strong></p></div>
+            <div class="card">
+              <h3>1 &middot; The metric</h3>
+              <p><strong>Per what?</strong><br>Choose a unit that reflects the value customers receive.</p>
+            </div>
+            <div class="card">
+              <h3>2 &middot; The level</h3>
+              <p><strong>How much per unit?</strong><br>Test the price against customer alternatives and your cost to serve.</p>
+            </div>
+            <div class="card">
+              <h3>3 &middot; The fences</h3>
+              <p><strong>Who pays more, and why?</strong><br>Use tiers, features, or commitments to serve different needs.</p>
+            </div>
           </div>
-          <div class="box fragment fade-up" data-fragment-index="2" style="margin-top: 20px;">
-            <p>Fences let the customers who get more <strong>pay more, without losing the ones who get less.</strong></p>
+          <div class="box warn closing-callout">
+            <p><strong>Test both growth and efficiency.</strong> Under usage pricing, more work can increase revenue; doing the same work with fewer resources can reduce it.</p>
           </div>
-          <aside class="notes">Most teams have a metric and a level and no fences at all. Ask each team who their cheap customer is; the silence is the finding.</aside>
+          <p class="closing-question">When your customer gets better at using your product,<br>what happens to their bill?</p>
+          <aside class="notes">Return to the coffee example: per cup, per visit, or per month? Ask a team to name its venture's metric, level, and one fence. Then ask how the bill changes if the customer gets the same value with less usage. A good metric still needs evidence about price, costs, and customer response.</aside>
         </section>
 
-        <!-- Asymmetries -->
-        <section>
-          <h2>The asymmetries that make it a model</h2>
-          <div class="two-col">
-            <div class="box warn fragment fade-up">
-              <h3>Spend your thinking where it is expensive to be wrong</h3>
-              <p><strong>The level is easy to change and cheap to get wrong. The metric is almost impossible to change and it decides your entire company.</strong></p>
-              <p class="small">You can raise prices next quarter. You cannot switch from per-seat to per-usage without renegotiating every contract, retraining every salesperson, rebuilding billing, and terrifying every customer whose budget was built on the old shape.</p>
+        <!-- Simulation introduction -->
+        <section class="closing-slide">
+          <h2>Next: Snowflake’s Consumption Meter</h2>
+          <p class="closing-lead">You are Snowflake’s executive team in spring 2026.</p>
+          <div class="box closing-callout">
+            <p><strong>The challenge:</strong> Customers pay for resources consumed. Making the platform more efficient can lower their bills. How should the company keep growing while delivering better value?</p>
+          </div>
+          <div class="three-col simulation-steps">
+            <div class="card">
+              <h3>1 &middot; Share evidence</h3>
+              <p>Read your role briefing. Consult the <strong>two colleagues</strong> named in your first question; each holds information you need.</p>
             </div>
-            <div class="box bad fragment fade-up">
-              <h3>You bought both halves</h3>
-              <p><strong>A usage metric aligns you with your customer's success &mdash; and with your customer's efficiency. Those are not the same thing.</strong></p>
-              <p class="small">When the customer grows, you grow. When the customer optimizes, you shrink. You signed up for both when you picked the metric, and you cannot have only the first half.</p>
+            <div class="card">
+              <h3>2 &middot; Coordinate choices</h3>
+              <p>The <strong>CFO, CMO, COO, and CTO</strong> make recommendations. Explain the evidence, trade-off, and dependency behind yours.</p>
+            </div>
+            <div class="card">
+              <h3>3 &middot; Set priorities</h3>
+              <p>Share recommendations in team chat. The <strong>CEO ranks the four questions</strong> and explains the first priority using the pricing triangle.</p>
             </div>
           </div>
-          <aside class="notes">The right-hand box is the case. Say it in these words now so that Thursday's disclosure reads as a consequence rather than a surprise.</aside>
+          <p class="simulation-footnote">Use the case evidence and the fictional planning assumptions in your briefing.</p>
+          <aside class="notes">The case uses Snowflake's FY2026 Form 10-K, for the year ended January 31, 2026. Briefings add clearly labeled fictional management assumptions. The CEO receives no private briefing or automatic answer summaries, so recommendations must travel through team chat. The CEO's reason should name the metric, assess whether it still tracks customer value, and identify one fence. Introduce the process without revealing the allocation or preferred ranking.</aside>
         </section>
 
-        <!-- The one question -->
-        <section>
-          <h2>The one question the model makes you ask</h2>
-          <p class="quote fragment fade-up">Not &ldquo;what should we charge?&rdquo; &mdash; but <span class="em">when our customer succeeds, does the number on our invoice go up on its own &mdash; and what happens to that number on the day they get good at using us?</span></p>
-          <div class="box fragment fade-up" style="margin-top: 22px;">
-            <p>Pricing is not a number. It is <strong>three decisions, in this order</strong>: the metric, the level, the fences.</p>
-            <p class="small"><strong>Get the metric right and the level almost sets itself. Get the metric wrong and no level saves you.</strong></p>
-          </div>
-          <aside class="notes">Have each team answer the second half of the question about their own venture. Nobody has ever thought about the day the customer gets good at using them.</aside>
-        </section>
-
-        <!-- Bridge -->
-        <section>
-          <h2>Next: the simulation</h2>
-          <div class="two-col">
-            <div>
-              <ul>
-                <li class="fragment fade-up">You will open the real books of a company that charges <strong>purely for consumption</strong> and grew revenue <strong>29% to $4.68 billion</strong>.</li>
-                <li class="fragment fade-up">It keeps <strong>125 cents</strong> of every dollar its existing customers spent last year &mdash; <strong>down from 133</strong> two years ago.</li>
-                <li class="fragment fade-up">And it states plainly, in its own annual report, that making its product more efficient <strong>may reduce its revenue.</strong></li>
-              </ul>
-            </div>
-            <div class="box warn fragment fade-up">
-              <h3>Your job</h3>
-              <p>Not to admire the model. <strong>To decide.</strong></p>
-              <p class="small">For pricing choices, identify metric, level, or fences. For cost and financing choices, explain how they support sustainable growth under consumption pricing.</p>
-            </div>
-          </div>
-          <aside class="notes">Hand out the role pages. The net-revenue-retention number is the thread the Financial Lead will pull; make sure the Marketing Lead knows what it measures before Thursday.</aside>
-        </section>
-<section class="course-adjustment"><h2>Before you open SkillSimm</h2><ul><li><strong>Read:</strong> the <a href="TheNumberIsTheLastDecision.md">module essay</a> and these lecture slides before the simulation.</li>
-<li><strong>Produce:</strong> one decision in words, one figure or passage, one trade-off, and what would change your mind.</li>
-<li><strong>Save:</strong> a personal decision record. The Account Manager ranks four decisions and weights them to 100.</li>
-<li><strong>Finished early?</strong> Compare two pricing models for your venture. Calculate the customer bill at low and high usage, identify a cost assumption, and justify one model.</li></ul><aside class="notes">Ask one student to restate the deliverable. Allow ten minutes for role reading and twenty-five for the activity. Use the packet if the platform lags.</aside></section>
 
       </div>
     </div>
