@@ -1,60 +1,87 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Simulation: Snowflake's Consumption Meter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Reflection: Snowflake’s Consumption Meter</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
-      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
-      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
-      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
-      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
-      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
-      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
-      .reveal ul { margin: 0.3em 0 0 1.1em; }
-      .reveal li { margin-bottom: 0.35em; }
-      .title-slide h2 { font-size: 1.3em; }
-      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
-      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
-      .small { font-size: 0.4em; color: var(--muted); }
-      /* role question slides */
-      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
-      .role-h .emoji { font-size: 1.1em; }
-      .role-h h2 { margin: 0; text-align: left; }
-      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
-      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
-      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
-      .reveal .role-h ~ p { text-align: left; }
-      .options li { margin-bottom: 0.35em; }
-      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
-      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
-      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
-      .reflect li { font-size: 0.44em; }
-      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+      :root { --ink: #182525; --muted: #526361; --line: #d7dfdb; --accent: #08695d; --soft: #eef3ef; --red: #b52b35; }
+      body { background: #f8f9f5; }
+      .reveal { font-family: "Avenir Next", "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 36px; }
+      .reveal .slides { text-align: left; }
+      .reveal .slides section { box-sizing: border-box; padding: 24px 32px; }
+      .reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--ink); text-transform: none; letter-spacing: -.035em; }
+      .reveal h1 { font-size: 2.1em; line-height: 1.06; font-weight: 750; margin: 22px 0; }
+      .reveal h2 { font-size: 1.35em; line-height: 1.15; font-weight: 700; margin: 0 0 24px; }
+      .reveal h3, .reveal .eyebrow { color: var(--accent); font-size: .38em; line-height: 1.4; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; margin: 0 0 18px; }
+      .reveal p, .reveal li { font-size: .59em; line-height: 1.5; }
+      .reveal p { margin: 16px 0; }
+      .reveal strong { font-weight: 700; }
+      .reveal .subtitle { color: var(--muted); font-size: .66em; max-width: 760px; }
+      .reveal .small { font-size: .36em; color: var(--muted); line-height: 1.5; }
+      .title-slide::before { content: ""; display: block; width: 72px; height: 6px; background: var(--red); margin-bottom: 34px; }
+      .title-slide h1 span { color: var(--red); }
+      .title-slide .title-meta { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 35px; color: var(--muted); font-size: .4em; }
+      .box { background: var(--soft); border-left: 4px solid var(--accent); padding: 22px 28px; border-radius: 0 12px 12px 0; }
+      .box p:first-child { margin-top: 0; }
+      .box p:last-child { margin-bottom: 0; }
+      .reveal .question-slide h2 { margin-bottom: 20px; }
+      .reveal .question-slide .q { font-size: .65em; line-height: 1.4; font-weight: 600; margin-bottom: 22px; max-width: 950px; }
+      .reveal .options { list-style: none; display: grid; gap: 10px; margin: 0; width: 100%; }
+      .reveal .options li { display: flex; align-items: baseline; gap: 14px; font-size: .53em; line-height: 1.42; background: #fff; border: 1px solid var(--line); border-radius: 9px; padding: 13px 18px; margin: 0; }
+      .options .k { color: var(--accent); font-weight: 750; flex: 0 0 24px; }
+      .reveal .takeaway-slide .concept-link { font-size: .48em; color: var(--accent); margin-bottom: 24px; }
+      .reveal .takeaway-slide ul { margin: 0 0 0 22px; }
+      .reveal .takeaway-slide li { font-size: .55em; line-height: 1.5; margin-bottom: 20px; padding-left: 6px; }
+      .reveal .takeaway-slide li:last-child { margin-bottom: 0; }
+      .reveal li::marker { color: var(--accent); }
+      .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 26px 0; }
+      .stat { padding: 22px 26px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+      .reveal .stat .value { font-size: 1.12em; font-weight: 750; line-height: 1.1; letter-spacing: -.04em; margin: 0 0 10px; }
+      .reveal .stat .label { font-size: .46em; color: var(--muted); margin: 0; }
+      .reveal .stat .denominator { font-size: .48em; color: var(--muted); font-weight: 500; }
+      .reveal .stat .sample { font-size: .34em; color: var(--muted); margin: 8px 0 0; }
+      .stat.highlight { background: var(--soft); border-color: #b6d1c8; }
+      .reveal .callout { border-left: 4px solid var(--accent); padding: 8px 0 8px 20px; font-size: .57em; }
+      .reveal .award-mark { color: var(--accent); font-size: .4em; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 30px; }
+      .reveal .award-slide h2 { font-size: 1.9em; max-width: 800px; }
+      .reveal .ranking-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; list-style: none; margin: 24px 0; width: 100%; }
+      .reveal .ranking-options li { font-size: .57em; padding: 24px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+      .reveal .controls { color: var(--accent); }
+      .reveal .progress { color: var(--accent); height: 4px; }
+      .reveal .slide-number { background: transparent; color: var(--muted); font: 13px "Segoe UI", sans-serif; right: 20px; bottom: 15px; }
+      @media print { .reveal .stat, .reveal .options li { break-inside: avoid; } }
+      @media (prefers-reduced-motion: reduce) { .reveal *, .reveal *::before { transition: none !important; animation: none !important; } }
+    
+      .reveal .dense .q { font-size: .57em; }
+      .reveal .ceo-slide .q { font-size: .52em; }
+      .reveal .ceo-slide .callout { font-size: .46em; }
+      .reveal .ceo-slide .ranking-options { gap: 12px; margin: 18px 0; }
+      .reveal .ceo-slide .ranking-options li { font-size: .49em; padding: 18px; }
+      .reveal .course-adjustment li { margin-bottom: 16px; }
+      .reveal .reflect { background: var(--soft); border-left: 4px solid var(--accent); padding: 22px 28px; }
+      .reveal .reflect li { margin-bottom: 16px; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .reveal .two-col li, .reveal .two-col p { font-size: .49em; }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 
-        <!-- Title -->
-        <section class="title-slide">
-          <h2>Snowflake's Consumption Meter</h2>
-          <p class="subtitle">Simulation Reflection · Thursday, November 5</p>
-        </section>
+<section class="title-slide">
+<p class="eyebrow">Startup Deploy / Simulation reflection</p><h1>Snowflake’s Consumption Meter</h1><p class="subtitle">Pricing strategy: when customer efficiency changes the bill.</p><p class="title-meta">Share information &nbsp; / &nbsp; Make a coordinated decision &nbsp; / &nbsp; Explain the priorities</p>
+</section>
+
 <section class="course-adjustment"><h2>Today: discuss, then apply</h2><ul><li><strong>10 min:</strong> recap the concept and explain the task in your own words.</li>
 <li><strong>35 min:</strong> selected role decisions, evidence, trade-offs, and feedback.</li>
 <li><strong>20 min:</strong> apply the case to your venture. <strong>10 min:</strong> save the record and start the reflection.</li>
 <li>Review the <a href="PricingStrategy.html">lecture slides</a> and <a href="TheNumberIsTheLastDecision.md">module essay</a>. Download the slides and save your own notes before the simulation.</li></ul><aside class="notes">Pause after each instruction. Invite a student to restate the task. Select contrasting decisions rather than reading every slide aloud.</aside></section>
 
-
-        <!-- ============ Discussion Time ============ -->
-        <section class="title-slide">
+<section class="title-slide">
           <h2>Group Discussion</h2>
           <div class="reflect">
             <ul>
@@ -66,132 +93,87 @@
           </div>
         </section>
 
-        <!-- ============ FINANCIAL LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
-          <p class="q">Revenue grew 29%, the operating loss was $1.4 billion, and free cash flow was positive $1.1 billion. What do you do?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Cut research and development.</strong> At $1,969.5 million it is 42% of revenue and the single largest expense line in the company.</li>
-            <li><span class="k">B</span> <strong>Do nothing structural.</strong> Free cash flow is $1,120.3 million and positive; the GAAP loss is an accounting artifact of how we pay people.</li>
-            <li><span class="k">C</span> <strong>Bring sales and marketing down further.</strong> It is 44% of revenue, already down from 50% two years ago, and under a consumption model the meter — not the sales team — is what expands an account.</li>
-            <li><span class="k">D</span> <strong>Drive stock-based compensation down as a share of revenue.</strong> At $1,599.5 million it is larger than the entire operating loss, and it is the reason a company with $1.1 billion of free cash flow still reports a $1.3 billion net loss.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Connect spending to the pricing model.</strong> Explain how the proposed allocation affects customer value, the cost to serve and the company&#x27;s ability to capture revenue.</li>
-              <li><strong>Distinguish the financial measures.</strong> Compare operating results, cash flow and compensation costs before drawing a conclusion about capacity to invest.</li>
-              <li><strong>State the long-term tradeoff.</strong> Identify what the choice funds or sacrifices and what evidence would make you revisit it.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">If the COO’s workload-recapture program and the CMO’s workload-migration motion are both funded, how many planning units remain for engineering? Consult the COO and the CMO before answering.</p><ul class="options"><li><span class="k">A.</span><span>75 units: the recapture program pays for itself out of the efficiency it ships.</span></li><li><span class="k">B.</span><span>35 units: recapture (40) and migration (25) use 65 of the 100-unit ceiling.</span></li><li><span class="k">C.</span><span>0 units: the recapture program alone uses the whole ceiling.</span></li><li><span class="k">D.</span><span>60 units: the migration motion is a sales cost and sits outside the ceiling.</span></li></ul>
+</section>
 
-        <!-- ============ MARKETING LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
-          <p class="q">Net revenue retention has fallen from 133% to 125%. Where does the selling effort go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> Into <strong>locking in longer capacity commitments.</strong> Remaining performance obligations rose to $9,771.5 million — the more customers commit up front, the less any of this matters.</li>
-            <li><span class="k">B</span> Into <strong>new logos.</strong> Total customers went from 10,996 to 13,328, and a wider base is what stops any single expansion rate from deciding the year.</li>
-            <li><span class="k">C</span> Into <strong>migrating new workloads inside existing customers.</strong> Under a consumption metric, revenue grows when work moves onto the platform — and the $1 million-plus customer count going from 449 to 733 is what that looks like when it works.</li>
-            <li><span class="k">D</span> Into <strong>the largest accounts.</strong> 790 Forbes Global 2000 customers are already about 43% of revenue and they have the most workloads left to move.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Expansion requires a behavioral explanation.</strong> State what customers would do differently under the proposed sales plan and how that affects the invoice.</li>
-              <li><strong>Separate the measures.</strong> Explain what retention, customer counts and commitments reveal about demand, and what they do not establish.</li>
-              <li><strong>Consider the fences.</strong> Identify which customer groups receive different value and how the proposal responds to those differences.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Against the ceiling, what does the CTO’s AI-layer option really cost compared with the new metered categories? Consult the CTO and the CFO before answering.</p><ul class="options"><li><span class="k">A.</span><span>30 units against 35: the AI layer is the cheaper engineering option.</span></li><li><span class="k">B.</span><span>0 units against 35: equity awards use no cash, so they sit outside the ceiling.</span></li><li><span class="k">C.</span><span>60 units against 70: both options are paid in equity and count double.</span></li><li><span class="k">D.</span><span>45 units against 35: the AI layer’s 30 units are paid in new equity awards, which count 1.5 times against the ceiling.</span></li></ul>
+</section>
 
-        <!-- ============ OPERATION LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
-          <p class="q">Every efficiency improvement you ship lets customers pay you less for the same work. What do you do about it?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Slow down the efficiency work on existing workloads</strong> and direct engineering to features we can charge separately for. There is no reason to cut our own meter.</li>
-            <li><span class="k">B</span> <strong>Ship the efficiency and go get the freed budget back as new workloads</strong> — the filing itself says lower revenue follows only <em>&quot;to the extent these improvements do not result in an offsetting increase in new workloads.&quot;</em></li>
-            <li><span class="k">C</span> <strong>Help customers optimize deliberately and openly.</strong> Price-performance is a factor we say we compete on, and the customer who trusts our optimization advice keeps the next workload with us.</li>
-            <li><span class="k">D</span> <strong>Broaden what can be metered.</strong> Transactions, AI agents, observability and applications put more kinds of work on the same meter, so one workload getting cheaper matters less.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Efficiency changes the relationship between work and billing.</strong> Trace what happens to resources consumed, customer value and revenue under the proposed plan.</li>
-              <li><strong>Test the response over time.</strong> Explain what customers might do with released capacity or budget and what evidence would support that expectation.</li>
-              <li><strong>Locate the choice in the triangle.</strong> Identify whether the proposal changes the metric, level, fences or the work being delivered.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Operating Officer (COO)</h2><p class="q">Which go-to-market and engineering pair turns the budget your efficiency release frees into new workloads on the meter? Consult the CMO and the CTO before answering.</p><ul class="options"><li><span class="k">A.</span><span>New logos plus open formats: more customers and more compatible compute.</span></li><li><span class="k">B.</span><span>Longer capacity commitments plus core price-performance work.</span></li><li><span class="k">C.</span><span>Workload migration inside existing customers plus new metered categories (transactions, agents, observability); open formats would lower consumption per workload.</span></li><li><span class="k">D.</span><span>The largest accounts plus the AI layer staffed with new equity grants.</span></li></ul>
+</section>
 
-        <!-- ============ TECH LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
-          <p class="q">R&amp;D is $1.97 billion — 42% of revenue — and the revenue model is paid by the unit consumed. What does engineering build?</p>
-          <ul class="options">
-            <li><span class="k">A</span> Build <strong>price-performance improvements on the core warehouse.</strong> It is the biggest part of consumption and the competitive factor we name first.</li>
-            <li><span class="k">B</span> Build the <strong>AI layer hardest.</strong> Snowflake Intelligence and Cortex Agents are where new workloads are actually being created right now, and new workloads are what the revenue model needs.</li>
-            <li><span class="k">C</span> Build for <strong>open formats and interoperability.</strong> Customers are going there anyway, and being the best compute engine over open data keeps us in the transaction even when we lose the storage.</li>
-            <li><span class="k">D</span> Build the <strong>new categories that put more kinds of work on the meter</strong> — transactions, AI agents, observability — because a consumption model is only as big as the range of work it can measure.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>The roadmap and the meter interact.</strong> Explain how the proposed capability changes customer value, measured usage and operating cost.</li>
-              <li><strong>Compare alternatives from the customer&#x27;s perspective.</strong> Identify the workflow each approach supports and the reasons a customer would choose it.</li>
-              <li><strong>Define a test of the investment.</strong> State how you would assess adoption and revenue effects without treating every increase in activity as equal value.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">How much of the ceiling remains for go-to-market and engineering once the COO’s recapture program is funded, and how do options paid in new equity awards count? Consult the CFO and the COO before answering.</p><ul class="options"><li><span class="k">A.</span><span>100 units remain; the recapture program is funded from free cash flow outside the ceiling.</span></li><li><span class="k">B.</span><span>60 units remain; equity-funded options use no cash, so they do not count.</span></li><li><span class="k">C.</span><span>60 units remain; an option paid in new equity awards counts at 1.5 times its stated cost.</span></li><li><span class="k">D.</span><span>85 units remain; the recapture program costs only the 15-unit efficiency release.</span></li></ul>
+</section>
 
+<section class="takeaway-slide">
+<h3>Stage 1 — Key takeaways</h3><h2>Understand what the meter rewards</h2><p class="concept-link">Pricing Strategy: Connect the value metric to customer behavior.</p><div class="box"><ul><li><strong>Combine the private evidence.</strong> The CFO holds the ceiling and dilution rule; the COO prices recapture; the CMO prices migration; the CTO explains the engineering choices.</li><li><strong>Calculate the real cost.</strong> Recapture (40) and migration (25) leave 35 of the 100 planning units. The AI layer costs 30 × 1.5 = 45 because it uses new equity awards.</li><li><strong>Trace the dependency.</strong> Efficiency lowers consumption for the same work. Recapture needs the migration motion, and new metered categories give customers more work to move.</li></ul></div><p class="small">Simulation assumptions: planning units, the ceiling, the equity multiplier and option dependencies.</p>
+</section>
 
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">Revenue grew 29% to $4,683.9 million at a 67% gross margin, but the operating loss was $(1,435.2) million while free cash flow was a positive $1,120.3 million. Stock-based compensation was $1,599.5 million — 34% of revenue — with $3.1 billion of unvested awards still to come. How should Snowflake fund this round?</p><ul class="options"><li><span class="k">A.</span><span>Cut research and development; at $1,969.5 million it is the largest expense line, and closing the loss comes first.</span></li><li><span class="k">B.</span><span>Do nothing structural; free cash flow is positive, so fund the round from the $1,120.3 million it generated on top of the plan.</span></li><li><span class="k">C.</span><span>Fund a coordinated recapture plan across operations, go-to-market and engineering within the ceiling, paid in cash rather than new equity awards, so stock-based compensation keeps falling as a share of revenue.</span></li><li><span class="k">D.</span><span>Fund the AI layer first with new equity grants, since awards use no cash, and fund operations and go-to-market from what remains.</span></li></ul>
+</section>
 
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Net revenue retention fell from 133% to 126% to 125%. Customers grew from 10,996 to 13,328, $1 million-plus customers from 449 to 733, and the 790 Forbes Global 2000 customers are about 43% of revenue. Remaining performance obligations rose to $9,771.5 million. Where does the go-to-market effort go?</p><ul class="options"><li><span class="k">A.</span><span>Hunt new logos; a wider base stops any single expansion rate from deciding the year.</span></li><li><span class="k">B.</span><span>Lock in longer capacity commitments; remaining performance obligations of $9,771.5 million show customers will commit up front.</span></li><li><span class="k">C.</span><span>Concentrate on the largest accounts; the Forbes Global 2000 have the most workloads left to move.</span></li><li><span class="k">D.</span><span>Migrate new workloads inside existing customers, timed to the COO’s recapture program, so freed budget returns to the meter.</span></li></ul>
+</section>
 
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Operating Officer (COO)</h2><p class="q">The filing warns that improvements may let customers “consume fewer compute, storage, and data transfer resources to accomplish the same workloads” and that without “an offsetting increase in new workloads, we may experience lower revenue.” Customers are already optimizing consumption. What does operations do with the next efficiency release?</p><ul class="options"><li><span class="k">A.</span><span>Ship the efficiency release on its own; price-performance is the factor we compete on first.</span></li><li><span class="k">B.</span><span>Ship the efficiency release with the workload-recapture program, paired with the CMO’s migration motion, so freed budget comes back as new workloads.</span></li><li><span class="k">C.</span><span>Slow the efficiency work on existing workloads and steer engineering toward separately chargeable features; there is no reason to cut our own meter.</span></li><li><span class="k">D.</span><span>Run an open optimization program that helps customers cut their bills; trust keeps the next workload with us.</span></li></ul>
+</section>
 
-        <!-- ============ ACCOUNT MANAGER ============ -->
-        <section class="course-adjustment"><h2>Account Manager</h2><ul><li>Hear the <strong>four leads</strong>: Financial, Marketing, Operation, and Tech.</li>
-<li>Rank <strong>Money, The paradox, Expansion, The roadmap</strong> from 1–4; use each once.</li>
-<li>Allocate <strong>100 priority points</strong> in blocks of 10. Explain the first priority with a figure or passage and a dependency.</li>
-<li>Name a trade-off and evidence that would change the ranking. Save the decision record.</li></ul></section>
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">Research and development is $1,969.5 million — 42% of revenue. Recent launches include Snowpark Container Services, Snowflake Intelligence and Cortex Agents, Generation 2 warehouses and Snowflake Postgres; the company bought Crunchy Data and Observe. Open data formats let customers use compute “without requiring storage”. What does engineering build this round?</p><ul class="options"><li><span class="k">A.</span><span>Build the new metered categories — transactions, AI agents, observability — so more kinds of work go on the same meter, within what the ceiling leaves after recapture and migration.</span></li><li><span class="k">B.</span><span>Improve price-performance on the core warehouse; it is the biggest part of consumption and the factor we name first.</span></li><li><span class="k">C.</span><span>Build the AI layer hardest, staffed through new equity grants, because AI agents are where new workloads are created.</span></li><li><span class="k">D.</span><span>Build for open formats and interoperability; being the best compute engine over open data keeps us in the deal.</span></li></ul>
+</section>
 
-        <section class="course-adjustment"><h2>Account Manager — Key Takeaways</h2><ul><li>Connect pricing to customer value, usage behavior, and the cost of sustainable growth.</li>
-<li>Different rankings can be defensible. Connect the priorities to evidence and the weekly concept.</li>
-<li>Example allocation: 40/30/20/10 totals 100. Explain your own allocation; priority points are not course-grade points.</li></ul></section>
+<section class="takeaway-slide">
+<h3>Stage 2 — Key takeaways</h3><h2>Make efficiency support expansion</h2><p class="concept-link">Pricing Strategy: Coordinate the product, selling effort and funding behind the meter.</p><div class="box"><ul><li><strong>Fund one complete plan.</strong> Recapture (40) + workload migration (25) + new metered categories (35) = 100 units, paid in cash. Free cash flow adds no extra units.</li><li><strong>Keep improving the product.</strong> Pair the efficiency release with migration so freed customer budget returns as new workloads. Longer commitments alone do not establish consumption.</li><li><strong>Compare the opportunity cost.</strong> Substituting the equity-funded AI layer makes the plan cost 110. The preferred plan broadens what the meter measures without changing its price level.</li></ul></div><p class="small">Simulation assumptions: planning units, the ceiling, the equity multiplier and option dependencies.</p>
+</section>
 
+<section class="question-slide ceo-slide">
+<h3>Stage 3 — CEO: Set Company Priorities</h3><h2>Chief Executive Officer (CEO)</h2><p class="q">As CEO, rank the four questions from most to least important for a company paid by the unit to still be growing in four years. Discuss your executives’ recommendations before setting the company’s priorities. Ask each executive: “What is your recommendation, which colleague’s constraint does it depend on, and why is your question important for the company to resolve?” You receive their answers through team chat, not automatic summaries.</p><ul class="ranking-options"><li>Money — 29% growth against a $1.4 billion operating loss</li><li>Expansion — a retention rate falling from 133% to 125%</li><li>The paradox — every efficiency gain bills less</li><li>The roadmap — what else can go on the meter</li></ul><p class="callout">Use each question once. Why should your first-ranked question take priority? Refer to information two executives shared, name the metric Snowflake charges for, say whether it still passes the test (does the number go up on its own when the customer succeeds?), and name one fence you would add.</p>
+</section>
 
-        <!-- Key takeaway -->
-        <section>
+<section class="takeaway-slide">
+<h3>Stage 3 — Key takeaways</h3><h2>Rank the constraints on growth</h2><p class="concept-link">Pricing Strategy: Explain the metric, its limits and one proposed fence.</p><div class="box"><ul><li><strong>Put Paradox and Expansion first.</strong> Either order fits the template: efficiency lowers the bill for existing work, so bringing new workloads onto the platform is the immediate revenue problem.</li><li><strong>Place Roadmap third and Money fourth.</strong> New categories enable expansion. The financial ceiling still binds the plan; ranking Money last does not make the budget optional.</li><li><strong>Test the value metric.</strong> Consumption rises with customer success only when success creates more metered work. Use evidence from two executives and propose one fence, such as a minimum committed spend.</li></ul></div><p class="small">These priorities follow the template’s scenario assumptions; explain the dependencies behind your ranking.</p>
+</section>
+
+<section>
           <h2>Key takeaway</h2>
           <div class="box"><p>Return to the coffee price: per what, at what level, and for which customers? Use the Value-Metric Triangle to explain how the team&#x27;s choices affect customer behavior, delivered value and revenue.</p></div>
           <p class="quote" style="margin-top: 20px;">What happens to the invoice when the customer gets better at using the product?</p>
         </section>
+
 <section class="course-adjustment"><h2>Apply this to your venture — 20 minutes</h2><ul><li>Compare two pricing models for your venture. Calculate the customer bill at low and high usage, identify a cost assumption, and justify one model.</li>
 <li><strong>Produce:</strong> A pricing comparison and recommendation for Final Section D.</li>
 <li>Add this to your shared project document. If you finish the simulation early, start here; this is not a new separately graded assignment.</li></ul></section>
+
 <section class="course-adjustment"><h2>Save your decision record</h2><ul><li><strong>Decision → evidence and source → trade-off → change after discussion → concept and venture application.</strong></li>
 <li>Save a personal copy or screenshot before leaving. Use decision words, not only option letters.</li>
 <li>If SkillSimm lags, use your downloaded lecture slides and your own notes.</li></ul></section>
+
 <section class="course-adjustment"><h2>Reflection: a clear, specific explanation</h2><ul><li>Use five headings: <strong>Decision, Evidence, Trade-off, Revision, Connection.</strong></li>
 <li>From October 20: aim for <strong>300–500 words</strong>. Complete responses following the previous 500–800 word guidance remain acceptable.</li>
 <li>Submit individually in the existing HuskyCT assignment; <strong>keep its current deadline</strong>.</li>
-<li><a href="../Assignments/Reflection_Guide.html">Rubric and example feedback</a>: one specific strength and one next revision.</li></ul></section>
-
+<li><a href="../../MENT3235/Mid-Final/Reflection_Guide.html">Rubric and example feedback</a>: one specific strength and one next revision.</li></ul></section>
 
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
     <script>
-      Reveal.initialize({ hash: true, slideNumber: true });
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        width: 1120,
+        height: 760,
+        margin: 0.06,
+        transition: 'none',
+        controlsTutorial: false,
+        progress: true
+      });
     </script>
   </body>
 </html>
