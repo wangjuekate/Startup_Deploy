@@ -1,197 +1,144 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Simulation: Marvell's Commitment Ladder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Reflection: Marvell’s Commitment Ladder</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #0f766e; --soft: #f3f4f6; --warn: #b45309; }
-      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
-      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
-      .reveal h2 { font-size: 1.15em; font-weight: 700; line-height: 1.15; margin-bottom: 0.4em; }
-      .reveal h3 { font-size: 0.7em; color: var(--accent); margin-bottom: 0.3em; }
-      .reveal h4 { font-size: 0.55em; color: var(--muted); margin-bottom: 0.4em; }
-      .reveal p, .reveal li { font-size: 0.46em; line-height: 1.45; color: var(--ink); }
-      .reveal ul { margin: 0.3em 0 0 1.1em; }
-      .reveal li { margin-bottom: 0.35em; }
-      .title-slide h2 { font-size: 1.3em; }
-      .subtitle { color: var(--muted); text-align: center; font-size: 0.5em; }
-      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 16px 20px; text-align: left; }
-      .small { font-size: 0.4em; color: var(--muted); }
-      /* role question slides */
-      .role-h { display: flex; align-items: center; gap: 12px; margin-bottom: 0.3em; }
-      .role-h .emoji { font-size: 1.1em; }
-      .role-h h2 { margin: 0; text-align: left; }
-      .q { font-weight: 600; text-align: left; margin-bottom: 0.4em; }
-      .reveal .options { list-style: none; margin: 0 0 0 0.2em; text-align: left; }
-      .reveal .options li { padding-left: 1.9em; text-indent: -1.9em; }
-      .reveal .role-h ~ p { text-align: left; }
-      .options li { margin-bottom: 0.35em; }
-      .options .k { display: inline-block; min-width: 1.7em; font-weight: 700; color: var(--accent); }
-      .reflect { background: #ecfdf5; border-left: 5px solid var(--accent); padding: 14px 18px; text-align: left; }
-      .reflect .tag { font-size: 0.4em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
-      .reflect li { font-size: 0.44em; }
-      .quote { font-size: 0.6em; font-weight: 600; line-height: 1.3; }
+      :root { --ink: #182525; --muted: #526361; --line: #d7dfdb; --accent: #08695d; --soft: #eef3ef; --red: #b52b35; }
+      body { background: #f8f9f5; }
+      .reveal { font-family: "Avenir Next", "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 36px; }
+      .reveal .slides { text-align: left; }
+      .reveal .slides section { box-sizing: border-box; padding: 24px 32px; }
+      .reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--ink); text-transform: none; letter-spacing: -.035em; }
+      .reveal h1 { font-size: 2.1em; line-height: 1.06; font-weight: 750; margin: 22px 0; }
+      .reveal h2 { font-size: 1.35em; line-height: 1.15; font-weight: 700; margin: 0 0 24px; }
+      .reveal h3, .reveal .eyebrow { color: var(--accent); font-size: .38em; line-height: 1.4; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; margin: 0 0 18px; }
+      .reveal p, .reveal li { font-size: .59em; line-height: 1.5; }
+      .reveal p { margin: 16px 0; }
+      .reveal strong { font-weight: 700; }
+      .reveal .subtitle { color: var(--muted); font-size: .66em; max-width: 760px; }
+      .reveal .small { font-size: .36em; color: var(--muted); line-height: 1.5; }
+      .title-slide::before { content: ""; display: block; width: 72px; height: 6px; background: var(--red); margin-bottom: 34px; }
+      .title-slide h1 span { color: var(--red); }
+      .title-slide .title-meta { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 35px; color: var(--muted); font-size: .4em; }
+      .box { background: var(--soft); border-left: 4px solid var(--accent); padding: 22px 28px; border-radius: 0 12px 12px 0; }
+      .box p:first-child { margin-top: 0; }
+      .box p:last-child { margin-bottom: 0; }
+      .reveal .question-slide h2 { margin-bottom: 20px; }
+      .reveal .question-slide .q { font-size: .65em; line-height: 1.4; font-weight: 600; margin-bottom: 22px; max-width: 950px; }
+      .reveal .options { list-style: none; display: grid; gap: 10px; margin: 0; width: 100%; }
+      .reveal .options li { display: flex; align-items: baseline; gap: 14px; font-size: .53em; line-height: 1.42; background: #fff; border: 1px solid var(--line); border-radius: 9px; padding: 13px 18px; margin: 0; }
+      .options .k { color: var(--accent); font-weight: 750; flex: 0 0 24px; }
+      .reveal .takeaway-slide .concept-link { font-size: .48em; color: var(--accent); margin-bottom: 24px; }
+      .reveal .takeaway-slide ul { margin: 0 0 0 22px; }
+      .reveal .takeaway-slide li { font-size: .55em; line-height: 1.5; margin-bottom: 20px; padding-left: 6px; }
+      .reveal .takeaway-slide li:last-child { margin-bottom: 0; }
+      .reveal li::marker { color: var(--accent); }
+      .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 26px 0; }
+      .stat { padding: 22px 26px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+      .reveal .stat .value { font-size: 1.12em; font-weight: 750; line-height: 1.1; letter-spacing: -.04em; margin: 0 0 10px; }
+      .reveal .stat .label { font-size: .46em; color: var(--muted); margin: 0; }
+      .reveal .stat .denominator { font-size: .48em; color: var(--muted); font-weight: 500; }
+      .reveal .stat .sample { font-size: .34em; color: var(--muted); margin: 8px 0 0; }
+      .stat.highlight { background: var(--soft); border-color: #b6d1c8; }
+      .reveal .callout { border-left: 4px solid var(--accent); padding: 8px 0 8px 20px; font-size: .57em; }
+      .reveal .award-mark { color: var(--accent); font-size: .4em; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 30px; }
+      .reveal .award-slide h2 { font-size: 1.9em; max-width: 800px; }
+      .reveal .ranking-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; list-style: none; margin: 24px 0; width: 100%; }
+      .reveal .ranking-options li { font-size: .57em; padding: 24px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+      .reveal .controls { color: var(--accent); }
+      .reveal .progress { color: var(--accent); height: 4px; }
+      .reveal .slide-number { background: transparent; color: var(--muted); font: 13px "Segoe UI", sans-serif; right: 20px; bottom: 15px; }
+      @media print { .reveal .stat, .reveal .options li { break-inside: avoid; } }
+      @media (prefers-reduced-motion: reduce) { .reveal *, .reveal *::before { transition: none !important; animation: none !important; } }
+    
+      .reveal .dense .q { font-size: .57em; }
+      .reveal .ceo-slide .q { font-size: .52em; }
+      .reveal .ceo-slide .callout { font-size: .46em; }
+      .reveal .ceo-slide .ranking-options { gap: 12px; margin: 18px 0; }
+      .reveal .ceo-slide .ranking-options li { font-size: .49em; padding: 18px; }
+      .reveal .course-adjustment li { margin-bottom: 16px; }
+      .reveal .reflect { background: var(--soft); border-left: 4px solid var(--accent); padding: 22px 28px; }
+      .reveal .reflect li { margin-bottom: 16px; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .reveal .two-col li, .reveal .two-col p { font-size: .49em; }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 
-        <!-- Title -->
-        <section class="title-slide">
-          <h2>Marvell's Commitment Ladder</h2>
-          <p class="subtitle">Simulation Reflection · Thursday, November 12</p>
-        </section>
-<section class="course-adjustment"><h2>Today: discuss, then apply</h2><ul><li><strong>10 min:</strong> recap the concept and explain the task in your own words.</li>
-<li><strong>35 min:</strong> selected role decisions, evidence, trade-offs, and feedback.</li>
-<li><strong>20 min:</strong> apply the case to your venture. <strong>10 min:</strong> save the record and start the reflection.</li>
-<li>Review the <a href="FinancialBudgeting.html">lecture slides</a> and <a href="RunwayIsADecision.md">module essay</a>. Download the slides and save your own notes before the simulation.</li></ul><aside class="notes">Pause after each instruction. Invite a student to restate the task. Select contrasting decisions rather than reading every slide aloud.</aside></section>
+<section class="title-slide">
+<p class="eyebrow">Startup Deploy / Simulation reflection</p><h1>Marvell’s Commitment Ladder</h1><p class="subtitle">Financial budgeting: match the spending plan to how quickly commitments can change.</p><p class="title-meta">Share information &nbsp; / &nbsp; Make a coordinated decision &nbsp; / &nbsp; Explain the priorities</p>
+</section>
 
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">If the COO’s staggered commitment ladder and the CMO’s customer-widening motion are both funded, how many planning units remain for engineering? Consult the COO and the CMO before answering.</p><ul class="options"><li><span class="k">A.</span><span>75 units: re-shaping the ladder pays for itself out of the cash it frees.</span></li><li><span class="k">B.</span><span>35 units: the staggered ladder (40) and widening the customer base (25) use 65 of the 100-unit ceiling.</span></li><li><span class="k">C.</span><span>0 units: re-shaping the ladder alone uses the whole ceiling.</span></li><li><span class="k">D.</span><span>60 units: the customer-widening motion is a sales cost and sits outside the ceiling.</span></li></ul>
+</section>
 
-        <!-- ============ Discussion Time ============ -->
-        <section class="title-slide">
-          <h2>Group Discussion</h2>
-          <div class="reflect">
-            <ul>
-              <li>Form groups with classmates who have the same role.</li>
-              <li>As a group, name the <strong>bucket</strong> your decision sits in — COMMITTED, STICKY or FLEXIBLE — and how long it takes to stop.</li>
-              <li>Cite a figure from your packet, name what your choice gives up, and state one thing that would change your answer.</li>
-              <li>Select one representative to present your group's choice and reasoning.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Against the ceiling, what does the CTO’s option of integrating Celestial AI and XConn really cost compared with staging R&amp;D against committed design wins? Consult the CTO and the CFO before answering.</p><ul class="options"><li><span class="k">A.</span><span>30 units against 35: integration is the cheaper engineering option.</span></li><li><span class="k">B.</span><span>0 units against 35: the acquisitions are already paid for, so integration sits outside the ceiling.</span></li><li><span class="k">C.</span><span>60 units against 70: both options are multi-year and count double.</span></li><li><span class="k">D.</span><span>45 units against 35: integration’s 30 units carry contingent payments through fiscal 2029 — new committed spend, which counts 1.5 times.</span></li></ul>
+</section>
 
-        <!-- ============ FINANCIAL LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead</h2></div>
-          <p class="q">Where does the money go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Fund the acquisitions and the contingent payments.</strong> Celestial and XConn cost about $1.6 billion in cash, and Celestial may require more cash and shares through fiscal 2029.</li>
-            <li><span class="k">B</span> <strong>Retire debt.</strong> $4.5 billion is outstanding with $499.8 million due within twelve months, and interest expense was $202.6 million — permanently reducing the fixed charge lowers the floor every future year has to clear.</li>
-            <li><span class="k">C</span> <strong>Hold enough cash against the $1,871.8 million of foundry commitments due in fiscal 2027.</strong> It is the least reversible obligation on the books and it gets paid whether or not the demand behind it shows up.</li>
-            <li><span class="k">D</span> <strong>Return it to shareholders</strong> through buybacks and dividends. We grew 42%, earned a 32.6% net margin, and the balance sheet has never looked stronger.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">💰</span><h2>Financial Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Cash allocation changes future flexibility.</strong> Explain which obligations the proposal meets and which choices remain available afterward.</li>
-              <li><strong>Compare sources with uses over time.</strong> Distinguish recurring operations, one-time proceeds and payments falling due when assessing the plan.</li>
-              <li><strong>Test a demand shortfall.</strong> State what happens to available cash and required payments if the expected revenue arrives late or does not arrive.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Operating Officer (COO)</h2><p class="q">Which go-to-market and engineering pair lets a staggered ladder hold if fiscal 2027 demand comes in low? Consult the CMO and the CTO before answering.</p><ul class="options"><li><span class="k">A.</span><span>Firmer commitments from the largest customers plus holding R&amp;D flat.</span></li><li><span class="k">B.</span><span>A data-center push plus integrating the acquisitions.</span></li><li><span class="k">C.</span><span>Widening the customer base plus R&amp;D staged against committed design wins; spending up to the ratio would budget to a forecast.</span></li><li><span class="k">D.</span><span>Serving the customers building inventory ahead of export restrictions plus spending R&amp;D up to the industry ratio.</span></li></ul>
+</section>
 
-        <!-- ============ MARKETING LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead</h2></div>
-          <p class="q">One distributor is 37% of revenue, and everything behind it is committed for years. Where does the commercial effort go?</p>
-          <ul class="options">
-            <li><span class="k">A</span> Into <strong>securing longer, firmer commitments from the largest customers</strong>, so the demand side of the ladder starts to look like the supply side.</li>
-            <li><span class="k">B</span> Into <strong>widening the customer base.</strong> Our costs are committed for years and our revenue arrives on purchase orders that can be cancelled with short notice — and one distributor has gone from 24% to 37% of revenue in two years.</li>
-            <li><span class="k">C</span> Into <strong>supporting the customers building inventory</strong> ahead of export restrictions. They are buying now, they are buying a lot, and revenue booked is revenue booked.</li>
-            <li><span class="k">D</span> Into <strong>the data center market as hard as possible.</strong> It grew 46% and that is where the AI demand behind every one of these commitments actually is.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">📣</span><h2>Marketing Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Commercial choices shape the demand side of the budget.</strong> Explain how the proposal changes the timing, certainty and concentration of customer orders.</li>
-              <li><strong>Compare the two cancellation clocks.</strong> Assess how quickly demand can change relative to the spending needed to supply it.</li>
-              <li><strong>Test the evidence behind the forecast.</strong> Identify what would distinguish durable demand from temporary ordering behavior and how the budget would respond.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 1 — Establish the Company’s Position</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">How much of the ceiling remains for go-to-market and engineering once the COO’s staggered ladder is funded, and how do options that add new committed spend count? Consult the CFO and the COO before answering.</p><ul class="options"><li><span class="k">A.</span><span>100 units remain; the $2.5 billion of divestiture cash funds the ladder outside the ceiling.</span></li><li><span class="k">B.</span><span>60 units remain; contingent payments are paid later, so they do not count.</span></li><li><span class="k">C.</span><span>60 units remain; an option that adds new committed spend counts 1.5 times its stated cost.</span></li><li><span class="k">D.</span><span>85 units remain; re-shaping the ladder costs only its 15-unit renegotiation fee.</span></li></ul>
+</section>
 
-        <!-- ============ OPERATION LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead</h2></div>
-          <p class="q">Seventy percent of every commitment you have falls in one year. What do you do with the ladder?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Diversify where it is made.</strong> Most qualified foundries sit in one region of Taiwan and assembly and test in the Pacific Rim — the concentration risk is geographic before it is financial.</li>
-            <li><span class="k">B</span> <strong>Re-shape the ladder</strong> so commitments are staggered across years instead of stacked. $1,871.8 million of the $2,665.8 million total falling in one year is a single bet on a single demand forecast.</li>
-            <li><span class="k">C</span> <strong>Negotiate the exit terms rather than the volumes.</strong> If cancellation costs and loss of queue priority are the real penalty, that is what should be renegotiated.</li>
-            <li><span class="k">D</span> <strong>Commit more capacity now while it is available.</strong> AI demand is here, data center revenue grew 46%, and reserved capacity is the constraint on how much of it we can serve.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">⚙️</span><h2>Operation Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Commitments have dates as well as totals.</strong> Show when payments fall due and which demand assumptions support them.</li>
-              <li><strong>Exiting has more than one cost.</strong> Consider fees, lost access, delays and rebuilding effort when assessing how reversible the proposal is.</li>
-              <li><strong>Compare scenarios before committing.</strong> Explain how the proposed arrangement performs under higher, lower or later demand.</li>
-            </ul>
-          </div>
-        </section>
+<section class="takeaway-slide">
+<h3>Stage 1 — Key takeaways</h3><h2>Price the commitments, then allocate</h2><p class="concept-link">Financial Budgeting: Budget by how quickly spending can stop.</p><div class="box"><ul><li><strong>Combine the private evidence.</strong> The CFO sets the reserve and the ceiling; the COO prices staggering; the CMO prices customer widening; the CTO explains the engineering choices.</li><li><strong>Calculate the real cost.</strong> Staggering (40) and widening (25) leave 35 of the 100 planning units. Integration costs 30 × 1.5 = 45 because it adds committed payments through fiscal 2029.</li><li><strong>Respect the reserve.</strong> Cash covering the $1,871.8 million of fiscal 2027 foundry commitments comes first. After staggering, 60 planning units remain; divestiture cash adds nothing beyond the reserve.</li></ul></div><p class="small">Simulation assumptions: planning units, the reserve-then-ceiling structure, the reversibility multiplier and option dependencies.</p>
+</section>
 
-        <!-- ============ TECH LEAD ============ -->
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead</h2></div>
-          <p class="q">R&amp;D is $2.08 billion and it is the hardest money in the company to stop. How do you budget it?</p>
-          <ul class="options">
-            <li><span class="k">A</span> <strong>Stage it against committed design wins.</strong> R&amp;D is the stickiest money we have — stopping a programme mid-flight loses the socket and the team — so each stage should be tied to a customer commitment that already exists.</li>
-            <li><span class="k">B</span> <strong>Hold the R&amp;D dollar amount flat</strong> and let it fall as a share of revenue. It has already gone from 33.9% to 25.3% and the business grew anyway.</li>
-            <li><span class="k">C</span> <strong>Spend up to keep the ratio</strong> where the industry expects it. If revenue is $8.2 billion, R&amp;D should scale with it, and cutting the ratio signals retreat.</li>
-            <li><span class="k">D</span> <strong>Concentrate on integrating what we just bought.</strong> Celestial and XConn cost about $1.6 billion plus contingent payments through fiscal 2029, and unintegrated acquisitions are the most expensive shelf-ware there is.</li>
-          </ul>
-        </section>
-        <section>
-          <div class="role-h"><span class="emoji">💻</span><h2>Tech Lead — Key Takeaways</h2></div>
-          <div class="reflect">
-            <ul>
-              <li><strong>Stopping and restarting are separate questions.</strong> Identify what it would take to pause the program and what capability or time might be lost.</li>
-              <li><strong>Budget around evidence.</strong> Explain the milestones and customer assumptions supporting the proposed spending, including what would trigger review.</li>
-              <li><strong>Distinguish dollars from ratios.</strong> State what a change in spending as a share of revenue reveals and what it leaves unknown about the program.</li>
-            </ul>
-          </div>
-        </section>
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Financial Officer (CFO)</h2><p class="q">The automotive ethernet sale brought in $2.5 billion in cash. The company holds about $2.6 billion of cash, owes $4.5 billion of borrowings with $499.8 million due within twelve months, has an undrawn $1.5 billion revolver, pays a quarterly dividend and repurchases stock. It owes $1,871.8 million to foundries in fiscal 2027 and has just spent about $1.6 billion of cash on Celestial AI and XConn. Where does the money go?</p><ul class="options"><li><span class="k">A.</span><span>Fund the acquisitions and the contingent payments. Celestial and XConn cost about $1.6 billion in cash, and Celestial may require more cash and shares through fiscal 2029.</span></li><li><span class="k">B.</span><span>Retire debt. $4.5 billion is outstanding with $499.8 million due within twelve months, and interest expense was $202.6 million — permanently reducing the fixed charge lowers the floor every future year has to clear.</span></li><li><span class="k">C.</span><span>Hold enough cash against the $1,871.8 million of foundry commitments due in fiscal 2027. It is the least reversible obligation on the books and it gets paid whether or not the demand behind it shows up.</span></li><li><span class="k">D.</span><span>Return it to shareholders through buybacks and dividends. We grew 42%, earned a 32.6% net margin, and the balance sheet has never looked stronger.</span></li></ul>
+</section>
 
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Marketing Officer (CMO)</h2><p class="q">Distributor A was 37% of net revenue, up from 34% and 24%. Direct Customer A was 14%. Four customers were 73% of gross accounts receivable, and 77% of revenue shipped to customers with operations in Asia. U.S. export restrictions on certain Chinese customers are expected to keep affecting revenue, and some customers “amass large inventories of our products well in advance of need.” Where does the commercial effort go?</p><ul class="options"><li><span class="k">A.</span><span>Into securing longer, firmer commitments from the largest customers, so the demand side of the ladder starts to look like the supply side.</span></li><li><span class="k">B.</span><span>Into supporting the customers building inventory ahead of export restrictions. They are buying now, they are buying a lot, and revenue booked is revenue booked.</span></li><li><span class="k">C.</span><span>Into the data center market as hard as possible. It grew 46% and that is where the AI demand behind every one of these commitments actually is.</span></li><li><span class="k">D.</span><span>Into widening the customer base. Our costs are committed for years and our revenue arrives on purchase orders that can be cancelled with short notice — and one distributor has gone from 24% to 37% of revenue in two years.</span></li></ul>
+</section>
 
+<section class="question-slide dense">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Operating Officer (COO)</h2><p class="q">Unconditional purchase commitments to foundries and test and assembly partners total $2,665.8 million — $1,871.8 million of it in fiscal 2027, $476.6 million in fiscal 2028 and under $70 million a year after that. Capacity reservation agreements run 4 to 10 years, with at least $458.2 million of purchase levels through fiscal 2033. Cancellation “requires payment of all costs and expenses incurred through the date of cancellation” and may mean “loss of priority to reserved capacity.” What do you do with the ladder?</p><ul class="options"><li><span class="k">A.</span><span>Diversify where it is made. Most qualified foundries sit in one region of Taiwan and assembly and test in the Pacific Rim — the concentration risk is geographic before it is financial.</span></li><li><span class="k">B.</span><span>Re-shape the ladder so commitments are staggered across years instead of stacked. $1,871.8 million of the $2,665.8 million total falling in one year is a single bet on a single demand forecast.</span></li><li><span class="k">C.</span><span>Commit more capacity now while it is available. AI demand is here, data center revenue grew 46%, and reserved capacity is the constraint on how much of it we can serve.</span></li><li><span class="k">D.</span><span>Negotiate the exit terms rather than the volumes. If cancellation costs and loss of queue priority are the real penalty, that is what should be renegotiated.</span></li></ul>
+</section>
 
+<section class="question-slide">
+<h3>Stage 2 — Make Executive Decisions</h3><h2>Chief Technology Officer (CTO)</h2><p class="q">Research and development is $2,075.2 million — 25.3% of revenue, down from 33.9% because revenue grew faster than spending, not because spending fell. $409.0 million of it is stock-based compensation. The company just bought Celestial AI (about $1.3 billion in cash plus 24.5 million shares, with contingent payments through fiscal 2029) and XConn ($280 million plus 2.1 million shares). How do you budget engineering?</p><ul class="options"><li><span class="k">A.</span><span>Stage it against committed design wins. R&amp;D is the stickiest money we have — stopping a programme mid-flight loses the socket and the team — so each stage should be tied to a customer commitment that already exists.</span></li><li><span class="k">B.</span><span>Hold the R&amp;D dollar amount flat and let it fall as a share of revenue. It has already gone from 33.9% to 25.3% and the business grew anyway.</span></li><li><span class="k">C.</span><span>Spend up to keep the ratio where the industry expects it. If revenue is $8.2 billion, R&amp;D should scale with it, and cutting the ratio signals retreat.</span></li><li><span class="k">D.</span><span>Concentrate on integrating what we just bought. Celestial and XConn cost about $1.6 billion plus contingent payments through fiscal 2029, and unintegrated acquisitions are the most expensive shelf-ware there is.</span></li></ul>
+</section>
 
+<section class="takeaway-slide">
+<h3>Stage 2 — Key takeaways</h3><h2>Fund flexibility around the fixed obligations</h2><p class="concept-link">Financial Budgeting: Connect the payment schedule to demand uncertainty.</p><div class="box"><ul><li><strong>Protect the committed bucket.</strong> Reserve cash for the fiscal 2027 foundry bill. The 32.6% net margin includes a $1.8 billion one-time divestiture gain; it does not establish recurring cash available to spend.</li><li><strong>Fund one complete plan.</strong> Stagger the ladder (40) + widen the customer base (25) + stage R&amp;D against committed design wins (35) = 100 units after the reserve.</li><li><strong>Compare the opportunity cost.</strong> Replacing design-win staging with integration makes the plan cost 110. Widening supports the staggered ladder, while staged R&amp;D releases sticky spending against customer commitments.</li></ul></div><p class="small">Simulation assumptions: planning units, the reserve-then-ceiling structure, the reversibility multiplier and option dependencies.</p>
+</section>
 
-        <!-- ============ ACCOUNT MANAGER ============ -->
-        <section class="course-adjustment"><h2>Account Manager</h2><ul><li>Hear the <strong>four leads</strong>: Financial, Marketing, Operation, and Tech.</li>
-<li>Rank <strong>Money, Commitments, Concentration, Engineering</strong> from 1–4; use each once.</li>
-<li>Allocate <strong>100 priority points</strong> in blocks of 10. Explain the first priority with a figure or passage and a dependency.</li>
-<li>Name a trade-off and evidence that would change the ranking. Save the decision record.</li></ul></section>
+<section class="question-slide ceo-slide">
+<h3>Stage 3 — CEO: Set Company Priorities</h3><h2>Chief Executive Officer (CEO)</h2><p class="q">As CEO, rank the four questions from most to least important for this company to survive a year in which the AI demand does not arrive. Discuss your executives’ recommendations before setting the company’s priorities. Ask each executive: “What is your recommendation, which colleague’s constraint does it depend on, and why is your question important for the company to resolve?” You receive their answers through team chat, not automatic summaries.</p><ul class="ranking-options"><li>Money — where the $2.5 billion goes</li><li>Concentration — one distributor is 37% of revenue</li><li>Commitments — $2.67 billion promised, most of it next year</li><li>Engineering — the stickiest money in the company</li></ul><p class="callout">Use each question once. Why should your first-ranked question take priority? Refer to information two executives shared, name the bucket it sits in (COMMITTED, STICKY or FLEXIBLE), and test it against worst-case revenue rather than expected revenue.</p>
+</section>
 
-        <section class="course-adjustment"><h2>Account Manager — Key Takeaways</h2><ul><li>Budget against the speed at which costs can change, not only expected revenue.</li>
-<li>Different rankings can be defensible. Connect the priorities to evidence and the weekly concept.</li>
-<li>Example allocation: 40/30/20/10 totals 100. Explain your own allocation; priority points are not course-grade points.</li></ul></section>
-
-
-        <!-- Key takeaway -->
-        <section>
-          <h2>Key takeaway</h2>
-          <div class="box"><p>Return to the airline that revised its demand forecast while its aircraft orders remained. Use the Reversibility Budget to compare what the company expects with what it has promised and how quickly either can change.</p></div>
-          <p class="quote" style="margin-top: 20px;">If demand disappoints, how long would it take to stop paying — and at what cost?</p>
-        </section>
-<section class="course-adjustment"><h2>Apply this to your venture — 20 minutes</h2><ul><li>Classify five venture expenses as committed, sticky, or flexible. State their stopping costs and recalculate the budget with revenue 20% below your base case.</li>
-<li><strong>Produce:</strong> A spending table and downside scenario for Final Section E.</li>
-<li>Add this to your shared project document. If you finish the simulation early, start here; this is not a new separately graded assignment.</li></ul></section>
-<section class="course-adjustment"><h2>Save your decision record</h2><ul><li><strong>Decision → evidence and source → trade-off → change after discussion → concept and venture application.</strong></li>
-<li>Save a personal copy or screenshot before leaving. Use decision words, not only option letters.</li>
-<li>If SkillSimm lags, use your downloaded lecture slides and your own notes.</li></ul></section>
-<section class="course-adjustment"><h2>Reflection: a clear, specific explanation</h2><ul><li>Use five headings: <strong>Decision, Evidence, Trade-off, Revision, Connection.</strong></li>
-<li>From October 20: aim for <strong>300–500 words</strong>. Complete responses following the previous 500–800 word guidance remain acceptable.</li>
-<li>Submit individually in the existing HuskyCT assignment; <strong>keep its current deadline</strong>.</li>
-<li><a href="../Assignments/Reflection_Guide.html">Rubric and example feedback</a>: one specific strength and one next revision.</li></ul></section>
+<section class="takeaway-slide">
+<h3>Stage 3 — Key takeaways</h3><h2>Rank the obligations that survive a downturn</h2><p class="concept-link">Financial Budgeting: Test the budget against worst-case revenue.</p><div class="box"><ul><li><strong>Put Commitments and Money first.</strong> Either order fits the template: the foundry payments remain due even if AI demand falls short, and cash must cover those obligations.</li><li><strong>Place Concentration third and Engineering fourth.</strong> Customers can cancel faster than the company can stop paying. Widening reduces dependence on one distributor; staging already ties engineering to design wins.</li><li><strong>Name the bucket and test the downside.</strong> Use evidence from two executives. Identify COMMITTED, STICKY or FLEXIBLE spending, then explain what still has to be paid if expected revenue does not arrive.</li></ul></div><p class="small">These priorities follow the template’s scenario assumptions; explain the dependencies behind your ranking.</p>
+</section>
 
 
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
     <script>
-      Reveal.initialize({ hash: true, slideNumber: true });
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        width: 1120,
+        height: 760,
+        margin: 0.06,
+        transition: 'none',
+        controlsTutorial: false,
+        progress: true
+      });
     </script>
   </body>
 </html>

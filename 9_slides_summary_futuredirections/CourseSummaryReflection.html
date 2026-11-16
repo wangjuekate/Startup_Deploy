@@ -1,244 +1,98 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Course Summary and Future Directions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Summary: Venture Planning, Management, and Growth</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-      :root { --ink: #111827; --muted: #4b5563; --line: #d1d5db; --accent: #1d4ed8; --soft: #f3f4f6; }
-      .reveal { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #fff; }
-      .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; letter-spacing: 0; }
-      .reveal h2 { font-size: 1.12em; font-weight: 700; line-height: 1.15; margin-bottom: 0.45em; }
-      .reveal h3 { font-size: 0.72em; color: var(--accent); margin-bottom: 0.45em; }
-      .reveal p, .reveal li { font-size: 0.48em; line-height: 1.45; color: var(--ink); }
-      .reveal ul { margin: 0.35em 0 0 1.1em; }
-      .reveal li { margin-bottom: 0.35em; }
-      .title-slide h2 { font-size: 1.35em; }
-      .subtitle { color: var(--muted); text-align: center; }
-      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; }
-      .box { background: var(--soft); border-left: 6px solid var(--accent); padding: 18px 22px; text-align: left; }
-      .question-slide li { list-style: none; margin-left: -1em; }
-      .small { font-size: 0.42em; color: var(--muted); }
-      .reveal table { font-size: 0.42em; }
-      .reveal table th { color: var(--accent); }
-      /* journey arc */
-      .arc { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 0.5em; }
-      .arc .stage { background: var(--soft); border-top: 4px solid var(--accent); border-radius: 6px; padding: 12px 14px; text-align: left; flex: 1 1 150px; }
-      .arc .stage h4 { color: var(--accent); font-size: 0.44em; font-weight: 700; margin: 0 0 0.35em 0; letter-spacing: 0.04em; text-transform: uppercase; }
-      .arc .stage p { font-size: 0.36em; line-height: 1.35; margin: 0 0 0.25em 0; }
-      .arc .stage .case { color: var(--muted); font-size: 0.32em; }
-      /* venture hub */
-      .hub { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; align-items: center; text-align: center; margin-top: 0.5em; }
-      .hub div { font-size: 0.4em; color: var(--muted); line-height: 1.35; }
-      .hub .center { background: var(--accent); color: #fff; font-size: 0.5em; font-weight: 700; border-radius: 8px; padding: 22px 10px; }
-      /* photo placeholder */
-      .fig { border: 2px dashed var(--line); border-radius: 12px; background: var(--soft);
-             display: flex; flex-direction: column; align-items: center; justify-content: center;
-             gap: 8px; padding: 20px; min-height: 300px; text-align: center; }
-      .fig .fig-icon { font-size: 1.4em; color: var(--accent); }
-      .fig .fig-label { font-size: 0.38em; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
-      .fig .fig-desc { font-size: 0.38em; max-width: 40ch; line-height: 1.4; color: var(--muted); }
-      .part-slide h2 { font-size: 1.2em; }
-      .part-slide .kicker { color: var(--accent); font-size: 0.44em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-align: center; }
-      .closing { font-size: 0.95em; font-weight: 700; line-height: 1.3; }
+      :root { --ink:#182525; --muted:#526361; --line:#d7dfdb; --accent:#08695d; --soft:#eef3ef; --warn:#a45422; }
+      body { background:#f8f9f5; }
+      .reveal { font-family:"Avenir Next","Segoe UI",Arial,sans-serif; color:var(--ink); font-size:36px; }
+      .reveal .slides { text-align:left; }
+      .reveal .slides section { box-sizing:border-box; padding:28px 34px; }
+      .reveal h1,.reveal h2,.reveal h3,.reveal h4 { font-family:inherit; text-transform:none; color:var(--ink); letter-spacing:-.035em; }
+      .reveal h1 { font-size:2.15em; line-height:1.08; font-weight:750; margin:24px 0; }
+      .reveal h2 { font-size:1.32em; line-height:1.15; margin:0 0 22px; font-weight:700; }
+      .reveal h3 { font-size:.7em; margin:0 0 12px; }
+      .reveal p,.reveal li { font-size:.58em; line-height:1.5; }
+      .reveal p { margin:14px 0; }
+      .reveal .eyebrow { color:var(--accent); font-size:.35em; text-transform:uppercase; letter-spacing:.16em; font-weight:750; margin:0 0 16px; }
+      .reveal .subtitle { font-size:.66em; color:var(--muted); max-width:850px; }
+      .reveal .small { font-size:.43em; color:var(--muted); }
+      .reveal strong { font-weight:750; }
+      .title-slide::before { content:""; display:block; width:72px; height:6px; background:var(--accent); margin-bottom:32px; }
+      .reveal .title-meta { border-top:1px solid var(--line); padding-top:20px; margin-top:36px; font-size:.43em; color:var(--muted); }
+      .model-grid,.case-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+      .model-card,.case-card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+      .model-card { border-left:4px solid var(--accent); }
+      .reveal .model-card h3 { font-size:.53em; margin:0 0 7px; }
+      .reveal .model-card p { font-size:.44em; line-height:1.4; margin:0; color:var(--muted); }
+      .reveal .case-card h3 { color:var(--accent); font-size:.55em; margin:0 0 6px; }
+      .reveal .case-card p { font-size:.48em; margin:0; }
+      .reveal .message { background:var(--accent); color:#fff; border-radius:10px; padding:16px 22px; font-size:.57em; font-weight:650; margin-top:20px; }
+      .reveal .roadmap { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; list-style:none; margin:0 !important; width:100%; counter-reset:journey; }
+      .reveal .roadmap li { font-size:1em; background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin:0; position:relative; }
+      .roadmap li::before { counter-increment:journey; content:counter(journey,decimal-leading-zero); display:block; color:var(--accent); font-size:.43em; font-weight:750; letter-spacing:.12em; margin-bottom:12px; }
+      .reveal .roadmap h3 { font-size:.61em; margin-bottom:10px; }
+      .reveal .roadmap p { font-size:.47em; line-height:1.45; margin:0; }
+      .reveal .roadmap .model-tag { font-size:.35em; color:var(--accent); margin-top:14px; font-weight:650; }
+      .two-col { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+      .box { background:var(--soft); border-left:4px solid var(--accent); border-radius:0 12px 12px 0; padding:24px 28px; }
+      .box p:last-child { margin-bottom:0; }
+      .reveal .hero-message { font-size:1.35em; line-height:1.25; max-width:960px; font-weight:700; letter-spacing:-.035em; }
+      .reveal .accent { color:var(--accent); }
+      .fig { border:2px dashed var(--line); border-radius:14px; background:var(--soft); min-height:360px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+      .reveal .fig p { color:var(--muted); }
+      .schedule { display:grid; grid-template-columns:185px 1fr; margin:0; }
+      .schedule dt,.schedule dd { font-size:.56em; line-height:1.45; padding:14px 0; border-top:1px solid var(--line); margin:0; }
+      .schedule dt { color:var(--accent); font-weight:750; }
+      .schedule dd { padding-left:20px; }
+      .reveal a { color:var(--accent); text-decoration:underline; text-underline-offset:4px; }
+      .reveal .controls,.reveal .progress { color:var(--accent); }
+      .reveal .slide-number { background:transparent; color:var(--muted); font-size:13px; }
+      @media print { .model-card,.case-card,.roadmap li { break-inside:avoid; } }
+      @media (prefers-reduced-motion:reduce) { .reveal * { animation:none !important; transition:none !important; } }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 
-        <section class="title-slide">
-          <h2>Course Summary and Future Directions</h2>
-          <p class="subtitle">MENT 3235 &middot; Venture Planning, Management, and Growth</p>
-          <p class="subtitle">Week 12: Tuesday, November 17 and Thursday, November 19</p>
-        </section>
+<section class="title-slide"><p class="eyebrow">MENT 3235 / Venture Planning, Management, and Growth</p><h1>From venture idea<br>to a plan that holds.</h1><p class="subtitle">Eight mental models for building, deploying and growing a venture.</p><p class="title-meta">Course summary and future directions · Week 12 · November 17 &amp; 19</p></section>
 
-        <section class="part-slide">
-          <p class="kicker">Part A &middot; Tuesday, November 17</p>
-          <h2>Course Summary and Reflection</h2>
-        </section>
+<section><p class="eyebrow">The toolkit / Eight mental models</p><h2>The semester in one picture</h2><div class="model-grid"><article class="model-card"><h3>01 · Value-Chain Chokepoint</h3><p>Find the step that serves the customer’s real job, is hard to copy and fails visibly. Protect the capability that earns trust and bargaining power.</p></article><article class="model-card"><h3>02 · Take-Rate Waterfall</h3><p>Trace volume → revenue → contribution → profit. Fix costs that grow with each sale before scaling; volume does not cure a per-unit loss.</p></article><article class="model-card"><h3>03 · Appropriability Matrix</h3><p>Ask whether disclosure destroys the advantage and whether copying can be detected. Match protection to the asset, including people and know-how.</p></article><article class="model-card"><h3>04 · Structure Trilemma</h3><p>Weigh control, capital and liability together. Ask who decides, who funds the venture and who bears the consequences when something goes wrong.</p></article><article class="model-card"><h3>05 · Dominant-Design Clock</h3><p>Identify the stage for each product: explore before dominance, build adoption during the battle, then operate efficiently and find the next source of value.</p></article><article class="model-card"><h3>06 · Evidence → Choice → Deployment</h3><p>Study competitors, discover pain, position the venture, decide what to keep or change, then deploy and test. Feed pilot evidence back into the next decision.</p></article><article class="model-card"><h3>07 · Value-Metric Triangle</h3><p>Choose what to charge for, the price level and who pays differently. Test whether the billing metric grows with customer value — and what efficiency does to revenue.</p></article><article class="model-card"><h3>08 · Reversibility Budget</h3><p>Sort spending into committed, sticky and flexible. Compare unavoidable payments with downside revenue; identify the time and cost needed to stop spending.</p></article></div><aside class="notes">Summaries follow the eight concept lectures. Module 6 now uses the competitive deployment process: evidence → choice → deployment. Treat the IP and structure models as prompts for investigation, not automatic legal conclusions.</aside></section>
 
-        <!-- The journey -->
-        <section>
-          <h2>The semester in one picture</h2>
-          <div class="arc">
-            <div class="stage">
-              <h4>Discover</h4>
-              <p>Marketing Research and the Value Chain</p>
-              <p class="case">TheRealReal FY2025 10-K</p>
-            </div>
-            <div class="stage">
-              <h4>Build</h4>
-              <p>Operations and Business Model</p>
-              <p class="case">Affirm FY2025 10-K</p>
-            </div>
-            <div class="stage">
-              <h4>Protect</h4>
-              <p>IP Protection &middot; Legal Structure</p>
-              <p class="case">Apple v. OpenAI &middot; NYT v. Microsoft &amp; OpenAI</p>
-            </div>
-            <div class="stage">
-              <h4>Enter</h4>
-              <p>Market Deployment and Dominant Design</p>
-              <p class="case">Tesla FY2025 10-K</p>
-            </div>
-            <div class="stage">
-              <h4>Compete</h4>
-              <p>Technology Deployment and Competitor Analysis</p>
-              <p class="case">Cerebras FY2025 10-K</p>
-            </div>
-            <div class="stage">
-              <h4>Monetize</h4>
-              <p>Pricing Strategy &middot; Financial Budgeting</p>
-              <p class="case">Snowflake FY2026 10-K &middot; Marvell FY2026 10-K</p>
-            </div>
-            <div class="stage">
-              <h4>Grow</h4>
-              <p>Summary and Future Directions</p>
-              <p class="case">your own venture</p>
-            </div>
-          </div>
-          <p class="small">The order is not arbitrary. You cannot price what you have not built, and you cannot protect what you have not defined.</p>
-        </section>
+<section><p class="eyebrow">Recall / The question behind each case</p><h2>The cases you argued about</h2><div class="case-grid"><article class="case-card"><h3>01 · TheRealReal</h3><p>Which step creates the trust customers are paying for?</p></article><article class="case-card"><h3>02 · Affirm</h3><p>How much survives after the costs of each transaction?</p></article><article class="case-card"><h3>03 · Apple v. OpenAI</h3><p>What value depends on keeping knowledge from leaving?</p></article><article class="case-card"><h3>04 · NYT v. Microsoft &amp; OpenAI</h3><p>How do control, financial benefit and responsibility connect?</p></article><article class="case-card"><h3>05 · Tesla</h3><p>Which design stage is each product competing in?</p></article><article class="case-card"><h3>06 · Cerebras</h3><p>Why would a customer switch from the existing alternative?</p></article><article class="case-card"><h3>07 · Snowflake</h3><p>What happens to revenue when customers use the product more efficiently?</p></article><article class="case-card"><h3>08 · Marvell</h3><p>What must still be paid if expected demand does not arrive?</p></article></div><aside class="notes">Ask students to connect a case decision to evidence and to their own venture. For the complaint-based cases, distinguish allegations from established findings.</aside></section>
 
-        <!-- Frameworks -->
-        <section>
-          <h2>Eight topics, eight frameworks</h2>
-          <table>
-            <tr><th>Topic</th><th>Case</th><th>Framework</th></tr>
-            <tr><td>Marketing Research and the Value Chain</td><td>TheRealReal</td><td>Value Chain Chokepoint</td></tr>
-            <tr><td>Operations and Business Model</td><td>Affirm</td><td>Take Rate Waterfall</td></tr>
-            <tr><td>Intellectual Property Protection</td><td>Apple v. OpenAI</td><td>Appropriability Matrix</td></tr>
-            <tr><td>Legal Structure</td><td>NYT v. Microsoft &amp; OpenAI</td><td>Structure Trilemma</td></tr>
-            <tr><td>Market Deployment and Dominant Design</td><td>Tesla</td><td>Dominant Design Clock</td></tr>
-            <tr><td>Technology Deployment and Competitor Analysis</td><td>Cerebras</td><td>10x Threshold</td></tr>
-            <tr><td>Pricing Strategy</td><td>Snowflake</td><td>Value Metric Triangle</td></tr>
-            <tr><td>Financial Budgeting</td><td>Marvell</td><td>Reversibility Budget</td></tr>
-          </table>
-          <p class="small">Every case was a real filing &mdash; a 10-K or a complaint &mdash; written by people who did not know how it ended either.</p>
-        </section>
+<section><p class="eyebrow">Apply / From discovery to deployment</p><h2>A roadmap to deploying your venture</h2><ol class="roadmap"><li><h3>Find the value</h3><p>Define the customer’s job and the capability that makes your offering worth choosing.</p><p class="model-tag">Value-Chain Chokepoint</p></li><li><h3>Make delivery work</h3><p>Map how value is delivered and what remains after each sale’s variable costs.</p><p class="model-tag">Take-Rate Waterfall</p></li><li><h3>Protect and organize</h3><p>Identify the assets to protect and align decision rights, funding and responsibility.</p><p class="model-tag">Appropriability · Structure Trilemma</p></li><li><h3>Choose your entry</h3><p>Read the market’s design stage, compare alternatives and test why customers would switch.</p><p class="model-tag">Dominant Design · Competitive Deployment</p></li><li><h3>Price the value</h3><p>Choose the billing basis, price and segments. Connect adoption and usage to revenue.</p><p class="model-tag">Value-Metric Triangle</p></li><li><h3>Fund the next milestone</h3><p>Build the budget, stress-test lower revenue and preserve room to change course.</p><p class="model-tag">Reversibility Budget</p></li></ol><p class="message">At every step: gather evidence → decide → test → revise.</p><aside class="notes">Revisit earlier steps as evidence changes. Pricing can expose an operating problem; a budget constraint can change the entry sequence; an IP dependency can change what you build or obtain through partners.</aside></section>
 
-        <!-- Not eight separate topics -->
-        <section>
-          <h2>You didn't learn eight separate topics</h2>
-          <div class="hub">
-            <div>Who is the customer?</div>
-            <div>What problem are we solving?</div>
-            <div>How do we create value?</div>
-            <div>How do we deliver it?</div>
-            <div class="center">YOUR<br>VENTURE</div>
-            <div>How do we protect it?</div>
-            <div>How do we compete?</div>
-            <div>How do we make money?</div>
-            <div>How do we fund and grow it?</div>
-          </div>
-        </section>
+<section><p class="eyebrow">Connect / One venture, interdependent decisions</p><h2>A change in one choice travels through the plan</h2><div class="case-grid"><article class="case-card"><h3>Customer → pricing</h3><p>A different customer can change the value metric, buying process and willingness to pay.</p></article><article class="case-card"><h3>Technology → operations</h3><p>A new capability can change suppliers, permissions, delivery costs and deployment timing.</p></article><article class="case-card"><h3>Pricing → budget</h3><p>The billing basis and sales assumptions must produce the revenue shown in the budget.</p></article><article class="case-card"><h3>Budget → market entry</h3><p>Less funding can change the first segment, launch scope and milestone you can reach.</p></article></div><p class="message">When one assumption changes, update every decision that depends on it.</p></section>
 
-        <section>
-          <h2>The lines between them are the course</h2>
-          <ul>
-            <li>Change <strong>who the customer is</strong> and your pricing model breaks.</li>
-            <li>Change your <strong>legal structure</strong> and your funding options change with it.</li>
-            <li>Win on <strong>technology</strong> and you have made your IP position both more valuable and more attacked.</li>
-            <li>Cut the <strong>budget</strong> and you have quietly changed your deployment timing.</li>
-          </ul>
-          <div class="box">
-            <p>Entrepreneurship is not about knowing one answer. It is about making interconnected decisions under uncertainty &mdash; and knowing which decision you would have to unwind first.</p>
-          </div>
-        </section>
+<section><p class="eyebrow">Reflect / Improve the next decision</p><h2>What would you do differently now?</h2><div class="case-grid"><article class="case-card"><h3>Reconsider a decision</h3><p>Which mental model changed your view of a business or your own venture?</p></article><article class="case-card"><h3>Locate the uncertainty</h3><p>Where is your evidence thinnest? What could you learn before making a larger commitment?</p></article><article class="case-card"><h3>Examine the teamwork</h3><p>Which colleague’s information changed your recommendation? What did you initially miss?</p></article><article class="case-card"><h3>Name the next action</h3><p>What specific change would most improve your proposal before submission?</p></article></div><p class="message">Explain the decision, the evidence and what you would revise.</p></section>
 
-        <!-- Reflection -->
-        <section>
-          <h2>Reflection questions</h2>
-          <ul>
-            <li>Which framework changed how you look at a business you had already made up your mind about?</li>
-            <li>Which simulation decision was hardest &mdash; and was it the data or the room?</li>
-            <li>Where is your venture's evidence thinnest, and are you avoiding it?</li>
-            <li>What has to improve before the final presentation?</li>
-            <li>What did you learn about yourself as a teammate?</li>
-          </ul>
-        </section>
+<section><p class="eyebrow">Apply / Final venture proposal and pitch</p><h2>Turn the models into one coherent proposal</h2><div class="model-grid"><article class="model-card"><h3>A · Venture and program fit</h3><p>Define the customer problem, selected support program, eligibility, request and milestone. Include the application preparation appendix.</p></article><article class="model-card"><h3>B · Market entry</h3><p>Choose the first segment and launch approach. Explain dominant design, standards, complements and adoption barriers.</p></article><article class="model-card"><h3>C · Technology and competition</h3><p>Specify what to build, acquire or obtain through partners. Compare alternatives and explain differentiation and dependencies.</p></article><article class="model-card"><h3>D · Pricing</h3><p>State the price and billing basis. Compare alternatives and connect adoption, volume and margins to the budget.</p></article><article class="model-card"><h3>E · Financial budgeting</h3><p>Show a base budget and revenue 20% below it. Classify spending and explain stopping costs and your response.</p></article><article class="model-card"><h3>Check the whole proposal</h3><p>Keep claims, prices, sales assumptions, milestones and support requests consistent across the report and video.</p></article></div><p class="small">Sections A–E are each worth 20 points per deliverable. Use the rubric for your team or individual option in the <a href="../Assignments/Final3235.md">final assignment guide</a>.</p></section>
 
-        <!-- Grade design -->
-        <section class="course-adjustment"><h2>Where your grade stands</h2><ul><li>Blog comments <strong>10%</strong> · Simulation reflections <strong>40%</strong> · Participation <strong>10%</strong>.</li>
-<li>Midterm report/pitch <strong>20%</strong> · Final report/pitch <strong>20%</strong>. Total: <strong>100%</strong>.</li>
-<li>Use the <a href="../Assignments/Assignment_Guide.html">assignment guide</a> and your existing HuskyCT grades.</li></ul></section>
+<section><p class="eyebrow">Submit / Follow your participation option</p><h2>Make the work clear and accessible</h2><div class="two-col"><div class="box"><h3>Teams</h3><p><strong>Standalone PDF + 10–20-minute video.</strong></p><p>The Team Leader submits both with all members’ names. Other members submit a team-and-leader note to each final assignment.</p></div><div class="box"><h3>Individuals · Group 36</h3><p><strong>Standalone PDF + 8–10-minute video.</strong></p><p>Submit your own report and recording. Aim for 6–8 pages of main text, plus title page, references and the concise application appendix.</p></div></div><p class="message">Open the submitted PDF. Test video access and playback. Save both receipts.</p><p class="small">Final project: 20% of the course grade; report and video contribute 10% each. Follow <a href="../Assignments/Final3235.md">the final guide</a> and Blackboard deadlines and version instructions.</p></section>
 
+<section><p class="eyebrow">The people behind the work</p><h2>Memory of this class</h2><div class="fig"><p>Class photos</p><p class="small">Add semester photos before the session.</p></div></section>
 
-        <!-- Checkpoint -->
-        <section class="course-adjustment"><h2>Team project checkpoint</h2><ul><li>Have you recorded each midterm comment, your action, and its location in the revised report?</li>
-<li>Have the four workshop outputs become market-entry, competitor, pricing, and budget sections?</li>
-<li>Can the reader trace each factual claim and figure to evidence?</li>
-<li>Do the report and 15-minute video agree? Can the instructor open both?</li>
-<li><a href="../Assignments/Final.html">Final checklist and canonical rubrics</a>.</li></ul></section>
+<section><p class="eyebrow">Continue / Your next stage</p><h2>Carry the work beyond this course</h2><div class="two-col"><div class="box"><h3>Keep building your judgment</h3><p>Explore MENT 4900’s broader strategic management perspective.</p><p>Use finance, marketing analytics and business law to investigate the decisions your venture still needs to resolve.</p></div><div class="box"><h3>Make the proposal useful</h3><p>Present it as a work sample: what you decided, what evidence changed your view and what you would test next.</p><p>Adapt it to the audience and requirements of your selected support program.</p></div></div><p class="message">A useful next step names the evidence you need and the milestone it enables.</p></section>
 
+<section><p class="eyebrow">Continue / Funding and support</p><h2>Match the support request to the next milestone</h2><div class="case-grid"><article class="case-card"><h3>Explore a venture test</h3><p>Get Seeded · UConn IDEA Grant · Innovation Quest</p></article><article class="case-card"><h3>Develop and commercialize</h3><p>Accelerate UConn · CCEI Summer Accelerator · Technology Incubation Program</p></article><article class="case-card"><h3>Resolve a focused question</h3><p>IP and Entrepreneurship Law Clinic · Transactional Law Clinic · Verge Consulting</p></article><article class="case-card"><h3>Prepare before applying</h3><p>Check eligibility, application windows, required materials and fit with your stage. Record the official source and date checked.</p></article></div><p class="small">Examples from the <a href="../Assignments/Final3235.md">final guide’s funding and support list</a>; verify current requirements there and on the official program sites. Prepare the appendix; an external application is optional.</p></section>
 
-        <section class="part-slide">
-          <p class="kicker">Part B &middot; Thursday, November 19</p>
-          <h2>Future Directions</h2>
-        </section>
+<section><p class="eyebrow">Finish / Sessions and submissions</p><h2>Remaining schedule</h2><dl class="schedule"><dt>Remote sessions</dt><dd>November 17 · December 1, 3, 8 and 10<br><span class="small">2:00–3:15 p.m. via Microsoft Teams. Join links are in the final assignment guide.</span></dd><dt>Office hours</dt><dd>Book through Blackboard for individual or team mentoring.</dd><dt>Report + video</dt><dd><strong>Follow the deadlines and required versions posted in Blackboard.</strong><br><span class="small">The final guide defers submission dates and cutoff times to Blackboard.</span></dd><dt>Before submitting</dt><dd>Check the selected rubric, appendix, citations, calculations and file access.</dd></dl><p><a href="../Assignments/Final3235.md">Final instructions, meeting links and rubrics →</a></p></section>
 
-        <!-- Memory -->
-        <section>
-          <h2>Memory of this class</h2>
-          <div class="fig">
-            <div class="fig-icon"><i class="fa-solid fa-camera-retro"></i></div>
-            <div class="fig-label">Class photos</div>
-            <div class="fig-desc">Drop the semester photos in here before the session.</div>
-          </div>
-        </section>
-
-        <!-- Next chapter -->
-        <section>
-          <h2>The next chapter of this journey</h2>
-          <div class="two-col">
-            <div class="box">
-              <h3>More classes</h3>
-              <ul>
-                <li><strong>MENT 4900</strong> &mdash; the broader strategic management view, for running the whole board rather than one venture.</li>
-                <li>Finance, marketing analytics, and business law will read differently now that you have seen what those decisions cost a real company.</li>
-              </ul>
-            </div>
-            <div class="box">
-              <h3>Programs and fellowships</h3>
-              <ul>
-                <li><strong>CCEI</strong> &mdash; accelerator, summer fellowship, validation awards.</li>
-                <li><strong>SBDC</strong> &mdash; free advising once you have customers.</li>
-                <li>Werth Institute, Innovation Quest, and the Technology Incubation Program.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Funding, honestly</h2>
-          <p>At your stage the money that matters is small, non-dilutive, and attached to a program: competitions, grants, and fellowships.</p>
-          <p>Nobody writes a term sheet off a class project. What they fund is evidence &mdash; and evidence is what your team has been assembling since Week 1.</p>
-          <div class="box">
-            <p><strong>Your revised venture report</strong> can become a useful work sample. Explain what you decided, what evidence changed your view, and how the venture improved.</p>
-          </div>
-        </section>
-
-        <!-- Calendar -->
-        <section class="course-adjustment"><h2>What is left on the calendar</h2><ul><li>November 24 and 26: Thanksgiving. December 1–3: project work.</li>
-<li>December 8: existing pitch video submission milestone.</li>
-<li>December 15: existing final report/video submission. December 17: grade posting.</li>
-<li>Keep the current HuskyCT cutoff times and version instructions; this review does not create a new slide or website deadline.</li></ul></section>
-
-
-        <!-- Close -->
-        <section>
-          <p class="closing">The semester ends.<br>The experiment doesn't.</p>
-          <aside class="notes">You will forget the framework names. Keep the habit: before you commit, say out loud what you are assuming and what it would cost you to be wrong.</aside>
-        </section>
+<section class="title-slide"><p class="eyebrow">Your next chapter</p><h1>The semester ends.<br><span class="accent">The experiment doesn’t.</span></h1><p class="subtitle">Choose one assumption. Design one test.<br>Let the result shape your next commitment.</p></section>
 
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
-    <script>Reveal.initialize({ hash: true, slideNumber: true });</script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: 'c/t', width: 1280, height: 820, margin: 0.05, transition: 'none', controlsTutorial: false });
+    </script>
   </body>
 </html>
